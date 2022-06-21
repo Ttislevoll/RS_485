@@ -1,6 +1,12 @@
-print('yoyo')
+import serial
+import serial.tools.list_ports
 
+portList = serial.tools.list_ports.comports()
 
-print('test1')
+for port in portList:
+    print(port)
 
-print('test2')
+ser = serial.Serial("COM2", 9600, timeout = 1)
+print (ser.write(b'\xff'))
+verdi = ser.read(1)
+print(verdi)
