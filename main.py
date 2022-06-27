@@ -1,22 +1,6 @@
-import serial
-import serial.tools.list_ports
-
-
-def portfinder() -> str:
-    """Finds the correct com"""
-    portList = serial.tools.list_ports.comports()
-
-    for port in portList:
-        if "MOXA" in str(port.description):
-            print(port)
-            COM = port.device
-            return COM
-
-COM = portfinder()
-
-ser = serial.Serial(COM, 9600, timeout = 1)
-
-print (ser.write(b'\xff\xff'))
-verdi = ser.read(1)
-print(verdi)
-print(COM)
+import struct
+data = b'\x68\x0b\x0b\x68\x01\x7e\x08\xdf\x53\x33\x44\x65\x1e\x09\x42\xfe\x16'
+distance = struct.unpack('f', data[7:11])
+print(distance)
+temperature = struct.unpack('f', data[11:15])
+print(temperature)

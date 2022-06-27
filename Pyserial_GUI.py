@@ -1,100 +1,139 @@
 import tkinter as tk
-from tkinter import BOTTOM, LEFT, NW, SOLID, SUNKEN, TOP, ttk
+from tkinter import BOTTOM, END, LEFT, NW, SOLID, SUNKEN, TOP, ttk
 import ctypes
 import serial
 import serial.tools.list_ports
 from PIL import ImageTk, Image
+import logging
+import datetime
+import struct
 
-output : str = ""           
+output : str = ""              
 ports = []
+distance_temp_v03a = b'\x10\x7e\x01\x4c\xcb\x16'
+soft_version_v03a = b'\x68\x09\x09\x68\x7e\x01\x4c\x30\x33\x5e\x10\x02\x02\xa0\x16'
 
-def receive_data(address, data):
+
+def receive_data(address, data): #Function is called when button for retrieving data from sensor is pressed
     try:
         index = int(combobox_ports.current())
         if index < 0:
             raise Exception()
-        COM = ports[int(combobox_ports.current())].device
-        ser = serial.Serial(COM, 9600, timeout = 1)
-        ser.stopbits = serial.STOPBITS_ONE
-        ser.parity = serial.PARITY_EVEN
-        ser.bytesize = 8
-        ser.write(address)
+        #Creates Serial object
+        COM = ports[index].device
+        ser = serial.Serial(
+            port=COM,
+            baudrate=230400,
+            bytesize=serial.EIGHTBITS,
+            stopbits=serial.STOPBITS_ONE,
+            parity=serial.PARITY_EVEN,
+            timeout=1
+        )
+        #Sends request to sensor        
+        ser.write(address)        
+        #Reads returned value
         if data == "distance":
-            lbl_distance['text'] = str(ser.read(1))
-            log_write("Read distance")
+            received = ser.read(17)
+            distance = struct.unpack('f', received[7:11])
+            temperature = struct.unpack('f', received[11:15])
+            lbl_distance['text'] = str(distance)
+            log_text=f'Read distance: {distance}'
+            log_text2=f'Read temperature: {temperature}'
+            log_write(log_text)
+            log_write(log_text2)
+            logging.info(log_text)
         elif data == "serial_number":
-            lbl_serial_number['text'] = str(ser.read(1))
-            log_write("Read serial_number")
+            received = ser.read(6)
+            lbl_serial_number['text'] = str(received)
+            log_text=f'Read serial number: {received}'
+            log_write(log_text)
+            logging_write(log_text)
     except:
-        log_write("Invalid port")
+        log_text="Invalid port"
+        log_write(log_text)
+        logging_write(log_text)
         
-def refresh_ports():
+def refresh_ports(): #Function is called when refresh button is pressed
     global ports
     ports = serial.tools.list_ports.comports()
     combobox_ports['values'] = ports
     current_port.set("")
 
-def log_write(text : str):    
-    txt_log.insert(0.0, text + "\n")
+def log_write(text : str): #Writes to log text-widget
+    current_time = datetime.datetime.now().strftime("%H:%M:%S")
+    txt_log.insert(END, f'{str(current_time)} {text}\n')
+    txt_log.yview_moveto(1.0)
 
-def port_selected():
+def logging_write(text : str):#Writes to log file
+    current_time = datetime.datetime.now().strftime("%H:%M:%S")
+    logging.info(f'{str(current_time)} {text}')
+
+def port_selected(): #Function is called when a port is selected
     window.focus()
-    log_write(f'Selected port: {current_port.get()}')
+    log_text=f'Selected port: {current_port.get()}'
+    log_write(log_text)
+    logging_write(log_text)
 
+
+
+#Creates Window---------------------------------------------------------------------------------------------
 ctypes.windll.shcore.SetProcessDpiAwareness(1)
 window = tk.Tk()
+window.title("DT3005 - Serial Communication")
 window.geometry('1000x800')
 window.resizable(False,False)
 
+#Configures log file--------------------------------------------------------------------------------------------
+logging.basicConfig(filename="Log.log", encoding='utf-8', level=logging.INFO, format='%(levelname)s:%(message)s')
+
+#adds onesubsea icon and logo to window------------------------------------------------------------------
 canvas = tk.Canvas(window, width = 700, height = 150)
 canvas.pack()
 img = ImageTk.PhotoImage(Image.open("onesubsea_logo.png"))
 canvas.create_image(20, 20, anchor=NW, image=img)
-#---------Valg av port------------------
-frame_ports = tk.Frame(window, width=50, height=50)
+icon = ImageTk.PhotoImage(Image.open("onesubsea_icon.png"))
+window.iconphoto(False, icon)
 
+#Creates button for retreiving distance value from sensor and a label to display result---------------------
+frame_distance = tk.Frame(window, width=50, height=50)
+btn_distance = ttk.Button(frame_distance, text="Test", command=lambda: receive_data(distance_temp_v03a, "distance"))
+btn_distance.pack(side=tk.LEFT, padx=8, pady=8)
+lbl_distance = ttk.Label(frame_distance, text="", width=11, background="white", relief=SOLID)
+lbl_distance.pack(side=tk.RIGHT, padx=8, pady=8)
+
+#Creates button for retreiving serial number from sensor and a label to display result--------------------
+frame_serial_number = tk.Frame(window, width=50, height=50)
+btn_serial_number = ttk.Button(frame_serial_number, text="Serial Number", command=lambda: receive_data(b'\x10\x7F\x01\x09\x89\x16', "serial_number"))
+btn_serial_number.pack(side=tk.LEFT, padx=8, pady=8)
+lbl_serial_number = ttk.Label(frame_serial_number, text="", width=11, background="white", relief=SOLID)
+lbl_serial_number.pack(side=tk.RIGHT, padx=8, pady=8)
+
+#Creates a label, dropdown list and refresh button for port selection---------------------------------
+frame_ports = tk.Frame(window, width=50, height=50)
 lbl_ports = tk.Label(frame_ports, text="Available Ports")
 lbl_ports.pack()
-
 current_port = tk.StringVar()
 combobox_ports = ttk.Combobox(frame_ports, textvariable=current_port)
 combobox_ports['state'] = 'readonly'
 combobox_ports.bind("<<ComboboxSelected>>", lambda e: port_selected())
 combobox_ports.pack(side=tk.LEFT, padx=5, pady=5)
-
-ports = serial.tools.list_ports.comports()
-combobox_ports['values'] = ports
-
+ports = serial.tools.list_ports.comports() #Creates a list of connected serial ports
+combobox_ports['values'] = ports #adds the "ports" list to a dropdown menu
 refresh_btn = ttk.Button(frame_ports, text="Refresh", command=refresh_ports)
 refresh_btn.pack(side=tk.RIGHT, padx=5, pady=5)
-#------------------------------------------
-#----------Hente avstand-------------------
-frame_distance = tk.Frame(window, width=50, height=50)
 
-btn_distance = ttk.Button(frame_distance, text="Distance", command=lambda: receive_data(b'\xff', "distance"))
-btn_distance.pack(side=tk.LEFT, padx=8, pady=8)
-
-lbl_distance = ttk.Label(frame_distance, text="", width=11, background="white", relief=SOLID)
-lbl_distance.pack(side=tk.RIGHT, padx=8, pady=8)
-#------------------------------------------
-#---------Hente serienummber---------------
-frame_serial_number = tk.Frame(window, width=50, height=50)
-
-btn_serial_number = ttk.Button(frame_serial_number, text="Serial Number", command=lambda: receive_data(b'\xff', "serial_number"))
-btn_serial_number.pack(side=tk.LEFT, padx=8, pady=8)
-
-lbl_serial_number = ttk.Label(frame_serial_number, text="", width=11, background="white", relief=SOLID)
-lbl_serial_number.pack(side=tk.RIGHT, padx=8, pady=8)
-#----------Log------------------------------
+#Creates a text box for displaying log-----------------------------------------------------------
 frame_log = ttk.Frame(window)
 txt_log = tk.Text(frame_log, height=10)
 lbl_log = ttk.Label(frame_log, text="Log")
 lbl_log.pack(anchor=NW)
 txt_log.pack()
 
+#Places widgets in window----------------------------------------------------------------------------
 frame_ports.pack()
 frame_distance.pack()
 frame_serial_number.pack()
 frame_log.pack(side=BOTTOM)
 
+#-------------------------------------------------------------------------------------------------------
 window.mainloop()
