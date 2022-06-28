@@ -4465,3 +4465,92 @@ INFO:Read distance: (781.1430053710938,)
 INFO:Read distance: (781.28662109375,)
 INFO:Read distance: (781.3583984375,)
 INFO:Read distance: (780.9994506835938,)
+INFO:14:10:11 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Read distance: (778.6066284179688,)
+INFO:14:11:28 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Distance: (787.5797119140625,)
+INFO:14:32:29 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:32:32 Invalid port
+INFO:14:33:12 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:33:31 Invalid port
+INFO:14:34:25 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:34:29 Invalid port
+INFO:14:35:55 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:35:59 Invalid port
+INFO:14:36:38 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:36:38 Invalid port
+INFO:14:39:00 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:39:01 Invalid port
+INFO:14:39:15 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:39:19 Read serial number: 397
+INFO:14:40:02 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:40:02 Read serial number: 3   97
+INFO:14:41:40 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:41:41 Read serial number: 3   0x61
+INFO:14:41:55 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:41:56 Read serial number: 3   97
+INFO:14:43:55 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:43:56 Read serial number: 3   a
+INFO:14:44:47 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:44:48 Read serial number: 3a
+INFO:08:01:33 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:08:01:36 Invalid port
+INFO:08:01:44 Invalid port
+INFO:Temperature: (20.77924346923828,)
+INFO:Temperature: (21.07128143310547,)
+INFO:Temperature: (21.082962036132812,)
+INFO:Temperature: (21.08879852294922,)
+INFO:Temperature: (21.094642639160156,)
+INFO:Temperature: (21.129684448242188,)
+INFO:08:31:59 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: (29.108108520507812,)
+INFO:Serial Number: b''
+INFO:10:08:59 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Serial Number: b'\xa2\x03\x00\x00'
+INFO:10:09:47 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Serial Number: 2718105600
+INFO:10:10:18 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Serial Number: 930
+INFO:Temperature: (30.98297119140625,)
+INFO:10:13:28 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Serial Number: 927
+INFO:10:15:08 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Serial Number: 929
+INFO:10:17:26 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: (29.078903198242188,)
+INFO:Temperature: (29.067222595214844,)
+INFO:Temperature: (29.0555419921875,)
+INFO:10:42:58 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: (30.50403594970703,)
+INFO:Temperature: (30.50403594970703,)
+INFO:Temperature: (30.50403594970703,)
+INFO:Temperature: (30.50403594970703,)
+INFO:Temperature: (30.50403594970703,)
+INFO:Temperature: (30.50403594970703,)
+INFO:Temperature: (30.50403594970703,)
+INFO:Temperature: (30.50403594970703,)
+INFO:Temperature: (30.50403594970703,)
+INFO:Temperature: (30.50403594970703,)
+INFO:Temperature: (30.50988006591797,)
+INFO:Temperature: (30.50988006591797,)
+INFO:Temperature: (30.50988006591797,)
+INFO:Temperature: (30.50988006591797,)
+INFO:Temperature: (30.50988006591797,)
+INFO:Temperature: (30.50988006591797,)
+INFO:Temperature: (30.50988006591797,)
+INFO:Temperature: (30.515716552734375,)
+INFO:Temperature: (30.515716552734375,)
+INFO:Temperature: (30.515716552734375,)
+INFO:Temperature: (30.50988006591797,)
+INFO:Temperature: (30.50988006591797,)
+INFO:Temperature: (30.50988006591797,)
+INFO:10:44:55 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: (30.568283081054688,)
+INFO:11:29:09 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Serial Number: 930
+INFO:12:13:31 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Serial Number: 928
+INFO:12:14:44 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Serial Number: 926
+INFO:12:16:13 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Serial Number: 942

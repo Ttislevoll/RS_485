@@ -9,10 +9,79 @@ import datetime
 import struct
 
 output : str = ""              
-ports = []
-distance_temp_v03a = b'\x10\x7e\x01\x4c\xcb\x16'
-soft_version_v03a = b'\x68\x09\x09\x68\x7e\x01\x4c\x30\x33\x5e\x10\x02\x02\xa0\x16'
+ports : list = []
+adr : hex = 0x00
+fcs : hex = 0x00
 
+broadcast = [0x10,0x7f,0x01,0x09,0x89,0x16]
+distance_temp_v03a = [0x10,adr,0x01,0x4c,fcs,0x16]
+soft_version_v03a = [0x68,0x09,0x09,0x68,adr,0x01,0x4c,0x30,0x33,0x5e,0x10,0x02,0x02,fcs,0x16]
+serial_number_v03a = [0x68,0x09,0x09,0x68,adr,0x01,0x4c,0x30,0x33,0x5e,0x10,0x10,0x04,fcs,0x16]
+
+def get_fcs(telegram, x):
+    global fcs
+    sum=0
+    for i in range(x, len(telegram)-2):
+        sum += int(telegram[i])
+    fcs = hex(sum % 256)
+
+def get_adr():
+    global adr
+    ser = initialize_port()
+    ser.write(bytearray(broadcast))
+    received = ser.read(6)
+    adr = hex(received[2])
+
+
+def initialize_port():
+    index = int(combobox_ports.current())
+    if index < 0:
+        raise Exception()
+    #Creates Serial object
+    COM = ports[index].device
+    ser = serial.Serial(
+        port=COM,
+        baudrate=230400,
+        bytesize=serial.EIGHTBITS,
+        stopbits=serial.STOPBITS_ONE,
+        parity=serial.PARITY_EVEN,
+        timeout=1
+    )
+    return ser
+
+def get_temperature():
+    try:
+        get_adr()
+        get_fcs(distance_temp_v03a, 1)
+        ser = initialize_port()
+        ser.write(bytearray(distance_temp_v03a))
+        received = ser.read(17)
+        temperature = struct.unpack('f', received[11:15])
+        lbl_distance['text'] = str(temperature)
+        log_text=f'Temperature: {temperature}'
+        log_write(log_text)
+        logging.info(log_text)
+    except:
+        log_text="Invalid port"
+        log_write(log_text)
+        logging_write(log_text)
+
+def get_serial_number():
+    try:
+        get_adr()
+        get_fcs(serial_number_v03a, 4)
+        ser = initialize_port()
+        ser.write(bytearray(serial_number_v03a))
+        received = ser.read(19)
+        serial_number = int.from_bytes(received[13:17], "little")
+        lbl_serial_number['text'] = str(serial_number)
+        log_text=f'Serial Number: {serial_number}'
+        log_write(log_text)
+        logging.info(log_text)
+    except:
+        log_text="Invalid port"
+        log_write(log_text)
+        logging_write(log_text)
 
 def receive_data(address, data): #Function is called when button for retrieving data from sensor is pressed
     try:
@@ -37,15 +106,18 @@ def receive_data(address, data): #Function is called when button for retrieving 
             distance = struct.unpack('f', received[7:11])
             temperature = struct.unpack('f', received[11:15])
             lbl_distance['text'] = str(distance)
-            log_text=f'Read distance: {distance}'
-            log_text2=f'Read temperature: {temperature}'
+            log_text=f'Distance: {distance}'
+            log_text2=f'Temperature: {temperature}'
             log_write(log_text)
             log_write(log_text2)
             logging.info(log_text)
         elif data == "serial_number":
-            received = ser.read(6)
-            lbl_serial_number['text'] = str(received)
-            log_text=f'Read serial number: {received}'
+            received = ser.read(17)
+            soft_number = received[14]
+            soft_letter = chr(received[13])
+            soft_version = f'{soft_number}{soft_letter}'
+            lbl_serial_number['text'] = soft_version
+            log_text=f'Read serial number: {soft_version}'
             log_write(log_text)
             logging_write(log_text)
     except:
@@ -96,14 +168,14 @@ window.iconphoto(False, icon)
 
 #Creates button for retreiving distance value from sensor and a label to display result---------------------
 frame_distance = tk.Frame(window, width=50, height=50)
-btn_distance = ttk.Button(frame_distance, text="Test", command=lambda: receive_data(distance_temp_v03a, "distance"))
-btn_distance.pack(side=tk.LEFT, padx=8, pady=8)
+btn_temperature = ttk.Button(frame_distance, text="Temperature", command=lambda: get_temperature())
+btn_temperature.pack(side=tk.LEFT, padx=8, pady=8)
 lbl_distance = ttk.Label(frame_distance, text="", width=11, background="white", relief=SOLID)
 lbl_distance.pack(side=tk.RIGHT, padx=8, pady=8)
 
 #Creates button for retreiving serial number from sensor and a label to display result--------------------
 frame_serial_number = tk.Frame(window, width=50, height=50)
-btn_serial_number = ttk.Button(frame_serial_number, text="Serial Number", command=lambda: receive_data(b'\x10\x7F\x01\x09\x89\x16', "serial_number"))
+btn_serial_number = ttk.Button(frame_serial_number, text="Serial Number", command=lambda: get_serial_number())
 btn_serial_number.pack(side=tk.LEFT, padx=8, pady=8)
 lbl_serial_number = ttk.Label(frame_serial_number, text="", width=11, background="white", relief=SOLID)
 lbl_serial_number.pack(side=tk.RIGHT, padx=8, pady=8)
