@@ -1,0 +1,110 @@
+INFO:13:02:33 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 30.539077758789062
+INFO:Distance: 1491.211669921875
+INFO:Software Version: 0.3a
+INFO:Distance: 1491.211669921875
+INFO:Distance: 1491.211669921875
+INFO:Distance: 1491.211669921875
+INFO:Distance: 1491.211669921875
+INFO:Distance: 1491.211669921875
+INFO:Distance: 1491.211669921875
+INFO:Distance: 1491.211669921875
+INFO:Distance: 184.350341796875
+INFO:Distance: 427.8913269042969
+INFO:Distance: 438.1565246582031
+INFO:Distance: 577.2271118164062
+INFO:Distance: 577.8013916015625
+INFO:Distance: 578.6867065429688
+INFO:Distance: 578.5670776367188
+INFO:Distance: 577.5142211914062
+INFO:Distance: 579.5481567382812
+INFO:Distance: 579.6677856445312
+INFO:Distance: 579.7395629882812
+INFO:Distance: 579.5003051757812
+INFO:Software Version: 0.3a
+INFO:Software Version: 0.3a
+INFO:Software Version: 0.3a
+INFO:Serial Number: 930
+INFO:Serial Number: 930
+INFO:Serial Number: 930
+INFO:Article Number: 4314083
+INFO:Article Number: 4314083
+INFO:Article Number: 4314083
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Unit: μm
+INFO:Measuring Unit: μm
+INFO:Measuring Unit: μm
+INFO:Measuring Range: 1400.0
+INFO:Measuring Range: 1400.0
+INFO:Measuring Range: 1400.0
+INFO:Measuring Offset: 100.0
+INFO:Measuring Offset: 100.0
+INFO:Measuring Offset: 100.0
+INFO:Temperature: 30.247047424316406
+INFO:Temperature: 30.247047424316406
+INFO:Temperature: 30.247047424316406
+INFO:Temperature: 30.247047424316406
+INFO:Temperature: 30.24120330810547
+INFO:Distance: 578.1602783203125
+INFO:Distance: 578.1602783203125
+INFO:Distance: 578.3995971679688
+INFO:Distance: 578.1124267578125
+INFO:Distance: 578.0406494140625
+INFO:Software Version: 0.3a
+INFO:Software Version: 0.3a
+INFO:Software Version: 0.3a
+INFO:Serial Number: 930
+INFO:Serial Number: 930
+INFO:Serial Number: 930
+INFO:Article Number: 4314083
+INFO:Article Number: 4314083
+INFO:Article Number: 4314083
+INFO:Article Number: 4314083
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Unit: μm
+INFO:Measuring Unit: μm
+INFO:Measuring Unit: μm
+INFO:Measuring Unit: μm
+INFO:Measuring Range: 1400.0
+INFO:Measuring Range: 1400.0
+INFO:Measuring Range: 1400.0
+INFO:Measuring Offset: 100.0
+INFO:Measuring Offset: 100.0
+INFO:Measuring Offset: 100.0
+INFO:13:06:30 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Distance: 580.1463623046875
+INFO:Distance: 580.1463623046875
+INFO:Distance: 580.1463623046875
+INFO:Serial Number: 930
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Offset: 100.0
+INFO:Measuring Range: 1400.0
+INFO:Measuring Unit: μm
+INFO:Article Number: 4314083
+INFO:Temperature: 30.147750854492188
+INFO:Distance: 578.7584838867188
+INFO:13:17:43 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 29.937484741210938
+INFO:Distance: 589.2630004882812
+INFO:Software Version: 0.3a
+INFO:Serial Number: 930
+INFO:Article Number: 4314083
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Unit: μm
+INFO:Measuring Range: 1400.0
+INFO:Measuring Offset: 100.0
+INFO:13:19:21 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 29.919967651367188
+INFO:Distance: 589.3108520507812
+INFO:Software Version: 0.3a
+INFO:Serial Number: 930
+INFO:Article Number: 4314083
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Unit: μm
+INFO:Measuring Range: 1400.0
+INFO:Measuring Offset: 100.0
