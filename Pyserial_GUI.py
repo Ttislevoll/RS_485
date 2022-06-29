@@ -12,6 +12,7 @@ output : str = ""
 ports : list = []
 adr : hex = 0x00
 fcs : hex = 0x00
+ser = None
 
 broadcast = [0x10,0x7f,0x01,0x09,0x89,0x16]
 distance_temp_v03a = [0x10,adr,0x01,0x4c,fcs,0x16]
@@ -19,19 +20,15 @@ soft_version_v03a = [0x68,0x09,0x09,0x68,adr,0x01,0x4c,0x30,0x33,0x5e,0x10,0x02,
 serial_number_v03a = [0x68,0x09,0x09,0x68,adr,0x01,0x4c,0x30,0x33,0x5e,0x10,0x10,0x04,fcs,0x16]
 
 def get_fcs(telegram, x):
-    global fcs
     sum=0
     for i in range(x, len(telegram)-2):
         sum += int(telegram[i])
-    fcs = hex(sum % 256)
+    return sum % 256
 
 def get_adr():
-    global adr
-    ser = initialize_port()
     ser.write(bytearray(broadcast))
     received = ser.read(6)
-    adr = hex(received[2])
-
+    return received[2]
 
 def initialize_port():
     index = int(combobox_ports.current())
@@ -51,14 +48,29 @@ def initialize_port():
 
 def get_temperature():
     try:
-        get_adr()
-        get_fcs(distance_temp_v03a, 1)
-        ser = initialize_port()
+        distance_temp_v03a[1] = get_adr()
+        distance_temp_v03a[-2] = get_fcs(distance_temp_v03a, 1)
         ser.write(bytearray(distance_temp_v03a))
         received = ser.read(17)
-        temperature = struct.unpack('f', received[11:15])
-        lbl_distance['text'] = str(temperature)
+        temperature = struct.unpack('f', received[11:15])[0]
+        lbl_temperature['text'] = str(temperature)
         log_text=f'Temperature: {temperature}'
+        log_write(log_text)
+        logging.info(log_text)
+    except:
+        log_text="Invalid port"
+        log_write(log_text)
+        logging_write(log_text)
+
+def get_distance():
+    try:
+        distance_temp_v03a[1] = get_adr()
+        distance_temp_v03a[-2] = get_fcs(distance_temp_v03a, 1)
+        ser.write(bytearray(distance_temp_v03a))
+        received = ser.read(17)
+        distance = struct.unpack('f', received[7:11])[0]
+        lbl_distance['text'] = str(distance)
+        log_text=f'Distance: {distance}'
         log_write(log_text)
         logging.info(log_text)
     except:
@@ -68,9 +80,8 @@ def get_temperature():
 
 def get_serial_number():
     try:
-        get_adr()
-        get_fcs(serial_number_v03a, 4)
-        ser = initialize_port()
+        serial_number_v03a[4] = get_adr()
+        serial_number_v03a[-2] = get_fcs(serial_number_v03a, 4)
         ser.write(bytearray(serial_number_v03a))
         received = ser.read(19)
         serial_number = int.from_bytes(received[13:17], "little")
@@ -78,48 +89,6 @@ def get_serial_number():
         log_text=f'Serial Number: {serial_number}'
         log_write(log_text)
         logging.info(log_text)
-    except:
-        log_text="Invalid port"
-        log_write(log_text)
-        logging_write(log_text)
-
-def receive_data(address, data): #Function is called when button for retrieving data from sensor is pressed
-    try:
-        index = int(combobox_ports.current())
-        if index < 0:
-            raise Exception()
-        #Creates Serial object
-        COM = ports[index].device
-        ser = serial.Serial(
-            port=COM,
-            baudrate=230400,
-            bytesize=serial.EIGHTBITS,
-            stopbits=serial.STOPBITS_ONE,
-            parity=serial.PARITY_EVEN,
-            timeout=1
-        )
-        #Sends request to sensor        
-        ser.write(address)        
-        #Reads returned value
-        if data == "distance":
-            received = ser.read(17)
-            distance = struct.unpack('f', received[7:11])
-            temperature = struct.unpack('f', received[11:15])
-            lbl_distance['text'] = str(distance)
-            log_text=f'Distance: {distance}'
-            log_text2=f'Temperature: {temperature}'
-            log_write(log_text)
-            log_write(log_text2)
-            logging.info(log_text)
-        elif data == "serial_number":
-            received = ser.read(17)
-            soft_number = received[14]
-            soft_letter = chr(received[13])
-            soft_version = f'{soft_number}{soft_letter}'
-            lbl_serial_number['text'] = soft_version
-            log_text=f'Read serial number: {soft_version}'
-            log_write(log_text)
-            logging_write(log_text)
     except:
         log_text="Invalid port"
         log_write(log_text)
@@ -141,11 +110,12 @@ def logging_write(text : str):#Writes to log file
     logging.info(f'{str(current_time)} {text}')
 
 def port_selected(): #Function is called when a port is selected
+    global ser
+    ser = initialize_port()
     window.focus()
     log_text=f'Selected port: {current_port.get()}'
     log_write(log_text)
     logging_write(log_text)
-
 
 
 #Creates Window---------------------------------------------------------------------------------------------
@@ -166,10 +136,17 @@ canvas.create_image(20, 20, anchor=NW, image=img)
 icon = ImageTk.PhotoImage(Image.open("onesubsea_icon.png"))
 window.iconphoto(False, icon)
 
+#Creates button for retreiving temperature value from sensor and a label to display result---------------------
+frame_temperature = tk.Frame(window, width=50, height=50)
+btn_temperature = ttk.Button(frame_temperature, text="Temperature", command=lambda: get_temperature())
+btn_temperature.pack(side=tk.LEFT, padx=8, pady=8)
+lbl_temperature = ttk.Label(frame_temperature, text="", width=11, background="white", relief=SOLID)
+lbl_temperature.pack(side=tk.RIGHT, padx=8, pady=8)
+
 #Creates button for retreiving distance value from sensor and a label to display result---------------------
 frame_distance = tk.Frame(window, width=50, height=50)
-btn_temperature = ttk.Button(frame_distance, text="Temperature", command=lambda: get_temperature())
-btn_temperature.pack(side=tk.LEFT, padx=8, pady=8)
+btn_distance = ttk.Button(frame_distance, text="Distance", command=lambda: get_distance())
+btn_distance.pack(side=tk.LEFT, padx=8, pady=8)
 lbl_distance = ttk.Label(frame_distance, text="", width=11, background="white", relief=SOLID)
 lbl_distance.pack(side=tk.RIGHT, padx=8, pady=8)
 
@@ -203,6 +180,7 @@ txt_log.pack()
 
 #Places widgets in window----------------------------------------------------------------------------
 frame_ports.pack()
+frame_temperature.pack()
 frame_distance.pack()
 frame_serial_number.pack()
 frame_log.pack(side=BOTTOM)
