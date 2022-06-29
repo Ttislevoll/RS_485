@@ -4705,3 +4705,269 @@ INFO:Distance: 358.4278259277344
 INFO:Distance: 358.4278259277344
 INFO:Distance: 358.2842712402344
 INFO:Distance: 358.5714111328125
+INFO:09:27:00 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 30.620849609375
+INFO:Distance: 358.4039001464844
+INFO:Serial Number: 930
+INFO:09:37:28 Invalid port
+INFO:09:37:29 Invalid port
+INFO:09:37:32 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:09:37:34 Invalid port
+INFO:Serial Number: 930
+INFO:09:37:39 Invalid port
+INFO:09:37:56 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:09:40:06 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Serial Number: 3a)
+INFO:09:40:06 Invalid port
+INFO:09:40:22 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Serial Number: 3a
+INFO:09:40:23 Invalid port
+INFO:Serial Number: 3a
+INFO:09:40:27 Invalid port
+INFO:09:40:40 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Serial Number: 3a
+INFO:Serial Number: 3a
+INFO:Serial Number: 3a
+INFO:Serial Number: 930
+INFO:Serial Number: 930
+INFO:Temperature: 30.439788818359375
+INFO:Distance: 370.9901123046875
+INFO:Serial Number: 3a
+INFO:09:41:06 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Serial Number: 0,3a
+INFO:09:41:28 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Serial Number: 0.3a
+INFO:Serial Number: 930
+INFO:Serial Number: 930
+INFO:Serial Number: 930
+INFO:09:43:12 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 30.433944702148438
+INFO:Distance: 371.2054748535156
+INFO:Serial Number: 0.3a
+INFO:Serial Number: 930
+INFO:Temperature: 30.42810821533203
+INFO:Distance: 370.7508239746094
+INFO:Serial Number: 0.3a
+INFO:Serial Number: 930
+INFO:09:45:15 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 30.433944702148438
+INFO:Distance: 379.6760559082031
+INFO:Serial Number: 0.3a
+INFO:Serial Number: 930
+INFO:09:45:21 Invalid port
+INFO:09:45:22 Invalid port
+INFO:09:45:23 Invalid port
+INFO:09:45:23 Invalid port
+INFO:09:48:03 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 30.498191833496094
+INFO:Temperature: 30.498191833496094
+INFO:Distance: 470.1006164550781
+INFO:Serial Number: 0.3a
+INFO:Serial Number: 930
+INFO:09:50:58 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 30.539077758789062
+INFO:Distance: 470.5552673339844
+INFO:Serial Number: 0.3a
+INFO:Serial Number: 930
+INFO:09:51:42 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 30.539077758789062
+INFO:Distance: 470.3638610839844
+INFO:Distance: 470.1963195800781
+INFO:Software Version: 0.3a
+INFO:Serial Number: 930
+INFO:09:53:13 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 30.544921875
+INFO:Distance: 470.4356384277344
+INFO:Software Version: 0.3a
+INFO:Serial Number: 930
+INFO:09:53:35 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 30.544921875
+INFO:Temperature: 30.544921875
+INFO:Distance: 470.3160095214844
+INFO:Software Version: 0.3a
+INFO:09:55:36 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 30.574127197265625
+INFO:Distance: 476.9440612792969
+INFO:Software Version: 0.3a
+INFO:Serial Number: 930
+INFO:10:08:10 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:10:13:14 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 30.702621459960938
+INFO:Distance: 536.4534912109375
+INFO:Software Version: 0.3a
+INFO:Serial Number: 930
+INFO:Distance: 536.8363647460938
+INFO:10:14:42 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Serial Number: 930
+INFO:Software Version: 0.3a
+INFO:Distance: 536.8363647460938
+INFO:Temperature: 30.71430206298828
+INFO:10:16:16 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 30.725982666015625
+INFO:Distance: 536.6209716796875
+INFO:Distance: 536.5731201171875
+INFO:Distance: 536.7406005859375
+INFO:Distance: 536.5013427734375
+INFO:Distance: 536.5731201171875
+INFO:Distance: 536.4056396484375
+INFO:Distance: 536.4056396484375
+INFO:Distance: 536.5731201171875
+INFO:Software Version: 0.3a
+INFO:Software Version: 0.3a
+INFO:Software Version: 0.3a
+INFO:Software Version: 0.3a
+INFO:Software Version: 0.3a
+INFO:Software Version: 0.3a
+INFO:Software Version: 0.3a
+INFO:Software Version: 0.3a
+INFO:Software Version: 0.3a
+INFO:Software Version: 0.3a
+INFO:Software Version: 0.3a
+INFO:Software Version: 0.3a
+INFO:Software Version: 0.3a
+INFO:Software Version: 0.3a
+INFO:Software Version: 0.3a
+INFO:Software Version: 0.3a
+INFO:Software Version: 0.3a
+INFO:Software Version: 0.3a
+INFO:Software Version: 0.3a
+INFO:Serial Number: 930
+INFO:Serial Number: 930
+INFO:Serial Number: 930
+INFO:Serial Number: 930
+INFO:Serial Number: 930
+INFO:Serial Number: 930
+INFO:Serial Number: 930
+INFO:Serial Number: 930
+INFO:Serial Number: 930
+INFO:Serial Number: 930
+INFO:Serial Number: 930
+INFO:Serial Number: 930
+INFO:Serial Number: 930
+INFO:Serial Number: 930
+INFO:Serial Number: 930
+INFO:Serial Number: 930
+INFO:Serial Number: 930
+INFO:10:20:08 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Article Number: 4314083
+INFO:10:20:40 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Article Number: 4314083
+INFO:Serial Number: 930
+INFO:Software Version: 0.3a
+INFO:Distance: 561.1234130859375
+INFO:Temperature: 30.761024475097656
+INFO:11:41:03 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:11:42:38 Invalid port
+INFO:11:42:41 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:12:09:44 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:12:09:46 Invalid port
+INFO:12:10:15 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:12:10:16 Invalid port
+INFO:Temperature: 30.825271606445312
+INFO:Distance: 807.5119018554688
+INFO:Software Version: 0.3a
+INFO:12:10:21 Invalid port
+INFO:12:10:22 Invalid port
+INFO:12:10:23 Invalid port
+INFO:12:11:28 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 30.83111572265625
+INFO:Distance: 807.7033081054688
+INFO:Software Version: 0.3a
+INFO:12:11:32 Invalid port
+INFO:12:11:56 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:12:13:47 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Serial Number: 930
+INFO:12:13:48 Invalid port
+INFO:12:14:30 Invalid port
+INFO:12:14:33 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Software Version: 0.3a
+INFO:Serial Number: 930
+INFO:12:14:35 Invalid port
+INFO:Article Number: 4314083
+INFO:12:15:32 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 30.84864044189453
+INFO:Distance: 817.6334838867188
+INFO:Distance: 817.7531127929688
+INFO:Distance: 817.824951171875
+INFO:Software Version: 0.3a
+INFO:Serial Number: 930
+INFO:12:15:40 Invalid port
+INFO:Article Number: 4314083
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:12:16:24 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Measuring Unit: μm
+INFO:Measuring Unit: μm
+INFO:12:21:34 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 30.877838134765625
+INFO:Distance: 864.48486328125
+INFO:Software Version: 0.3a
+INFO:Software Version: 0.3a
+INFO:Serial Number: 930
+INFO:12:21:39 Invalid port
+INFO:Article Number: 4314083
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Unit: μm
+INFO:12:33:58 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Measuring Unit: 1400.0
+INFO:12:40:18 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Measuring Offset: 100.0
+INFO:Measuring Range: 1400.0
+INFO:Measuring Unit: μm
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Article Number: 4314083
+INFO:Serial Number: 930
+INFO:12:40:29 Invalid port
+INFO:Serial Number: 930
+INFO:12:40:30 Invalid port
+INFO:Serial Number: 930
+INFO:12:40:31 Invalid port
+INFO:Serial Number: 930
+INFO:12:40:31 Invalid port
+INFO:Serial Number: 930
+INFO:12:40:31 Invalid port
+INFO:Serial Number: 930
+INFO:12:40:32 Invalid port
+INFO:Software Version: 0.3a
+INFO:Software Version: 0.3a
+INFO:Software Version: 0.3a
+INFO:Software Version: 0.3a
+INFO:Serial Number: 930
+INFO:12:40:39 Invalid port
+INFO:Serial Number: 930
+INFO:12:40:40 Invalid port
+INFO:Serial Number: 930
+INFO:12:40:41 Invalid port
+INFO:12:41:30 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 30.988815307617188
+INFO:Distance: 883.5795288085938
+INFO:Software Version: 0.3a
+INFO:Serial Number: 930
+INFO:Article Number: 4314083
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Unit: μm
+INFO:Measuring Range: 1400.0
+INFO:Measuring Offset: 100.0
+INFO:12:42:29 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 31.00634002685547
+INFO:Distance: 884.177734375
+INFO:Software Version: 0.3a
+INFO:Serial Number: 930
+INFO:Article Number: 4314083
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Unit: μm
+INFO:Measuring Range: 1400.0
+INFO:Measuring Offset: 100.0
+INFO:12:44:37 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 31.00049591064453
+INFO:Distance: 884.7041625976562
+INFO:Software Version: 0.3a
+INFO:Serial Number: 930
+INFO:Article Number: 4314083
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Unit: μm
+INFO:Measuring Range: 1400.0
+INFO:Measuring Offset: 100.0
