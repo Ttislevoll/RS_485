@@ -1,14 +1,18 @@
+#Import the required Libraries
+from tkinter import *
+from tkinter import ttk
+#Create an instance of Tkinter frame
+win = Tk()
+#Set the geometry of Tkinter frame
+win.geometry("750x270")
 
-fcs = 0x48
-adr = 0x16
-broadcast = [0x10,0x7e,0x01,0x4c,0xac,0x16]
-test = bytearray(broadcast)
-sum=0
-for x in range(1, len(broadcast)-2):
-    sum += int(broadcast[x])
+def open_popup():
+   top= Toplevel(win)
+   top.geometry("750x250")
+   top.title("Child Window")
+   Label(top, text= "Hello World!", font=('Mistral 18 bold')).place(x=150,y=80)
 
-print(hex(sum % 256))
-print(0x7f)
-print(str(test[1]))
-print(hex(broadcast[-2]))
- 
+Label(win, text=" Click the Below Button to Open the Popup Window", font=('Helvetica 14 bold')).pack(pady=20)
+#Create a button in the main Window to open the popup
+ttk.Button(win, text= "Open", command= open_popup).pack()
+win.mainloop()

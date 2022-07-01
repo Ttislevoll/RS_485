@@ -1,42 +1,58 @@
+from operator import truediv
 import tkinter as tk
-from tkinter import BOTTOM, END, LEFT, NW, SOLID, SUNKEN, TOP, ttk
+from tkinter import BOTTOM, END, LEFT, N, NW, RIGHT, SOLID, SUNKEN, TOP, ttk, messagebox
 import ctypes
+from turtle import back, left
 import serial
 import serial.tools.list_ports
 from PIL import ImageTk, Image
 import logging
 import datetime
 import struct
+from Machine import Machine
+from Sensor import Sensor
+import pickle
+from typing import List
+import os.path
+import time
 
 output : str = ""              
 ports : list = []
 adr : hex = 0x00
 fcs : hex = 0x00
+new_adr : hex = 0x00
 ser = None
+machines : List[Machine] = []
 
 broadcast = [0x10,0x7f,0x01,0x09,0x89,0x16]
 distance_temp_v03a = [0x10,adr,0x01,0x4c,fcs,0x16]
-#block 0x10
+#read block 0x10
 soft_version_v03a = [0x68,0x09,0x09,0x68,adr,0x01,0x4c,0x30,0x33,0x5e,0x10,0x02,0x02,fcs,0x16]
 article_number = [0x68,0x09,0x09,0x68,adr,0x01,0x4c,0x30,0x33,0x5e,0x10,0x04,0x04,fcs,0x16]
 serial_number = [0x68,0x09,0x09,0x68,adr,0x01,0x4c,0x30,0x33,0x5e,0x10,0x10,0x04,fcs,0x16]
 description = [0x68,0x09,0x09,0x68,adr,0x01,0x4c,0x30,0x33,0x5e,0x10,0x28,0x20,fcs,0x16]
-#block 0x20
+#read block 0x20
 measuring_unit = [0x68,0x09,0x09,0x68,adr,0x01,0x4c,0x30,0x33,0x5e,0x20,0x03,0x01,fcs,0x16]
 measuring_range = [0x68,0x09,0x09,0x68,adr,0x01,0x4c,0x30,0x33,0x5e,0x20,0x1c,0x04,fcs,0x16]
 measuring_offset = [0x68,0x09,0x09,0x68,adr,0x01,0x4c,0x30,0x33,0x5e,0x20,0x20,0x04,fcs,0x16]
+#assign address
+assign_address = [0x68,0x09,0x09,0x68,adr,0x01,0x43,0x37,0x3e,new_adr,0x00,0x00,0x00,fcs,0x16]
 
 
 def get_fcs(telegram, x):
     sum=0
     for i in range(x, len(telegram)-2):
-        sum += int(telegram[i])
+        sum += telegram[i]
     return sum % 256
 
 def get_adr():
-    ser.write(bytearray(broadcast))
-    received = ser.read(6)
-    return received[2]
+    try:
+        ser.write(bytearray(broadcast))
+        received = ser.read(6)
+        if get_fcs(received, 1) != received[-2]: raise Exception("Checksum is not equal")
+        return received[2]
+    except:
+        return None
 
 def initialize_port():
     index = int(combobox_ports.current())
@@ -57,26 +73,32 @@ def initialize_port():
 
 def get_temperature():
     try:
-        distance_temp_v03a[1] = get_adr()
+        adr = get_adr()
+        if adr is None: raise Exception("Checksum is not equal")
+        distance_temp_v03a[1] = adr
         distance_temp_v03a[-2] = get_fcs(distance_temp_v03a, 1)
         ser.write(bytearray(distance_temp_v03a))
         received = ser.read(17)
+        if get_fcs(received, 4) != received[-2]: raise Exception("Checksum is not equal")
         temperature = struct.unpack('f', received[11:15])[0]
         lbl_temperature['text'] = str(temperature)
         log_text=f'Temperature: {temperature}'
         log_write(log_text)
         logging.info(log_text)
-    except:
-        log_text="Invalid port"
+    except Exception as error:
+        log_text=error
         log_write(log_text)
         logging_write(log_text)
 
 def get_distance():
     try:
-        distance_temp_v03a[1] = get_adr()
+        adr = get_adr()
+        if adr is None: raise Exception("Checksum is not equal")
+        distance_temp_v03a[1] = adr
         distance_temp_v03a[-2] = get_fcs(distance_temp_v03a, 1)
         ser.write(bytearray(distance_temp_v03a))
         received = ser.read(17)
+        if get_fcs(received, 4) != received[-2]: raise Exception("checksum is not equal")
         distance = struct.unpack('f', received[7:11])[0]
         lbl_distance['text'] = str(distance)
         log_text=f'Distance: {distance}'
@@ -89,10 +111,13 @@ def get_distance():
 
 def get_serial_number():
     try:
-        serial_number[4] = get_adr()
+        adr = get_adr()
+        if adr is None: raise Exception("Checksum is not equal")
+        serial_number[4] = adr
         serial_number[-2] = get_fcs(serial_number, 4)
         ser.write(bytearray(serial_number))
         received = ser.read(19)
+        if get_fcs(received, 4) != received[-2]: raise Exception("checksum is not equal")
         serial_n = int.from_bytes(received[13:17], "little")
         lbl_serial_number['text'] = str(serial_n)
         log_text=f'Serial Number: {serial_n}'
@@ -105,10 +130,13 @@ def get_serial_number():
 
 def get_article_number():
     try:
-        article_number[4] = get_adr()
+        adr = get_adr()
+        if adr is None: raise Exception("Checksum is not equal")
+        article_number[4] = adr
         article_number[-2] = get_fcs(article_number, 4)
         ser.write(bytearray(article_number))
         received = ser.read(19)
+        if get_fcs(received, 4) != received[-2]: raise Exception("checksum is not equal")
         article_n = int.from_bytes(received[13:17], "little")
         lbl_article_number['text'] = str(article_n)
         log_text=f'Article Number: {article_n}'
@@ -121,10 +149,13 @@ def get_article_number():
 
 def get_soft_version():
     try:
-        soft_version_v03a[4] = get_adr()
+        adr = get_adr()
+        if adr is None: raise Exception("Checksum is not equal")
+        soft_version_v03a[4] = adr
         soft_version_v03a[-2] = get_fcs(soft_version_v03a, 4)
         ser.write(bytearray(soft_version_v03a))
         received = ser.read(17)
+        if get_fcs(received, 4) != received[-2]: raise Exception("checksum is not equal")
         soft = received[13:15]
         text = f'0.{int(soft[1])}{chr(soft[0])}'
         lbl_soft_version['text'] = text
@@ -138,10 +169,13 @@ def get_soft_version():
 
 def get_description():
     try:
-        description[4] = get_adr()
+        adr = get_adr()
+        if adr is None: raise Exception("Checksum is not equal")
+        description[4] = adr
         description[-2] = get_fcs(description, 4)
         ser.write(bytearray(description))
         received = ser.read(47)
+        if get_fcs(received, 4) != received[-2]: raise Exception("checksum is not equal")
         temp = received[13:45]
         text = temp.decode("ascii")
         lbl_description['text'] = text
@@ -155,10 +189,13 @@ def get_description():
 
 def get_measuring_unit():
     try:
-        measuring_unit[4] = get_adr()
+        adr = get_adr()
+        if adr is None: raise Exception("Checksum is not equal")
+        measuring_unit[4] = adr
         measuring_unit[-2] = get_fcs(measuring_unit, 4)
         ser.write(bytearray(measuring_unit))
         received = ser.read(16)
+        if get_fcs(received, 4) != received[-2]: raise Exception("checksum is not equal")
         unit = int(received[13])
         units = ["m","mm","μm"]
         lbl_measuring_unit['text'] = units[unit]
@@ -172,10 +209,13 @@ def get_measuring_unit():
 
 def get_measuring_range():
     try:
-        measuring_range[4] = get_adr()
+        adr = get_adr()
+        if adr is None: raise Exception("Checksum is not equal")
+        measuring_range[4] = adr
         measuring_range[-2] = get_fcs(measuring_range, 4)
         ser.write(bytearray(measuring_range))
         received = ser.read(19)
+        if get_fcs(received, 4) != received[-2]: raise Exception("checksum is not equal")
         range = struct.unpack('f', received[13:17])[0]
         lbl_measuring_range['text'] = str(range)
         log_text=f'Measuring Range: {range}'
@@ -188,13 +228,54 @@ def get_measuring_range():
 
 def get_measuring_offset():
     try:
-        measuring_offset[4] = get_adr()
+        adr = get_adr()
+        if adr is None: raise Exception("Checksum is not equal")
+        measuring_offset[4] = adr
         measuring_offset[-2] = get_fcs(measuring_offset, 4)
         ser.write(bytearray(measuring_offset))
         received = ser.read(19)
+        if get_fcs(received, 4) != received[-2]: raise Exception("checksum is not equal")
         offset = struct.unpack('f', received[13:17])[0]
         lbl_measuring_offset['text'] = str(offset)
         log_text=f'Measuring Offset: {offset}'
+        log_write(log_text)
+        logging.info(log_text)
+    except:
+        log_text="Invalid port"
+        log_write(log_text)
+        logging_write(log_text)
+
+def get_all():
+    get_temperature()
+    get_distance()
+    get_serial_number()
+    get_article_number()
+    get_soft_version()
+    get_description()
+    get_measuring_unit()
+    get_measuring_range()
+    get_measuring_offset()
+
+
+def set_address(new_adr):
+    try:
+        assign_address[4] = get_adr()
+        assign_address[9] = new_adr
+        assign_address[-2] = get_fcs(assign_address, 4)
+        ser.write(bytearray(assign_address))
+        received = ser.read(1)
+        log_text=f'Received: {received}'
+        log_write(log_text)
+        messagebox.showinfo("Assign Address", "Restart the sensor then click 'ok'")
+        t_5s = time.time() + 5
+        current_adr = None
+        while current_adr is None:
+            current_adr = get_adr()
+            if(time.time() > t_5s):
+                current_adr = "Sensor polling timed out"
+                break
+        lbl_assign_address['text'] = str(current_adr)
+        log_text=f'current address: {current_adr}'
         log_write(log_text)
         logging.info(log_text)
     except:
@@ -222,6 +303,7 @@ def logging_write(text : str):#Writes to log file
 
 def port_selected(): #Function is called when a port is selected
     global ser
+    ser = None
     ser = initialize_port()
     window.focus()
     log_text=f'Selected port: {current_port.get()}'
@@ -233,7 +315,7 @@ def port_selected(): #Function is called when a port is selected
 ctypes.windll.shcore.SetProcessDpiAwareness(1)
 window = tk.Tk()
 window.title("DT3005 - Serial Communication")
-window.geometry('1000x800')
+window.geometry('1300x900')
 window.resizable(False,False)
 
 #Configures log file--------------------------------------------------------------------------------------------
@@ -247,92 +329,134 @@ canvas.create_image(20, 20, anchor=NW, image=img)
 icon = ImageTk.PhotoImage(Image.open("onesubsea_icon.png"))
 window.iconphoto(False, icon)
 
+frame_right=ttk.Frame(master=window)
+frame_left= ttk.Frame(master=window)
+
 #Creates button for retreiving temperature value from sensor and a label to display result---------------------
-frame_temperature = tk.Frame(window, width=50, height=50)
-btn_temperature = ttk.Button(frame_temperature, text="Temperature", command=lambda: get_temperature())
-btn_temperature.pack(side=tk.LEFT, padx=8, pady=8)
-lbl_temperature = ttk.Label(frame_temperature, text="", width=11, background="white", relief=SOLID)
-lbl_temperature.pack(side=tk.RIGHT, padx=8, pady=8)
+frame_temperature = ttk.Frame(frame_right, width=50, height=50)
+btn_temperature = ttk.Button(frame_temperature, text="Temperature", width=14, command=lambda: get_temperature())
+btn_temperature.pack(side=tk.LEFT, padx=(20,8), pady=(28,8))
+lbl_temperature = ttk.Label(frame_temperature, text="", width=14, background="white", relief=SOLID)
+lbl_temperature.pack(side=tk.RIGHT, padx=(8,20), pady=(28,8))
 
 #Creates button for retreiving distance value from sensor and a label to display result---------------------
-frame_distance = tk.Frame(window, width=50, height=50)
-btn_distance = ttk.Button(frame_distance, text="Distance", command=lambda: get_distance())
-btn_distance.pack(side=tk.LEFT, padx=8, pady=8)
-lbl_distance = ttk.Label(frame_distance, text="", width=11, background="white", relief=SOLID)
-lbl_distance.pack(side=tk.RIGHT, padx=8, pady=8)
-
+frame_distance = ttk.Frame(frame_right, width=50, height=50)
+btn_distance = ttk.Button(frame_distance, text="Distance", width=14, command=lambda: get_distance())
+btn_distance.pack(side=tk.LEFT, padx=(20,8), pady=8)
+lbl_distance = ttk.Label(frame_distance, text="", width=14, background="white", relief=SOLID)
+lbl_distance.pack(side=tk.RIGHT, padx=(8,20), pady=8)
+ 
 #Creates button for retreiving serial number from sensor and a label to display result--------------------
-frame_serial_number = tk.Frame(window, width=50, height=50)
-btn_serial_number = ttk.Button(frame_serial_number, text="Serial Number", command=lambda: get_serial_number())
-btn_serial_number.pack(side=tk.LEFT, padx=8, pady=8)
-lbl_serial_number = ttk.Label(frame_serial_number, text="", width=11, background="white", relief=SOLID)
-lbl_serial_number.pack(side=tk.RIGHT, padx=8, pady=8)
+frame_serial_number = ttk.Frame(frame_right, width=50, height=50)
+btn_serial_number = ttk.Button(frame_serial_number, text="Serial Number", width=14, command=lambda: get_serial_number())
+btn_serial_number.pack(side=tk.LEFT, padx=(20,8), pady=8)
+lbl_serial_number = ttk.Label(frame_serial_number, text="", width=14, background="white", relief=SOLID)
+lbl_serial_number.pack(side=tk.RIGHT, padx=(8,20), pady=8)
 
 #Creates button for retreiving sofr version from sensor and a label to display result--------------------
-frame_soft_version = tk.Frame(window, width=50, height=50)
-btn_soft_version = ttk.Button(frame_soft_version, text="Version", command=lambda: get_soft_version())
-btn_soft_version.pack(side=tk.LEFT, padx=8, pady=8)
-lbl_soft_version = ttk.Label(frame_soft_version, text="", width=11, background="white", relief=SOLID)
-lbl_soft_version.pack(side=tk.RIGHT, padx=8, pady=8)
+frame_soft_version = ttk.Frame(frame_right, width=50, height=50)
+btn_soft_version = ttk.Button(frame_soft_version, text="Version", width=14, command=lambda: get_soft_version())
+btn_soft_version.pack(side=tk.LEFT, padx=(20,8), pady=8)
+lbl_soft_version = ttk.Label(frame_soft_version, text="", width=14, background="white", relief=SOLID)
+lbl_soft_version.pack(side=tk.RIGHT, padx=(8,20), pady=8)
 
 #Creates button for retreiving article number from sensor and a label to display result--------------------
-frame_article_number = tk.Frame(window, width=50, height=50)
-btn_article_number = ttk.Button(frame_article_number, text="Article Number", command=lambda: get_article_number())
-btn_article_number.pack(side=tk.LEFT, padx=8, pady=8)
-lbl_article_number = ttk.Label(frame_article_number, text="", width=11, background="white", relief=SOLID)
-lbl_article_number.pack(side=tk.RIGHT, padx=8, pady=8)
+frame_article_number = ttk.Frame(frame_right, width=50, height=50)
+btn_article_number = ttk.Button(frame_article_number, text="Article Number", width=14, command=lambda: get_article_number())
+btn_article_number.pack(side=tk.LEFT, padx=(20,8), pady=8)
+lbl_article_number = ttk.Label(frame_article_number, text="", width=14, background="white", relief=SOLID)
+lbl_article_number.pack(side=tk.RIGHT, padx=(8,20), pady=8)
 
 #Creates button for retreiving article number from sensor and a label to display result--------------------
-frame_description = tk.Frame(window, width=50, height=50)
-btn_description = ttk.Button(frame_description, text="Description", command=lambda: get_description())
-btn_description.pack(side=tk.LEFT, padx=8, pady=8)
-lbl_description = ttk.Label(frame_description, text="", width=11, background="white", relief=SOLID)
-lbl_description.pack(side=tk.RIGHT, padx=8, pady=8)
+frame_description = ttk.Frame(frame_right, width=50, height=50)
+btn_description = ttk.Button(frame_description, text="Description", width=14, command=lambda: get_description())
+btn_description.pack(side=tk.LEFT, padx=(20,8), pady=8)
+lbl_description = ttk.Label(frame_description, text="", width=14, background="white", relief=SOLID)
+lbl_description.pack(side=tk.RIGHT, padx=(8,20), pady=8)
 
 #Creates button for retreiving article number from sensor and a label to display result--------------------
-frame_measuring_unit = tk.Frame(window, width=50, height=50)
-btn_measuring_unit = ttk.Button(frame_measuring_unit, text="Measuring Unit", command=lambda: get_measuring_unit())
-btn_measuring_unit.pack(side=tk.LEFT, padx=8, pady=8)
-lbl_measuring_unit = ttk.Label(frame_measuring_unit, text="", width=11, background="white", relief=SOLID)
-lbl_measuring_unit.pack(side=tk.RIGHT, padx=8, pady=8)
+frame_measuring_unit = ttk.Frame(frame_right, width=50, height=50)
+btn_measuring_unit = ttk.Button(frame_measuring_unit, text="Measuring Unit", width=14, command=lambda: get_measuring_unit())
+btn_measuring_unit.pack(side=tk.LEFT, padx=(20,8), pady=8)
+lbl_measuring_unit = ttk.Label(frame_measuring_unit, text="", width=14, background="white", relief=SOLID)
+lbl_measuring_unit.pack(side=tk.RIGHT, padx=(8,20), pady=8)
 
 #Creates button for retreiving article number from sensor and a label to display result--------------------
-frame_measuring_range = tk.Frame(window, width=50, height=50)
-btn_measuring_range = ttk.Button(frame_measuring_range, text="Measuring range", command=lambda: get_measuring_range())
-btn_measuring_range.pack(side=tk.LEFT, padx=8, pady=8)
-lbl_measuring_range = ttk.Label(frame_measuring_range, text="", width=11, background="white", relief=SOLID)
-lbl_measuring_range.pack(side=tk.RIGHT, padx=8, pady=8)
+frame_measuring_range = ttk.Frame(frame_right, width=50, height=50)
+btn_measuring_range = ttk.Button(frame_measuring_range, text="Measuring range", width=14, command=lambda: get_measuring_range())
+btn_measuring_range.pack(side=tk.LEFT, padx=(20,8), pady=8)
+lbl_measuring_range = ttk.Label(frame_measuring_range, text="", width=14, background="white", relief=SOLID)
+lbl_measuring_range.pack(side=tk.RIGHT, padx=(8,20), pady=8)
 
 #Creates button for retreiving article number from sensor and a label to display result--------------------
-frame_measuring_offset = tk.Frame(window, width=50, height=50)
-btn_measuring_offset = ttk.Button(frame_measuring_offset, text="Measuring offset", command=lambda: get_measuring_offset())
-btn_measuring_offset.pack(side=tk.LEFT, padx=8, pady=8)
-lbl_measuring_offset = ttk.Label(frame_measuring_offset, text="", width=11, background="white", relief=SOLID)
-lbl_measuring_offset.pack(side=tk.RIGHT, padx=8, pady=8)
+frame_measuring_offset = ttk.Frame(frame_right, width=50, height=50)
+btn_measuring_offset = ttk.Button(frame_measuring_offset, text="Measuring offset", width=14, command=lambda: get_measuring_offset())
+btn_measuring_offset.pack(side=tk.LEFT, padx=(20,8), pady=8)
+lbl_measuring_offset = ttk.Label(frame_measuring_offset, text="", width=14, background="white", relief=SOLID)
+lbl_measuring_offset.pack(side=tk.RIGHT, padx=(8,20), pady=8)
 
-#Creates a label, dropdown list and refresh button for port selection---------------------------------
-frame_ports = tk.Frame(window, width=50, height=50)
-lbl_ports = tk.Label(frame_ports, text="Available Ports")
-lbl_ports.pack()
-current_port = tk.StringVar()
-combobox_ports = ttk.Combobox(frame_ports, textvariable=current_port)
-combobox_ports['state'] = 'readonly'
-combobox_ports.bind("<<ComboboxSelected>>", lambda e: port_selected())
-combobox_ports.pack(side=tk.LEFT, padx=5, pady=5)
-ports = serial.tools.list_ports.comports() #Creates a list of connected serial ports
-combobox_ports['values'] = ports #adds the "ports" list to a dropdown menu
-refresh_btn = ttk.Button(frame_ports, text="Refresh", command=refresh_ports)
-refresh_btn.pack(side=tk.RIGHT, padx=5, pady=5)
+#Creates button for retreiving article number from sensor and a label to display result--------------------
+frame_assign_address = ttk.Frame(frame_right, width=50, height=50)
+btn_assign_address = ttk.Button(frame_assign_address, text="Assign Address", width=14, command=lambda: set_address(0x20))
+btn_assign_address.pack(side=tk.LEFT, padx=(20,8), pady=8)
+lbl_assign_address = ttk.Label(frame_assign_address, text="", width=14, background="white", relief=SOLID)
+lbl_assign_address.pack(side=tk.RIGHT, padx=(8,20), pady=8)
 
 #Creates a text box for displaying log-----------------------------------------------------------
 frame_log = ttk.Frame(window)
-txt_log = tk.Text(frame_log, height=10)
+txt_log = tk.Text(frame_log, height=31, width=60)
 lbl_log = ttk.Label(frame_log, text="Log")
 lbl_log.pack(anchor=NW)
 txt_log.pack()
 
+#Creates a label, dropdown list and refresh button for port selection---------------------------------
+frame_ports = ttk.Frame(frame_left, width=50, height=50)
+lbl_ports = ttk.Label(frame_ports, text="Available Ports")
+lbl_ports.pack(anchor=NW, padx=(20,5), pady=(0,0))
+current_port = tk.StringVar()
+combobox_ports = ttk.Combobox(frame_ports, textvariable=current_port)
+combobox_ports['state'] = 'readonly'
+combobox_ports.bind("<<ComboboxSelected>>", lambda e: port_selected())
+combobox_ports.pack(side=tk.LEFT, padx=(20,5), pady=(0,0))
+ports = serial.tools.list_ports.comports() #Creates a list of connected serial ports
+combobox_ports['values'] = ports #adds the "ports" list to a dropdown menu
+if(len(ports) > 0): 
+    combobox_ports.current(newindex=0)
+    port_selected()
+refresh_btn = ttk.Button(frame_ports, text="Refresh", command=refresh_ports)
+refresh_btn.pack(side=tk.RIGHT, padx=(5,20), pady=(0,0))
+
+#Creates a label, dropdown list and refresh button for port selection---------------------------------
+frame_machines = ttk.Frame(frame_left, width=50, height=50)
+lbl_machines = ttk.Label(frame_machines, text="Machines")
+lbl_machines.pack(anchor=NW, padx=(20,5), pady=(50,0))
+current_machine = tk.StringVar()
+combobox_machines = ttk.Combobox(frame_machines, textvariable=current_machine)
+combobox_machines['state'] = 'readonly'
+#combobox_machines.bind("<<ComboboxSelected>>", lambda e: port_selected())
+combobox_machines.pack(side=tk.LEFT, padx=(20,5), pady=(0,0))
+add_machine_btn = ttk.Button(frame_machines, text="New Machine", command=refresh_ports)
+add_machine_btn.pack(side=tk.RIGHT, padx=(5,20), pady=(0,0))
+
+#Creates a label, dropdown list and refresh button for port selection---------------------------------
+frame_sensors = ttk.Frame(frame_left, width=50, height=50)
+lbl_sensors = ttk.Label(frame_sensors, text="Sensors")
+lbl_sensors.pack(anchor=NW, padx=(20,5), pady=(50,0))
+current_sensor = tk.StringVar()
+combobox_sensors = ttk.Combobox(frame_sensors, textvariable=current_sensor)
+combobox_sensors['state'] = 'readonly'
+#combobox_machines.bind("<<ComboboxSelected>>", lambda e: port_selected())
+combobox_sensors.pack(side=tk.LEFT, padx=(20,5), pady=(0,0))
+add_sensor_btn = ttk.Button(frame_sensors, text="New Sensor", command=refresh_ports)
+add_sensor_btn.pack(side=tk.RIGHT, padx=(5,20), pady=(0,0))
+
+
 #Places widgets in window----------------------------------------------------------------------------
+frame_right.pack(side=RIGHT, anchor=N)
+frame_left.pack(side=LEFT, anchor=N)
 frame_ports.pack()
+frame_machines.pack()
+frame_sensors.pack()
 frame_temperature.pack()
 frame_distance.pack()
 frame_soft_version.pack()
@@ -342,7 +466,8 @@ frame_description.pack()
 frame_measuring_unit.pack()
 frame_measuring_range.pack()
 frame_measuring_offset.pack()
-frame_log.pack(side=BOTTOM)
+frame_assign_address.pack()
+frame_log.pack()
 
 #-------------------------------------------------------------------------------------------------------
 window.mainloop()

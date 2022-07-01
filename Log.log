@@ -19,3 +19,1150 @@ INFO:Description: DT3009-S1,4-M20_OSS_LF
 INFO:Measuring Unit: μm
 INFO:Measuring Range: 1400.0
 INFO:Measuring Offset: 100.0
+INFO:15:16:57 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:07:47:49 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 20.4580078125
+INFO:Temperature: 20.47552490234375
+INFO:07:55:09 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 23.833938598632812
+INFO:08:00:11 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:08:00:52 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 25.9599609375
+INFO:Temperature: 25.97747802734375
+INFO:Temperature: 26.030044555664062
+INFO:08:01:31 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 26.14685821533203
+INFO:08:01:49 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 26.234474182128906
+INFO:08:02:43 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 26.41553497314453
+INFO:08:06:38 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 27.40845489501953
+INFO:Temperature: 27.420135498046875
+INFO:08:08:52 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Received: b'\xe5' current address: 32
+INFO:08:15:31 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:current address: 32
+INFO:08:26:35 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 29.750579833984375
+INFO:Distance: 1491.211669921875
+INFO:Serial Number: 930
+INFO:Article Number: 4314083
+INFO:Software Version: 0.3a
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Unit: μm
+INFO:Measuring Range: 1400.0
+INFO:08:27:10 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 29.803146362304688
+INFO:Distance: 1491.211669921875
+INFO:Serial Number: 930
+INFO:Article Number: 4314083
+INFO:Software Version: 0.3a
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Unit: μm
+INFO:Measuring Range: 1400.0
+INFO:Measuring Offset: 100.0
+INFO:Temperature: 29.902442932128906
+INFO:Distance: 1491.211669921875
+INFO:Serial Number: 930
+INFO:Article Number: 4314083
+INFO:Software Version: 0.3a
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Unit: μm
+INFO:Measuring Range: 1400.0
+INFO:Measuring Offset: 100.0
+INFO:Temperature: 29.902442932128906
+INFO:Distance: 1491.211669921875
+INFO:Serial Number: 930
+INFO:Article Number: 4314083
+INFO:Software Version: 0.3a
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Unit: μm
+INFO:Measuring Range: 1400.0
+INFO:Measuring Offset: 100.0
+INFO:Temperature: 29.902442932128906
+INFO:Distance: 1491.211669921875
+INFO:Serial Number: 930
+INFO:Article Number: 4314083
+INFO:Software Version: 0.3a
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Unit: μm
+INFO:Measuring Range: 1400.0
+INFO:Measuring Offset: 100.0
+INFO:Temperature: 29.902442932128906
+INFO:Distance: 1491.211669921875
+INFO:Serial Number: 930
+INFO:Article Number: 4314083
+INFO:Software Version: 0.3a
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Unit: μm
+INFO:Measuring Range: 1400.0
+INFO:Measuring Offset: 100.0
+INFO:Temperature: 29.902442932128906
+INFO:Distance: 1491.211669921875
+INFO:Serial Number: 930
+INFO:Article Number: 4314083
+INFO:Software Version: 0.3a
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Unit: μm
+INFO:Measuring Range: 1400.0
+INFO:Measuring Offset: 100.0
+INFO:Temperature: 29.902442932128906
+INFO:Distance: 1491.211669921875
+INFO:Serial Number: 930
+INFO:Article Number: 4314083
+INFO:Software Version: 0.3a
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Unit: μm
+INFO:Measuring Range: 1400.0
+INFO:Measuring Offset: 100.0
+INFO:Temperature: 29.902442932128906
+INFO:Distance: 1491.211669921875
+INFO:Serial Number: 930
+INFO:Article Number: 4314083
+INFO:Software Version: 0.3a
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Unit: μm
+INFO:Measuring Range: 1400.0
+INFO:Measuring Offset: 100.0
+INFO:Temperature: 29.902442932128906
+INFO:Distance: 1491.211669921875
+INFO:Serial Number: 930
+INFO:Article Number: 4314083
+INFO:Software Version: 0.3a
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Unit: μm
+INFO:Measuring Range: 1400.0
+INFO:Measuring Offset: 100.0
+INFO:Temperature: 29.902442932128906
+INFO:Distance: 1491.211669921875
+INFO:Serial Number: 930
+INFO:Article Number: 4314083
+INFO:Software Version: 0.3a
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Unit: μm
+INFO:Measuring Range: 1400.0
+INFO:Measuring Offset: 100.0
+INFO:Temperature: 29.902442932128906
+INFO:Distance: 1491.211669921875
+INFO:Serial Number: 930
+INFO:Article Number: 4314083
+INFO:Software Version: 0.3a
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Unit: μm
+INFO:Measuring Range: 1400.0
+INFO:Measuring Offset: 100.0
+INFO:Temperature: 29.902442932128906
+INFO:Distance: 1491.211669921875
+INFO:Serial Number: 930
+INFO:Article Number: 4314083
+INFO:Software Version: 0.3a
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Unit: μm
+INFO:Measuring Range: 1400.0
+INFO:Measuring Offset: 100.0
+INFO:Temperature: 29.902442932128906
+INFO:Distance: 1491.211669921875
+INFO:Serial Number: 930
+INFO:Article Number: 4314083
+INFO:Software Version: 0.3a
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Unit: μm
+INFO:Measuring Range: 1400.0
+INFO:Measuring Offset: 100.0
+INFO:Temperature: 29.902442932128906
+INFO:Distance: 1491.211669921875
+INFO:Serial Number: 930
+INFO:Article Number: 4314083
+INFO:Software Version: 0.3a
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Unit: μm
+INFO:Measuring Range: 1400.0
+INFO:Measuring Offset: 100.0
+INFO:Temperature: 29.902442932128906
+INFO:Distance: 1491.211669921875
+INFO:Serial Number: 930
+INFO:Article Number: 4314083
+INFO:Software Version: 0.3a
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Unit: μm
+INFO:Measuring Range: 1400.0
+INFO:Measuring Offset: 100.0
+INFO:Temperature: 29.902442932128906
+INFO:Distance: 1491.211669921875
+INFO:Serial Number: 930
+INFO:Article Number: 4314083
+INFO:Software Version: 0.3a
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Unit: μm
+INFO:Measuring Range: 1400.0
+INFO:Measuring Offset: 100.0
+INFO:Temperature: 29.902442932128906
+INFO:Distance: 1491.211669921875
+INFO:Serial Number: 930
+INFO:Article Number: 4314083
+INFO:Software Version: 0.3a
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Unit: μm
+INFO:Measuring Range: 1400.0
+INFO:Measuring Offset: 100.0
+INFO:Temperature: 29.902442932128906
+INFO:Distance: 1491.211669921875
+INFO:Serial Number: 930
+INFO:Article Number: 4314083
+INFO:Software Version: 0.3a
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Unit: μm
+INFO:Measuring Range: 1400.0
+INFO:Measuring Offset: 100.0
+INFO:Temperature: 29.902442932128906
+INFO:Distance: 1491.211669921875
+INFO:Serial Number: 930
+INFO:Article Number: 4314083
+INFO:Software Version: 0.3a
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Unit: μm
+INFO:Measuring Range: 1400.0
+INFO:Measuring Offset: 100.0
+INFO:Temperature: 29.902442932128906
+INFO:Distance: 1491.211669921875
+INFO:Serial Number: 930
+INFO:Article Number: 4314083
+INFO:Software Version: 0.3a
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Unit: μm
+INFO:Measuring Range: 1400.0
+INFO:Measuring Offset: 100.0
+INFO:Temperature: 29.902442932128906
+INFO:Distance: 1491.211669921875
+INFO:Serial Number: 930
+INFO:Article Number: 4314083
+INFO:Software Version: 0.3a
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Unit: μm
+INFO:Measuring Range: 1400.0
+INFO:Measuring Offset: 100.0
+INFO:Temperature: 29.902442932128906
+INFO:Distance: 1491.211669921875
+INFO:Serial Number: 930
+INFO:Article Number: 4314083
+INFO:Software Version: 0.3a
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Unit: μm
+INFO:Measuring Range: 1400.0
+INFO:Measuring Offset: 100.0
+INFO:Temperature: 29.902442932128906
+INFO:Distance: 1491.211669921875
+INFO:Serial Number: 930
+INFO:Article Number: 4314083
+INFO:Software Version: 0.3a
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Unit: μm
+INFO:Measuring Range: 1400.0
+INFO:Measuring Offset: 100.0
+INFO:Temperature: 29.902442932128906
+INFO:Distance: 1491.211669921875
+INFO:Serial Number: 930
+INFO:Article Number: 4314083
+INFO:Software Version: 0.3a
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Unit: μm
+INFO:Measuring Range: 1400.0
+INFO:Measuring Offset: 100.0
+INFO:Temperature: 29.902442932128906
+INFO:Distance: 1491.211669921875
+INFO:Serial Number: 930
+INFO:Article Number: 4314083
+INFO:Software Version: 0.3a
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Unit: μm
+INFO:Measuring Range: 1400.0
+INFO:Measuring Offset: 100.0
+INFO:Temperature: 29.902442932128906
+INFO:Distance: 1491.211669921875
+INFO:Serial Number: 930
+INFO:Article Number: 4314083
+INFO:Software Version: 0.3a
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Unit: μm
+INFO:Measuring Range: 1400.0
+INFO:Measuring Offset: 100.0
+INFO:Temperature: 29.908279418945312
+INFO:Distance: 1491.211669921875
+INFO:Serial Number: 930
+INFO:Article Number: 4314083
+INFO:Software Version: 0.3a
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Unit: μm
+INFO:Measuring Range: 1400.0
+INFO:Measuring Offset: 100.0
+INFO:Temperature: 29.902442932128906
+INFO:Distance: 1491.211669921875
+INFO:Serial Number: 930
+INFO:Article Number: 4314083
+INFO:Software Version: 0.3a
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Unit: μm
+INFO:Measuring Range: 1400.0
+INFO:Measuring Offset: 100.0
+INFO:Temperature: 29.902442932128906
+INFO:Distance: 1491.211669921875
+INFO:Serial Number: 930
+INFO:Article Number: 4314083
+INFO:Software Version: 0.3a
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Unit: μm
+INFO:Measuring Range: 1400.0
+INFO:Measuring Offset: 100.0
+INFO:Temperature: 29.908279418945312
+INFO:Distance: 1491.211669921875
+INFO:Serial Number: 930
+INFO:Article Number: 4314083
+INFO:Software Version: 0.3a
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Unit: μm
+INFO:Measuring Range: 1400.0
+INFO:Measuring Offset: 100.0
+INFO:Temperature: 29.908279418945312
+INFO:Distance: 1491.211669921875
+INFO:Serial Number: 930
+INFO:Article Number: 4314083
+INFO:Software Version: 0.3a
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Unit: μm
+INFO:Measuring Range: 1400.0
+INFO:Measuring Offset: 100.0
+INFO:Temperature: 29.908279418945312
+INFO:Distance: 1491.211669921875
+INFO:Serial Number: 930
+INFO:Article Number: 4314083
+INFO:Software Version: 0.3a
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Unit: μm
+INFO:Measuring Range: 1400.0
+INFO:Measuring Offset: 100.0
+INFO:Temperature: 29.908279418945312
+INFO:Distance: 1491.211669921875
+INFO:Serial Number: 930
+INFO:Article Number: 4314083
+INFO:Software Version: 0.3a
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Unit: μm
+INFO:Measuring Range: 1400.0
+INFO:Measuring Offset: 100.0
+INFO:Temperature: 29.91412353515625
+INFO:Distance: 1491.211669921875
+INFO:Serial Number: 930
+INFO:Article Number: 4314083
+INFO:Software Version: 0.3a
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Unit: μm
+INFO:Measuring Range: 1400.0
+INFO:Measuring Offset: 100.0
+INFO:Temperature: 29.91412353515625
+INFO:Distance: 1491.211669921875
+INFO:Serial Number: 930
+INFO:Article Number: 4314083
+INFO:Software Version: 0.3a
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Unit: μm
+INFO:Measuring Range: 1400.0
+INFO:Measuring Offset: 100.0
+INFO:08:38:14 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:09:17:35 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 30.79607391357422
+INFO:Distance: 1491.211669921875
+INFO:12:12:55 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 30.90704345703125
+INFO:Distance: 1491.211669921875
+INFO:Software Version: 0.3a
+INFO:Distance: 791.599609375
+INFO:Distance: 791.04931640625
+INFO:Distance: 791.599609375
+INFO:Distance: 791.19287109375
+INFO:Serial Number: 930
+INFO:Article Number: 4314083
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Unit: μm
+INFO:Measuring Range: 1400.0
+INFO:Measuring Offset: 100.0
+INFO:12:14:00 Invalid port
+INFO:12:14:02 Invalid port
+INFO:12:14:02 Invalid port
+INFO:12:14:03 Invalid port
+INFO:12:14:04 Invalid port
+INFO:12:14:04 Invalid port
+INFO:12:14:05 Invalid port
+INFO:12:14:06 Invalid port
+INFO:12:14:07 Invalid port
+INFO:12:14:25 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 30.98297119140625
+INFO:Distance: 795.4281616210938
+INFO:Software Version: 0.3a
+INFO:Serial Number: 930
+INFO:Article Number: 4314083
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Unit: μm
+INFO:Measuring Range: 1400.0
+INFO:Measuring Offset: 100.0
+INFO:12:14:38 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:12:25:11 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:12:25:19 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 30.305450439453125
+INFO:Distance: 806.6983032226562
+INFO:Distance: 805.7890625
+INFO:Distance: 808.0621948242188
+INFO:Distance: 808.540771484375
+INFO:Distance: 807.9186401367188
+INFO:Distance: 807.8468627929688
+INFO:Distance: 807.9904174804688
+INFO:Distance: 808.0621948242188
+INFO:Distance: 807.5597534179688
+INFO:Distance: 807.9186401367188
+INFO:Distance: 807.7750854492188
+INFO:Distance: 807.7750854492188
+INFO:Distance: 807.9186401367188
+INFO:Distance: 809.5457763671875
+INFO:Distance: 809.6175537109375
+INFO:Distance: 809.1868286132812
+INFO:Distance: 809.6175537109375
+INFO:Distance: 808.8997192382812
+INFO:Distance: 808.8997192382812
+INFO:Distance: 808.612548828125
+INFO:Distance: 808.8997192382812
+INFO:Distance: 808.7561645507812
+INFO:Distance: 808.397216796875
+INFO:Distance: 808.468994140625
+INFO:Distance: 808.612548828125
+INFO:Distance: 808.468994140625
+INFO:Distance: 808.468994140625
+INFO:Distance: 808.397216796875
+INFO:Distance: 808.540771484375
+INFO:Distance: 808.540771484375
+INFO:Distance: 808.110107421875
+INFO:Distance: 807.9904174804688
+INFO:Distance: 807.6315307617188
+INFO:Distance: 807.9904174804688
+INFO:Distance: 809.0432739257812
+INFO:Distance: 809.5457763671875
+INFO:Distance: 809.7371826171875
+INFO:Distance: 809.1150512695312
+INFO:Distance: 805.0951538085938
+INFO:Distance: 804.8797607421875
+INFO:Distance: 805.0233764648438
+INFO:Distance: 804.8797607421875
+INFO:Distance: 805.2147827148438
+INFO:Distance: 804.9515380859375
+INFO:Distance: 804.8797607421875
+INFO:Distance: 804.8079833984375
+INFO:Distance: 804.8797607421875
+INFO:Distance: 804.8797607421875
+INFO:Distance: 804.8079833984375
+INFO:Distance: 805.0233764648438
+INFO:Distance: 804.8079833984375
+INFO:Distance: 804.8797607421875
+INFO:Distance: 804.9515380859375
+INFO:Distance: 804.7362060546875
+INFO:Distance: 804.8079833984375
+INFO:Distance: 804.8797607421875
+INFO:Distance: 804.7362060546875
+INFO:Distance: 805.2865600585938
+INFO:Distance: 807.6315307617188
+INFO:Distance: 807.8468627929688
+INFO:Distance: 807.9425659179688
+INFO:Distance: 807.9186401367188
+INFO:Distance: 807.7272338867188
+INFO:Distance: 807.4400634765625
+INFO:Distance: 807.7272338867188
+INFO:Distance: 807.7272338867188
+INFO:Distance: 807.7990112304688
+INFO:Distance: 807.4400634765625
+INFO:Distance: 807.5597534179688
+INFO:Distance: 807.3443603515625
+INFO:Distance: 807.5597534179688
+INFO:Distance: 807.7033081054688
+INFO:Distance: 807.7033081054688
+INFO:Distance: 807.4879760742188
+INFO:Distance: 807.5597534179688
+INFO:Distance: 807.5597534179688
+INFO:Distance: 807.4879760742188
+INFO:Distance: 807.4879760742188
+INFO:Distance: 807.6315307617188
+INFO:Distance: 807.5597534179688
+INFO:Distance: 807.5597534179688
+INFO:Distance: 807.2008056640625
+INFO:Distance: 807.4161376953125
+INFO:Distance: 807.4879760742188
+INFO:Distance: 807.4879760742188
+INFO:Distance: 807.9904174804688
+INFO:Distance: 807.7033081054688
+INFO:Distance: 807.5597534179688
+INFO:Distance: 807.8468627929688
+INFO:Distance: 807.7750854492188
+INFO:Distance: 807.2725830078125
+INFO:Distance: 807.0811767578125
+INFO:Distance: 807.8468627929688
+INFO:Distance: 807.7750854492188
+INFO:Distance: 807.4879760742188
+INFO:Distance: 807.1051025390625
+INFO:Distance: 807.1051025390625
+INFO:Distance: 805.4540405273438
+INFO:Distance: 805.71728515625
+INFO:Distance: 805.5975952148438
+INFO:Distance: 805.5975952148438
+INFO:Distance: 805.66943359375
+INFO:Distance: 805.3822631835938
+INFO:Distance: 805.81298828125
+INFO:Distance: 805.884765625
+INFO:Distance: 806.076171875
+INFO:Distance: 805.7890625
+INFO:Distance: 805.86083984375
+INFO:Distance: 806.00439453125
+INFO:Distance: 805.6455078125
+INFO:Distance: 805.9326171875
+INFO:Distance: 805.7890625
+INFO:Distance: 805.5736694335938
+INFO:Distance: 806.076171875
+INFO:Distance: 805.7890625
+INFO:Distance: 805.7890625
+INFO:Distance: 805.86083984375
+INFO:Distance: 805.7890625
+INFO:Distance: 805.7890625
+INFO:Distance: 805.86083984375
+INFO:Distance: 805.9326171875
+INFO:Distance: 805.7890625
+INFO:Distance: 805.7890625
+INFO:Distance: 805.7890625
+INFO:12:32:27 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 30.235366821289062
+INFO:12:33:17 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:12:33:30 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 30.223678588867188
+INFO:Temperature: 30.223678588867188
+INFO:Temperature: 30.21784210205078
+INFO:Temperature: 30.21784210205078
+INFO:Temperature: 30.223678588867188
+INFO:Temperature: 30.223678588867188
+INFO:Temperature: 30.223678588867188
+INFO:Temperature: 30.223678588867188
+INFO:Temperature: 30.223678588867188
+INFO:Temperature: 30.223678588867188
+INFO:Temperature: 30.223678588867188
+INFO:Temperature: 30.223678588867188
+INFO:Temperature: 30.223678588867188
+INFO:Temperature: 30.223678588867188
+INFO:12:34:14 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:12:34:57 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:12:35:00 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:12:35:05 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:12:35:18 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 30.235366821289062
+INFO:12:35:35 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 30.235366821289062
+INFO:Temperature: 30.235366821289062
+INFO:Distance: 811.6753540039062
+INFO:12:37:27 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:12:37:29 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:12:39:05 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:12:39:08 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 30.21784210205078
+INFO:Distance: 810.3114624023438
+INFO:Software Version: 0.3a
+INFO:Serial Number: 930
+INFO:Article Number: 4314083
+INFO:12:39:16 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 30.21784210205078
+INFO:Temperature: 30.21784210205078
+INFO:Software Version: 0.3a
+INFO:Software Version: 0.3a
+INFO:Software Version: 0.3a
+INFO:12:39:25 Invalid port
+INFO:12:39:25 Invalid port
+INFO:12:39:25 Invalid port
+INFO:12:39:28 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 30.21784210205078
+INFO:Temperature: 30.21784210205078
+INFO:Temperature: 30.21784210205078
+INFO:Serial Number: 930
+INFO:Serial Number: 930
+INFO:Serial Number: 930
+INFO:Serial Number: 930
+INFO:12:39:39 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 30.223678588867188
+INFO:Temperature: 30.223678588867188
+INFO:Temperature: 30.223678588867188
+INFO:Temperature: 30.223678588867188
+INFO:12:41:07 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 30.21784210205078
+INFO:Temperature: 30.21784210205078
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.2003173828125
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.2003173828125
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.2003173828125
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.2003173828125
+INFO:Temperature: 30.2003173828125
+INFO:Temperature: 30.2003173828125
+INFO:Temperature: 30.2003173828125
+INFO:Temperature: 30.2003173828125
+INFO:12:57:22 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:12:57:25 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 30.194480895996094
+INFO:Temperature: 30.194480895996094
+INFO:Temperature: 30.194480895996094
+INFO:Temperature: 30.194480895996094
+INFO:Temperature: 30.194480895996094
+INFO:Temperature: 30.194480895996094
+INFO:Temperature: 30.194480895996094
+INFO:Temperature: 30.194480895996094
+INFO:Temperature: 30.194480895996094
+INFO:Temperature: 30.194480895996094
+INFO:Temperature: 30.194480895996094
+INFO:12:57:50 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:12:57:53 Invalid port
+INFO:12:57:57 Invalid port
+INFO:12:57:57 Invalid port
+INFO:12:57:58 Invalid port
+INFO:12:58:28 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 30.194480895996094
+INFO:Temperature: 30.2003173828125
+INFO:Temperature: 30.2003173828125
+INFO:Temperature: 30.2003173828125
+INFO:Temperature: 30.2003173828125
+INFO:Temperature: 30.2003173828125
+INFO:12:58:38 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:12:58:40 Invalid port
+INFO:12:58:40 Invalid port
+INFO:12:58:40 Invalid port
+INFO:12:58:40 Invalid port
+INFO:12:59:00 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:12:59:02 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:12:59:52 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.206161499023438
+INFO:12:59:59 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:13:00:01 Invalid port
+INFO:13:00:01 Invalid port
+INFO:13:00:02 Invalid port
+INFO:13:00:12 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 30.211997985839844
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:Temperature: 30.206161499023438
+INFO:13:03:59 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 30.206161499023438
+INFO:Distance: 812.2496337890625
+INFO:Software Version: 0.3a
+INFO:Serial Number: 930
+INFO:Article Number: 4314083
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Unit: μm
+INFO:Measuring Range: 1400.0
+INFO:Measuring Offset: 100.0
+INFO:13:14:36 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 30.188636779785156
+INFO:Distance: 812.3693237304688
+INFO:Software Version: 0.3a
+INFO:Serial Number: 930
+INFO:Article Number: 4314083
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Unit: μm
+INFO:Measuring Range: 1400.0
+INFO:Measuring Offset: 100.0
+INFO:13:23:48 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:13:23:57 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:13:24:12 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:13:24:33 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:13:24:40 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:13:25:22 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 30.1243896484375
+INFO:13:26:26 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 30.147750854492188
+INFO:Temperature: 30.147750854492188
+INFO:Temperature: 30.147750854492188
+INFO:Temperature: 30.147750854492188
+INFO:13:26:41 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 30.147750854492188
+INFO:Temperature: 30.147750854492188
+INFO:Temperature: 30.147750854492188
+INFO:Temperature: 30.147750854492188
+INFO:Temperature: 30.147750854492188
+INFO:Temperature: 30.147750854492188
+INFO:Temperature: 30.147750854492188
+INFO:Temperature: 30.147750854492188
+INFO:Temperature: 30.147750854492188
+INFO:Temperature: 30.147750854492188
+INFO:Temperature: 30.147750854492188
+INFO:Temperature: 30.147750854492188
+INFO:Temperature: 30.147750854492188
+INFO:Temperature: 30.147750854492188
+INFO:Temperature: 30.147750854492188
+INFO:Temperature: 30.147750854492188
+INFO:Temperature: 30.147750854492188
+INFO:Temperature: 30.147750854492188
+INFO:Temperature: 30.147750854492188
+INFO:Temperature: 30.147750854492188
+INFO:Temperature: 30.147750854492188
+INFO:Temperature: 30.147750854492188
+INFO:Temperature: 30.147750854492188
+INFO:Temperature: 30.147750854492188
+INFO:Temperature: 30.147750854492188
+INFO:Temperature: 30.147750854492188
+INFO:Temperature: 30.147750854492188
+INFO:Temperature: 30.147750854492188
+INFO:Temperature: 30.147750854492188
+INFO:Temperature: 30.147750854492188
+INFO:Temperature: 30.147750854492188
+INFO:13:28:05 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 30.14191436767578
+INFO:Temperature: 30.14191436767578
+INFO:Temperature: 30.14191436767578
+INFO:Temperature: 30.14191436767578
+INFO:Temperature: 30.14191436767578
+INFO:Temperature: 30.14191436767578
+INFO:Temperature: 30.14191436767578
+INFO:Temperature: 30.14191436767578
+INFO:Temperature: 30.14191436767578
+INFO:Temperature: 30.14191436767578
+INFO:Temperature: 30.14191436767578
+INFO:Temperature: 30.14191436767578
+INFO:Temperature: 30.14191436767578
+INFO:Temperature: 30.14191436767578
+INFO:Temperature: 30.14191436767578
+INFO:Temperature: 30.14191436767578
+INFO:Temperature: 30.14191436767578
+INFO:Temperature: 30.14191436767578
+INFO:Temperature: 30.14191436767578
+INFO:Temperature: 30.14191436767578
+INFO:Temperature: 30.14191436767578
+INFO:Temperature: 30.14191436767578
+INFO:Temperature: 30.14191436767578
+INFO:Temperature: 30.14191436767578
+INFO:Temperature: 30.14191436767578
+INFO:Temperature: 30.14191436767578
+INFO:Temperature: 30.14191436767578
+INFO:Temperature: 30.14191436767578
+INFO:13:29:29 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 30.136070251464844
+INFO:Temperature: 30.136070251464844
+INFO:Temperature: 30.136070251464844
+INFO:Temperature: 30.14191436767578
+INFO:Temperature: 30.136070251464844
+INFO:Temperature: 30.14191436767578
+INFO:Temperature: 30.14191436767578
+INFO:Temperature: 30.14191436767578
+INFO:Temperature: 30.14191436767578
+INFO:Temperature: 30.136070251464844
+INFO:Temperature: 30.14191436767578
+INFO:Temperature: 30.14191436767578
+INFO:Temperature: 30.14191436767578
+INFO:Temperature: 30.14191436767578
+INFO:Temperature: 30.14191436767578
+INFO:Temperature: 30.14191436767578
+INFO:Temperature: 30.14191436767578
+INFO:Temperature: 30.14191436767578
+INFO:Temperature: 30.14191436767578
+INFO:Temperature: 30.14191436767578
+INFO:Temperature: 30.14191436767578
+INFO:Temperature: 30.14191436767578
+INFO:Temperature: 30.14191436767578
+INFO:13:31:51 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 30.15943145751953
+INFO:Temperature: 30.15943145751953
+INFO:Temperature: 30.15943145751953
+INFO:Temperature: 30.15943145751953
+INFO:13:32:41 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 30.16527557373047
+INFO:13:32:53 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 30.16527557373047
+INFO:Temperature: 30.16527557373047
+INFO:Temperature: 30.16527557373047
+INFO:Temperature: 30.16527557373047
+INFO:Temperature: 30.16527557373047
+INFO:Temperature: 30.16527557373047
+INFO:Temperature: 30.16527557373047
+INFO:Temperature: 30.16527557373047
+INFO:Temperature: 30.16527557373047
+INFO:Temperature: 30.15943145751953
+INFO:Temperature: 30.15943145751953
+INFO:Temperature: 30.15943145751953
+INFO:Temperature: 30.15943145751953
+INFO:Temperature: 30.15943145751953
+INFO:Temperature: 30.15943145751953
+INFO:Temperature: 30.15943145751953
+INFO:Temperature: 30.15943145751953
+INFO:Temperature: 30.16527557373047
+INFO:Temperature: 30.16527557373047
+INFO:13:33:36 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 30.16527557373047
+INFO:Temperature: 30.16527557373047
+INFO:Temperature: 30.16527557373047
+INFO:Temperature: 30.16527557373047
+INFO:Temperature: 30.171112060546875
+INFO:Temperature: 30.16527557373047
+INFO:Temperature: 30.171112060546875
+INFO:Temperature: 30.16527557373047
+INFO:Temperature: 30.16527557373047
+INFO:Temperature: 30.16527557373047
+INFO:Temperature: 30.171112060546875
+INFO:Temperature: 30.171112060546875
+INFO:13:34:05 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 30.176956176757812
+INFO:Temperature: 30.171112060546875
+INFO:Temperature: 30.176956176757812
+INFO:Temperature: 30.176956176757812
+INFO:Temperature: 30.176956176757812
+INFO:Temperature: 30.176956176757812
+INFO:Temperature: 30.176956176757812
+INFO:Temperature: 30.176956176757812
+INFO:Temperature: 30.176956176757812
+INFO:Temperature: 30.176956176757812
+INFO:Temperature: 30.176956176757812
+INFO:Temperature: 30.176956176757812
+INFO:Temperature: 30.176956176757812
+INFO:Temperature: 30.176956176757812
+INFO:Temperature: 30.176956176757812
+INFO:Temperature: 30.176956176757812
+INFO:Temperature: 30.176956176757812
+INFO:Temperature: 30.176956176757812
+INFO:Temperature: 30.176956176757812
+INFO:Temperature: 30.176956176757812
+INFO:13:47:12 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:13:47:17 'NoneType' object has no attribute 'write'
+INFO:13:47:47 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:13:47:50 checksum is not equal
+INFO:13:47:51 checksum is not equal
+INFO:13:47:53 checksum is not equal
+INFO:13:47:54 checksum is not equal
+INFO:13:47:55 checksum is not equal
+INFO:13:47:55 checksum is not equal
+INFO:13:47:55 checksum is not equal
+INFO:13:47:56 checksum is not equal
+INFO:13:47:56 checksum is not equal
+INFO:13:47:56 checksum is not equal
+INFO:13:47:56 checksum is not equal
+INFO:13:47:56 checksum is not equal
+INFO:13:54:45 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:00:02 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:15:02:24 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:15:02:26 Checksum is not equal
+INFO:15:02:57 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:15:03:50 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 30.176956176757812
+INFO:15:05:48 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 30.16527557373047
+INFO:15:06:54 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 30.153594970703125
+INFO:Temperature: 30.153594970703125
+INFO:Temperature: 30.153594970703125
+INFO:Temperature: 30.153594970703125
+INFO:Temperature: 30.153594970703125
+INFO:Temperature: 30.153594970703125
+INFO:Temperature: 30.153594970703125
+INFO:Temperature: 30.153594970703125
+INFO:Temperature: 30.153594970703125
+INFO:Temperature: 30.153594970703125
+INFO:Temperature: 30.153594970703125
+INFO:Temperature: 30.153594970703125
+INFO:Temperature: 30.153594970703125
+INFO:Temperature: 30.153594970703125
+INFO:Temperature: 30.153594970703125
+INFO:Temperature: 30.153594970703125
+INFO:Temperature: 30.153594970703125
+INFO:Temperature: 30.153594970703125
+INFO:Temperature: 30.153594970703125
+INFO:Temperature: 30.153594970703125
+INFO:Temperature: 30.153594970703125
+INFO:Temperature: 30.153594970703125
+INFO:Temperature: 30.153594970703125
+INFO:Temperature: 30.153594970703125
+INFO:Temperature: 30.153594970703125
+INFO:Temperature: 30.153594970703125
+INFO:Temperature: 30.153594970703125
+INFO:Temperature: 30.153594970703125
+INFO:Temperature: 30.153594970703125
+INFO:Temperature: 30.153594970703125
+INFO:Temperature: 30.153594970703125
+INFO:Temperature: 30.153594970703125
+INFO:Temperature: 30.153594970703125
+INFO:Temperature: 30.153594970703125
+INFO:Temperature: 30.153594970703125
+INFO:Temperature: 30.153594970703125
+INFO:Temperature: 30.153594970703125
+INFO:Temperature: 30.153594970703125
+INFO:Temperature: 30.153594970703125
+INFO:Temperature: 30.153594970703125
+INFO:Temperature: 30.153594970703125
+INFO:Temperature: 30.153594970703125
+INFO:Temperature: 30.153594970703125
+INFO:15:10:22 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 30.147750854492188
+INFO:Distance: 815.6953125
+INFO:Software Version: 0.3a
+INFO:Serial Number: 930
+INFO:Article Number: 4314083
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Unit: μm
+INFO:Measuring Range: 1400.0
+INFO:Measuring Offset: 100.0
+INFO:15:12:05 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:current address: None
+INFO:15:13:38 Checksum is not equal
+INFO:15:13:42 Invalid port
+INFO:15:15:12 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 30.130233764648438
+INFO:Distance: 950.5067138671875
+INFO:Software Version: 0.3a
+INFO:Serial Number: 930
+INFO:15:15:59 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 30.14191436767578
+INFO:Distance: 951.798828125
+INFO:Software Version: 0.3a
+INFO:Serial Number: 930
+INFO:Article Number: 4314083
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Unit: μm
+INFO:Measuring Range: 1400.0
+INFO:Measuring Offset: 100.0
+INFO:current address: 126
+INFO:Temperature: 30.15943145751953
+INFO:Distance: 1102.7376708984375
+INFO:Software Version: 0.3a
+INFO:Distance: 1103.69482421875
+INFO:Serial Number: 930
+INFO:Article Number: 4314083
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Unit: μm
+INFO:Measuring Range: 1400.0
+INFO:Measuring Offset: 100.0
+INFO:15:29:11 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:current address: 32
+INFO:15:39:05 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:09:08:50 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:09:08:57 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 21.836410522460938
+INFO:Distance: 1286.195068359375
+INFO:Software Version: 0.3a
+INFO:Serial Number: 930
+INFO:Article Number: 4314083
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Unit: μm
+INFO:Measuring Range: 1400.0
+INFO:Measuring Offset: 100.0
+INFO:Temperature: 21.877296447753906
+INFO:Temperature: 21.877296447753906
+INFO:Temperature: 21.877296447753906
+INFO:Temperature: 21.877296447753906
+INFO:Temperature: 21.883140563964844
+INFO:Temperature: 21.883140563964844
+INFO:Temperature: 21.883140563964844
+INFO:Temperature: 21.883140563964844
+INFO:Temperature: 21.883140563964844
+INFO:Temperature: 21.883140563964844
+INFO:Temperature: 21.883140563964844
+INFO:Temperature: 21.883140563964844
+INFO:Temperature: 21.883140563964844
+INFO:Temperature: 21.883140563964844
+INFO:Temperature: 21.883140563964844
+INFO:Temperature: 21.883140563964844
+INFO:Temperature: 21.883140563964844
+INFO:Temperature: 21.883140563964844
+INFO:Temperature: 21.883140563964844
+INFO:Temperature: 21.88897705078125
+INFO:Temperature: 21.88897705078125
+INFO:Temperature: 21.88897705078125
+INFO:Temperature: 21.88897705078125
+INFO:Temperature: 21.88897705078125
+INFO:Temperature: 21.88897705078125
+INFO:Temperature: 21.88897705078125
+INFO:Temperature: 21.88897705078125
+INFO:Temperature: 21.88897705078125
+INFO:Temperature: 21.88897705078125
+INFO:Temperature: 21.88897705078125
+INFO:Temperature: 21.88897705078125
+INFO:Temperature: 21.88897705078125
+INFO:Temperature: 21.894821166992188
+INFO:Temperature: 21.894821166992188
+INFO:Temperature: 21.894821166992188
+INFO:Software Version: 0.3a
+INFO:Software Version: 0.3a
+INFO:Software Version: 0.3a
+INFO:Software Version: 0.3a
+INFO:09:22:33 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:09:23:20 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:09:23:50 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:09:24:18 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:09:24:39 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:09:25:01 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:09:25:22 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:09:25:32 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:09:26:02 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 27.636245727539062
+INFO:Temperature: 27.64208221435547
+INFO:Distance: 1277.9876708984375
+INFO:Distance: 1278.96875
+INFO:Software Version: 0.3a
+INFO:Serial Number: 930
+INFO:Article Number: 4314083
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Unit: μm
+INFO:Measuring Range: 1400.0
+INFO:Measuring Offset: 100.0
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Measuring Unit: μm
+INFO:Measuring Range: 1400.0
+INFO:Measuring Range: 1400.0
+INFO:09:28:38 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Temperature: 27.975006103515625
+INFO:Distance: 1278.4422607421875
+INFO:Software Version: 0.3a
+INFO:Serial Number: 930
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:09:34:47 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:09:35:28 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:09:36:03 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:09:36:51 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:09:37:21 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:10:00:53 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:Serial Number: 930
+INFO:Article Number: 4314083
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
+INFO:Description: DT3009-S1,4-M20_OSS_LF          
