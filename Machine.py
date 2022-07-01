@@ -7,6 +7,8 @@ class Machine:
         self.description = description
         self.serial_number = serial_number
         self.sensors: List[Sensor] = []
-        
+    
+    def __str__(self):
+        return str(self.description)
 
         

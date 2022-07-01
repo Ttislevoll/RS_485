@@ -11,5 +11,8 @@ class Sensor:
         self.measuring_offset = None
         self.distance = None
         self.temperature = None
+
+    def __str__(self):
+        return str(self.sensor_location)
     
     

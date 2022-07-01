@@ -1,8 +1,6 @@
-from operator import truediv
 import tkinter as tk
 from tkinter import BOTTOM, END, LEFT, N, NW, RIGHT, SOLID, SUNKEN, TOP, ttk, messagebox
 import ctypes
-from turtle import back, left
 import serial
 import serial.tools.list_ports
 from PIL import ImageTk, Image
@@ -15,6 +13,7 @@ import pickle
 from typing import List
 import os.path
 import time
+from dialog_box import Dialog_box
 
 output : str = ""              
 ports : list = []
@@ -39,38 +38,7 @@ measuring_offset = [0x68,0x09,0x09,0x68,adr,0x01,0x4c,0x30,0x33,0x5e,0x20,0x20,0
 assign_address = [0x68,0x09,0x09,0x68,adr,0x01,0x43,0x37,0x3e,new_adr,0x00,0x00,0x00,fcs,0x16]
 
 
-def get_fcs(telegram, x):
-    sum=0
-    for i in range(x, len(telegram)-2):
-        sum += telegram[i]
-    return sum % 256
-
-def get_adr():
-    try:
-        ser.write(bytearray(broadcast))
-        received = ser.read(6)
-        if get_fcs(received, 1) != received[-2]: raise Exception("Checksum is not equal")
-        return received[2]
-    except:
-        return None
-
-def initialize_port():
-    index = int(combobox_ports.current())
-    if index < 0:
-        raise Exception()
-    #Creates Serial object
-    COM = ports[index].device
-    ser = serial.Serial(
-        port=COM,
-        baudrate=230400,
-        bytesize=serial.EIGHTBITS,
-        stopbits=serial.STOPBITS_ONE,
-        parity=serial.PARITY_EVEN,
-        timeout=1
-    )
-    return ser
-
-
+#serial read functions
 def get_temperature():
     try:
         adr = get_adr()
@@ -257,6 +225,7 @@ def get_all():
     get_measuring_offset()
 
 
+#serial write functions
 def set_address(new_adr):
     try:
         assign_address[4] = get_adr()
@@ -284,6 +253,7 @@ def set_address(new_adr):
         logging_write(log_text)
 
 
+#Utility functions
 def refresh_ports(): #Function is called when refresh button is pressed
     global ports
     global ser
@@ -310,18 +280,80 @@ def port_selected(): #Function is called when a port is selected
     log_write(log_text)
     logging_write(log_text)
 
+def machine_selected():
+    window.focus()
+    log_text=f'Selected machine: {current_machine.get()}'
+    log_write(log_text)
+    logging_write(log_text)
+    combobox_sensors['values'] = machines[combobox_machines.current()].sensors
+    current_sensor.set("")    
 
-#Creates Window---------------------------------------------------------------------------------------------
+def create_button(text, func, padx_btn=(20,8), padx_lbl=(8,20), pady=(8,8)):
+    frame = ttk.Frame(frame_right, width=50, height=50)
+    btn = ttk.Button(frame, text=text, width=14, command=lambda: func())
+    btn.pack(side=tk.LEFT, padx=padx_btn, pady=pady)
+    lbl = ttk.Label(frame, text="", width=14, background="white", relief=SOLID)
+    lbl.pack(side=tk.RIGHT, padx=padx_lbl, pady=pady)
+    frame.pack()
+    return lbl
+
+def get_fcs(telegram, x):
+    sum=0
+    for i in range(x, len(telegram)-2):
+        sum += telegram[i]
+    return sum % 256
+
+def get_adr():
+    try:
+        ser.write(bytearray(broadcast))
+        received = ser.read(6)
+        if get_fcs(received, 1) != received[-2]: raise Exception("Checksum is not equal")
+        return received[2]
+    except:
+        return None
+
+def initialize_port():
+    index = int(combobox_ports.current())
+    if index < 0:
+        raise Exception()
+    #Creates Serial object
+    COM = ports[index].device
+    ser = serial.Serial(
+        port=COM,
+        baudrate=230400,
+        bytesize=serial.EIGHTBITS,
+        stopbits=serial.STOPBITS_ONE,
+        parity=serial.PARITY_EVEN,
+        timeout=1
+    )
+    return ser
+
+def create_machine():
+    dialog = Dialog_box(parent=window, msg_list=["Itm Number:","Description:","Serial Number:"])
+    window.wait_window(dialog.window)
+    machines.append(Machine(dialog.inputs[0],dialog.inputs[1],dialog.inputs[2]))
+    combobox_machines['values'] = machines
+    log_write(f'Added machine with Itm Number: {machines[0].itm_number}')
+
+def create_sensor():
+    dialog = Dialog_box(parent=window, msg_list=["Sensor Location:"])
+    window.wait_window(dialog.window)
+    machines[combobox_machines.current()].sensors.append(Sensor(dialog.inputs[0]))
+    combobox_sensors['values'] = machines[combobox_machines.current()].sensors
+    log_write(f'Added sensor with location: {dialog.inputs[0]}')
+
+
+#Creates Window
 ctypes.windll.shcore.SetProcessDpiAwareness(1)
 window = tk.Tk()
 window.title("DT3005 - Serial Communication")
-window.geometry('1300x900')
+window.geometry('1300x900+300+50')
 window.resizable(False,False)
 
-#Configures log file--------------------------------------------------------------------------------------------
+#Configures log file
 logging.basicConfig(filename="Log.log", encoding='utf-8', level=logging.INFO, format='%(levelname)s:%(message)s')
 
-#adds onesubsea icon and logo to window------------------------------------------------------------------
+#adds onesubsea icon and logo to window
 canvas = tk.Canvas(window, width = 700, height = 150)
 canvas.pack()
 img = ImageTk.PhotoImage(Image.open("onesubsea_logo.png"))
@@ -332,84 +364,41 @@ window.iconphoto(False, icon)
 frame_right=ttk.Frame(master=window)
 frame_left= ttk.Frame(master=window)
 
-#Creates button for retreiving temperature value from sensor and a label to display result---------------------
-frame_temperature = ttk.Frame(frame_right, width=50, height=50)
-btn_temperature = ttk.Button(frame_temperature, text="Temperature", width=14, command=lambda: get_temperature())
-btn_temperature.pack(side=tk.LEFT, padx=(20,8), pady=(28,8))
-lbl_temperature = ttk.Label(frame_temperature, text="", width=14, background="white", relief=SOLID)
-lbl_temperature.pack(side=tk.RIGHT, padx=(8,20), pady=(28,8))
+#Creates button for retreiving temperature value from sensor and a label to display result
+lbl_temperature = create_button("Temperature", get_temperature, pady=(28,8))
+#Creates button for retreiving distance value from sensor and a label to display result
+lbl_distance = create_button("Distance", get_distance)
+#Creates button for retreiving serial number from sensor and a label to display result
+lbl_serial_number = create_button("Serial Number", get_serial_number)
+#Creates button for retreiving sofr version from sensor and a label to display result
+lbl_soft_version = create_button("Soft Version", get_soft_version)
+#Creates button for retreiving article number from sensor and a label to display result
+lbl_article_number = create_button("Article Number", get_article_number)
+#Creates button for retreiving measuring unit from sensor and a label to display result
+lbl_description = create_button("Description", get_description)
+#Creates button for retreiving measuring unit from sensor and a label to display result
+lbl_measuring_unit = create_button("Measuring Unit", get_measuring_unit)
+#Creates button for retreiving article number from sensor and a label to display result
+lbl_measuring_range = create_button("Measuring Range", get_measuring_range)
+#Creates button for retreiving article number from sensor and a label to display result
+lbl_measuring_offset = create_button("Measuring Offset", get_measuring_offset)
 
-#Creates button for retreiving distance value from sensor and a label to display result---------------------
-frame_distance = ttk.Frame(frame_right, width=50, height=50)
-btn_distance = ttk.Button(frame_distance, text="Distance", width=14, command=lambda: get_distance())
-btn_distance.pack(side=tk.LEFT, padx=(20,8), pady=8)
-lbl_distance = ttk.Label(frame_distance, text="", width=14, background="white", relief=SOLID)
-lbl_distance.pack(side=tk.RIGHT, padx=(8,20), pady=8)
- 
-#Creates button for retreiving serial number from sensor and a label to display result--------------------
-frame_serial_number = ttk.Frame(frame_right, width=50, height=50)
-btn_serial_number = ttk.Button(frame_serial_number, text="Serial Number", width=14, command=lambda: get_serial_number())
-btn_serial_number.pack(side=tk.LEFT, padx=(20,8), pady=8)
-lbl_serial_number = ttk.Label(frame_serial_number, text="", width=14, background="white", relief=SOLID)
-lbl_serial_number.pack(side=tk.RIGHT, padx=(8,20), pady=8)
 
-#Creates button for retreiving sofr version from sensor and a label to display result--------------------
-frame_soft_version = ttk.Frame(frame_right, width=50, height=50)
-btn_soft_version = ttk.Button(frame_soft_version, text="Version", width=14, command=lambda: get_soft_version())
-btn_soft_version.pack(side=tk.LEFT, padx=(20,8), pady=8)
-lbl_soft_version = ttk.Label(frame_soft_version, text="", width=14, background="white", relief=SOLID)
-lbl_soft_version.pack(side=tk.RIGHT, padx=(8,20), pady=8)
-
-#Creates button for retreiving article number from sensor and a label to display result--------------------
-frame_article_number = ttk.Frame(frame_right, width=50, height=50)
-btn_article_number = ttk.Button(frame_article_number, text="Article Number", width=14, command=lambda: get_article_number())
-btn_article_number.pack(side=tk.LEFT, padx=(20,8), pady=8)
-lbl_article_number = ttk.Label(frame_article_number, text="", width=14, background="white", relief=SOLID)
-lbl_article_number.pack(side=tk.RIGHT, padx=(8,20), pady=8)
-
-#Creates button for retreiving article number from sensor and a label to display result--------------------
-frame_description = ttk.Frame(frame_right, width=50, height=50)
-btn_description = ttk.Button(frame_description, text="Description", width=14, command=lambda: get_description())
-btn_description.pack(side=tk.LEFT, padx=(20,8), pady=8)
-lbl_description = ttk.Label(frame_description, text="", width=14, background="white", relief=SOLID)
-lbl_description.pack(side=tk.RIGHT, padx=(8,20), pady=8)
-
-#Creates button for retreiving article number from sensor and a label to display result--------------------
-frame_measuring_unit = ttk.Frame(frame_right, width=50, height=50)
-btn_measuring_unit = ttk.Button(frame_measuring_unit, text="Measuring Unit", width=14, command=lambda: get_measuring_unit())
-btn_measuring_unit.pack(side=tk.LEFT, padx=(20,8), pady=8)
-lbl_measuring_unit = ttk.Label(frame_measuring_unit, text="", width=14, background="white", relief=SOLID)
-lbl_measuring_unit.pack(side=tk.RIGHT, padx=(8,20), pady=8)
-
-#Creates button for retreiving article number from sensor and a label to display result--------------------
-frame_measuring_range = ttk.Frame(frame_right, width=50, height=50)
-btn_measuring_range = ttk.Button(frame_measuring_range, text="Measuring range", width=14, command=lambda: get_measuring_range())
-btn_measuring_range.pack(side=tk.LEFT, padx=(20,8), pady=8)
-lbl_measuring_range = ttk.Label(frame_measuring_range, text="", width=14, background="white", relief=SOLID)
-lbl_measuring_range.pack(side=tk.RIGHT, padx=(8,20), pady=8)
-
-#Creates button for retreiving article number from sensor and a label to display result--------------------
-frame_measuring_offset = ttk.Frame(frame_right, width=50, height=50)
-btn_measuring_offset = ttk.Button(frame_measuring_offset, text="Measuring offset", width=14, command=lambda: get_measuring_offset())
-btn_measuring_offset.pack(side=tk.LEFT, padx=(20,8), pady=8)
-lbl_measuring_offset = ttk.Label(frame_measuring_offset, text="", width=14, background="white", relief=SOLID)
-lbl_measuring_offset.pack(side=tk.RIGHT, padx=(8,20), pady=8)
-
-#Creates button for retreiving article number from sensor and a label to display result--------------------
+#Creates button for changing address of the sensor
 frame_assign_address = ttk.Frame(frame_right, width=50, height=50)
-btn_assign_address = ttk.Button(frame_assign_address, text="Assign Address", width=14, command=lambda: set_address(0x20))
+btn_assign_address = ttk.Button(frame_assign_address, text="Assign Address", width=14, command=lambda: set_address(0x7e))
 btn_assign_address.pack(side=tk.LEFT, padx=(20,8), pady=8)
 lbl_assign_address = ttk.Label(frame_assign_address, text="", width=14, background="white", relief=SOLID)
 lbl_assign_address.pack(side=tk.RIGHT, padx=(8,20), pady=8)
 
-#Creates a text box for displaying log-----------------------------------------------------------
+#Creates a text box for displaying log
 frame_log = ttk.Frame(window)
 txt_log = tk.Text(frame_log, height=31, width=60)
 lbl_log = ttk.Label(frame_log, text="Log")
 lbl_log.pack(anchor=NW)
 txt_log.pack()
 
-#Creates a label, dropdown list and refresh button for port selection---------------------------------
+#Creates a label, dropdown list and refresh button for port selection
 frame_ports = ttk.Frame(frame_left, width=50, height=50)
 lbl_ports = ttk.Label(frame_ports, text="Available Ports")
 lbl_ports.pack(anchor=NW, padx=(20,5), pady=(0,0))
@@ -426,19 +415,22 @@ if(len(ports) > 0):
 refresh_btn = ttk.Button(frame_ports, text="Refresh", command=refresh_ports)
 refresh_btn.pack(side=tk.RIGHT, padx=(5,20), pady=(0,0))
 
-#Creates a label, dropdown list and refresh button for port selection---------------------------------
+#Creates a label, dropdown list and refresh button for port selection
 frame_machines = ttk.Frame(frame_left, width=50, height=50)
 lbl_machines = ttk.Label(frame_machines, text="Machines")
 lbl_machines.pack(anchor=NW, padx=(20,5), pady=(50,0))
 current_machine = tk.StringVar()
 combobox_machines = ttk.Combobox(frame_machines, textvariable=current_machine)
 combobox_machines['state'] = 'readonly'
-#combobox_machines.bind("<<ComboboxSelected>>", lambda e: port_selected())
+combobox_machines.bind("<<ComboboxSelected>>", lambda e: machine_selected())
 combobox_machines.pack(side=tk.LEFT, padx=(20,5), pady=(0,0))
-add_machine_btn = ttk.Button(frame_machines, text="New Machine", command=refresh_ports)
+add_machine_btn = ttk.Button(frame_machines, text="New Machine", command=create_machine)
 add_machine_btn.pack(side=tk.RIGHT, padx=(5,20), pady=(0,0))
 
-#Creates a label, dropdown list and refresh button for port selection---------------------------------
+
+
+
+#Creates a label, dropdown list and refresh button for port selection
 frame_sensors = ttk.Frame(frame_left, width=50, height=50)
 lbl_sensors = ttk.Label(frame_sensors, text="Sensors")
 lbl_sensors.pack(anchor=NW, padx=(20,5), pady=(50,0))
@@ -447,27 +439,17 @@ combobox_sensors = ttk.Combobox(frame_sensors, textvariable=current_sensor)
 combobox_sensors['state'] = 'readonly'
 #combobox_machines.bind("<<ComboboxSelected>>", lambda e: port_selected())
 combobox_sensors.pack(side=tk.LEFT, padx=(20,5), pady=(0,0))
-add_sensor_btn = ttk.Button(frame_sensors, text="New Sensor", command=refresh_ports)
+add_sensor_btn = ttk.Button(frame_sensors, text="New Sensor", command=create_sensor)
 add_sensor_btn.pack(side=tk.RIGHT, padx=(5,20), pady=(0,0))
 
 
-#Places widgets in window----------------------------------------------------------------------------
+#Places widgets in window
 frame_right.pack(side=RIGHT, anchor=N)
 frame_left.pack(side=LEFT, anchor=N)
 frame_ports.pack()
 frame_machines.pack()
 frame_sensors.pack()
-frame_temperature.pack()
-frame_distance.pack()
-frame_soft_version.pack()
-frame_serial_number.pack()
-frame_article_number.pack()
-frame_description.pack()
-frame_measuring_unit.pack()
-frame_measuring_range.pack()
-frame_measuring_offset.pack()
 frame_assign_address.pack()
 frame_log.pack()
 
-#-------------------------------------------------------------------------------------------------------
 window.mainloop()
