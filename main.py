@@ -1,5 +1,6 @@
 import tkinter as tk
 from tkinter import BOTTOM, END, LEFT, N, NW, RIGHT, SOLID, SUNKEN, TOP, ttk, messagebox, filedialog
+from tkinter.filedialog import asksaveasfilename
 import ctypes
 import serial
 import serial.tools.list_ports
@@ -23,7 +24,6 @@ seconds = 0
 t_60s = 0
 ser = None
 machines : List[Machine] = []
-labels = {}
 
 broadcast = [0x10,0x7f,0x01,0x09,0x89,0x16]
 distance_temp_v03a = [0x10,adr,0x01,0x4c,fcs,0x16]
@@ -49,8 +49,8 @@ def get_temperature():
         received = ser.read(17)
         if get_fcs(received, 4) != received[-2]: raise Exception("Checksum is not equal")
         temperature = struct.unpack('f', received[11:15])[0]
-        machines[combobox_machines.current()].sensors[combobox_sensors.current()].values["Temperature"] = temperature
-        labels["Temperature"]['text'] = str(temperature)
+        machines[combobox_machines.current()].sensors[combobox_sensors.current()].temperature = temperature
+        lbl_temperature['text'] = str(temperature)
         log_text=f'Temperature: {temperature}'
         log_write(log_text)
     except Exception as error:
@@ -65,8 +65,8 @@ def get_distance():
         received = ser.read(17)
         if get_fcs(received, 4) != received[-2]: raise Exception("checksum is not equal")
         distance = struct.unpack('f', received[7:11])[0]
-        machines[combobox_machines.current()].sensors[combobox_sensors.current()].values["Distance"] = distance
-        labels["Distance"]['text'] = str(distance)
+        machines[combobox_machines.current()].sensors[combobox_sensors.current()].distance = distance
+        lbl_distance['text'] = str(distance)
         log_text=f'Distance: {distance}'
         log_write(log_text)
     except Exception as error:
@@ -81,8 +81,8 @@ def get_serial_number():
         received = ser.read(19)
         if get_fcs(received, 4) != received[-2]: raise Exception("checksum is not equal")
         serial_n = int.from_bytes(received[13:17], "little")
-        machines[combobox_machines.current()].sensors[combobox_sensors.current()].values["Serial Number"] = serial_n
-        labels["Serial Number"]['text'] = str(serial_n)
+        machines[combobox_machines.current()].sensors[combobox_sensors.current()].serial_number = serial_n
+        lbl_serial_number['text'] = str(serial_n)
         log_text=f'Serial Number: {serial_n}'
         log_write(log_text)
     except Exception as error:
@@ -97,8 +97,8 @@ def get_article_number():
         received = ser.read(19)
         if get_fcs(received, 4) != received[-2]: raise Exception("checksum is not equal")
         article_n = int.from_bytes(received[13:17], "little")
-        machines[combobox_machines.current()].sensors[combobox_sensors.current()].values["Article Number"] = article_n
-        labels["Article Number"]['text'] = str(article_n)
+        machines[combobox_machines.current()].sensors[combobox_sensors.current()].article_number = article_n
+        lbl_article_number['text'] = str(article_n)
         log_text=f'Article Number: {article_n}'
         log_write(log_text)
     except Exception as error:
@@ -114,8 +114,8 @@ def get_soft_version():
         if get_fcs(received, 4) != received[-2]: raise Exception("checksum is not equal")
         soft = received[13:15]
         text = f'0.{int(soft[1])}{chr(soft[0])}'
-        machines[combobox_machines.current()].sensors[combobox_sensors.current()].values["SW Version"] = text
-        labels["SW Version"]['text'] = text
+        machines[combobox_machines.current()].sensors[combobox_sensors.current()].sw_version = text
+        lbl_soft_version['text'] = text
         log_text=f'Software Version: {text}'
         log_write(log_text)
     except Exception as error:
@@ -130,10 +130,9 @@ def get_description():
         received = ser.read(47)
         if get_fcs(received, 4) != received[-2]: raise Exception("checksum is not equal")
         temp = received[13:45]
-        text = str(temp.decode("ascii"))
-        text = text.strip()
-        machines[combobox_machines.current()].sensors[combobox_sensors.current()].values["Description"] = text
-        labels["Description"]['text'] = text
+        text = temp.decode("ascii")
+        machines[combobox_machines.current()].sensors[combobox_sensors.current()].description = text
+        lbl_description['text'] = text
         log_text=f'Description: {text}'
         log_write(log_text)
     except Exception as error:
@@ -149,8 +148,8 @@ def get_measuring_unit():
         if get_fcs(received, 4) != received[-2]: raise Exception("Checksum is not equal")
         unit = int(received[13])
         units = ["m","mm","μm"]
-        machines[combobox_machines.current()].sensors[combobox_sensors.current()].values["Measuring Unit"] = units[unit]
-        labels["Measuring Unit"]['text'] = units[unit]
+        machines[combobox_machines.current()].sensors[combobox_sensors.current()].measuring_unit = units[unit]
+        lbl_measuring_unit['text'] = units[unit]
         log_text=f'Measuring Unit: {units[unit]}'
         log_write(log_text)
     except Exception as error:
@@ -165,8 +164,8 @@ def get_measuring_range():
         received = ser.read(19)
         if get_fcs(received, 4) != received[-2]: raise Exception("checksum is not equal")
         range = struct.unpack('f', received[13:17])[0]
-        machines[combobox_machines.current()].sensors[combobox_sensors.current()].values["Measuring Range"] = range
-        labels["Measuring Range"]['text'] = str(range)
+        machines[combobox_machines.current()].sensors[combobox_sensors.current()].measuring_range = range
+        lbl_measuring_range['text'] = str(range)
         log_text=f'Measuring Range: {range}'
         log_write(log_text)
     except Exception as error:
@@ -181,8 +180,8 @@ def get_measuring_offset():
         received = ser.read(19)
         if get_fcs(received, 4) != received[-2]: raise Exception("checksum is not equal")
         offset = struct.unpack('f', received[13:17])[0]
-        machines[combobox_machines.current()].sensors[combobox_sensors.current()].values["Measuring Offset"] = offset
-        labels["Measuring Offset"]['text'] = str(offset)
+        machines[combobox_machines.current()].sensors[combobox_sensors.current()].measuring_offset = offset
+        lbl_measuring_offset['text'] = str(offset)
         log_text=f'Measuring Offset: {offset}'
         log_write(log_text)
     except Exception as error:
@@ -270,19 +269,21 @@ def machine_selected():
     log_write(log_text)
     combobox_sensors['values'] = machines[combobox_machines.current()].sensors
     current_sensor.set("")    
-    for key in labels:
-        labels[key] = ""
 
 def sensor_selected():
     window.focus()
     sensor = machines[combobox_machines.current()].sensors[combobox_sensors.current()]
     log_text=f'Selected sensor: {current_sensor.get()}'
     log_write(log_text) 
-    for key in sensor.values:
-        if sensor.values[key]: log_write(f'{key}: {sensor.values[key]}')
-        labels[key] = sensor.values[key]
-    txt_log.insert(END, "\n")
-    
+    lbl_temperature['text']=sensor.temperature
+    lbl_distance['text']=sensor.distance
+    lbl_serial_number['text']=sensor.serial_number
+    lbl_article_number['text']=sensor.article_number
+    lbl_soft_version['text']=sensor.sw_version
+    lbl_description['text']=sensor.description  
+    lbl_measuring_unit['text']=sensor.measuring_unit
+    lbl_measuring_range['text']=sensor.measuring_range
+    lbl_measuring_offset['text']=sensor.measuring_offset
 
 def create_button(text, func, padx_btn=(20,8), padx_lbl=(8,20), pady=(8,8)):
     frame = ttk.Frame(frame_right, width=50, height=50)
@@ -303,7 +304,7 @@ def get_adr():
     ser.write(bytearray(broadcast))
     received = ser.read(6)
     if get_fcs(received, 1) != received[-2]: raise Exception("Checksum is not equal")
-    machines[combobox_machines.current()].sensors[combobox_sensors.current()].values["Address"] = received[2]
+    machines[combobox_machines.current()].sensors[combobox_sensors.current()].address = received[2]
     return received[2]
 
 def initialize_port():
@@ -371,23 +372,23 @@ frame_left= ttk.Frame(master=window)
 #Creates button for retreiving temperature value from sensor and a label to display result
 create_button("Get All", get_all, pady=(28,8))
 #Creates button for retreiving temperature value from sensor and a label to display result
-labels["Temperature"] = create_button("Temperature", get_temperature)
+lbl_temperature = create_button("Temperature", get_temperature)
 #Creates button for retreiving distance value from sensor and a label to display result
-labels["Distance"] = create_button("Distance", get_distance)
+lbl_distance = create_button("Distance", get_distance)
 #Creates button for retreiving serial number from sensor and a label to display result
-labels["Serial Number"] = create_button("Serial Number", get_serial_number)
+lbl_serial_number = create_button("Serial Number", get_serial_number)
 #Creates button for retreiving sofr version from sensor and a label to display result
-labels["SW Version"] = create_button("Soft Version", get_soft_version)
+lbl_soft_version = create_button("Soft Version", get_soft_version)
 #Creates button for retreiving article number from sensor and a label to display result
-labels["Article Number"] = create_button("Article Number", get_article_number)
+lbl_article_number = create_button("Article Number", get_article_number)
 #Creates button for retreiving measuring unit from sensor and a label to display result
-labels["Description"] = create_button("Description", get_description)
+lbl_description = create_button("Description", get_description)
 #Creates button for retreiving measuring unit from sensor and a label to display result
-labels["Measuring Unit"] = create_button("Measuring Unit", get_measuring_unit)
+lbl_measuring_unit = create_button("Measuring Unit", get_measuring_unit)
 #Creates button for retreiving article number from sensor and a label to display result
-labels["Measuring Range"] = create_button("Measuring Range", get_measuring_range)
+lbl_measuring_range = create_button("Measuring Range", get_measuring_range)
 #Creates button for retreiving article number from sensor and a label to display result
-labels["Measuring Offset"] = create_button("Measuring Offset", get_measuring_offset)
+lbl_measuring_offset = create_button("Measuring Offset", get_measuring_offset)
 
 
 #Creates button for changing address of the sensor

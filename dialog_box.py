@@ -19,7 +19,7 @@ class Dialog_box:
 
     def create_entry_box(self, msg):
         self.frame = ttk.Frame(self.window)
-        self.lbl = ttk.Label(self.frame, text=msg, width=12)
+        self.lbl = ttk.Label(self.frame, text=msg, width=13)
         self.lbl.pack(side=LEFT, padx=10, pady=10)
         self.entry_box = ttk.Entry(self.frame, width=20)
         self.entry_box.pack(side=RIGHT, padx=10, pady=10)
