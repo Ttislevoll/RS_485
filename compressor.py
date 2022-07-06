@@ -6,8 +6,4 @@ class Compressor:
         self.tolerance = tolerance
 
     def __str__(self):
-        location = "{:<20}".format(str(self.location))
-        address = "{:<5}".format(str(self.address))
-        nom_value = "{:<5}".format(str(self.nom_value))
-        tolerance = "{:<5}".format(str(self.tolerance))
-        return location + address + nom_value + tolerance
+        return f'{self.location:<20}{self.address:<10}{self.nom_value:<10}{self.tolerance:<10}'

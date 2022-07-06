@@ -14,6 +14,7 @@ from typing import List
 import os.path
 import time
 from dialog_box import Dialog_box
+from sensor_window import Sensor_Window
           
 ports : list = []
 adr : hex = 0x00
@@ -28,8 +29,9 @@ addresses = [0x7e, 0x20]
 
 broadcast = [0x10,0x7f,0x01,0x09,0x89,0x16]
 distance_temp_v03a = [0x10,adr,0x01,0x4c,fcs,0x16]
+temperature_v02a = [0x68,0x09,0x09,0x68,adr,0x01,0x4c,0x30,0x33,0x5e,0xd1,0x0c,0x04,fcs,0x16]
 #read block 0x10
-soft_version_v03a = [0x68,0x09,0x09,0x68,adr,0x01,0x4c,0x30,0x33,0x5e,0x10,0x02,0x02,fcs,0x16]
+sw_version = [0x68,0x09,0x09,0x68,adr,0x01,0x4c,0x30,0x33,0x5e,0x10,0x02,0x02,fcs,0x16]
 article_number = [0x68,0x09,0x09,0x68,adr,0x01,0x4c,0x30,0x33,0x5e,0x10,0x04,0x04,fcs,0x16]
 serial_number = [0x68,0x09,0x09,0x68,adr,0x01,0x4c,0x30,0x33,0x5e,0x10,0x10,0x04,fcs,0x16]
 description = [0x68,0x09,0x09,0x68,adr,0x01,0x4c,0x30,0x33,0x5e,0x10,0x28,0x20,fcs,0x16]
@@ -44,12 +46,20 @@ assign_address = [0x68,0x09,0x09,0x68,adr,0x01,0x43,0x37,0x3e,new_adr,0x00,0x00,
 #serial read functions
 def get_temperature():
     try:
-        distance_temp_v03a[1] = get_adr()
-        distance_temp_v03a[-2] = get_fcs(distance_temp_v03a, 1)
-        ser.write(bytearray(distance_temp_v03a))
-        received = ser.read(17)
-        if get_fcs(received, 4) != received[-2]: raise Exception("Checksum is not equal")
-        temperature = struct.unpack('f', received[11:15])[0]
+        if get_sw_version(True) == "0.2a":
+            temperature_v02a[4] = get_adr()
+            temperature_v02a[-2] = get_fcs(temperature_v02a, 4)
+            ser.write(bytearray(temperature_v02a))
+            received = ser.read(13)
+            if get_fcs(received, 4) != received[-2]: raise Exception("Checksum is not equal")
+            temperature = struct.unpack('f', received[7:11])[0]
+        else:
+            distance_temp_v03a[1] = get_adr()
+            distance_temp_v03a[-2] = get_fcs(distance_temp_v03a, 1)
+            ser.write(bytearray(distance_temp_v03a))
+            received = ser.read(17)
+            if get_fcs(received, 4) != received[-2]: raise Exception("Checksum is not equal")
+            temperature = struct.unpack('f', received[11:15])[0]
         try: machines[combobox_machines.current()].sensors[combobox_sensors.current()].values["Temperature"] = temperature
         except: pass
         labels["Temperature"]['text'] = str(temperature)
@@ -63,8 +73,10 @@ def get_distance():
     try:
         distance_temp_v03a[1] = get_adr()
         distance_temp_v03a[-2] = get_fcs(distance_temp_v03a, 1)
+        bytes = 17
+        if get_sw_version(True) == "0.2a": bytes=13
         ser.write(bytearray(distance_temp_v03a))
-        received = ser.read(17)
+        received = ser.read(bytes)
         if get_fcs(received, 4) != received[-2]: raise Exception("checksum is not equal")
         distance = struct.unpack('f', received[7:11])[0]
         try: machines[combobox_machines.current()].sensors[combobox_sensors.current()].values["Distance"] = distance
@@ -110,15 +122,16 @@ def get_article_number():
         log_text=error
         log_write(log_text)
 
-def get_soft_version():
+def get_sw_version(no_print=False):
     try:
-        soft_version_v03a[4] = get_adr()
-        soft_version_v03a[-2] = get_fcs(soft_version_v03a, 4)
-        ser.write(bytearray(soft_version_v03a))
+        sw_version[4] = get_adr()
+        sw_version[-2] = get_fcs(sw_version, 4)
+        ser.write(bytearray(sw_version))
         received = ser.read(17)
         if get_fcs(received, 4) != received[-2]: raise Exception("checksum is not equal")
         soft = received[13:15]
-        text = f'0.{int(soft[1])}{chr(soft[0])}'
+        text = f'0.{soft[1]}{chr(soft[0])}'
+        if no_print: return text
         try: machines[combobox_machines.current()].sensors[combobox_sensors.current()].values["SW Version"] = text
         except: pass
         labels["SW Version"]['text'] = text
@@ -225,7 +238,7 @@ def get_all():
     get_distance()
     get_serial_number()
     get_article_number()
-    get_soft_version()
+    get_sw_version()
     get_description()
     get_measuring_unit()
     get_measuring_range()
@@ -352,7 +365,7 @@ def create_machine():
     dialog = Dialog_box(parent=window, msg_list=["ITM Number:","Description:","Serial Number:"])
     window.wait_window(dialog.window)
     if dialog.cancel == False:
-        machines.append(Machine(dialog.inputs[0],dialog.inputs[1],dialog.inputs[2]))
+        machines.append(Machine(dialog.inputs[0],dialog.inputs[1],dialog.inputs[2],dialog.machine_type))
         combobox_machines['values'] = machines
         combobox_machines.current(newindex=len(machines)-1)
         log_write(f'Added machine with Itm Number: {machines[0].itm_number}')
@@ -362,14 +375,15 @@ def create_sensor():
     if combobox_machines.current() == -1: 
         messagebox.showinfo("error", "No selected machine")
         return
-    dialog = Dialog_box(parent=window, msg_list=["Sensor Location:"])
+    dialog = Sensor_Window(window, get_machine())
     window.wait_window(dialog.window)
     if dialog.cancel == False:
         sensors = machines[combobox_machines.current()].sensors
-        sensors.append(Sensor(dialog.inputs[0]))
+        values = dialog.values
+        sensors.append(Sensor(values[0],values[1],values[2],values[3]))
         combobox_sensors['values'] = sensors
         combobox_sensors.current(newindex=len(sensors)-1)
-        log_write(f'Added sensor with location: {dialog.inputs[0]}')
+        log_write(f'Added sensor with location: {values[0]}')
         sensor_selected()
 
 def get_machine():
@@ -408,7 +422,7 @@ labels["Distance"] = create_button("Distance", get_distance)
 #Creates button for retreiving serial number from sensor and a label to display result
 labels["Serial Number"] = create_button("Serial Number", get_serial_number)
 #Creates button for retreiving sofr version from sensor and a label to display result
-labels["SW Version"] = create_button("Soft Version", get_soft_version)
+labels["SW Version"] = create_button("SW Version", get_sw_version)
 #Creates button for retreiving article number from sensor and a label to display result
 labels["Article Number"] = create_button("Article Number", get_article_number)
 #Creates button for retreiving measuring unit from sensor and a label to display result

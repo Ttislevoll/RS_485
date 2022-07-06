@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import LEFT, RIGHT, ttk, messagebox
+from tkinter import BOTTOM, LEFT, RIGHT, ttk, messagebox
 from PIL import ImageTk, Image
 
 class Dialog_box:
@@ -14,8 +14,12 @@ class Dialog_box:
         self.entrys = []
         for i in range(0, len(msg_list)):
             self.entrys.append(self.create_entry_box(msg_list[i]))
-        self.btn = ttk.Button(self.window, text='Done', command=self.submit)
-        self.btn.pack(pady=(25,0))
+        btn_frame = ttk.Frame(self.window)
+        self.btn_compress = ttk.Button(btn_frame, text='Add Compressor', command=lambda:self.submit("Compressor"))
+        self.btn_compress.pack(side=LEFT, pady=(20,0), padx=(0,15))
+        self.btn_compress = ttk.Button(btn_frame, text='Add Pump', command=lambda:self.submit("Pump"))
+        self.btn_compress.pack(side=RIGHT, pady=(20,0), padx=(15,0))
+        btn_frame.pack()
 
     def create_entry_box(self, msg):
         self.frame = ttk.Frame(self.window)
@@ -26,8 +30,9 @@ class Dialog_box:
         self.frame.pack()
         return self.entry_box
 
-    def submit(self):
+    def submit(self, machine_type):
         self.inputs = []
+        self.machine_type = machine_type
         for i in self.entrys:
             entry = i.get()
             if entry: self.inputs.append(i.get())

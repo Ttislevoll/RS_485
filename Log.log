@@ -2513,3 +2513,508 @@ INFO:13:49:52 Measuring Unit: μm
 INFO:13:49:52 Measuring Range: 1400.0
 INFO:13:49:52 Measuring Offset: 100.0
 INFO:13:49:52 Address: 32
+INFO:07:39:36 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:08:01:10 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:08:01:34 index out of range
+INFO:08:01:38 index out of range
+INFO:08:01:39 index out of range
+INFO:08:08:34 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:08:08:36 Address: 32
+INFO:08:08:38 Address: 32
+INFO:08:08:39 Address: 32
+INFO:08:08:39 Address: 32
+INFO:08:08:39 Address: 32
+INFO:08:09:02 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:08:09:05 index out of range
+INFO:08:11:28 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:08:11:30 Address: 32
+INFO:08:17:09 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:08:35:08 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:08:35:13 Address: 10
+INFO:08:36:25 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:08:36:26 Address: 10
+INFO:08:37:07 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:08:37:16 Address: 10
+INFO:08:37:44 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:08:37:47 Address: 32
+INFO:08:38:19 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:08:38:21 Checksum is not equal
+INFO:08:38:41 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:08:38:44 Address: 10
+INFO:08:38:46 Measuring Offset: 100.0
+INFO:08:38:47 Measuring Range: 1400.0
+INFO:08:38:48 Measuring Unit: μm
+INFO:08:38:49 Description: DT3009-S1,4-M20_OSS_LF
+INFO:08:38:53 Article Number: 4314083
+INFO:08:39:00 Software Version: 0.2a
+INFO:08:39:01 Serial Number: 926
+INFO:08:39:03 Distance: 1489.5872802734375
+INFO:08:39:05 unpack requires a buffer of 4 bytes
+INFO:08:39:19 Distance: -42.301544189453125
+INFO:08:39:21 Distance: 1489.5872802734375
+INFO:08:39:31 unpack requires a buffer of 4 bytes
+INFO:09:18:37 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:09:21:13 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:09:21:33 Added machine with Itm Number: 234
+INFO:09:21:33 Selected machine: maskin en 
+INFO:09:25:13 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:09:25:22 Added machine with Itm Number: 1
+INFO:09:25:22 Selected machine: 1
+INFO:09:26:02 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:09:26:07 Added machine with Itm Number: 1
+INFO:09:26:07 Selected machine: 1
+INFO:09:26:32 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:09:26:40 Added machine with Itm Number: 1
+INFO:09:26:40 Selected machine: 1
+INFO:09:28:13 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:09:28:23 Added machine with Itm Number: 1
+INFO:09:28:23 Selected machine: 1
+INFO:09:30:12 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:09:30:23 Added machine with Itm Number: 1
+INFO:09:30:23 Selected machine: 1
+INFO:09:31:28 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:09:31:41 Added machine with Itm Number: 1
+INFO:09:31:41 Selected machine: 1
+INFO:09:34:03 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:09:34:11 Added machine with Itm Number: 1
+INFO:09:34:11 Selected machine: 1
+INFO:09:34:58 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:09:35:03 Added machine with Itm Number: 1
+INFO:09:35:03 Selected machine: 1
+INFO:09:39:23 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:09:39:45 Added machine with Itm Number: 1
+INFO:09:39:45 Selected machine: 1
+INFO:09:41:24 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:09:41:29 Added machine with Itm Number: 1
+INFO:09:41:29 Selected machine: 1
+INFO:09:42:27 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:09:42:33 Added machine with Itm Number: 1
+INFO:09:42:33 Selected machine: 1
+INFO:09:44:29 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:09:44:37 Added machine with Itm Number: 1
+INFO:09:44:37 Selected machine: 1
+INFO:09:45:08 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:09:45:18 Added machine with Itm Number: 1
+INFO:09:45:18 Selected machine: 1
+INFO:09:46:51 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:09:46:59 Added machine with Itm Number: 1
+INFO:09:46:59 Selected machine: 1
+INFO:09:47:18 Added machine with Itm Number: 1
+INFO:09:47:18 Selected machine: 1
+INFO:09:47:36 Added machine with Itm Number: 1
+INFO:09:47:36 Selected machine: 2
+INFO:09:48:17 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:09:48:23 Added machine with Itm Number: 1
+INFO:09:48:23 Selected machine: 1
+INFO:09:49:50 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:09:49:56 Added machine with Itm Number: 1
+INFO:09:49:56 Selected machine: 1
+INFO:09:51:10 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:09:51:16 Added machine with Itm Number: 1
+INFO:09:51:16 Selected machine: 1
+INFO:09:51:57 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:09:52:04 Added machine with Itm Number: 1
+INFO:09:52:04 Selected machine: 1
+INFO:09:53:23 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:09:53:36 Added machine with Itm Number: 1
+INFO:09:53:36 Selected machine: 1
+INFO:09:54:32 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:09:54:38 Added machine with Itm Number: 1
+INFO:09:54:38 Selected machine: 1
+INFO:09:55:49 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:09:56:24 Added machine with Itm Number: 1
+INFO:09:56:24 Selected machine: 1
+INFO:10:04:33 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:10:04:41 Added machine with Itm Number: 1
+INFO:10:04:41 Selected machine: 1
+INFO:10:05:20 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:10:05:27 Added machine with Itm Number: 1
+INFO:10:05:27 Selected machine: 1
+INFO:10:08:40 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:10:08:47 Added machine with Itm Number: 1
+INFO:10:08:47 Selected machine: 1
+INFO:10:10:58 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:10:11:05 Added machine with Itm Number: 1
+INFO:10:11:05 Selected machine: 1
+INFO:10:12:39 Address: 10
+INFO:10:13:04 Distance: 690.91064453125
+INFO:10:13:22 Distance: 691.962646484375
+INFO:10:15:14 Distance: 693.08642578125
+INFO:10:37:41 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:10:37:50 Added machine with Itm Number: 1
+INFO:10:37:50 Selected machine: 1
+INFO:10:38:50 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:10:38:55 Added machine with Itm Number: 1
+INFO:10:38:55 Selected machine: 1
+INFO:10:43:37 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:10:43:46 Added machine with Itm Number: 1
+INFO:10:43:46 Selected machine: 1
+INFO:10:46:42 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:10:46:48 Added machine with Itm Number: 1
+INFO:10:46:48 Selected machine: 1
+INFO:11:24:00 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:11:24:06 Added machine with Itm Number: 1
+INFO:11:24:06 Selected machine: 1
+INFO:11:24:55 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:11:25:00 Added machine with Itm Number: 1
+INFO:11:25:00 Selected machine: 1
+INFO:11:30:04 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:11:30:10 Added machine with Itm Number: 1
+INFO:11:30:10 Selected machine: 1
+INFO:11:37:12 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:11:37:18 Added machine with Itm Number: 1
+INFO:11:37:18 Selected machine: 1
+INFO:11:42:01 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:11:42:25 Added machine with Itm Number: 1
+INFO:11:42:25 Selected machine: 1
+INFO:11:44:43 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:11:44:57 Added machine with Itm Number: 1
+INFO:11:44:57 Selected machine: 1
+INFO:11:48:04 Added machine with Itm Number: 1
+INFO:11:48:04 Selected machine: 2
+INFO:11:48:18 Added machine with Itm Number: 1
+INFO:11:48:18 Selected machine: 2
+INFO:11:50:58 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:11:51:19 Added machine with Itm Number: 2343
+INFO:11:51:19 Selected machine: en greeie
+INFO:12:15:27 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:12:15:42 Added machine with Itm Number: hei
+INFO:12:15:42 Selected machine: eple
+INFO:12:19:46 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:12:19:52 Added machine with Itm Number: 1
+INFO:12:19:52 Selected machine: 1
+INFO:12:23:53 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:12:24:01 Added machine with Itm Number: 1
+INFO:12:24:01 Selected machine: 1
+INFO:12:24:31 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:12:24:37 Added machine with Itm Number: 1
+INFO:12:24:37 Selected machine: 1
+INFO:12:25:43 Added sensor with location: Motor-NDE-X
+INFO:12:25:45 Selected sensor: 
+INFO:12:28:49 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:12:29:00 Added machine with Itm Number: pizza
+INFO:12:29:00 Selected machine: banan
+INFO:12:29:37 Added sensor with location: Motor-NDE-X
+INFO:12:29:37 Selected sensor: Motor-NDE-X
+INFO:12:29:46 Address: 10
+INFO:12:29:48 Measuring Offset: 100.0
+INFO:12:29:48 Measuring Range: 1400.0
+INFO:12:29:49 Measuring Unit: μm
+INFO:12:29:50 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:29:50 Article Number: 4314083
+INFO:12:29:51 Software Version: 0.2a
+INFO:12:29:52 Serial Number: 926
+INFO:12:29:54 Distance: 695.4295654296875
+INFO:12:30:14 Added sensor with location: Pump-DE-Ax1
+INFO:12:30:14 Selected sensor: Pump-DE-Ax1
+INFO:12:30:20 Serial Number: 926
+INFO:12:30:21 Software Version: 0.2a
+INFO:12:30:22 Article Number: 4314083
+INFO:12:30:23 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:30:23 Measuring Unit: μm
+INFO:12:30:24 Measuring Range: 1400.0
+INFO:12:30:25 Measuring Offset: 100.0
+INFO:12:30:37 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:12:30:52 Selected machine: banan
+INFO:12:30:54 Selected sensor: Motor-NDE-X
+INFO:12:30:54 Distance: 695.4295654296875
+INFO:12:30:54 Serial Number: 926
+INFO:12:30:54 SW Version: 0.2a
+INFO:12:30:54 Article Number: 4314083
+INFO:12:30:54 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:30:54 Address: 10
+INFO:12:30:54 Measuring Unit: μm
+INFO:12:30:54 Measuring Offset: 100.0
+INFO:12:30:54 Measuring Range: 1400.0
+INFO:12:30:57 Selected sensor: Pump-DE-Ax1
+INFO:12:30:57 Serial Number: 926
+INFO:12:30:57 SW Version: 0.2a
+INFO:12:30:57 Article Number: 4314083
+INFO:12:30:57 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:30:57 Measuring Unit: μm
+INFO:12:30:57 Measuring Offset: 100.0
+INFO:12:30:57 Measuring Range: 1400.0
+INFO:12:31:00 Selected sensor: Motor-NDE-X
+INFO:12:31:00 Distance: 695.4295654296875
+INFO:12:31:00 Serial Number: 926
+INFO:12:31:00 SW Version: 0.2a
+INFO:12:31:00 Article Number: 4314083
+INFO:12:31:00 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:31:00 Address: 10
+INFO:12:31:00 Measuring Unit: μm
+INFO:12:31:00 Measuring Offset: 100.0
+INFO:12:31:00 Measuring Range: 1400.0
+INFO:12:31:02 Selected sensor: Pump-DE-Ax1
+INFO:12:31:02 Serial Number: 926
+INFO:12:31:02 SW Version: 0.2a
+INFO:12:31:02 Article Number: 4314083
+INFO:12:31:02 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:31:02 Measuring Unit: μm
+INFO:12:31:02 Measuring Offset: 100.0
+INFO:12:31:02 Measuring Range: 1400.0
+INFO:13:42:35 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:13:42:51 Added machine with Itm Number: 1
+INFO:13:42:51 Selected machine: 1
+INFO:13:50:56 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:13:51:08 Added machine with Itm Number: 1
+INFO:13:51:08 Selected machine: 1
+INFO:13:53:51 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:13:53:59 Added machine with Itm Number: 1
+INFO:13:53:59 Selected machine: 1
+INFO:13:54:45 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:13:54:52 Added machine with Itm Number: 1
+INFO:13:54:52 Selected machine: 1
+INFO:13:56:30 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:13:56:43 Added machine with Itm Number: 1
+INFO:13:56:43 Selected machine: 1
+INFO:13:59:32 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:13:59:45 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:00:07 Added machine with Itm Number: 1
+INFO:14:00:07 Selected machine: 1
+INFO:14:03:46 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:03:55 Added machine with Itm Number: 1
+INFO:14:03:55 Selected machine: 1
+INFO:14:11:18 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:11:26 Added machine with Itm Number: 1
+INFO:14:11:26 Selected machine: 1
+INFO:14:15:00 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:15:08 Added machine with Itm Number: 1
+INFO:14:15:08 Selected machine: 1
+INFO:14:17:30 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:18:55 Added machine with Itm Number: 1
+INFO:14:18:55 Selected machine: 1
+INFO:14:19:11 Added sensor with location: WGC-Outer-DE-X
+INFO:14:19:11 Selected sensor: WGC-Outer-DE-X
+INFO:14:19:21 Address: 10
+INFO:14:19:24 Measuring Offset: 100.0
+INFO:14:19:25 Measuring Range: 1400.0
+INFO:14:19:27 Measuring Unit: μm
+INFO:14:19:28 Description: DT3009-S1,4-M20_OSS_LF
+INFO:14:19:29 Article Number: 4314083
+INFO:14:19:30 Software Version: 0.2a
+INFO:14:19:31 Serial Number: 926
+INFO:14:19:38 Added sensor with location: WGC-Outer-DE-Ax2
+INFO:14:19:38 Selected sensor: WGC-Outer-DE-Ax2
+INFO:14:19:42 Address: 10
+INFO:14:19:43 Measuring Offset: 100.0
+INFO:14:19:43 Measuring Range: 1400.0
+INFO:14:19:44 Measuring Unit: μm
+INFO:14:19:45 Description: DT3009-S1,4-M20_OSS_LF
+INFO:14:19:46 Article Number: 4314083
+INFO:14:19:46 Software Version: 0.2a
+INFO:14:19:47 Serial Number: 926
+INFO:14:19:50 Selected sensor: WGC-Outer-DE-X
+INFO:14:19:50 Serial Number: 926
+INFO:14:19:50 SW Version: 0.2a
+INFO:14:19:50 Article Number: 4314083
+INFO:14:19:50 Description: DT3009-S1,4-M20_OSS_LF
+INFO:14:19:50 Address: 10
+INFO:14:19:50 Measuring Unit: μm
+INFO:14:19:50 Measuring Offset: 100.0
+INFO:14:19:50 Measuring Range: 1400.0
+INFO:14:19:53 Selected sensor: WGC-Outer-DE-Ax2
+INFO:14:19:53 Serial Number: 926
+INFO:14:19:53 SW Version: 0.2a
+INFO:14:19:53 Article Number: 4314083
+INFO:14:19:53 Description: DT3009-S1,4-M20_OSS_LF
+INFO:14:19:53 Address: 10
+INFO:14:19:53 Measuring Unit: μm
+INFO:14:19:53 Measuring Offset: 100.0
+INFO:14:19:53 Measuring Range: 1400.0
+INFO:14:19:55 Selected sensor: WGC-Outer-DE-X
+INFO:14:19:55 Serial Number: 926
+INFO:14:19:55 SW Version: 0.2a
+INFO:14:19:55 Article Number: 4314083
+INFO:14:19:55 Description: DT3009-S1,4-M20_OSS_LF
+INFO:14:19:55 Address: 10
+INFO:14:19:55 Measuring Unit: μm
+INFO:14:19:55 Measuring Offset: 100.0
+INFO:14:19:55 Measuring Range: 1400.0
+INFO:14:19:57 Selected sensor: WGC-Outer-DE-Ax2
+INFO:14:19:57 Serial Number: 926
+INFO:14:19:57 SW Version: 0.2a
+INFO:14:19:57 Article Number: 4314083
+INFO:14:19:57 Description: DT3009-S1,4-M20_OSS_LF
+INFO:14:19:57 Address: 10
+INFO:14:19:57 Measuring Unit: μm
+INFO:14:19:57 Measuring Offset: 100.0
+INFO:14:19:57 Measuring Range: 1400.0
+INFO:14:20:01 Selected sensor: WGC-Outer-DE-X
+INFO:14:20:01 Serial Number: 926
+INFO:14:20:01 SW Version: 0.2a
+INFO:14:20:01 Article Number: 4314083
+INFO:14:20:01 Description: DT3009-S1,4-M20_OSS_LF
+INFO:14:20:01 Address: 10
+INFO:14:20:01 Measuring Unit: μm
+INFO:14:20:01 Measuring Offset: 100.0
+INFO:14:20:01 Measuring Range: 1400.0
+INFO:14:26:49 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:26:59 Added machine with Itm Number: 1
+INFO:14:26:59 Selected machine: 1
+INFO:14:27:52 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:28:06 Added machine with Itm Number: 1
+INFO:14:28:06 Selected machine: 1
+INFO:14:29:28 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:29:39 Added machine with Itm Number: 1
+INFO:14:29:39 Selected machine: 1
+INFO:14:31:08 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:31:17 Added machine with Itm Number: 1
+INFO:14:31:17 Selected machine: 1
+INFO:14:33:55 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:34:02 Added machine with Itm Number: 1
+INFO:14:34:02 Selected machine: 1
+INFO:14:37:38 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:38:08 Added machine with Itm Number: 1
+INFO:14:38:08 Selected machine: 1
+INFO:14:40:23 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:41:00 Added machine with Itm Number: 1
+INFO:14:41:00 Selected machine: 1
+INFO:14:42:22 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:42:32 Added machine with Itm Number: 1
+INFO:14:42:32 Selected machine: 1
+INFO:14:44:34 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:44:41 Added machine with Itm Number: 1
+INFO:14:44:41 Selected machine: 1
+INFO:14:45:45 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:45:53 Added machine with Itm Number: 1
+INFO:14:45:53 Selected machine: 1
+INFO:14:47:07 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:47:18 Added machine with Itm Number: 1
+INFO:14:47:18 Selected machine: 1
+INFO:14:49:24 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:49:36 Added machine with Itm Number: 1
+INFO:14:49:36 Selected machine: 1
+INFO:14:50:05 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:50:14 Added machine with Itm Number: 1
+INFO:14:50:14 Selected machine: 1
+INFO:14:50:34 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:50:42 Added machine with Itm Number: 1
+INFO:14:50:42 Selected machine: 1
+INFO:14:50:59 Added sensor with location: Upper-Motor-NDE-Y
+INFO:14:50:59 Selected sensor: Upper-Motor-NDE-Y
+INFO:14:51:20 Added sensor with location: WGC-Inner-KP
+INFO:14:51:20 Selected sensor: WGC-Inner-KP
+INFO:14:58:15 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:58:49 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:59:11 Added machine with Itm Number: 1
+INFO:14:59:11 Selected machine: 1
+INFO:14:59:57 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:15:00:32 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:15:02:38 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:15:02:59 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:15:04:00 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:15:04:22 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:15:04:49 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:15:05:12 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:15:05:31 Added machine with Itm Number: 234
+INFO:15:05:31 Selected machine: maskin en
+INFO:15:05:41 Added sensor with location: WGC-Inner-DE-Ax1
+INFO:15:05:41 Selected sensor: WGC-Inner-DE-Ax1
+INFO:15:05:44 Address: 10
+INFO:15:05:44 Measuring Offset: 100.0
+INFO:15:05:45 Measuring Range: 1400.0
+INFO:15:05:46 Measuring Unit: μm
+INFO:15:05:46 Description: DT3009-S1,4-M20_OSS_LF
+INFO:15:05:47 Article Number: 4314083
+INFO:15:05:47 Software Version: 0.2a
+INFO:15:05:48 Serial Number: 926
+INFO:15:05:50 Distance: 696.4098510742188
+INFO:15:06:04 Added sensor with location: Lower-Motor-DE-X
+INFO:15:06:04 Selected sensor: Lower-Motor-DE-X
+INFO:15:06:06 Measuring Range: 1400.0
+INFO:15:06:07 Measuring Unit: μm
+INFO:15:06:11 Added sensor with location: WGC-Outer-NDE-Y
+INFO:15:06:11 Selected sensor: WGC-Outer-NDE-Y
+INFO:15:06:54 Selected sensor: WGC-Inner-DE-Ax1
+INFO:15:06:54 Distance: 696.4098510742188
+INFO:15:06:54 Serial Number: 926
+INFO:15:06:54 SW Version: 0.2a
+INFO:15:06:54 Article Number: 4314083
+INFO:15:06:54 Description: DT3009-S1,4-M20_OSS_LF
+INFO:15:06:54 Address: 10
+INFO:15:06:54 Measuring Unit: μm
+INFO:15:06:54 Measuring Offset: 100.0
+INFO:15:06:54 Measuring Range: 1400.0
+INFO:15:06:56 Selected sensor: Lower-Motor-DE-X
+INFO:15:06:56 Measuring Unit: μm
+INFO:15:06:56 Measuring Range: 1400.0
+INFO:15:06:58 Description: DT3009-S1,4-M20_OSS_LF
+INFO:15:06:59 Selected sensor: WGC-Outer-NDE-Y
+INFO:15:07:00 Measuring Offset: 100.0
+INFO:15:07:02 Selected sensor: Lower-Motor-DE-X
+INFO:15:07:02 Description: DT3009-S1,4-M20_OSS_LF
+INFO:15:07:02 Measuring Unit: μm
+INFO:15:07:02 Measuring Range: 1400.0
+INFO:15:07:05 Selected sensor: WGC-Inner-DE-Ax1
+INFO:15:07:05 Distance: 696.4098510742188
+INFO:15:07:05 Serial Number: 926
+INFO:15:07:05 SW Version: 0.2a
+INFO:15:07:05 Article Number: 4314083
+INFO:15:07:05 Description: DT3009-S1,4-M20_OSS_LF
+INFO:15:07:05 Address: 10
+INFO:15:07:05 Measuring Unit: μm
+INFO:15:07:05 Measuring Offset: 100.0
+INFO:15:07:05 Measuring Range: 1400.0
+INFO:15:07:40 Selected machine: maskin en
+INFO:15:08:44 unpack requires a buffer of 4 bytes
+INFO:15:08:47 Description: DT3009-S1,4-M20_OSS_LF
+INFO:15:08:47 Description: DT3009-S1,4-M20_OSS_LF
+INFO:15:08:47 Description: DT3009-S1,4-M20_OSS_LF
+INFO:15:08:47 Description: DT3009-S1,4-M20_OSS_LF
+INFO:15:08:47 Description: DT3009-S1,4-M20_OSS_LF
+INFO:15:08:48 Description: DT3009-S1,4-M20_OSS_LF
+INFO:15:08:48 Description: DT3009-S1,4-M20_OSS_LF
+INFO:15:08:48 Measuring Unit: μm
+INFO:15:08:49 Measuring Unit: μm
+INFO:15:08:49 Measuring Unit: μm
+INFO:15:08:49 Measuring Unit: μm
+INFO:15:08:49 Measuring Unit: μm
+INFO:15:08:49 Measuring Unit: μm
+INFO:15:08:49 Measuring Unit: μm
+INFO:15:08:50 Measuring Unit: μm
+INFO:15:08:50 Measuring Range: 1400.0
+INFO:15:08:50 Measuring Range: 1400.0
+INFO:15:08:50 Measuring Range: 1400.0
+INFO:15:08:51 Address: 10
+INFO:15:08:51 Address: 10
+INFO:15:08:52 Address: 10
+INFO:15:13:47 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:15:13:59 Software Version: 0.2a
+INFO:15:14:55 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:15:15:02 Software Version: 0.2a
+INFO:15:16:36 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:15:16:39 Software Version: 0.2a
+INFO:15:24:43 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:15:24:45 Software Version: 0.2a
+INFO:15:45:52 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:15:45:59 unpack requires a buffer of 4 bytes
+INFO:15:46:02 Distance: 696.6011352539062
+INFO:15:46:05 Software Version: 0.2a
+INFO:15:46:40 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:15:46:44 Checksum is not equal
+INFO:15:46:51 Checksum is not equal
+INFO:15:46:53 Checksum is not equal
+INFO:15:46:54 Distance: 696.69677734375
+INFO:15:46:56 Distance: 696.7684936523438
+INFO:15:46:56 Distance: 696.5772094726562
+INFO:15:46:56 Distance: 696.5293579101562
+INFO:15:46:57 Distance: 696.338134765625
+INFO:15:46:57 Distance: 696.625
+INFO:15:46:57 Distance: 696.5054931640625
+INFO:15:47:03 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:15:47:05 Distance: 696.2185668945312
+INFO:15:47:06 Distance: 696.4815673828125
+INFO:15:47:06 Distance: 696.6011352539062
+INFO:15:47:06 Distance: 696.6728515625
+INFO:15:47:06 Distance: 696.5293579101562
+INFO:15:47:06 Distance: 696.6728515625
+INFO:15:47:07 Distance: 696.4815673828125
+INFO:15:47:07 Distance: 696.6011352539062
+INFO:15:47:07 Checksum is not equal
+INFO:15:47:08 Checksum is not equal
+INFO:15:47:09 Checksum is not equal
+INFO:15:47:09 Checksum is not equal
+INFO:15:47:09 Checksum is not equal
+INFO:15:47:09 Checksum is not equal
+INFO:15:48:04 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:15:48:06 Temperature: -59643211776.0
