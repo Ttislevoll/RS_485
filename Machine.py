@@ -1,5 +1,4 @@
-from Sensor import Sensor
-from compressor import Compressor
+from sensor import Sensor
 from typing import List
 
 class Machine:

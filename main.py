@@ -8,8 +8,8 @@ from PIL import ImageTk, Image
 import logging
 import datetime
 import struct
-from Machine import Machine
-from Sensor import Sensor
+from machine import machine
+from sensor import Sensor
 import pickle
 from typing import List
 import os.path
@@ -23,7 +23,7 @@ new_adr : hex = 0x00
 seconds = 0
 t_60s = 0
 ser = None
-machines : List[Machine] = []
+machines : List[machine] = []
 
 broadcast = [0x10,0x7f,0x01,0x09,0x89,0x16]
 distance_temp_v03a = [0x10,adr,0x01,0x4c,fcs,0x16]
@@ -327,7 +327,7 @@ def create_machine():
     dialog = New_Machine(parent=window, msg_list=["ITM Number:","Description:","Serial Number:"])
     window.wait_window(dialog.window)
     if dialog.cancel == False:
-        machines.append(Machine(dialog.inputs[0],dialog.inputs[1],dialog.inputs[2]))
+        machines.append(machine(dialog.inputs[0],dialog.inputs[1],dialog.inputs[2]))
         combobox_machines['values'] = machines
         combobox_machines.current(newindex=len(machines)-1)
         log_write(f'Added machine with Itm Number: {machines[0].itm_number}')

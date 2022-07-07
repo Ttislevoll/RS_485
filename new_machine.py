@@ -10,6 +10,7 @@ class New_Machine:
         self.window.geometry("400x250+750+300")
         icon = ImageTk.PhotoImage(Image.open("onesubsea_icon.png"))
         self.window.iconphoto(False, icon)
+        
         self.cancel = False
         self.entrys = []
         for i in range(0, len(msg_list)):

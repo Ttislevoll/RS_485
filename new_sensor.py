@@ -1,8 +1,7 @@
 import tkinter as tk
 from tkinter import CENTER, LEFT, RIGHT, ttk, font
 from PIL import ImageTk, Image
-from Machine import Machine
-from compressor import Compressor
+from machine import Machine
 
 class New_Sensor:
     def __init__(self, parent, machine):

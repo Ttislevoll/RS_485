@@ -7,8 +7,8 @@ from PIL import ImageTk, Image
 import logging
 import datetime
 import struct
-from Machine import Machine
-from Sensor import Sensor
+from machine import Machine
+from sensor import Sensor
 import pickle
 from typing import List
 import os.path
@@ -51,7 +51,7 @@ assign_address = [0x68,0x09,0x09,0x68,adr,0x01,0x43,0x37,0x3e,new_adr,0x00,0x00,
 
 #serial read functions
 def get_temperature():
-    #try:
+    try:
         if get_sw_version() == "0.2a":
             temperature_v02a[4] = get_adr()
             temperature_v02a[-2] = get_fcs(temperature_v02a, 4)
@@ -60,9 +60,7 @@ def get_temperature():
             if get_fcs(received, 4) != received[-2]: raise Exception("Checksum is not equal")
             temp = struct.unpack('i', received[13:17])[0]
             serial_number = str(get_serial_number())
-            #factors = temp_corr[serial_number]
             temperature = temp * temp_corr[serial_number][0] + temp_corr[serial_number][1]
-
         else:
             distance_temp_v03a[1] = get_adr()
             distance_temp_v03a[-2] = get_fcs(distance_temp_v03a, 1)
@@ -75,9 +73,9 @@ def get_temperature():
         labels["Temperature"]['text'] = str(temperature)
         log_text=f'Temperature: {temperature}'
         log_write(log_text)
-    #except Exception as error:
-        #log_text=error
-        #log_write(log_text)
+    except Exception as error:
+        log_text=error
+        log_write(log_text)
 
 def get_distance():
     try:
