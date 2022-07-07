@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import BOTTOM, LEFT, RIGHT, ttk, messagebox
 from PIL import ImageTk, Image
 
-class Dialog_box:
+class New_Machine:
     def __init__(self, parent, msg_list:list):
         self.window = tk.Toplevel(parent)
         self.window.protocol("WM_DELETE_WINDOW", self.close)

@@ -13,8 +13,8 @@ import pickle
 from typing import List
 import os.path
 import time
-from dialog_box import Dialog_box
-from sensor_window import Sensor_Window
+from new_machine import New_Machine
+from new_sensor import New_Sensor
           
 ports : list = []
 adr : hex = 0x00
@@ -26,7 +26,13 @@ ser = None
 machines : List[Machine] = []
 labels = {}
 addresses = [0x7e, 0x20]
+temp_corr = {}
+for line in open("TempCorrFactor.txt").readlines():
+    if line != '\n':
+        var = line.split()
+        temp_corr[var[0]] = [float(var[1]), float(var[2])]
 
+print(temp_corr)
 broadcast = [0x10,0x7f,0x01,0x09,0x89,0x16]
 distance_temp_v03a = [0x10,adr,0x01,0x4c,fcs,0x16]
 temperature_v02a = [0x68,0x09,0x09,0x68,adr,0x01,0x4c,0x30,0x33,0x5e,0xd1,0x0c,0x04,fcs,0x16]
@@ -45,14 +51,18 @@ assign_address = [0x68,0x09,0x09,0x68,adr,0x01,0x43,0x37,0x3e,new_adr,0x00,0x00,
 
 #serial read functions
 def get_temperature():
-    try:
-        if get_sw_version(True) == "0.2a":
+    #try:
+        if get_sw_version() == "0.2a":
             temperature_v02a[4] = get_adr()
             temperature_v02a[-2] = get_fcs(temperature_v02a, 4)
             ser.write(bytearray(temperature_v02a))
-            received = ser.read(13)
+            received = ser.read(19)
             if get_fcs(received, 4) != received[-2]: raise Exception("Checksum is not equal")
-            temperature = struct.unpack('f', received[7:11])[0]
+            temp = struct.unpack('i', received[13:17])[0]
+            serial_number = str(get_serial_number())
+            #factors = temp_corr[serial_number]
+            temperature = temp * temp_corr[serial_number][0] + temp_corr[serial_number][1]
+
         else:
             distance_temp_v03a[1] = get_adr()
             distance_temp_v03a[-2] = get_fcs(distance_temp_v03a, 1)
@@ -65,16 +75,16 @@ def get_temperature():
         labels["Temperature"]['text'] = str(temperature)
         log_text=f'Temperature: {temperature}'
         log_write(log_text)
-    except Exception as error:
-        log_text=error
-        log_write(log_text)
+    #except Exception as error:
+        #log_text=error
+        #log_write(log_text)
 
 def get_distance():
     try:
         distance_temp_v03a[1] = get_adr()
         distance_temp_v03a[-2] = get_fcs(distance_temp_v03a, 1)
         bytes = 17
-        if get_sw_version(True) == "0.2a": bytes=13
+        if get_sw_version() == "0.2a": bytes=13
         ser.write(bytearray(distance_temp_v03a))
         received = ser.read(bytes)
         if get_fcs(received, 4) != received[-2]: raise Exception("checksum is not equal")
@@ -89,17 +99,21 @@ def get_distance():
         log_write(log_text)
 
 def get_serial_number():
+    serial_number[4] = get_adr()
+    serial_number[-2] = get_fcs(serial_number, 4)
+    ser.write(bytearray(serial_number))
+    received = ser.read(19)
+    if get_fcs(received, 4) != received[-2]: raise Exception("checksum is not equal")
+    serial_num = int.from_bytes(received[13:17], "little")
+    return serial_num
+
+def save_serial_number():
     try:
-        serial_number[4] = get_adr()
-        serial_number[-2] = get_fcs(serial_number, 4)
-        ser.write(bytearray(serial_number))
-        received = ser.read(19)
-        if get_fcs(received, 4) != received[-2]: raise Exception("checksum is not equal")
-        serial_n = int.from_bytes(received[13:17], "little")
-        try: machines[combobox_machines.current()].sensors[combobox_sensors.current()].values["Serial Number"] = serial_n
+        serial_number = get_serial_number()
+        try: machines[combobox_machines.current()].sensors[combobox_sensors.current()].values["Serial Number"] = serial_number
         except: pass
-        labels["Serial Number"]['text'] = str(serial_n)
-        log_text=f'Serial Number: {serial_n}'
+        labels["Serial Number"]['text'] = str(serial_number)
+        log_text=f'Serial Number: {serial_number}'
         log_write(log_text)
     except Exception as error:
         log_text=error
@@ -122,20 +136,23 @@ def get_article_number():
         log_text=error
         log_write(log_text)
 
-def get_sw_version(no_print=False):
+def get_sw_version():
+    sw_version[4] = get_adr()
+    sw_version[-2] = get_fcs(sw_version, 4)
+    ser.write(bytearray(sw_version))
+    received = ser.read(17)
+    if get_fcs(received, 4) != received[-2]: raise Exception("checksum is not equal")
+    sw = received[13:15]
+    sw_string = f'0.{sw[1]}{chr(sw[0])}'
+    return sw_string
+
+def save_sw_version():
     try:
-        sw_version[4] = get_adr()
-        sw_version[-2] = get_fcs(sw_version, 4)
-        ser.write(bytearray(sw_version))
-        received = ser.read(17)
-        if get_fcs(received, 4) != received[-2]: raise Exception("checksum is not equal")
-        soft = received[13:15]
-        text = f'0.{soft[1]}{chr(soft[0])}'
-        if no_print: return text
-        try: machines[combobox_machines.current()].sensors[combobox_sensors.current()].values["SW Version"] = text
+        sw_version = get_sw_version()
+        try: machines[combobox_machines.current()].sensors[combobox_sensors.current()].values["SW Version"] = sw_version
         except: pass
-        labels["SW Version"]['text'] = text
-        log_text=f'Software Version: {text}'
+        labels["SW Version"]['text'] = sw_version
+        log_text=f'Software Version: {sw_version}'
         log_write(log_text)
     except Exception as error:
         log_text=error
@@ -231,20 +248,20 @@ def save_address():
         log_write(log_text)
 
 def get_all():
+    txt_log.insert(END, "\n")
     try: log_text=f'Machine: {get_machine()},  Sensor: {get_sensor()}'
     except: log_text="No sensor selected"
     log_write(log_text)
     get_temperature()
     get_distance()
-    get_serial_number()
+    save_serial_number()
     get_article_number()
-    get_sw_version()
+    save_sw_version()
     get_description()
     get_measuring_unit()
     get_measuring_range()
     get_measuring_offset()
     save_address()
-    txt_log.insert(END, "\n")
 
 #serial write functions
 def set_address(new_adr):
@@ -322,12 +339,12 @@ def machine_selected():
 def sensor_selected():
     window.focus()
     sensor = get_sensor()
+    txt_log.insert(END, "\n")
     log_text=f'Selected sensor: {current_sensor.get()}'
     log_write(log_text) 
     for key in sensor.values:
         if sensor.values[key]: log_write(f'{key}: {sensor.values[key]}')
         labels[key]['text'] = sensor.values[key]
-    txt_log.insert(END, "\n")
     
 
 def create_button(text, func, padx_btn=(20,8), padx_lbl=(8,20), pady=(8,8)):
@@ -362,7 +379,7 @@ def initialize_port():
     return ser
 
 def create_machine():
-    dialog = Dialog_box(parent=window, msg_list=["ITM Number:","Description:","Serial Number:"])
+    dialog = New_Machine(parent=window, msg_list=["ITM Number:","Description:","Serial Number:"])
     window.wait_window(dialog.window)
     if dialog.cancel == False:
         machines.append(Machine(dialog.inputs[0],dialog.inputs[1],dialog.inputs[2],dialog.machine_type))
@@ -375,7 +392,7 @@ def create_sensor():
     if combobox_machines.current() == -1: 
         messagebox.showinfo("error", "No selected machine")
         return
-    dialog = Sensor_Window(window, get_machine())
+    dialog = New_Sensor(window, get_machine())
     window.wait_window(dialog.window)
     if dialog.cancel == False:
         sensors = machines[combobox_machines.current()].sensors
@@ -420,9 +437,9 @@ labels["Temperature"] = create_button("Temperature", get_temperature)
 #Creates button for retreiving distance value from sensor and a label to display result
 labels["Distance"] = create_button("Distance", get_distance)
 #Creates button for retreiving serial number from sensor and a label to display result
-labels["Serial Number"] = create_button("Serial Number", get_serial_number)
+labels["Serial Number"] = create_button("Serial Number", save_serial_number)
 #Creates button for retreiving sofr version from sensor and a label to display result
-labels["SW Version"] = create_button("SW Version", get_sw_version)
+labels["SW Version"] = create_button("SW Version", save_sw_version)
 #Creates button for retreiving article number from sensor and a label to display result
 labels["Article Number"] = create_button("Article Number", get_article_number)
 #Creates button for retreiving measuring unit from sensor and a label to display result

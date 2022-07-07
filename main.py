@@ -14,7 +14,7 @@ import pickle
 from typing import List
 import os.path
 import time
-from dialog_box import Dialog_box
+from new_machine import New_Machine
           
 ports : list = []
 adr : hex = 0x00
@@ -324,7 +324,7 @@ def initialize_port():
     return ser
 
 def create_machine():
-    dialog = Dialog_box(parent=window, msg_list=["ITM Number:","Description:","Serial Number:"])
+    dialog = New_Machine(parent=window, msg_list=["ITM Number:","Description:","Serial Number:"])
     window.wait_window(dialog.window)
     if dialog.cancel == False:
         machines.append(Machine(dialog.inputs[0],dialog.inputs[1],dialog.inputs[2]))
@@ -337,7 +337,7 @@ def create_sensor():
     if combobox_machines.current() == -1: 
         messagebox.showinfo("error", "No selected machine")
         return
-    dialog = Dialog_box(parent=window, msg_list=["Sensor Location:"])
+    dialog = New_Machine(parent=window, msg_list=["Sensor Location:"])
     window.wait_window(dialog.window)
     if dialog.cancel == False:
         sensors = machines[combobox_machines.current()].sensors

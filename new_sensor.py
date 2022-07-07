@@ -4,7 +4,7 @@ from PIL import ImageTk, Image
 from Machine import Machine
 from compressor import Compressor
 
-class Sensor_Window:
+class New_Sensor:
     def __init__(self, parent, machine):
         self.window = tk.Toplevel(parent)
         self.window.protocol("WM_DELETE_WINDOW", self.close)
