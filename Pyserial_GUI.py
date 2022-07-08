@@ -50,19 +50,20 @@ assign_address = [0x68,0x09,0x09,0x68,adr,0x01,0x43,0x37,0x3e,new_adr,0x00,0x00,
 
 
 #serial read functions
-def get_temperature():
+def get_temperature(adr):
     try:
-        if get_sw_version() == "0.2a":
-            temperature_v02a[4] = get_adr()
+        adr = adr()
+        if get_sw_version(lambda:adr) == "0.2a":
+            temperature_v02a[4] = adr
             temperature_v02a[-2] = get_fcs(temperature_v02a, 4)
             ser.write(bytearray(temperature_v02a))
             received = ser.read(19)
             if get_fcs(received, 4) != received[-2]: raise Exception("Checksum is not equal")
             temp = struct.unpack('i', received[13:17])[0]
-            serial_number = str(get_serial_number())
+            serial_number = str(get_serial_number(lambda:adr))
             temperature = temp * temp_corr[serial_number][0] + temp_corr[serial_number][1]
         else:
-            distance_temp_v03a[1] = get_adr()
+            distance_temp_v03a[1] = adr
             distance_temp_v03a[-2] = get_fcs(distance_temp_v03a, 1)
             ser.write(bytearray(distance_temp_v03a))
             received = ser.read(17)
@@ -77,12 +78,13 @@ def get_temperature():
         log_text=error
         log_write(log_text)
 
-def get_distance():
+def get_distance(adr):
     try:
-        distance_temp_v03a[1] = get_adr()
+        adr=adr()
+        distance_temp_v03a[1] = adr
         distance_temp_v03a[-2] = get_fcs(distance_temp_v03a, 1)
         bytes = 17
-        if get_sw_version() == "0.2a": bytes=13
+        if get_sw_version(lambda:adr) == "0.2a": bytes=13
         ser.write(bytearray(distance_temp_v03a))
         received = ser.read(bytes)
         if get_fcs(received, 4) != received[-2]: raise Exception("checksum is not equal")
@@ -96,8 +98,8 @@ def get_distance():
         log_text=error
         log_write(log_text)
 
-def get_serial_number():
-    serial_number[4] = get_adr()
+def get_serial_number(adr):
+    serial_number[4] = adr()
     serial_number[-2] = get_fcs(serial_number, 4)
     ser.write(bytearray(serial_number))
     received = ser.read(19)
@@ -105,9 +107,9 @@ def get_serial_number():
     serial_num = int.from_bytes(received[13:17], "little")
     return serial_num
 
-def save_serial_number():
+def save_serial_number(adr):
     try:
-        serial_number = get_serial_number()
+        serial_number = get_serial_number(adr)
         try: machines[combobox_machines.current()].sensors[combobox_sensors.current()].values["Serial Number"] = serial_number
         except: pass
         labels["Serial Number"]['text'] = str(serial_number)
@@ -117,9 +119,9 @@ def save_serial_number():
         log_text=error
         log_write(log_text)
 
-def get_article_number():
+def get_article_number(adr):
     try:
-        article_number[4] = get_adr()
+        article_number[4] = adr()
         article_number[-2] = get_fcs(article_number, 4)
         ser.write(bytearray(article_number))
         received = ser.read(19)
@@ -134,8 +136,8 @@ def get_article_number():
         log_text=error
         log_write(log_text)
 
-def get_sw_version():
-    sw_version[4] = get_adr()
+def get_sw_version(adr):
+    sw_version[4] = adr()
     sw_version[-2] = get_fcs(sw_version, 4)
     ser.write(bytearray(sw_version))
     received = ser.read(17)
@@ -144,9 +146,9 @@ def get_sw_version():
     sw_string = f'0.{sw[1]}{chr(sw[0])}'
     return sw_string
 
-def save_sw_version():
+def save_sw_version(adr):
     try:
-        sw_version = get_sw_version()
+        sw_version = get_sw_version(adr)
         try: machines[combobox_machines.current()].sensors[combobox_sensors.current()].values["SW Version"] = sw_version
         except: pass
         labels["SW Version"]['text'] = sw_version
@@ -156,9 +158,9 @@ def save_sw_version():
         log_text=error
         log_write(log_text)
 
-def get_description():
+def get_description(adr):
     try:
-        description[4] = get_adr()
+        description[4] = adr()
         description[-2] = get_fcs(description, 4)
         ser.write(bytearray(description))
         received = ser.read(47)
@@ -175,9 +177,9 @@ def get_description():
         log_text=error
         log_write(log_text)
 
-def get_measuring_unit():
+def get_measuring_unit(adr):
     try:
-        measuring_unit[4] = get_adr()
+        measuring_unit[4] = adr()
         measuring_unit[-2] = get_fcs(measuring_unit, 4)
         ser.write(bytearray(measuring_unit))
         received = ser.read(16)
@@ -193,9 +195,9 @@ def get_measuring_unit():
         log_text=error
         log_write(log_text)
 
-def get_measuring_range():
+def get_measuring_range(adr):
     try:
-        measuring_range[4] = get_adr()
+        measuring_range[4] = adr()
         measuring_range[-2] = get_fcs(measuring_range, 4)
         ser.write(bytearray(measuring_range))
         received = ser.read(19)
@@ -210,9 +212,9 @@ def get_measuring_range():
         log_text=error
         log_write(log_text)
 
-def get_measuring_offset():
+def get_measuring_offset(adr):
     try:
-        measuring_offset[4] = get_adr()
+        measuring_offset[4] = adr()
         measuring_offset[-2] = get_fcs(measuring_offset, 4)
         ser.write(bytearray(measuring_offset))
         received = ser.read(19)
@@ -227,15 +229,17 @@ def get_measuring_offset():
         log_text=error
         log_write(log_text)
 
-def get_adr():
+def get_adr(adr):
+    broadcast[1] = adr
+    broadcast[-2] = get_fcs(broadcast, 1)
     ser.write(bytearray(broadcast))
     received = ser.read(6)
     if get_fcs(received, 1) != received[-2]: raise Exception("Checksum is not equal")
     return received[2]
 
-def save_address():
+def save_address(adr):
     try:
-        address = get_adr()
+        address = get_adr(adr())
         try: machines[combobox_machines.current()].sensors[combobox_sensors.current()].values["Address"] = address
         except: pass
         labels["Address"]['text'] = address
@@ -245,21 +249,36 @@ def save_address():
         log_text=error
         log_write(log_text)
 
-def get_all():
+def get_all(adr):
     txt_log.insert(END, "\n")
     try: log_text=f'Machine: {get_machine()},  Sensor: {get_sensor()}'
     except: log_text="No sensor selected"
     log_write(log_text)
-    get_temperature()
-    get_distance()
-    save_serial_number()
-    get_article_number()
-    save_sw_version()
-    get_description()
-    get_measuring_unit()
-    get_measuring_range()
-    get_measuring_offset()
-    save_address()
+    get_temperature(adr)
+    get_distance(adr)
+    save_serial_number(adr)
+    get_article_number(adr)
+    save_sw_version(adr)
+    get_description(adr)
+    get_measuring_unit(adr)
+    get_measuring_range(adr)
+    get_measuring_offset(adr)
+    save_address(adr)
+
+def get_all_multiple():
+    ser.timeout=0.01
+    a=time.time()
+    for i in range(0,127):
+        try: 
+            adr = get_adr(i)
+            log_write(f'found adr: {adr}')
+            ser.timeout=1
+            get_all(lambda:adr)
+            ser.timeout=0.01
+        except: pass
+    ser.timeout=1
+    print(time.time()-a)
+    
 
 #serial write functions
 def set_address(new_adr):
@@ -429,27 +448,29 @@ frame_right=ttk.Frame(master=window)
 frame_left= ttk.Frame(master=window)
 
 #Creates button for retreiving temperature value from sensor and a label to display result
-create_button("Get All", get_all, pady=(28,8))
+create_button("Get All", lambda:get_all(lambda:get_adr(0x7f)), pady=(28,8))
 #Creates button for retreiving temperature value from sensor and a label to display result
-labels["Temperature"] = create_button("Temperature", get_temperature)
+labels["Temperature"] = create_button("Temperature", lambda:get_temperature(lambda:get_adr(0x7f)))
 #Creates button for retreiving distance value from sensor and a label to display result
-labels["Distance"] = create_button("Distance", get_distance)
+labels["Distance"] = create_button("Distance", lambda:get_distance(lambda:get_adr(0x7f)))
 #Creates button for retreiving serial number from sensor and a label to display result
-labels["Serial Number"] = create_button("Serial Number", save_serial_number)
+labels["Serial Number"] = create_button("Serial Number", lambda:save_serial_number(lambda:get_adr(0x7f)))
 #Creates button for retreiving sofr version from sensor and a label to display result
-labels["SW Version"] = create_button("SW Version", save_sw_version)
+labels["SW Version"] = create_button("SW Version", lambda:save_sw_version(lambda:get_adr(0x7f)))
 #Creates button for retreiving article number from sensor and a label to display result
-labels["Article Number"] = create_button("Article Number", get_article_number)
+labels["Article Number"] = create_button("Article Number", lambda:get_article_number(lambda:32))
 #Creates button for retreiving measuring unit from sensor and a label to display result
-labels["Description"] = create_button("Description", get_description)
+labels["Description"] = create_button("Description", lambda:get_description(lambda:get_adr(0x7f)))
 #Creates button for retreiving measuring unit from sensor and a label to display result
-labels["Measuring Unit"] = create_button("Measuring Unit", get_measuring_unit)
+labels["Measuring Unit"] = create_button("Measuring Unit", lambda:get_measuring_unit(lambda:get_adr(0x7f)))
 #Creates button for retreiving article number from sensor and a label to display result
-labels["Measuring Range"] = create_button("Measuring Range", get_measuring_range)
+labels["Measuring Range"] = create_button("Measuring Range", lambda:get_measuring_range(lambda:get_adr(0x7f)))
 #Creates button for retreiving article number from sensor and a label to display result
-labels["Measuring Offset"] = create_button("Measuring Offset", get_measuring_offset)
+labels["Measuring Offset"] = create_button("Measuring Offset", lambda:get_measuring_offset(lambda:get_adr(0x7f)))
 #Creates button for retreiving article number from sensor and a label to display result
-labels["Address"] = create_button("Address", save_address)
+labels["Address"] = create_button("Address", lambda:save_address(lambda:get_adr(0x7f)))
+
+create_button("Multiple_sensor", get_all_multiple)
 
 
 #Creates button for changing address of the sensor
