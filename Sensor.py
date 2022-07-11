@@ -19,5 +19,12 @@ class Sensor:
 
     def __str__(self):
         return self.location
+
+    def ToString(self):
+        output = f"Location: {self.location}\nDefault Address: {self.address}\nNom Value: {self.nom_value}\nTolerance: {self.tolerance}"
+        for key in self.values:
+            if self.values[key]:
+                output += f"\n{key}: {self.values[key]}"
+        return output
     
     

@@ -5269,3 +5269,2900 @@ INFO:14:55:36 Distance: 1489.5872802734375
 INFO:14:55:36 Distance: 1489.5872802734375
 INFO:15:22:37 Selected port: COM1 - MOXA USB Serial Port (COM1)
 INFO:15:24:54 Temperature: 41.02389952736
+INFO:07:43:15 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:07:44:39 found adr: 32
+INFO:07:44:39 No sensor selected
+INFO:07:44:39 Temperature: 208.31208075488001
+INFO:07:44:39 Distance: 1489.5872802734375
+INFO:07:44:39 Serial Number: 926
+INFO:07:44:39 Article Number: 4314083
+INFO:07:44:39 Software Version: 0.2a
+INFO:07:44:39 Description: DT3009-S1,4-M20_OSS_LF
+INFO:07:44:39 Measuring Unit: μm
+INFO:07:44:39 Measuring Range: 1400.0
+INFO:07:44:39 Measuring Offset: 100.0
+INFO:07:44:39 Address: 32
+INFO:07:44:41 found adr: 126
+INFO:07:44:41 No sensor selected
+INFO:07:44:41 Temperature: 20.031631469726562
+INFO:07:44:41 Distance: 1491.211669921875
+INFO:07:44:41 Serial Number: 930
+INFO:07:44:41 Article Number: 4314083
+INFO:07:44:41 Software Version: 0.3a
+INFO:07:44:41 Description: DT3009-S1,4-M20_OSS_LF
+INFO:07:44:41 Measuring Unit: μm
+INFO:07:44:41 Measuring Range: 1400.0
+INFO:07:44:41 Measuring Offset: 100.0
+INFO:07:44:41 Address: 126
+INFO:07:45:08 found adr: 32
+INFO:07:45:08 No sensor selected
+INFO:07:45:09 Temperature: 63.21914835168
+INFO:07:45:09 Distance: 1489.5872802734375
+INFO:07:45:09 Serial Number: 926
+INFO:07:45:09 Article Number: 4314083
+INFO:07:45:09 Software Version: 0.2a
+INFO:07:45:09 Description: DT3009-S1,4-M20_OSS_LF
+INFO:07:45:09 Measuring Unit: μm
+INFO:07:45:09 Measuring Range: 1400.0
+INFO:07:45:09 Measuring Offset: 100.0
+INFO:07:45:09 Address: 32
+INFO:07:45:10 found adr: 126
+INFO:07:45:10 No sensor selected
+INFO:07:45:10 Temperature: 20.1134033203125
+INFO:07:45:10 Distance: 1491.211669921875
+INFO:07:45:10 Serial Number: 930
+INFO:07:45:10 Article Number: 4314083
+INFO:07:45:10 Software Version: 0.3a
+INFO:07:45:10 Description: DT3009-S1,4-M20_OSS_LF
+INFO:07:45:10 Measuring Unit: μm
+INFO:07:45:10 Measuring Range: 1400.0
+INFO:07:45:10 Measuring Offset: 100.0
+INFO:07:45:10 Address: 126
+INFO:07:45:14 found adr: 32
+INFO:07:45:14 No sensor selected
+INFO:07:45:14 Temperature: 60.228341557440004
+INFO:07:45:14 Distance: 1489.5872802734375
+INFO:07:45:14 Serial Number: 926
+INFO:07:45:14 Article Number: 4314083
+INFO:07:45:14 Software Version: 0.2a
+INFO:07:45:14 Description: DT3009-S1,4-M20_OSS_LF
+INFO:07:45:14 Measuring Unit: μm
+INFO:07:45:14 Measuring Range: 1400.0
+INFO:07:45:14 Measuring Offset: 100.0
+INFO:07:45:14 Address: 32
+INFO:07:45:16 found adr: 126
+INFO:07:45:16 No sensor selected
+INFO:07:45:16 Temperature: 20.13092803955078
+INFO:07:45:16 Distance: 1491.211669921875
+INFO:07:45:16 Serial Number: 930
+INFO:07:45:16 Article Number: 4314083
+INFO:07:45:16 Software Version: 0.3a
+INFO:07:45:16 Description: DT3009-S1,4-M20_OSS_LF
+INFO:07:45:16 Measuring Unit: μm
+INFO:07:45:16 Measuring Range: 1400.0
+INFO:07:45:16 Measuring Offset: 100.0
+INFO:07:45:16 Address: 126
+INFO:07:45:18 found adr: 32
+INFO:07:45:18 No sensor selected
+INFO:07:45:18 Temperature: 61.547639564479994
+INFO:07:45:18 Distance: 1489.5872802734375
+INFO:07:45:18 Serial Number: 926
+INFO:07:45:18 Article Number: 4314083
+INFO:07:45:18 Software Version: 0.2a
+INFO:07:45:18 Description: DT3009-S1,4-M20_OSS_LF
+INFO:07:45:18 Measuring Unit: μm
+INFO:07:45:18 Measuring Range: 1400.0
+INFO:07:45:18 Measuring Offset: 100.0
+INFO:07:45:18 Address: 32
+INFO:07:45:19 found adr: 126
+INFO:07:45:19 No sensor selected
+INFO:07:45:19 Temperature: 20.142608642578125
+INFO:07:45:19 Distance: 1491.211669921875
+INFO:07:45:19 Serial Number: 930
+INFO:07:45:19 Article Number: 4314083
+INFO:07:45:19 Software Version: 0.3a
+INFO:07:45:19 Description: DT3009-S1,4-M20_OSS_LF
+INFO:07:45:19 Measuring Unit: μm
+INFO:07:45:19 Measuring Range: 1400.0
+INFO:07:45:19 Measuring Offset: 100.0
+INFO:07:45:19 Address: 126
+INFO:07:45:30 found adr: 32
+INFO:07:45:30 No sensor selected
+INFO:07:45:30 Temperature: 85.91584981215999
+INFO:07:45:30 Distance: 1489.5872802734375
+INFO:07:45:30 Serial Number: 926
+INFO:07:45:30 Article Number: 4314083
+INFO:07:45:30 Software Version: 0.2a
+INFO:07:45:30 Description: DT3009-S1,4-M20_OSS_LF
+INFO:07:45:30 Measuring Unit: μm
+INFO:07:45:30 Measuring Range: 1400.0
+INFO:07:45:30 Measuring Offset: 100.0
+INFO:07:45:30 Address: 32
+INFO:07:45:31 found adr: 126
+INFO:07:45:31 No sensor selected
+INFO:07:45:31 Temperature: 20.1893310546875
+INFO:07:45:31 Distance: 1491.211669921875
+INFO:07:45:31 Serial Number: 930
+INFO:07:45:31 Article Number: 4314083
+INFO:07:45:31 Software Version: 0.3a
+INFO:07:45:31 Description: DT3009-S1,4-M20_OSS_LF
+INFO:07:45:31 Measuring Unit: μm
+INFO:07:45:31 Measuring Range: 1400.0
+INFO:07:45:31 Measuring Offset: 100.0
+INFO:07:45:31 Address: 126
+INFO:07:46:12 found adr: 32
+INFO:07:46:12 No sensor selected
+INFO:07:46:12 Temperature: 48.40241688799999
+INFO:07:46:12 Distance: 1489.5872802734375
+INFO:07:46:12 Serial Number: 926
+INFO:07:46:12 Article Number: 4314083
+INFO:07:46:12 Software Version: 0.2a
+INFO:07:46:12 Description: DT3009-S1,4-M20_OSS_LF
+INFO:07:46:12 Measuring Unit: μm
+INFO:07:46:12 Measuring Range: 1400.0
+INFO:07:46:12 Measuring Offset: 100.0
+INFO:07:46:12 Address: 32
+INFO:07:46:13 found adr: 126
+INFO:07:46:13 No sensor selected
+INFO:07:46:13 Temperature: 20.44048309326172
+INFO:07:46:13 Distance: 1491.211669921875
+INFO:07:46:13 Serial Number: 930
+INFO:07:46:13 Article Number: 4314083
+INFO:07:46:13 Software Version: 0.3a
+INFO:07:46:13 Description: DT3009-S1,4-M20_OSS_LF
+INFO:07:46:13 Measuring Unit: μm
+INFO:07:46:13 Measuring Range: 1400.0
+INFO:07:46:13 Measuring Offset: 100.0
+INFO:07:46:13 Address: 126
+INFO:07:46:47 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:07:47:01 found adr: 32
+INFO:07:47:01 No sensor selected
+INFO:07:47:01 Temperature: 89.22901901536
+INFO:07:47:01 Distance: 1489.5872802734375
+INFO:07:47:01 Serial Number: 926
+INFO:07:47:01 Article Number: 4314083
+INFO:07:47:01 Software Version: 0.2a
+INFO:07:47:01 Description: DT3009-S1,4-M20_OSS_LF
+INFO:07:47:01 Measuring Unit: μm
+INFO:07:47:01 Measuring Range: 1400.0
+INFO:07:47:01 Measuring Offset: 100.0
+INFO:07:47:01 Address: 32
+INFO:07:47:03 found adr: 126
+INFO:07:47:03 No sensor selected
+INFO:07:47:03 Temperature: 20.86101531982422
+INFO:07:47:03 Distance: 1491.211669921875
+INFO:07:47:03 Serial Number: 930
+INFO:07:47:03 Article Number: 4314083
+INFO:07:47:03 Software Version: 0.3a
+INFO:07:47:03 Description: DT3009-S1,4-M20_OSS_LF
+INFO:07:47:03 Measuring Unit: μm
+INFO:07:47:03 Measuring Range: 1400.0
+INFO:07:47:03 Measuring Offset: 100.0
+INFO:07:47:03 Address: 126
+INFO:07:48:53 found adr: 32
+INFO:07:48:53 No sensor selected
+INFO:07:50:19 Temperature: 43.059558443200004
+INFO:07:50:19 Distance: 1489.5872802734375
+INFO:07:50:19 Serial Number: 926
+INFO:07:50:19 Article Number: 4314083
+INFO:07:50:19 Software Version: 0.2a
+INFO:07:50:19 Description: DT3009-S1,4-M20_OSS_LF
+INFO:07:50:19 Measuring Unit: μm
+INFO:07:50:19 Measuring Range: 1400.0
+INFO:07:50:19 Measuring Offset: 100.0
+INFO:07:50:19 Address: 32
+INFO:07:50:21 found adr: 126
+INFO:07:50:21 No sensor selected
+INFO:07:50:32 Temperature: 22.57818603515625
+INFO:07:50:32 Distance: 1491.211669921875
+INFO:07:50:32 Serial Number: 930
+INFO:07:50:32 Article Number: 4314083
+INFO:07:50:32 Software Version: 0.3a
+INFO:07:50:32 Description: DT3009-S1,4-M20_OSS_LF
+INFO:07:50:32 Measuring Unit: μm
+INFO:07:50:32 Measuring Range: 1400.0
+INFO:07:50:32 Measuring Offset: 100.0
+INFO:07:50:32 Address: 126
+INFO:07:50:39 found adr: 32
+INFO:07:50:39 No sensor selected
+INFO:07:50:39 Temperature: 45.84739631328
+INFO:07:50:39 Distance: 1489.5872802734375
+INFO:07:50:39 Serial Number: 926
+INFO:07:50:39 Article Number: 4314083
+INFO:07:50:39 Software Version: 0.2a
+INFO:07:50:39 Description: DT3009-S1,4-M20_OSS_LF
+INFO:07:50:39 Measuring Unit: μm
+INFO:07:50:39 Measuring Range: 1400.0
+INFO:07:50:39 Measuring Offset: 100.0
+INFO:07:50:39 Address: 32
+INFO:07:50:40 found adr: 126
+INFO:07:50:40 No sensor selected
+INFO:07:52:47 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:07:52:54 found adr: 32
+INFO:07:52:54 No sensor selected
+INFO:07:53:04 Temperature: 48.08005447904
+INFO:07:53:04 Distance: 1489.5872802734375
+INFO:07:53:04 Serial Number: 926
+INFO:07:53:04 Article Number: 4314083
+INFO:07:53:04 Software Version: 0.2a
+INFO:07:53:04 Description: DT3009-S1,4-M20_OSS_LF
+INFO:07:53:04 Measuring Unit: μm
+INFO:07:53:04 Measuring Range: 1400.0
+INFO:07:53:04 Measuring Offset: 100.0
+INFO:07:53:04 Address: 32
+INFO:07:53:05 found adr: 126
+INFO:07:53:05 No sensor selected
+INFO:07:53:05 Temperature: 23.775527954101562
+INFO:07:53:05 Distance: 1491.211669921875
+INFO:07:53:05 Serial Number: 930
+INFO:07:53:05 Article Number: 4314083
+INFO:07:53:05 Software Version: 0.3a
+INFO:07:53:05 Description: DT3009-S1,4-M20_OSS_LF
+INFO:07:53:05 Measuring Unit: μm
+INFO:07:53:05 Measuring Range: 1400.0
+INFO:07:53:05 Measuring Offset: 100.0
+INFO:07:53:05 Address: 126
+INFO:07:53:41 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:07:55:32 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:08:01:04 Temperature: 38.51066667232
+INFO:09:12:32 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:09:12:38 Added machine with Itm Number: 1
+INFO:09:12:38 Selected machine: 1
+INFO:09:12:40 Added sensor with location: WGC-Outer-DE-X
+INFO:09:12:40 Selected sensor: WGC-Outer-DE-X
+INFO:09:12:43 Temperature: 69.09927747808
+INFO:09:12:44 Distance: 1489.5872802734375
+INFO:09:12:45 Serial Number: 926
+INFO:09:12:46 Software Version: 0.2a
+INFO:09:12:47 Article Number: 4314083
+INFO:09:12:47 Description: DT3009-S1,4-M20_OSS_LF
+INFO:09:12:48 Measuring Unit: μm
+INFO:09:12:50 Measuring Range: 1400.0
+INFO:09:12:51 Measuring Offset: 100.0
+INFO:09:12:52 Address: 32
+INFO:09:12:56 Added sensor with location: WGC-Outer-NDE-Y
+INFO:09:12:56 Selected sensor: WGC-Outer-NDE-Y
+INFO:09:12:57 Temperature: 69.11121682656
+INFO:09:12:58 Distance: 1489.5872802734375
+INFO:09:12:58 Serial Number: 926
+INFO:09:12:59 Software Version: 0.2a
+INFO:09:13:00 Article Number: 4314083
+INFO:09:13:01 Description: DT3009-S1,4-M20_OSS_LF
+INFO:09:13:02 Measuring Unit: μm
+INFO:09:13:02 Measuring Range: 1400.0
+INFO:09:13:03 Measuring Offset: 100.0
+INFO:09:13:04 Address: 32
+INFO:09:13:08 Selected sensor: WGC-Outer-DE-X
+INFO:09:13:08 Temperature: 69.09927747808
+INFO:09:13:08 Distance: 1489.5872802734375
+INFO:09:13:08 Serial Number: 926
+INFO:09:13:08 SW Version: 0.2a
+INFO:09:13:08 Article Number: 4314083
+INFO:09:13:08 Description: DT3009-S1,4-M20_OSS_LF
+INFO:09:13:08 Address: 32
+INFO:09:13:08 Measuring Unit: μm
+INFO:09:13:08 Measuring Offset: 100.0
+INFO:09:13:08 Measuring Range: 1400.0
+INFO:09:13:43 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:09:14:41 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:09:14:59 Added machine with Itm Number: 1
+INFO:09:14:59 Selected machine: 1
+INFO:09:15:01 Added sensor with location: WGC-Outer-DE-X
+INFO:09:15:01 Selected sensor: WGC-Outer-DE-X
+INFO:09:15:02 Machine: 1,  Sensor: WGC-Outer-DE-X
+INFO:09:15:43 Temperature: 68.86646018272
+INFO:09:15:43 Distance: 1489.5872802734375
+INFO:09:15:43 Serial Number: 926
+INFO:09:15:43 Article Number: 4314083
+INFO:09:15:43 Software Version: 0.2a
+INFO:09:15:43 Description: DT3009-S1,4-M20_OSS_LF
+INFO:09:15:43 Measuring Unit: μm
+INFO:09:15:43 Measuring Range: 1400.0
+INFO:09:15:43 Measuring Offset: 100.0
+INFO:09:15:43 Address: 32
+INFO:09:15:51 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:09:17:07 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:09:17:08 Temperature: 68.56200679648
+INFO:09:17:09 Temperature: 68.56200679648
+INFO:09:17:09 Temperature: 68.55603712224
+INFO:09:17:09 Temperature: 68.55603712224
+INFO:09:18:23 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:09:18:24 No sensor selected
+INFO:09:18:24 Temperature: 68.17994764512
+INFO:09:18:24 Distance: 1489.5872802734375
+INFO:09:18:24 Serial Number: 926
+INFO:09:18:24 Article Number: 4314083
+INFO:09:18:24 Software Version: 0.2a
+INFO:09:18:24 Description: DT3009-S1,4-M20_OSS_LF
+INFO:09:18:24 Measuring Unit: μm
+INFO:09:18:24 Measuring Range: 1400.0
+INFO:09:18:24 Measuring Offset: 100.0
+INFO:09:18:24 Address: 32
+INFO:09:18:25 Temperature: 68.17994764512
+INFO:09:18:26 Temperature: 68.17397797088
+INFO:09:18:26 Serial Number: 926
+INFO:09:18:27 Description: DT3009-S1,4-M20_OSS_LF
+INFO:09:18:29 Address: 32
+INFO:09:18:34 Added machine with Itm Number: 1
+INFO:09:18:34 Selected machine: 1
+INFO:09:18:36 Added sensor with location: WGC-Outer-DE-Y
+INFO:09:18:36 Selected sensor: WGC-Outer-DE-Y
+INFO:09:18:38 Machine: 1,  Sensor: WGC-Outer-DE-Y
+INFO:09:18:38 Temperature: 68.12622057696
+INFO:09:18:38 Distance: 1489.5872802734375
+INFO:09:18:38 Serial Number: 926
+INFO:09:18:38 Article Number: 4314083
+INFO:09:18:38 Software Version: 0.2a
+INFO:09:18:38 Description: DT3009-S1,4-M20_OSS_LF
+INFO:09:18:38 Measuring Unit: μm
+INFO:09:18:38 Measuring Range: 1400.0
+INFO:09:18:38 Measuring Offset: 100.0
+INFO:09:18:38 Address: 32
+INFO:09:24:10 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:09:24:17 Added machine with Itm Number: 123
+INFO:09:24:17 Selected machine: 123
+INFO:09:24:26 Added sensor with location: Upper-Motor-NDE-X
+INFO:09:24:26 Selected sensor: Upper-Motor-NDE-X
+INFO:09:24:28 Machine: 123,  Sensor: Upper-Motor-NDE-X
+INFO:09:24:28 Temperature: 67.39195064544
+INFO:09:24:28 Distance: 1489.5872802734375
+INFO:09:24:28 Serial Number: 926
+INFO:09:24:28 Article Number: 4314083
+INFO:09:24:28 Software Version: 0.2a
+INFO:09:24:28 Description: DT3009-S1,4-M20_OSS_LF
+INFO:09:24:28 Measuring Unit: μm
+INFO:09:24:28 Measuring Range: 1400.0
+INFO:09:24:28 Measuring Offset: 100.0
+INFO:09:24:28 Address: 32
+INFO:09:24:51 Added sensor with location: WGC-Outer-DE-X
+INFO:09:24:51 Selected sensor: WGC-Outer-DE-X
+INFO:09:24:57 Machine: 123,  Sensor: WGC-Outer-DE-X
+INFO:09:24:57 Temperature: 20.43463897705078
+INFO:09:24:57 Distance: 1491.211669921875
+INFO:09:24:57 Serial Number: 930
+INFO:09:24:57 Article Number: 4314083
+INFO:09:24:57 Software Version: 0.3a
+INFO:09:24:57 Description: DT3009-S1,4-M20_OSS_LF
+INFO:09:24:57 Measuring Unit: μm
+INFO:09:24:57 Measuring Range: 1400.0
+INFO:09:24:57 Measuring Offset: 100.0
+INFO:09:24:57 Address: 126
+INFO:09:25:29 found adr: 32
+INFO:09:25:29 Machine: 123,  Sensor: WGC-Outer-DE-X
+INFO:09:25:29 Temperature: 38.86884712672
+INFO:09:25:29 Distance: 1489.5872802734375
+INFO:09:25:29 Serial Number: 926
+INFO:09:25:29 Article Number: 4314083
+INFO:09:25:29 Software Version: 0.2a
+INFO:09:25:29 Description: DT3009-S1,4-M20_OSS_LF
+INFO:09:25:29 Measuring Unit: μm
+INFO:09:25:29 Measuring Range: 1400.0
+INFO:09:25:29 Measuring Offset: 100.0
+INFO:09:25:29 Address: 32
+INFO:09:25:31 found adr: 126
+INFO:09:25:31 Machine: 123,  Sensor: WGC-Outer-DE-X
+INFO:09:25:31 Temperature: 20.533935546875
+INFO:09:25:31 Distance: 1491.211669921875
+INFO:09:25:31 Serial Number: 930
+INFO:09:25:31 Article Number: 4314083
+INFO:09:25:31 Software Version: 0.3a
+INFO:09:25:31 Description: DT3009-S1,4-M20_OSS_LF
+INFO:09:25:31 Measuring Unit: μm
+INFO:09:25:31 Measuring Range: 1400.0
+INFO:09:25:31 Measuring Offset: 100.0
+INFO:09:25:31 Address: 126
+INFO:09:26:28 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:09:26:42 Added machine with Itm Number: 123
+INFO:09:26:42 Selected machine: 123
+INFO:09:26:46 Added sensor with location: Upper-Motor-NDE-X
+INFO:09:26:46 Selected sensor: Upper-Motor-NDE-X
+INFO:09:26:47 Machine: 123,  Sensor: Upper-Motor-NDE-X
+INFO:09:26:47 Checksum is not equal
+INFO:09:26:47 Distance: 1491.211669921875
+INFO:09:26:48 Checksum is not equal
+INFO:09:26:48 Article Number: 4314083
+INFO:09:26:49 Checksum is not equal
+INFO:09:26:50 Checksum is not equal
+INFO:09:26:51 Checksum is not equal
+INFO:09:26:51 Checksum is not equal
+INFO:09:26:51 Measuring Offset: 100.0
+INFO:09:26:52 Checksum is not equal
+INFO:09:27:17 Machine: 123,  Sensor: Upper-Motor-NDE-X
+INFO:09:27:17 Temperature: 21.246498107910156
+INFO:09:27:17 Distance: 1491.211669921875
+INFO:09:27:17 Serial Number: 930
+INFO:09:27:17 Article Number: 4314083
+INFO:09:27:17 Software Version: 0.3a
+INFO:09:27:17 Description: DT3009-S1,4-M20_OSS_LF
+INFO:09:27:17 Measuring Unit: μm
+INFO:09:27:17 Measuring Range: 1400.0
+INFO:09:27:17 Measuring Offset: 100.0
+INFO:09:27:17 Address: 126
+INFO:09:27:32 Added sensor with location: WGC-Outer-DE-Y
+INFO:09:27:32 Selected sensor: WGC-Outer-DE-Y
+INFO:09:27:41 Machine: 123,  Sensor: WGC-Outer-DE-Y
+INFO:09:27:41 Temperature: 36.77349146848
+INFO:09:27:41 Distance: 1489.5872802734375
+INFO:09:27:41 Serial Number: 926
+INFO:09:27:41 Article Number: 4314083
+INFO:09:27:41 Software Version: 0.2a
+INFO:09:27:41 Description: DT3009-S1,4-M20_OSS_LF
+INFO:09:27:41 Measuring Unit: μm
+INFO:09:27:41 Measuring Range: 1400.0
+INFO:09:27:41 Measuring Offset: 100.0
+INFO:09:27:41 Address: 32
+INFO:09:28:25 found adr: 32
+INFO:09:28:25 Machine: 123,  Sensor: WGC-Outer-DE-Y
+INFO:09:28:25 Temperature: 33.26929268959999
+INFO:09:28:25 Distance: 1489.5872802734375
+INFO:09:28:25 Serial Number: 926
+INFO:09:28:25 Article Number: 4314083
+INFO:09:28:25 Software Version: 0.2a
+INFO:09:28:25 Description: DT3009-S1,4-M20_OSS_LF
+INFO:09:28:25 Measuring Unit: μm
+INFO:09:28:25 Measuring Range: 1400.0
+INFO:09:28:25 Measuring Offset: 100.0
+INFO:09:28:25 Address: 32
+INFO:09:28:27 found adr: 126
+INFO:09:28:27 Machine: 123,  Sensor: WGC-Outer-DE-Y
+INFO:09:28:27 Temperature: 21.81304931640625
+INFO:09:28:27 Distance: 1491.211669921875
+INFO:09:28:27 Serial Number: 930
+INFO:09:28:27 Article Number: 4314083
+INFO:09:28:27 Software Version: 0.3a
+INFO:09:28:27 Description: DT3009-S1,4-M20_OSS_LF
+INFO:09:28:27 Measuring Unit: μm
+INFO:09:28:27 Measuring Range: 1400.0
+INFO:09:28:27 Measuring Offset: 100.0
+INFO:09:28:27 Address: 126
+INFO:09:30:14 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:09:30:21 Added machine with Itm Number: 123
+INFO:09:30:21 Selected machine: 123
+INFO:09:30:24 Added sensor with location: Upper-Motor-NDE-X
+INFO:09:30:24 Selected sensor: Upper-Motor-NDE-X
+INFO:09:30:26 Machine: 123,  Sensor: Upper-Motor-NDE-X
+INFO:09:30:26 Checksum is not equal
+INFO:09:30:26 Distance: 1491.211669921875
+INFO:09:30:27 Checksum is not equal
+INFO:09:30:27 Checksum is not equal
+INFO:09:30:28 Checksum is not equal
+INFO:09:30:28 Description: DT3009-S1,4-M20_OSS_LF
+INFO:09:30:28 Measuring Unit: μm
+INFO:09:30:29 Checksum is not equal
+INFO:09:30:29 Checksum is not equal
+INFO:09:30:29 Checksum is not equal
+INFO:09:30:52 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:09:31:01 Added machine with Itm Number: 123
+INFO:09:31:01 Selected machine: 123
+INFO:09:31:08 Added sensor with location: Upper-Motor-NDE-X
+INFO:09:31:08 Selected sensor: Upper-Motor-NDE-X
+INFO:09:31:10 Machine: 123,  Sensor: Upper-Motor-NDE-X
+INFO:09:31:10 Temperature: 23.027915954589844
+INFO:09:31:10 Distance: 1491.211669921875
+INFO:09:31:10 Serial Number: 930
+INFO:09:31:10 Article Number: 4314083
+INFO:09:31:10 Software Version: 0.3a
+INFO:09:31:10 Description: DT3009-S1,4-M20_OSS_LF
+INFO:09:31:10 Measuring Unit: μm
+INFO:09:31:10 Measuring Range: 1400.0
+INFO:09:31:10 Measuring Offset: 100.0
+INFO:09:31:10 Address: 126
+INFO:09:31:13 Added sensor with location: WGC-Outer-DE-Ax1
+INFO:09:31:13 Selected sensor: WGC-Outer-DE-Ax1
+INFO:09:31:15 Machine: 123,  Sensor: WGC-Outer-DE-Ax1
+INFO:09:31:15 Temperature: 23.062965393066406
+INFO:09:31:15 Distance: 1491.211669921875
+INFO:09:31:15 Serial Number: 930
+INFO:09:31:15 Article Number: 4314083
+INFO:09:31:15 Software Version: 0.3a
+INFO:09:31:15 Description: DT3009-S1,4-M20_OSS_LF
+INFO:09:31:15 Measuring Unit: μm
+INFO:09:31:15 Measuring Range: 1400.0
+INFO:09:31:15 Measuring Offset: 100.0
+INFO:09:31:15 Address: 126
+INFO:09:31:29 Machine: 123,  Sensor: WGC-Outer-DE-Ax1
+INFO:09:31:29 Temperature: 45.26236823776
+INFO:09:31:29 Distance: 1489.5872802734375
+INFO:09:31:29 Serial Number: 926
+INFO:09:31:29 Article Number: 4314083
+INFO:09:31:29 Software Version: 0.2a
+INFO:09:31:29 Description: DT3009-S1,4-M20_OSS_LF
+INFO:09:31:29 Measuring Unit: μm
+INFO:09:31:29 Measuring Range: 1400.0
+INFO:09:31:29 Measuring Offset: 100.0
+INFO:09:31:29 Address: 32
+INFO:09:31:47 found adr: 32
+INFO:09:31:47 Machine: 123,  Sensor: WGC-Outer-DE-Ax1
+INFO:09:31:47 Temperature: 32.3738415536
+INFO:09:31:47 Distance: 1489.5872802734375
+INFO:09:31:47 Serial Number: 926
+INFO:09:31:47 Article Number: 4314083
+INFO:09:31:47 Software Version: 0.2a
+INFO:09:31:47 Description: DT3009-S1,4-M20_OSS_LF
+INFO:09:31:47 Measuring Unit: μm
+INFO:09:31:47 Measuring Range: 1400.0
+INFO:09:31:47 Measuring Offset: 100.0
+INFO:09:31:47 Address: 32
+INFO:09:31:48 found adr: 126
+INFO:09:31:48 Machine: 123,  Sensor: WGC-Outer-DE-Ax1
+INFO:09:31:48 Temperature: 23.261550903320312
+INFO:09:31:48 Distance: 1491.211669921875
+INFO:09:31:48 Serial Number: 930
+INFO:09:31:48 Article Number: 4314083
+INFO:09:31:48 Software Version: 0.3a
+INFO:09:31:48 Description: DT3009-S1,4-M20_OSS_LF
+INFO:09:31:48 Measuring Unit: μm
+INFO:09:31:48 Measuring Range: 1400.0
+INFO:09:31:48 Measuring Offset: 100.0
+INFO:09:31:48 Address: 126
+INFO:09:52:14 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:09:52:21 Added machine with Itm Number: 123
+INFO:09:52:21 Selected machine: 123
+INFO:09:52:24 Added sensor with location: Upper-Motor-NDE-X
+INFO:09:52:24 Selected sensor: Upper-Motor-NDE-X
+INFO:09:54:23 Machine: 123,  Sensor: Upper-Motor-NDE-X
+INFO:09:54:23 Temperature: 36.021312514239995
+INFO:09:54:23 Distance: 1489.5872802734375
+INFO:09:54:23 Serial Number: 926
+INFO:09:54:23 Article Number: 4314083
+INFO:09:54:23 Software Version: 0.2a
+INFO:09:54:23 Description: DT3009-S1,4-M20_OSS_LF
+INFO:09:54:23 Measuring Unit: μm
+INFO:09:54:23 Measuring Range: 1400.0
+INFO:09:54:23 Measuring Offset: 100.0
+INFO:09:54:23 Address: 32
+INFO:09:54:32 Added sensor with location: WGC-Outer-DE-Ax1
+INFO:09:54:32 Selected sensor: WGC-Outer-DE-Ax1
+INFO:09:54:44 Machine: 123,  Sensor: WGC-Outer-DE-Ax1
+INFO:09:54:44 Temperature: 27.7939453125
+INFO:09:54:44 Distance: 1491.211669921875
+INFO:09:54:44 Serial Number: 930
+INFO:09:54:44 Article Number: 4314083
+INFO:09:54:44 Software Version: 0.3a
+INFO:09:54:44 Description: DT3009-S1,4-M20_OSS_LF
+INFO:09:54:44 Measuring Unit: μm
+INFO:09:54:44 Measuring Range: 1400.0
+INFO:09:54:44 Measuring Offset: 100.0
+INFO:09:54:44 Address: 126
+INFO:09:55:26 found adr: 32
+INFO:09:55:26 Machine: 123,  Sensor: WGC-Outer-DE-Ax1
+INFO:09:55:26 Temperature: 33.549867378879995
+INFO:09:55:26 Distance: 1489.5872802734375
+INFO:09:55:26 Serial Number: 926
+INFO:09:55:26 Article Number: 4314083
+INFO:09:55:26 Software Version: 0.2a
+INFO:09:55:26 Description: DT3009-S1,4-M20_OSS_LF
+INFO:09:55:26 Measuring Unit: μm
+INFO:09:55:26 Measuring Range: 1400.0
+INFO:09:55:26 Measuring Offset: 100.0
+INFO:09:55:26 Address: 32
+INFO:09:55:27 found adr: 126
+INFO:09:55:27 Machine: 123,  Sensor: WGC-Outer-DE-Ax1
+INFO:09:55:27 Temperature: 27.577835083007812
+INFO:09:55:27 Distance: 1491.211669921875
+INFO:09:55:27 Serial Number: 930
+INFO:09:55:27 Article Number: 4314083
+INFO:09:55:27 Software Version: 0.3a
+INFO:09:55:27 Description: DT3009-S1,4-M20_OSS_LF
+INFO:09:55:27 Measuring Unit: μm
+INFO:09:55:27 Measuring Range: 1400.0
+INFO:09:55:27 Measuring Offset: 100.0
+INFO:09:55:27 Address: 126
+INFO:10:31:13 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:10:31:28 Added machine with Itm Number: 123
+INFO:10:31:28 Selected machine: 123
+INFO:10:31:31 Added sensor with location: Upper-Motor-NDE-X
+INFO:10:31:31 Selected sensor: Upper-Motor-NDE-X
+INFO:10:31:34 Machine: 123,  Sensor: Upper-Motor-NDE-X
+INFO:10:31:34 Temperature: 29.51111602783203
+INFO:10:31:34 Distance: 1491.211669921875
+INFO:10:31:34 Serial Number: 930
+INFO:10:31:34 Article Number: 4314083
+INFO:10:31:34 Software Version: 0.3a
+INFO:10:31:34 Description: DT3009-S1,4-M20_OSS_LF
+INFO:10:31:34 Measuring Unit: μm
+INFO:10:31:34 Measuring Range: 1400.0
+INFO:10:31:34 Measuring Offset: 100.0
+INFO:10:31:34 Address: 126
+INFO:10:31:45 Added sensor with location: WGC-Outer-DE-Ax1
+INFO:10:31:45 Selected sensor: WGC-Outer-DE-Ax1
+INFO:10:31:47 Machine: 123,  Sensor: WGC-Outer-DE-Ax1
+INFO:10:31:47 Checksum is not equal
+INFO:10:31:47 Checksum is not equal
+INFO:10:31:47 Checksum is not equal
+INFO:10:31:47 Checksum is not equal
+INFO:10:31:47 Checksum is not equal
+INFO:10:31:47 Checksum is not equal
+INFO:10:31:47 Checksum is not equal
+INFO:10:31:47 Checksum is not equal
+INFO:10:31:47 Checksum is not equal
+INFO:10:31:47 Checksum is not equal
+INFO:10:31:52 Machine: 123,  Sensor: WGC-Outer-DE-Ax1
+INFO:10:31:52 Checksum is not equal
+INFO:10:31:52 Checksum is not equal
+INFO:10:31:52 Checksum is not equal
+INFO:10:31:52 Checksum is not equal
+INFO:10:31:52 Checksum is not equal
+INFO:10:31:52 Checksum is not equal
+INFO:10:31:52 Checksum is not equal
+INFO:10:31:52 Checksum is not equal
+INFO:10:31:52 Checksum is not equal
+INFO:10:31:52 Checksum is not equal
+INFO:10:32:09 Machine: 123,  Sensor: WGC-Outer-DE-Ax1
+INFO:10:32:09 Checksum is not equal
+INFO:10:32:09 Checksum is not equal
+INFO:10:32:09 Checksum is not equal
+INFO:10:32:09 Checksum is not equal
+INFO:10:32:09 Checksum is not equal
+INFO:10:32:09 Checksum is not equal
+INFO:10:32:09 Checksum is not equal
+INFO:10:32:09 Checksum is not equal
+INFO:10:32:09 Checksum is not equal
+INFO:10:32:09 Checksum is not equal
+INFO:10:32:19 Machine: 123,  Sensor: WGC-Outer-DE-Ax1
+INFO:10:32:19 Checksum is not equal
+INFO:10:32:19 Checksum is not equal
+INFO:10:32:19 Checksum is not equal
+INFO:10:32:19 Checksum is not equal
+INFO:10:32:19 Checksum is not equal
+INFO:10:32:19 Checksum is not equal
+INFO:10:32:19 Checksum is not equal
+INFO:10:32:19 Checksum is not equal
+INFO:10:32:19 Checksum is not equal
+INFO:10:32:19 Checksum is not equal
+INFO:10:32:32 Machine: 123,  Sensor: WGC-Outer-DE-Ax1
+INFO:10:32:32 Checksum is not equal
+INFO:10:32:32 Checksum is not equal
+INFO:10:32:32 Checksum is not equal
+INFO:10:32:32 Checksum is not equal
+INFO:10:32:32 Checksum is not equal
+INFO:10:32:32 Checksum is not equal
+INFO:10:32:32 Checksum is not equal
+INFO:10:32:32 Checksum is not equal
+INFO:10:32:32 Checksum is not equal
+INFO:10:32:32 Checksum is not equal
+INFO:10:32:40 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:10:32:42 Temperature: 29.40013885498047
+INFO:10:32:43 No sensor selected
+INFO:10:32:43 Temperature: 29.40013885498047
+INFO:10:32:43 Distance: 1491.211669921875
+INFO:10:32:43 Serial Number: 930
+INFO:10:32:43 Article Number: 4314083
+INFO:10:32:43 Software Version: 0.3a
+INFO:10:32:43 Description: DT3009-S1,4-M20_OSS_LF
+INFO:10:32:43 Measuring Unit: μm
+INFO:10:32:43 Measuring Range: 1400.0
+INFO:10:32:43 Measuring Offset: 100.0
+INFO:10:32:43 Address: 126
+INFO:10:32:56 Added machine with Itm Number: 123
+INFO:10:32:56 Selected machine: 123
+INFO:10:33:00 Added sensor with location: Upper-Motor-NDE-X
+INFO:10:33:00 Selected sensor: Upper-Motor-NDE-X
+INFO:10:33:01 Machine: 123,  Sensor: Upper-Motor-NDE-X
+INFO:10:33:01 Temperature: 29.37677764892578
+INFO:10:33:01 Distance: 1491.211669921875
+INFO:10:33:01 Serial Number: 930
+INFO:10:33:01 Article Number: 4314083
+INFO:10:33:01 Software Version: 0.3a
+INFO:10:33:01 Description: DT3009-S1,4-M20_OSS_LF
+INFO:10:33:01 Measuring Unit: μm
+INFO:10:33:01 Measuring Range: 1400.0
+INFO:10:33:01 Measuring Offset: 100.0
+INFO:10:33:01 Address: 126
+INFO:10:33:06 Added sensor with location: WGC-Outer-DE-Ax1
+INFO:10:33:06 Selected sensor: WGC-Outer-DE-Ax1
+INFO:10:33:16 Machine: 123,  Sensor: WGC-Outer-DE-Ax1
+INFO:10:33:16 Temperature: 82.04750090464
+INFO:10:33:16 Distance: 1489.5872802734375
+INFO:10:33:16 Serial Number: 926
+INFO:10:33:16 Article Number: 4314083
+INFO:10:33:16 Software Version: 0.2a
+INFO:10:33:16 Description: DT3009-S1,4-M20_OSS_LF
+INFO:10:33:16 Measuring Unit: μm
+INFO:10:33:16 Measuring Range: 1400.0
+INFO:10:33:16 Measuring Offset: 100.0
+INFO:10:33:16 Address: 32
+INFO:10:33:33 found adr: 32
+INFO:10:33:33 Machine: 123,  Sensor: WGC-Outer-DE-Ax1
+INFO:10:33:33 Temperature: 31.2694518192
+INFO:10:33:33 Distance: 1489.5872802734375
+INFO:10:33:33 Serial Number: 926
+INFO:10:33:33 Article Number: 4314083
+INFO:10:33:33 Software Version: 0.2a
+INFO:10:33:33 Description: DT3009-S1,4-M20_OSS_LF
+INFO:10:33:33 Measuring Unit: μm
+INFO:10:33:33 Measuring Range: 1400.0
+INFO:10:33:33 Measuring Offset: 100.0
+INFO:10:33:33 Address: 32
+INFO:10:33:34 found adr: 126
+INFO:10:33:34 Machine: 123,  Sensor: WGC-Outer-DE-Ax1
+INFO:10:33:34 Temperature: 29.24243927001953
+INFO:10:33:34 Distance: 1491.211669921875
+INFO:10:33:34 Serial Number: 930
+INFO:10:33:34 Article Number: 4314083
+INFO:10:33:34 Software Version: 0.3a
+INFO:10:33:34 Description: DT3009-S1,4-M20_OSS_LF
+INFO:10:33:34 Measuring Unit: μm
+INFO:10:33:34 Measuring Range: 1400.0
+INFO:10:33:34 Measuring Offset: 100.0
+INFO:10:33:34 Address: 126
+INFO:10:34:57 Selected sensor: Upper-Motor-NDE-X
+INFO:10:34:57 Temperature: 29.37677764892578
+INFO:10:34:57 Distance: 1491.211669921875
+INFO:10:34:57 Serial Number: 930
+INFO:10:34:57 SW Version: 0.3a
+INFO:10:34:57 Article Number: 4314083
+INFO:10:34:57 Description: DT3009-S1,4-M20_OSS_LF
+INFO:10:34:57 Address: 126
+INFO:10:34:57 Measuring Unit: μm
+INFO:10:34:57 Measuring Offset: 100.0
+INFO:10:34:57 Measuring Range: 1400.0
+INFO:10:35:00 Selected sensor: WGC-Outer-DE-Ax1
+INFO:10:35:00 Temperature: 82.04750090464
+INFO:10:35:00 Distance: 1489.5872802734375
+INFO:10:35:00 Serial Number: 926
+INFO:10:35:00 SW Version: 0.2a
+INFO:10:35:00 Article Number: 4314083
+INFO:10:35:00 Description: DT3009-S1,4-M20_OSS_LF
+INFO:10:35:00 Address: 32
+INFO:10:35:00 Measuring Unit: μm
+INFO:10:35:00 Measuring Offset: 100.0
+INFO:10:35:00 Measuring Range: 1400.0
+INFO:10:35:19 Distance: 1489.5872802734375
+INFO:10:35:24 Distance: 1435.93408203125
+INFO:10:35:25 Distance: 1331.4012451171875
+INFO:10:35:25 Distance: 1215.00927734375
+INFO:10:35:26 Distance: 1147.7994384765625
+INFO:10:35:26 Distance: 1044.5816650390625
+INFO:10:35:27 Distance: 909.8509521484375
+INFO:10:35:27 Distance: 833.818359375
+INFO:10:35:28 Distance: 752.8365478515625
+INFO:10:35:28 Distance: 752.8365478515625
+INFO:10:35:29 Distance: 617.1494750976562
+INFO:10:35:30 Distance: 545.4684448242188
+INFO:11:29:44 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:11:30:30 Added machine with Itm Number: 123
+INFO:11:30:30 Selected machine: 123
+INFO:11:30:37 found adr: 32
+INFO:11:30:37 Sensor with address: 32 was not found in registry
+INFO:11:31:04 found adr: 32
+INFO:11:31:04 Sensor with address: 32 was not found in registry
+INFO:11:31:07 found adr: 32
+INFO:11:31:07 Sensor with address: 32 was not found in registry
+INFO:11:31:18 found adr: 32
+INFO:11:31:18 Sensor with address: 32 was not found in registry
+INFO:11:31:32 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:11:31:38 Added machine with Itm Number: 123
+INFO:11:31:38 Selected machine: 123
+INFO:11:31:48 found adr: 32
+INFO:11:31:48 Sensor with address:32 was not found in registry
+INFO:11:32:29 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:11:32:47 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:11:32:53 Added machine with Itm Number: 123
+INFO:11:32:53 Selected machine: 123
+INFO:11:32:58 found adr: 32
+INFO:11:32:58 Sensor with address:32 was not found in registry
+INFO:11:34:54 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:11:35:00 Added machine with Itm Number: 123
+INFO:11:35:00 Selected machine: 123
+INFO:11:35:04 found adr: 32
+INFO:11:35:04 Sensor with address:32 was not found in registry
+INFO:11:35:06 found adr: 126
+INFO:11:35:06 Sensor with address:126 was not found in registry
+INFO:11:35:18 Added sensor with location: Upper-Motor-NDE-X
+INFO:11:35:18 Selected sensor: Upper-Motor-NDE-X
+INFO:11:35:23 Machine: 123,  Sensor: Upper-Motor-NDE-X
+INFO:11:35:23 Temperature: 23.273231506347656
+INFO:11:35:23 Distance: 1491.211669921875
+INFO:11:35:23 Serial Number: 930
+INFO:11:35:23 Article Number: 4314083
+INFO:11:35:23 Software Version: 0.3a
+INFO:11:35:23 Description: DT3009-S1,4-M20_OSS_LF
+INFO:11:35:23 Measuring Unit: μm
+INFO:11:35:23 Measuring Range: 1400.0
+INFO:11:35:23 Measuring Offset: 100.0
+INFO:11:35:23 Address: 126
+INFO:11:35:38 Added sensor with location: WGC-Outer-DE-Ax1
+INFO:11:35:38 Selected sensor: WGC-Outer-DE-Ax1
+INFO:11:35:40 Machine: 123,  Sensor: WGC-Outer-DE-Ax1
+INFO:11:35:40 Temperature: 30.779938531520003
+INFO:11:35:40 Distance: 545.2293701171875
+INFO:11:35:40 Serial Number: 926
+INFO:11:35:40 Article Number: 4314083
+INFO:11:35:40 Software Version: 0.2a
+INFO:11:35:40 Description: DT3009-S1,4-M20_OSS_LF
+INFO:11:35:40 Measuring Unit: μm
+INFO:11:35:40 Measuring Range: 1400.0
+INFO:11:35:40 Measuring Offset: 100.0
+INFO:11:35:40 Address: 32
+INFO:11:35:57 found adr: 32
+INFO:11:35:57 Machine: 123,  Sensor: WGC-Outer-DE-Ax1
+INFO:11:35:57 Temperature: 30.069547296959996
+INFO:11:35:57 Distance: 544.9185180664062
+INFO:11:35:57 Serial Number: 926
+INFO:11:35:57 Article Number: 4314083
+INFO:11:35:57 Software Version: 0.2a
+INFO:11:35:57 Description: DT3009-S1,4-M20_OSS_LF
+INFO:11:35:57 Measuring Unit: μm
+INFO:11:35:57 Measuring Range: 1400.0
+INFO:11:35:57 Measuring Offset: 100.0
+INFO:11:35:57 Address: 32
+INFO:11:35:57 Sensor with address:32 was not found in registry
+INFO:11:35:59 found adr: 126
+INFO:11:35:59 Machine: 123,  Sensor: WGC-Outer-DE-Ax1
+INFO:11:35:59 Temperature: 23.489334106445312
+INFO:11:35:59 Distance: 1491.211669921875
+INFO:11:35:59 Serial Number: 930
+INFO:11:35:59 Article Number: 4314083
+INFO:11:35:59 Software Version: 0.3a
+INFO:11:35:59 Description: DT3009-S1,4-M20_OSS_LF
+INFO:11:35:59 Measuring Unit: μm
+INFO:11:35:59 Measuring Range: 1400.0
+INFO:11:35:59 Measuring Offset: 100.0
+INFO:11:35:59 Address: 126
+INFO:11:35:59 Sensor with address:126 was not found in registry
+INFO:11:36:23 found adr: 32
+INFO:11:36:24 Machine: 123,  Sensor: WGC-Outer-DE-Ax1
+INFO:11:36:24 Temperature: 30.254607198399995
+INFO:11:36:24 Distance: 545.0380859375
+INFO:11:36:24 Serial Number: 926
+INFO:11:36:24 Article Number: 4314083
+INFO:11:36:24 Software Version: 0.2a
+INFO:11:36:24 Description: DT3009-S1,4-M20_OSS_LF
+INFO:11:36:24 Measuring Unit: μm
+INFO:11:36:24 Measuring Range: 1400.0
+INFO:11:36:24 Measuring Offset: 100.0
+INFO:11:36:24 Address: 32
+INFO:11:36:24 Sensor with address:32 was not found in registry
+INFO:11:36:25 found adr: 126
+INFO:11:36:25 Machine: 123,  Sensor: WGC-Outer-DE-Ax1
+INFO:11:36:25 Temperature: 23.693763732910156
+INFO:11:36:25 Distance: 1491.211669921875
+INFO:11:36:25 Serial Number: 930
+INFO:11:36:25 Article Number: 4314083
+INFO:11:36:25 Software Version: 0.3a
+INFO:11:36:25 Description: DT3009-S1,4-M20_OSS_LF
+INFO:11:36:25 Measuring Unit: μm
+INFO:11:36:25 Measuring Range: 1400.0
+INFO:11:36:25 Measuring Offset: 100.0
+INFO:11:36:25 Address: 126
+INFO:11:36:25 Sensor with address:126 was not found in registry
+INFO:11:36:31 found adr: 32
+INFO:11:36:31 Machine: 123,  Sensor: WGC-Outer-DE-Ax1
+INFO:11:36:31 Temperature: 30.188940781759996
+INFO:11:36:31 Distance: 544.7990112304688
+INFO:11:36:31 Serial Number: 926
+INFO:11:36:31 Article Number: 4314083
+INFO:11:36:31 Software Version: 0.2a
+INFO:11:36:31 Description: DT3009-S1,4-M20_OSS_LF
+INFO:11:36:31 Measuring Unit: μm
+INFO:11:36:31 Measuring Range: 1400.0
+INFO:11:36:31 Measuring Offset: 100.0
+INFO:11:36:31 Address: 32
+INFO:11:36:31 Sensor with address:32 was not found in registry
+INFO:11:36:33 found adr: 126
+INFO:11:36:33 Machine: 123,  Sensor: WGC-Outer-DE-Ax1
+INFO:11:36:33 Temperature: 23.74048614501953
+INFO:11:36:33 Distance: 1491.211669921875
+INFO:11:36:33 Serial Number: 930
+INFO:11:36:33 Article Number: 4314083
+INFO:11:36:33 Software Version: 0.3a
+INFO:11:36:33 Description: DT3009-S1,4-M20_OSS_LF
+INFO:11:36:33 Measuring Unit: μm
+INFO:11:36:33 Measuring Range: 1400.0
+INFO:11:36:33 Measuring Offset: 100.0
+INFO:11:36:33 Address: 126
+INFO:11:36:33 Sensor with address:126 was not found in registry
+INFO:11:38:10 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:11:38:21 Added machine with Itm Number: 123
+INFO:11:38:21 Selected machine: 123
+INFO:11:38:24 found adr: 32
+INFO:11:38:24 Sensor with address:32 was not found in registry
+INFO:11:38:25 found adr: 126
+INFO:11:38:25 Sensor with address:126 was not found in registry
+INFO:11:38:40 Added sensor with location: Upper-Motor-NDE-X
+INFO:11:38:40 Selected sensor: Upper-Motor-NDE-X
+INFO:11:38:44 Machine: 123,  Sensor: Upper-Motor-NDE-X
+INFO:11:38:44 Temperature: 24.44721221923828
+INFO:11:38:44 Distance: 1491.211669921875
+INFO:11:38:44 Serial Number: 930
+INFO:11:38:44 Article Number: 4314083
+INFO:11:38:44 Software Version: 0.3a
+INFO:11:38:44 Description: DT3009-S1,4-M20_OSS_LF
+INFO:11:38:44 Measuring Unit: μm
+INFO:11:38:44 Measuring Range: 1400.0
+INFO:11:38:44 Measuring Offset: 100.0
+INFO:11:38:44 Address: 126
+INFO:11:38:56 Added sensor with location: WGC-Outer-DE-Ax2
+INFO:11:38:56 Selected sensor: WGC-Outer-DE-Ax2
+INFO:11:38:59 Machine: 123,  Sensor: WGC-Outer-DE-Ax2
+INFO:11:38:59 Temperature: 30.44563677408
+INFO:11:38:59 Distance: 545.75537109375
+INFO:11:38:59 Serial Number: 926
+INFO:11:38:59 Article Number: 4314083
+INFO:11:38:59 Software Version: 0.2a
+INFO:11:38:59 Description: DT3009-S1,4-M20_OSS_LF
+INFO:11:38:59 Measuring Unit: μm
+INFO:11:38:59 Measuring Range: 1400.0
+INFO:11:38:59 Measuring Offset: 100.0
+INFO:11:38:59 Address: 32
+INFO:11:39:02 Selected sensor: Upper-Motor-NDE-X
+INFO:11:39:02 Temperature: 24.44721221923828
+INFO:11:39:02 Distance: 1491.211669921875
+INFO:11:39:02 Serial Number: 930
+INFO:11:39:02 SW Version: 0.3a
+INFO:11:39:02 Article Number: 4314083
+INFO:11:39:02 Description: DT3009-S1,4-M20_OSS_LF
+INFO:11:39:02 Address: 126
+INFO:11:39:02 Measuring Unit: μm
+INFO:11:39:02 Measuring Offset: 100.0
+INFO:11:39:02 Measuring Range: 1400.0
+INFO:11:39:04 Selected sensor: WGC-Outer-DE-Ax2
+INFO:11:39:04 Temperature: 30.44563677408
+INFO:11:39:04 Distance: 545.75537109375
+INFO:11:39:04 Serial Number: 926
+INFO:11:39:04 SW Version: 0.2a
+INFO:11:39:04 Article Number: 4314083
+INFO:11:39:04 Description: DT3009-S1,4-M20_OSS_LF
+INFO:11:39:04 Address: 32
+INFO:11:39:04 Measuring Unit: μm
+INFO:11:39:04 Measuring Offset: 100.0
+INFO:11:39:04 Measuring Range: 1400.0
+INFO:11:39:08 Selected sensor: Upper-Motor-NDE-X
+INFO:11:39:08 Temperature: 24.44721221923828
+INFO:11:39:08 Distance: 1491.211669921875
+INFO:11:39:08 Serial Number: 930
+INFO:11:39:08 SW Version: 0.3a
+INFO:11:39:08 Article Number: 4314083
+INFO:11:39:08 Description: DT3009-S1,4-M20_OSS_LF
+INFO:11:39:08 Address: 126
+INFO:11:39:08 Measuring Unit: μm
+INFO:11:39:08 Measuring Offset: 100.0
+INFO:11:39:08 Measuring Range: 1400.0
+INFO:11:39:10 Selected sensor: WGC-Outer-DE-Ax2
+INFO:11:39:10 Temperature: 30.44563677408
+INFO:11:39:10 Distance: 545.75537109375
+INFO:11:39:10 Serial Number: 926
+INFO:11:39:10 SW Version: 0.2a
+INFO:11:39:10 Article Number: 4314083
+INFO:11:39:10 Description: DT3009-S1,4-M20_OSS_LF
+INFO:11:39:10 Address: 32
+INFO:11:39:10 Measuring Unit: μm
+INFO:11:39:10 Measuring Offset: 100.0
+INFO:11:39:10 Measuring Range: 1400.0
+INFO:11:39:12 Selected sensor: Upper-Motor-NDE-X
+INFO:11:39:12 Temperature: 24.44721221923828
+INFO:11:39:12 Distance: 1491.211669921875
+INFO:11:39:12 Serial Number: 930
+INFO:11:39:12 SW Version: 0.3a
+INFO:11:39:12 Article Number: 4314083
+INFO:11:39:12 Description: DT3009-S1,4-M20_OSS_LF
+INFO:11:39:12 Address: 126
+INFO:11:39:12 Measuring Unit: μm
+INFO:11:39:12 Measuring Offset: 100.0
+INFO:11:39:12 Measuring Range: 1400.0
+INFO:11:39:24 found adr: 32
+INFO:11:39:24 Machine: 123,  Sensor: Upper-Motor-NDE-X
+INFO:11:39:24 Temperature: 29.15618713824
+INFO:11:39:24 Distance: 545.0380859375
+INFO:11:39:24 Serial Number: 926
+INFO:11:39:24 Article Number: 4314083
+INFO:11:39:24 Software Version: 0.2a
+INFO:11:39:24 Description: DT3009-S1,4-M20_OSS_LF
+INFO:11:39:24 Measuring Unit: μm
+INFO:11:39:24 Measuring Range: 1400.0
+INFO:11:39:24 Measuring Offset: 100.0
+INFO:11:39:24 Address: 32
+INFO:11:39:44 found adr: 32
+INFO:11:39:44 Machine: 123,  Sensor: Upper-Motor-NDE-X
+INFO:11:39:44 Temperature: 28.851733752
+INFO:11:39:44 Distance: 545.0859375
+INFO:11:39:44 Serial Number: 926
+INFO:11:39:44 Article Number: 4314083
+INFO:11:39:44 Software Version: 0.2a
+INFO:11:39:44 Description: DT3009-S1,4-M20_OSS_LF
+INFO:11:39:44 Measuring Unit: μm
+INFO:11:39:44 Measuring Range: 1400.0
+INFO:11:39:44 Measuring Offset: 100.0
+INFO:11:39:44 Address: 32
+INFO:11:39:46 found adr: 126
+INFO:11:39:46 Machine: 123,  Sensor: Upper-Motor-NDE-X
+INFO:11:39:46 Temperature: 24.634117126464844
+INFO:11:39:46 Distance: 1491.211669921875
+INFO:11:39:46 Serial Number: 930
+INFO:11:39:46 Article Number: 4314083
+INFO:11:39:46 Software Version: 0.3a
+INFO:11:39:46 Description: DT3009-S1,4-M20_OSS_LF
+INFO:11:39:46 Measuring Unit: μm
+INFO:11:39:46 Measuring Range: 1400.0
+INFO:11:39:46 Measuring Offset: 100.0
+INFO:11:39:46 Address: 126
+INFO:11:59:32 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:12:02:56 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:12:15:42 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:12:15:48 Added machine with Itm Number: 123
+INFO:12:15:48 Selected machine: 123
+INFO:12:15:50 Added sensor with location: Upper-Motor-NDE-X
+INFO:12:15:50 Selected sensor: Upper-Motor-NDE-X
+INFO:12:15:52 Machine: 123,  Sensor: Upper-Motor-NDE-X
+INFO:12:15:52 Temperature: 29.178192138671875
+INFO:12:15:52 Distance: 1491.211669921875
+INFO:12:15:52 Serial Number: 930
+INFO:12:15:53 Checksum is not equal
+INFO:12:15:53 Software Version: 0.3a
+INFO:12:15:53 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:15:54 Checksum is not equal
+INFO:12:15:54 Measuring Range: 1400.0
+INFO:12:15:54 Checksum is not equal
+INFO:12:15:54 Address: 126
+INFO:12:16:01 Machine: 123,  Sensor: Upper-Motor-NDE-X
+INFO:12:16:01 Temperature: 29.47854954719999
+INFO:12:16:01 Distance: 544.9185180664062
+INFO:12:16:01 Serial Number: 926
+INFO:12:16:01 Article Number: 4314083
+INFO:12:16:01 Software Version: 0.2a
+INFO:12:16:01 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:16:01 Measuring Unit: μm
+INFO:12:16:01 Measuring Range: 1400.0
+INFO:12:16:01 Measuring Offset: 100.0
+INFO:12:16:01 Address: 32
+INFO:12:17:47 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:12:17:55 Added machine with Itm Number: 123
+INFO:12:17:55 Selected machine: 123
+INFO:12:17:58 Added sensor with location: Upper-Motor-NDE-X
+INFO:12:17:58 Selected sensor: Upper-Motor-NDE-X
+INFO:12:17:59 Machine: 123,  Sensor: Upper-Motor-NDE-X
+INFO:12:18:01 Temperature: 29.496458569919994
+INFO:12:18:01 Distance: 544.9424438476562
+INFO:12:18:01 Serial Number: 926
+INFO:12:18:01 Article Number: 4314083
+INFO:12:18:01 Software Version: 0.2a
+INFO:12:18:01 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:18:01 Measuring Unit: μm
+INFO:12:18:01 Measuring Range: 1400.0
+INFO:12:18:01 Measuring Offset: 100.0
+INFO:12:18:01 Address: 32
+INFO:12:31:42 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:12:31:48 Added machine with Itm Number: 123
+INFO:12:31:48 Selected machine: 123
+INFO:12:31:51 Added sensor with location: Upper-Motor-NDE-X
+INFO:12:31:51 Selected sensor: Upper-Motor-NDE-X
+INFO:12:33:39 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:12:33:47 Added machine with Itm Number: 123
+INFO:12:33:47 Selected machine: 123
+INFO:12:33:51 Added sensor with location: Upper-Motor-NDE-X
+INFO:12:33:51 Selected sensor: Upper-Motor-NDE-X
+INFO:12:34:56 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:12:35:04 Added machine with Itm Number: 123
+INFO:12:35:04 Selected machine: 123
+INFO:12:35:07 Added sensor with location: Upper-Motor-NDE-X
+INFO:12:35:07 Selected sensor: Upper-Motor-NDE-X
+INFO:12:35:07 Location:Upper-Motor-NDE-X
+Default Address:111
+Nom Value:700
+Tolerance:300
+INFO:12:35:33 Machine: 123,  Sensor: Upper-Motor-NDE-X
+INFO:12:35:38 Temperature: 29.377065085119995
+INFO:12:35:38 Distance: 544.6077270507812
+INFO:12:35:38 Serial Number: 926
+INFO:12:35:38 Article Number: 4314083
+INFO:12:35:38 Software Version: 0.2a
+INFO:12:35:38 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:35:38 Measuring Unit: μm
+INFO:12:35:38 Measuring Range: 1400.0
+INFO:12:35:38 Measuring Offset: 100.0
+INFO:12:35:38 Address: 32
+INFO:12:35:42 Added sensor with location: WGC-Outer-DE-Y
+INFO:12:35:42 Selected sensor: WGC-Outer-DE-Y
+INFO:12:35:42 Location:WGC-Outer-DE-Y
+Default Address:142
+Nom Value:700
+Tolerance:300
+INFO:12:35:45 Machine: 123,  Sensor: WGC-Outer-DE-Y
+INFO:12:35:45 Temperature: 29.377065085119995
+INFO:12:35:45 Distance: 544.6077270507812
+INFO:12:35:45 Serial Number: 926
+INFO:12:35:45 Article Number: 4314083
+INFO:12:35:45 Software Version: 0.2a
+INFO:12:35:45 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:35:45 Measuring Unit: μm
+INFO:12:35:45 Measuring Range: 1400.0
+INFO:12:35:45 Measuring Offset: 100.0
+INFO:12:35:45 Address: 32
+INFO:12:35:48 Selected sensor: Upper-Motor-NDE-X
+INFO:12:35:48 Location:Upper-Motor-NDE-X
+Default Address:111
+Nom Value:700
+Tolerance:300
+Temperature:29.377065085119995
+Distance:544.6077270507812
+Serial Number:926
+SW Version:0.2a
+Article Number:4314083
+Description:DT3009-S1,4-M20_OSS_LF
+Address:32
+Measuring Unit:μm
+Measuring Offset:100.0
+Measuring Range:1400.0
+INFO:12:35:55 Selected sensor: WGC-Outer-DE-Y
+INFO:12:35:55 Location:WGC-Outer-DE-Y
+Default Address:142
+Nom Value:700
+Tolerance:300
+Temperature:29.377065085119995
+Distance:544.6077270507812
+Serial Number:926
+SW Version:0.2a
+Article Number:4314083
+Description:DT3009-S1,4-M20_OSS_LF
+Address:32
+Measuring Unit:μm
+Measuring Offset:100.0
+Measuring Range:1400.0
+INFO:12:36:00 Selected sensor: Upper-Motor-NDE-X
+INFO:12:36:00 Location:Upper-Motor-NDE-X
+Default Address:111
+Nom Value:700
+Tolerance:300
+Temperature:29.377065085119995
+Distance:544.6077270507812
+Serial Number:926
+SW Version:0.2a
+Article Number:4314083
+Description:DT3009-S1,4-M20_OSS_LF
+Address:32
+Measuring Unit:μm
+Measuring Offset:100.0
+Measuring Range:1400.0
+INFO:12:36:03 Selected sensor: WGC-Outer-DE-Y
+INFO:12:36:03 Location:WGC-Outer-DE-Y
+Default Address:142
+Nom Value:700
+Tolerance:300
+Temperature:29.377065085119995
+Distance:544.6077270507812
+Serial Number:926
+SW Version:0.2a
+Article Number:4314083
+Description:DT3009-S1,4-M20_OSS_LF
+Address:32
+Measuring Unit:μm
+Measuring Offset:100.0
+Measuring Range:1400.0
+INFO:12:36:05 Selected sensor: Upper-Motor-NDE-X
+INFO:12:36:05 Location:Upper-Motor-NDE-X
+Default Address:111
+Nom Value:700
+Tolerance:300
+Temperature:29.377065085119995
+Distance:544.6077270507812
+Serial Number:926
+SW Version:0.2a
+Article Number:4314083
+Description:DT3009-S1,4-M20_OSS_LF
+Address:32
+Measuring Unit:μm
+Measuring Offset:100.0
+Measuring Range:1400.0
+INFO:12:36:12 Selected sensor: WGC-Outer-DE-Y
+INFO:12:36:12 Location:WGC-Outer-DE-Y
+Default Address:142
+Nom Value:700
+Tolerance:300
+Temperature:29.377065085119995
+Distance:544.6077270507812
+Serial Number:926
+SW Version:0.2a
+Article Number:4314083
+Description:DT3009-S1,4-M20_OSS_LF
+Address:32
+Measuring Unit:μm
+Measuring Offset:100.0
+Measuring Range:1400.0
+INFO:12:36:21 Selected sensor: Upper-Motor-NDE-X
+INFO:12:36:21 Location:Upper-Motor-NDE-X
+Default Address:111
+Nom Value:700
+Tolerance:300
+Temperature:29.377065085119995
+Distance:544.6077270507812
+Serial Number:926
+SW Version:0.2a
+Article Number:4314083
+Description:DT3009-S1,4-M20_OSS_LF
+Address:32
+Measuring Unit:μm
+Measuring Offset:100.0
+Measuring Range:1400.0
+INFO:12:40:36 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:12:40:44 Added machine with Itm Number: 123
+INFO:12:40:44 Selected machine: 123
+INFO:12:40:47 Added sensor with location: Upper-Motor-NDE-X
+INFO:12:40:47 Location: Upper-Motor-NDE-X
+Default Address: 111
+Nom Value: 700
+Tolerance: 300
+INFO:12:41:06 Machine: 123,  Sensor: Location: Upper-Motor-NDE-X
+Default Address: 111
+Nom Value: 700
+Tolerance: 300
+INFO:12:41:06 Temperature: 29.389004433599993
+INFO:12:41:06 Distance: 544.655517578125
+INFO:12:41:06 Serial Number: 926
+INFO:12:41:06 Article Number: 4314083
+INFO:12:41:06 Software Version: 0.2a
+INFO:12:41:06 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:41:06 Measuring Unit: μm
+INFO:12:41:06 Measuring Range: 1400.0
+INFO:12:41:06 Measuring Offset: 100.0
+INFO:12:41:06 Address: 32
+INFO:12:41:17 Machine: 123,  Sensor: Location: Upper-Motor-NDE-X
+Default Address: 111
+Nom Value: 700
+Tolerance: 300
+Temperature: 29.389004433599993
+Distance: 544.655517578125
+Serial Number: 926
+SW Version: 0.2a
+Article Number: 4314083
+Description: DT3009-S1,4-M20_OSS_LF
+Address: 32
+Measuring Unit: μm
+Measuring Offset: 100.0
+Measuring Range: 1400.0
+INFO:12:41:17 Temperature: 29.38303475936
+INFO:12:41:17 Distance: 545.01416015625
+INFO:12:41:17 Serial Number: 926
+INFO:12:41:17 Article Number: 4314083
+INFO:12:41:17 Software Version: 0.2a
+INFO:12:41:17 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:41:17 Measuring Unit: μm
+INFO:12:41:17 Measuring Range: 1400.0
+INFO:12:41:17 Measuring Offset: 100.0
+INFO:12:41:17 Address: 32
+INFO:12:44:46 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:12:44:54 Added machine with Itm Number: 123
+INFO:12:44:54 Selected machine: 123
+INFO:12:45:30 Added sensor with location: Upper-Motor-NDE-X
+INFO:12:45:30 Selected sensor: Upper-Motor-NDE-X
+INFO:12:45:32 Machine: 123,  Sensor: Upper-Motor-NDE-X
+INFO:12:45:32 Temperature: 29.371095410880002
+INFO:12:45:32 Distance: 544.7272338867188
+INFO:12:45:32 Serial Number: 926
+INFO:12:45:32 Article Number: 4314083
+INFO:12:45:32 Software Version: 0.2a
+INFO:12:45:32 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:45:32 Measuring Unit: μm
+INFO:12:45:32 Measuring Range: 1400.0
+INFO:12:45:32 Measuring Offset: 100.0
+INFO:12:45:32 Address: 32
+INFO:12:45:36 Added sensor with location: WGC-Outer-DE-Ax2
+INFO:12:45:36 Selected sensor: WGC-Outer-DE-Ax2
+INFO:12:45:37 Machine: 123,  Sensor: WGC-Outer-DE-Ax2
+INFO:12:45:37 Temperature: 29.371095410880002
+INFO:12:45:37 Distance: 544.6077270507812
+INFO:12:45:37 Serial Number: 926
+INFO:12:45:37 Article Number: 4314083
+INFO:12:45:37 Software Version: 0.2a
+INFO:12:45:37 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:45:37 Measuring Unit: μm
+INFO:12:45:37 Measuring Range: 1400.0
+INFO:12:45:37 Measuring Offset: 100.0
+INFO:12:45:37 Address: 32
+INFO:12:45:39 Selected sensor: Upper-Motor-NDE-X
+INFO:12:45:39 Temperature: 29.371095410880002
+INFO:12:45:39 Distance: 544.7272338867188
+INFO:12:45:39 Serial Number: 926
+INFO:12:45:39 SW Version: 0.2a
+INFO:12:45:39 Article Number: 4314083
+INFO:12:45:39 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:45:39 Address: 32
+INFO:12:45:39 Measuring Unit: μm
+INFO:12:45:39 Measuring Offset: 100.0
+INFO:12:45:39 Measuring Range: 1400.0
+INFO:12:45:41 Selected sensor: WGC-Outer-DE-Ax2
+INFO:12:45:41 Temperature: 29.371095410880002
+INFO:12:45:41 Distance: 544.6077270507812
+INFO:12:45:41 Serial Number: 926
+INFO:12:45:41 SW Version: 0.2a
+INFO:12:45:41 Article Number: 4314083
+INFO:12:45:41 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:45:41 Address: 32
+INFO:12:45:41 Measuring Unit: μm
+INFO:12:45:41 Measuring Offset: 100.0
+INFO:12:45:41 Measuring Range: 1400.0
+INFO:12:45:43 Selected sensor: Upper-Motor-NDE-X
+INFO:12:45:43 Temperature: 29.371095410880002
+INFO:12:45:43 Distance: 544.7272338867188
+INFO:12:45:43 Serial Number: 926
+INFO:12:45:43 SW Version: 0.2a
+INFO:12:45:43 Article Number: 4314083
+INFO:12:45:43 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:45:43 Address: 32
+INFO:12:45:43 Measuring Unit: μm
+INFO:12:45:43 Measuring Offset: 100.0
+INFO:12:45:43 Measuring Range: 1400.0
+INFO:12:53:12 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:12:53:47 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:12:54:10 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:12:54:49 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:12:55:43 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:12:55:54 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:12:56:18 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:12:56:27 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:13:03:52 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:13:04:09 Added machine with Itm Number: 123
+INFO:13:04:09 Selected machine: 123
+INFO:13:04:11 found adr: 32
+INFO:13:04:11 No sensor selected
+INFO:13:04:11 Temperature: 29.424822479040003
+INFO:13:04:11 Distance: 544.9663696289062
+INFO:13:04:11 Serial Number: 926
+INFO:13:04:11 Article Number: 4314083
+INFO:13:04:11 Software Version: 0.2a
+INFO:13:04:11 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:04:11 Measuring Unit: μm
+INFO:13:04:11 Measuring Range: 1400.0
+INFO:13:04:11 Measuring Offset: 100.0
+INFO:13:04:11 Address: 32
+INFO:13:04:11 Sensor: 926 was not found in registry
+INFO:13:04:13 found adr: 126
+INFO:13:04:13 No sensor selected
+INFO:13:04:13 Temperature: 21.16473388671875
+INFO:13:04:13 Distance: 1491.211669921875
+INFO:13:04:13 Serial Number: 930
+INFO:13:04:13 Article Number: 4314083
+INFO:13:04:13 Software Version: 0.3a
+INFO:13:04:13 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:04:13 Measuring Unit: μm
+INFO:13:04:13 Measuring Range: 1400.0
+INFO:13:04:13 Measuring Offset: 100.0
+INFO:13:04:13 Address: 126
+INFO:13:04:13 Sensor: 930 was not found in registry
+INFO:13:04:53 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:13:05:00 Added machine with Itm Number: 123
+INFO:13:05:00 Selected machine: 123
+INFO:13:05:06 found adr: 32
+INFO:13:05:06 Sensor: 926 not found in registry
+INFO:13:05:06 No sensor selected
+INFO:13:05:06 Temperature: 29.430792153279995
+INFO:13:05:06 Distance: 545.0859375
+INFO:13:05:06 Serial Number: 926
+INFO:13:05:06 Article Number: 4314083
+INFO:13:05:06 Software Version: 0.2a
+INFO:13:05:06 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:05:06 Measuring Unit: μm
+INFO:13:05:06 Measuring Range: 1400.0
+INFO:13:05:06 Measuring Offset: 100.0
+INFO:13:05:06 Address: 32
+INFO:13:05:07 found adr: 126
+INFO:13:05:07 Sensor: 930 not found in registry
+INFO:13:05:07 No sensor selected
+INFO:13:05:07 Temperature: 21.328269958496094
+INFO:13:05:07 Distance: 1491.211669921875
+INFO:13:05:07 Serial Number: 930
+INFO:13:05:07 Article Number: 4314083
+INFO:13:05:07 Software Version: 0.3a
+INFO:13:05:07 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:05:07 Measuring Unit: μm
+INFO:13:05:07 Measuring Range: 1400.0
+INFO:13:05:07 Measuring Offset: 100.0
+INFO:13:05:07 Address: 126
+INFO:13:06:50 found adr: 32
+INFO:13:06:50 Sensor: 926 not found in registry
+INFO:13:06:50 No sensor selected
+INFO:13:06:50 Temperature: 29.43676182752
+INFO:13:06:50 Distance: 544.8946533203125
+INFO:13:06:50 Serial Number: 926
+INFO:13:06:50 Article Number: 4314083
+INFO:13:06:50 Software Version: 0.2a
+INFO:13:06:50 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:06:50 Measuring Unit: μm
+INFO:13:06:50 Measuring Range: 1400.0
+INFO:13:06:50 Measuring Offset: 100.0
+INFO:13:06:50 Address: 32
+INFO:13:06:52 found adr: 126
+INFO:13:06:52 Sensor: 930 not found in registry
+INFO:13:06:52 No sensor selected
+INFO:13:06:52 Temperature: 22.0992431640625
+INFO:13:06:52 Distance: 1491.211669921875
+INFO:13:06:52 Serial Number: 930
+INFO:13:06:52 Article Number: 4314083
+INFO:13:06:52 Software Version: 0.3a
+INFO:13:06:52 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:06:52 Measuring Unit: μm
+INFO:13:06:52 Measuring Range: 1400.0
+INFO:13:06:52 Measuring Offset: 100.0
+INFO:13:06:52 Address: 126
+INFO:13:07:51 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:13:07:57 Added machine with Itm Number: 123
+INFO:13:07:57 Selected machine: 123
+INFO:13:07:59 found adr: 32
+INFO:13:07:59 Sensor: 926 not found in registry
+INFO:13:07:59 No sensor selected
+INFO:13:07:59 Temperature: 29.442731501759994
+INFO:13:07:59 Distance: 544.8228759765625
+INFO:13:07:59 Serial Number: 926
+INFO:13:07:59 Article Number: 4314083
+INFO:13:07:59 Software Version: 0.2a
+INFO:13:07:59 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:07:59 Measuring Unit: μm
+INFO:13:07:59 Measuring Range: 1400.0
+INFO:13:07:59 Measuring Offset: 100.0
+INFO:13:07:59 Address: 32
+INFO:13:08:00 found adr: 126
+INFO:13:08:01 Sensor: 930 not found in registry
+INFO:13:08:01 No sensor selected
+INFO:13:08:01 Temperature: 22.683319091796875
+INFO:13:08:01 Distance: 1491.211669921875
+INFO:13:08:01 Serial Number: 930
+INFO:13:08:01 Article Number: 4314083
+INFO:13:08:01 Software Version: 0.3a
+INFO:13:08:01 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:08:01 Measuring Unit: μm
+INFO:13:08:01 Measuring Range: 1400.0
+INFO:13:08:01 Measuring Offset: 100.0
+INFO:13:08:01 Address: 126
+INFO:13:20:11 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:13:20:27 Added machine with Itm Number: 123
+INFO:13:20:27 Selected machine: 123
+INFO:13:20:29 found adr: 32
+INFO:13:20:29 Sensor: 926 not found in registry
+INFO:13:20:29 No sensor selected
+INFO:13:20:29 Temperature: 29.47854954719999
+INFO:13:20:29 Distance: 545.2293701171875
+INFO:13:20:29 Serial Number: 926
+INFO:13:20:29 Article Number: 4314083
+INFO:13:20:29 Software Version: 0.2a
+INFO:13:20:29 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:20:29 Measuring Unit: μm
+INFO:13:20:30 Measuring Range: 1400.0
+INFO:13:20:30 Measuring Offset: 100.0
+INFO:13:20:30 Address: 32
+INFO:13:20:31 found adr: 126
+INFO:13:20:31 Sensor: 930 not found in registry
+INFO:13:20:31 No sensor selected
+INFO:13:20:31 Temperature: 26.74261474609375
+INFO:13:20:31 Distance: 1491.211669921875
+INFO:13:20:31 Serial Number: 930
+INFO:13:20:31 Article Number: 4314083
+INFO:13:20:31 Software Version: 0.3a
+INFO:13:20:31 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:20:31 Measuring Unit: μm
+INFO:13:20:31 Measuring Range: 1400.0
+INFO:13:20:31 Measuring Offset: 100.0
+INFO:13:20:31 Address: 126
+INFO:13:22:37 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:13:22:46 Added machine with Itm Number: 123
+INFO:13:22:46 Selected machine: 123
+INFO:13:22:51 found adr: 32
+INFO:13:22:51 Sensor: 926 not found in registry
+INFO:13:22:51 No sensor selected
+INFO:13:22:51 Temperature: 29.490488895680002
+INFO:13:22:51 Distance: 545.3489379882812
+INFO:13:22:51 Serial Number: 926
+INFO:13:22:51 Article Number: 4314083
+INFO:13:22:51 Software Version: 0.2a
+INFO:13:22:51 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:22:51 Measuring Unit: μm
+INFO:13:22:51 Measuring Range: 1400.0
+INFO:13:22:51 Measuring Offset: 100.0
+INFO:13:22:51 Address: 32
+INFO:13:22:53 found adr: 126
+INFO:13:22:53 Sensor: 930 not found in registry
+INFO:13:22:53 No sensor selected
+INFO:13:22:53 Temperature: 27.22154998779297
+INFO:13:22:53 Distance: 1491.211669921875
+INFO:13:22:53 Serial Number: 930
+INFO:13:22:53 Article Number: 4314083
+INFO:13:22:53 Software Version: 0.3a
+INFO:13:22:53 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:22:53 Measuring Unit: μm
+INFO:13:22:53 Measuring Range: 1400.0
+INFO:13:22:53 Measuring Offset: 100.0
+INFO:13:22:53 Address: 126
+INFO:13:25:33 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:13:25:39 Added machine with Itm Number: 123
+INFO:13:25:39 Selected machine: 123
+INFO:13:25:41 found adr: 32
+INFO:13:25:41 Sensor: 926 not found in registry
+INFO:13:25:41 No sensor selected
+INFO:13:25:41 Temperature: 29.490488895680002
+INFO:13:25:41 Distance: 545.4684448242188
+INFO:13:25:41 Serial Number: 926
+INFO:13:25:41 Article Number: 4314083
+INFO:13:25:41 Software Version: 0.2a
+INFO:13:25:41 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:25:41 Measuring Unit: μm
+INFO:13:25:41 Measuring Range: 1400.0
+INFO:13:25:41 Measuring Offset: 100.0
+INFO:13:25:41 Address: 32
+INFO:13:25:42 found adr: 126
+INFO:13:25:42 Sensor: 930 not found in registry
+INFO:13:25:42 No sensor selected
+INFO:13:25:42 Temperature: 27.630401611328125
+INFO:13:25:42 Distance: 1491.211669921875
+INFO:13:25:42 Serial Number: 930
+INFO:13:25:42 Article Number: 4314083
+INFO:13:25:42 Software Version: 0.3a
+INFO:13:25:42 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:25:42 Measuring Unit: μm
+INFO:13:25:42 Measuring Range: 1400.0
+INFO:13:25:42 Measuring Offset: 100.0
+INFO:13:25:42 Address: 126
+INFO:13:26:12 Selected sensor: Unknown
+INFO:13:26:12 Temperature: 27.630401611328125
+INFO:13:26:12 Distance: 1491.211669921875
+INFO:13:26:12 Serial Number: 930
+INFO:13:26:12 SW Version: 0.3a
+INFO:13:26:12 Article Number: 4314083
+INFO:13:26:12 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:26:12 Address: 126
+INFO:13:26:12 Measuring Unit: μm
+INFO:13:26:12 Measuring Offset: 100.0
+INFO:13:26:12 Measuring Range: 1400.0
+INFO:13:26:15 Selected sensor: Unknown
+INFO:13:26:15 Temperature: 29.490488895680002
+INFO:13:26:15 Distance: 545.4684448242188
+INFO:13:26:15 Serial Number: 926
+INFO:13:26:15 SW Version: 0.2a
+INFO:13:26:15 Article Number: 4314083
+INFO:13:26:15 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:26:15 Address: 32
+INFO:13:26:15 Measuring Unit: μm
+INFO:13:26:15 Measuring Offset: 100.0
+INFO:13:26:15 Measuring Range: 1400.0
+INFO:13:26:17 Selected sensor: Unknown
+INFO:13:26:17 Temperature: 27.630401611328125
+INFO:13:26:17 Distance: 1491.211669921875
+INFO:13:26:17 Serial Number: 930
+INFO:13:26:17 SW Version: 0.3a
+INFO:13:26:17 Article Number: 4314083
+INFO:13:26:17 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:26:17 Address: 126
+INFO:13:26:17 Measuring Unit: μm
+INFO:13:26:17 Measuring Offset: 100.0
+INFO:13:26:17 Measuring Range: 1400.0
+INFO:13:26:20 Selected sensor: Unknown
+INFO:13:26:20 Temperature: 29.490488895680002
+INFO:13:26:20 Distance: 545.4684448242188
+INFO:13:26:20 Serial Number: 926
+INFO:13:26:20 SW Version: 0.2a
+INFO:13:26:20 Article Number: 4314083
+INFO:13:26:20 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:26:20 Address: 32
+INFO:13:26:20 Measuring Unit: μm
+INFO:13:26:20 Measuring Offset: 100.0
+INFO:13:26:20 Measuring Range: 1400.0
+INFO:13:26:22 Selected sensor: Unknown
+INFO:13:26:22 Temperature: 27.630401611328125
+INFO:13:26:22 Distance: 1491.211669921875
+INFO:13:26:22 Serial Number: 930
+INFO:13:26:22 SW Version: 0.3a
+INFO:13:26:22 Article Number: 4314083
+INFO:13:26:22 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:26:22 Address: 126
+INFO:13:26:22 Measuring Unit: μm
+INFO:13:26:22 Measuring Offset: 100.0
+INFO:13:26:22 Measuring Range: 1400.0
+INFO:13:26:24 Selected sensor: Unknown
+INFO:13:26:24 Temperature: 29.490488895680002
+INFO:13:26:24 Distance: 545.4684448242188
+INFO:13:26:24 Serial Number: 926
+INFO:13:26:24 SW Version: 0.2a
+INFO:13:26:24 Article Number: 4314083
+INFO:13:26:24 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:26:24 Address: 32
+INFO:13:26:24 Measuring Unit: μm
+INFO:13:26:24 Measuring Offset: 100.0
+INFO:13:26:24 Measuring Range: 1400.0
+INFO:13:26:31 Added sensor with location: Upper-Motor-NDE-X
+INFO:13:26:31 Selected sensor: Upper-Motor-NDE-X
+INFO:13:26:37 Machine: 123,  Sensor: Upper-Motor-NDE-X
+INFO:13:26:37 Temperature: 29.490488895680002
+INFO:13:26:37 Distance: 545.396728515625
+INFO:13:26:37 Serial Number: 926
+INFO:13:26:37 Article Number: 4314083
+INFO:13:26:37 Software Version: 0.2a
+INFO:13:26:37 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:26:37 Measuring Unit: μm
+INFO:13:26:37 Measuring Range: 1400.0
+INFO:13:26:37 Measuring Offset: 100.0
+INFO:13:26:37 Address: 32
+INFO:13:26:47 Added sensor with location: WGC-Outer-DE-X
+INFO:13:26:47 Selected sensor: WGC-Outer-DE-X
+INFO:13:26:49 Machine: 123,  Sensor: WGC-Outer-DE-X
+INFO:13:26:49 Temperature: 27.73553466796875
+INFO:13:26:49 Distance: 1491.211669921875
+INFO:13:26:49 Serial Number: 930
+INFO:13:26:49 Article Number: 4314083
+INFO:13:26:49 Software Version: 0.3a
+INFO:13:26:49 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:26:49 Measuring Unit: μm
+INFO:13:26:49 Measuring Range: 1400.0
+INFO:13:26:49 Measuring Offset: 100.0
+INFO:13:26:49 Address: 126
+INFO:13:27:02 found adr: 32
+INFO:13:27:02 Machine: 123,  Sensor: WGC-Outer-DE-X
+INFO:13:27:02 Temperature: 29.5680946608
+INFO:13:27:02 Distance: 546.2096557617188
+INFO:13:27:02 Serial Number: 926
+INFO:13:27:02 Article Number: 4314083
+INFO:13:27:02 Software Version: 0.2a
+INFO:13:27:02 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:27:02 Measuring Unit: μm
+INFO:13:27:02 Measuring Range: 1400.0
+INFO:13:27:02 Measuring Offset: 100.0
+INFO:13:27:02 Address: 32
+INFO:13:27:04 found adr: 126
+INFO:13:27:04 Machine: 123,  Sensor: WGC-Outer-DE-X
+INFO:13:27:04 Temperature: 27.770584106445312
+INFO:13:27:04 Distance: 1491.211669921875
+INFO:13:27:04 Serial Number: 930
+INFO:13:27:04 Article Number: 4314083
+INFO:13:27:04 Software Version: 0.3a
+INFO:13:27:04 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:27:04 Measuring Unit: μm
+INFO:13:27:04 Measuring Range: 1400.0
+INFO:13:27:04 Measuring Offset: 100.0
+INFO:13:27:04 Address: 126
+INFO:13:27:11 Selected sensor: Upper-Motor-NDE-X
+INFO:13:27:11 Temperature: 29.5680946608
+INFO:13:27:11 Distance: 546.2096557617188
+INFO:13:27:11 Serial Number: 926
+INFO:13:27:11 SW Version: 0.2a
+INFO:13:27:11 Article Number: 4314083
+INFO:13:27:11 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:27:11 Address: 32
+INFO:13:27:11 Measuring Unit: μm
+INFO:13:27:11 Measuring Offset: 100.0
+INFO:13:27:11 Measuring Range: 1400.0
+INFO:13:27:13 Selected sensor: WGC-Outer-DE-X
+INFO:13:27:13 Temperature: 27.770584106445312
+INFO:13:27:13 Distance: 1491.211669921875
+INFO:13:27:13 Serial Number: 930
+INFO:13:27:13 SW Version: 0.3a
+INFO:13:27:13 Article Number: 4314083
+INFO:13:27:13 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:27:13 Address: 126
+INFO:13:27:13 Measuring Unit: μm
+INFO:13:27:13 Measuring Offset: 100.0
+INFO:13:27:13 Measuring Range: 1400.0
+INFO:13:27:22 Selected sensor: Upper-Motor-NDE-X
+INFO:13:27:22 Temperature: 29.5680946608
+INFO:13:27:22 Distance: 546.2096557617188
+INFO:13:27:22 Serial Number: 926
+INFO:13:27:22 SW Version: 0.2a
+INFO:13:27:22 Article Number: 4314083
+INFO:13:27:22 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:27:22 Address: 32
+INFO:13:27:22 Measuring Unit: μm
+INFO:13:27:22 Measuring Offset: 100.0
+INFO:13:27:22 Measuring Range: 1400.0
+INFO:13:27:24 Selected sensor: WGC-Outer-DE-X
+INFO:13:27:24 Temperature: 27.770584106445312
+INFO:13:27:24 Distance: 1491.211669921875
+INFO:13:27:24 Serial Number: 930
+INFO:13:27:24 SW Version: 0.3a
+INFO:13:27:24 Article Number: 4314083
+INFO:13:27:24 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:27:24 Address: 126
+INFO:13:27:24 Measuring Unit: μm
+INFO:13:27:24 Measuring Offset: 100.0
+INFO:13:27:24 Measuring Range: 1400.0
+INFO:13:27:25 Selected sensor: Upper-Motor-NDE-X
+INFO:13:27:25 Temperature: 29.5680946608
+INFO:13:27:25 Distance: 546.2096557617188
+INFO:13:27:25 Serial Number: 926
+INFO:13:27:25 SW Version: 0.2a
+INFO:13:27:25 Article Number: 4314083
+INFO:13:27:25 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:27:25 Address: 32
+INFO:13:27:25 Measuring Unit: μm
+INFO:13:27:25 Measuring Offset: 100.0
+INFO:13:27:25 Measuring Range: 1400.0
+INFO:13:27:30 Selected sensor: WGC-Outer-DE-X
+INFO:13:27:30 Temperature: 27.770584106445312
+INFO:13:27:30 Distance: 1491.211669921875
+INFO:13:27:30 Serial Number: 930
+INFO:13:27:30 SW Version: 0.3a
+INFO:13:27:30 Article Number: 4314083
+INFO:13:27:30 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:27:30 Address: 126
+INFO:13:27:30 Measuring Unit: μm
+INFO:13:27:30 Measuring Offset: 100.0
+INFO:13:27:30 Measuring Range: 1400.0
+INFO:13:27:36 Selected sensor: Upper-Motor-NDE-X
+INFO:13:27:36 Temperature: 29.5680946608
+INFO:13:27:36 Distance: 546.2096557617188
+INFO:13:27:36 Serial Number: 926
+INFO:13:27:36 SW Version: 0.2a
+INFO:13:27:36 Article Number: 4314083
+INFO:13:27:36 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:27:36 Address: 32
+INFO:13:27:36 Measuring Unit: μm
+INFO:13:27:36 Measuring Offset: 100.0
+INFO:13:27:36 Measuring Range: 1400.0
+INFO:13:27:37 Selected sensor: WGC-Outer-DE-X
+INFO:13:27:37 Temperature: 27.770584106445312
+INFO:13:27:37 Distance: 1491.211669921875
+INFO:13:27:37 Serial Number: 930
+INFO:13:27:37 SW Version: 0.3a
+INFO:13:27:37 Article Number: 4314083
+INFO:13:27:37 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:27:37 Address: 126
+INFO:13:27:37 Measuring Unit: μm
+INFO:13:27:37 Measuring Offset: 100.0
+INFO:13:27:37 Measuring Range: 1400.0
+INFO:13:27:38 Selected sensor: Upper-Motor-NDE-X
+INFO:13:27:38 Temperature: 29.5680946608
+INFO:13:27:38 Distance: 546.2096557617188
+INFO:13:27:38 Serial Number: 926
+INFO:13:27:38 SW Version: 0.2a
+INFO:13:27:38 Article Number: 4314083
+INFO:13:27:38 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:27:38 Address: 32
+INFO:13:27:38 Measuring Unit: μm
+INFO:13:27:38 Measuring Offset: 100.0
+INFO:13:27:38 Measuring Range: 1400.0
+INFO:13:28:44 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:13:30:41 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:13:30:47 Added machine with Itm Number: 123
+INFO:13:30:47 Selected machine: 123
+INFO:13:30:50 found adr: 32
+INFO:13:30:50 Sensor: 926 not found in registry
+INFO:13:30:50 No sensor selected
+INFO:13:30:50 Temperature: 28.821885380799998
+INFO:13:30:50 Distance: 545.396728515625
+INFO:13:30:50 Serial Number: 926
+INFO:13:30:50 Article Number: 4314083
+INFO:13:30:50 Software Version: 0.2a
+INFO:13:30:50 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:30:50 Measuring Unit: μm
+INFO:13:30:50 Measuring Range: 1400.0
+INFO:13:30:50 Measuring Offset: 100.0
+INFO:13:30:50 Address: 32
+INFO:13:30:52 found adr: 126
+INFO:13:30:52 Sensor: 930 not found in registry
+INFO:13:30:52 No sensor selected
+INFO:13:30:52 Temperature: 28.261199951171875
+INFO:13:30:52 Distance: 1491.211669921875
+INFO:13:30:52 Serial Number: 930
+INFO:13:30:52 Article Number: 4314083
+INFO:13:30:52 Software Version: 0.3a
+INFO:13:30:52 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:30:52 Measuring Unit: μm
+INFO:13:30:52 Measuring Range: 1400.0
+INFO:13:30:52 Measuring Offset: 100.0
+INFO:13:30:52 Address: 126
+INFO:13:31:04 Selected sensor: Unknown
+INFO:13:31:04 Temperature: 28.821885380799998
+INFO:13:31:04 Distance: 545.396728515625
+INFO:13:31:04 Serial Number: 926
+INFO:13:31:04 SW Version: 0.2a
+INFO:13:31:04 Article Number: 4314083
+INFO:13:31:04 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:31:04 Address: 32
+INFO:13:31:04 Measuring Unit: μm
+INFO:13:31:04 Measuring Offset: 100.0
+INFO:13:31:04 Measuring Range: 1400.0
+INFO:13:31:07 Selected sensor: Unknown
+INFO:13:31:07 Temperature: 28.261199951171875
+INFO:13:31:07 Distance: 1491.211669921875
+INFO:13:31:07 Serial Number: 930
+INFO:13:31:07 SW Version: 0.3a
+INFO:13:31:07 Article Number: 4314083
+INFO:13:31:07 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:31:07 Address: 126
+INFO:13:31:07 Measuring Unit: μm
+INFO:13:31:07 Measuring Offset: 100.0
+INFO:13:31:07 Measuring Range: 1400.0
+INFO:13:31:11 Selected sensor: Unknown
+INFO:13:31:11 Temperature: 28.821885380799998
+INFO:13:31:11 Distance: 545.396728515625
+INFO:13:31:11 Serial Number: 926
+INFO:13:31:11 SW Version: 0.2a
+INFO:13:31:11 Article Number: 4314083
+INFO:13:31:11 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:31:11 Address: 32
+INFO:13:31:11 Measuring Unit: μm
+INFO:13:31:11 Measuring Offset: 100.0
+INFO:13:31:11 Measuring Range: 1400.0
+INFO:13:31:28 Added sensor with location: Upper-Motor-NDE-X
+INFO:13:31:28 Selected sensor: Upper-Motor-NDE-X
+INFO:13:31:30 Machine: 123,  Sensor: Upper-Motor-NDE-X
+INFO:13:31:30 Temperature: 28.313766479492188
+INFO:13:31:30 Distance: 1491.211669921875
+INFO:13:31:30 Serial Number: 930
+INFO:13:31:30 Article Number: 4314083
+INFO:13:31:30 Software Version: 0.3a
+INFO:13:31:30 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:31:30 Measuring Unit: μm
+INFO:13:31:30 Measuring Range: 1400.0
+INFO:13:31:30 Measuring Offset: 100.0
+INFO:13:31:30 Address: 126
+INFO:13:31:37 Added sensor with location: WGC-Outer-DE-Ax1
+INFO:13:31:37 Selected sensor: WGC-Outer-DE-Ax1
+INFO:13:31:45 Machine: 123,  Sensor: WGC-Outer-DE-Ax1
+INFO:13:31:45 Temperature: 29.490488895680002
+INFO:13:31:45 Distance: 546.114013671875
+INFO:13:31:45 Serial Number: 926
+INFO:13:31:45 Article Number: 4314083
+INFO:13:31:45 Software Version: 0.2a
+INFO:13:31:45 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:31:45 Measuring Unit: μm
+INFO:13:31:45 Measuring Range: 1400.0
+INFO:13:31:45 Measuring Offset: 100.0
+INFO:13:31:45 Address: 32
+INFO:13:31:54 found adr: 32
+INFO:13:31:55 Machine: 123,  Sensor: WGC-Outer-DE-Ax1
+INFO:13:31:55 Temperature: 29.15618713824
+INFO:13:31:55 Distance: 545.779296875
+INFO:13:31:55 Serial Number: 926
+INFO:13:31:55 Article Number: 4314083
+INFO:13:31:55 Software Version: 0.2a
+INFO:13:31:55 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:31:55 Measuring Unit: μm
+INFO:13:31:55 Measuring Range: 1400.0
+INFO:13:31:55 Measuring Offset: 100.0
+INFO:13:31:55 Address: 32
+INFO:13:31:56 found adr: 126
+INFO:13:31:56 Machine: 123,  Sensor: WGC-Outer-DE-Ax1
+INFO:13:31:56 Temperature: 28.32544708251953
+INFO:13:31:56 Distance: 1491.211669921875
+INFO:13:31:56 Serial Number: 930
+INFO:13:31:56 Article Number: 4314083
+INFO:13:31:56 Software Version: 0.3a
+INFO:13:31:56 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:31:56 Measuring Unit: μm
+INFO:13:31:56 Measuring Range: 1400.0
+INFO:13:31:56 Measuring Offset: 100.0
+INFO:13:31:56 Address: 126
+INFO:13:31:59 Selected sensor: Upper-Motor-NDE-X
+INFO:13:31:59 Temperature: 28.32544708251953
+INFO:13:31:59 Distance: 1491.211669921875
+INFO:13:31:59 Serial Number: 930
+INFO:13:31:59 SW Version: 0.3a
+INFO:13:31:59 Article Number: 4314083
+INFO:13:31:59 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:31:59 Address: 126
+INFO:13:31:59 Measuring Unit: μm
+INFO:13:31:59 Measuring Offset: 100.0
+INFO:13:31:59 Measuring Range: 1400.0
+INFO:13:32:01 Selected sensor: WGC-Outer-DE-Ax1
+INFO:13:32:01 Temperature: 29.15618713824
+INFO:13:32:01 Distance: 545.779296875
+INFO:13:32:01 Serial Number: 926
+INFO:13:32:01 SW Version: 0.2a
+INFO:13:32:01 Article Number: 4314083
+INFO:13:32:01 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:32:01 Address: 32
+INFO:13:32:01 Measuring Unit: μm
+INFO:13:32:01 Measuring Offset: 100.0
+INFO:13:32:01 Measuring Range: 1400.0
+INFO:13:32:03 Selected sensor: Upper-Motor-NDE-X
+INFO:13:32:03 Temperature: 28.32544708251953
+INFO:13:32:03 Distance: 1491.211669921875
+INFO:13:32:03 Serial Number: 930
+INFO:13:32:03 SW Version: 0.3a
+INFO:13:32:03 Article Number: 4314083
+INFO:13:32:03 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:32:03 Address: 126
+INFO:13:32:03 Measuring Unit: μm
+INFO:13:32:03 Measuring Offset: 100.0
+INFO:13:32:03 Measuring Range: 1400.0
+INFO:13:33:19 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:13:33:28 Added machine with Itm Number: 123
+INFO:13:33:28 Selected machine: 123
+INFO:13:33:31 found adr: 32
+INFO:13:33:31 Sensor: 926 not found in registry
+INFO:13:33:31 No sensor selected
+INFO:13:33:31 Temperature: 28.481613949120003
+INFO:13:33:31 Distance: 545.4684448242188
+INFO:13:33:31 Serial Number: 926
+INFO:13:33:31 Article Number: 4314083
+INFO:13:33:31 Software Version: 0.2a
+INFO:13:33:31 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:33:31 Measuring Unit: μm
+INFO:13:33:31 Measuring Range: 1400.0
+INFO:13:33:31 Measuring Offset: 100.0
+INFO:13:33:31 Address: 32
+INFO:13:33:33 found adr: 126
+INFO:13:33:33 Sensor: 930 not found in registry
+INFO:13:33:33 No sensor selected
+INFO:13:33:33 Temperature: 28.413063049316406
+INFO:13:33:33 Distance: 1491.211669921875
+INFO:13:33:33 Serial Number: 930
+INFO:13:33:33 Article Number: 4314083
+INFO:13:33:33 Software Version: 0.3a
+INFO:13:33:33 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:33:33 Measuring Unit: μm
+INFO:13:33:33 Measuring Range: 1400.0
+INFO:13:33:33 Measuring Offset: 100.0
+INFO:13:33:33 Address: 126
+INFO:13:33:46 Selected sensor: Unknown
+INFO:13:33:46 Temperature: 28.413063049316406
+INFO:13:33:46 Distance: 1491.211669921875
+INFO:13:33:46 Serial Number: 930
+INFO:13:33:46 SW Version: 0.3a
+INFO:13:33:46 Article Number: 4314083
+INFO:13:33:46 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:33:46 Address: 126
+INFO:13:33:46 Measuring Unit: μm
+INFO:13:33:46 Measuring Offset: 100.0
+INFO:13:33:46 Measuring Range: 1400.0
+INFO:13:33:48 Selected sensor: Unknown
+INFO:13:33:48 Temperature: 28.481613949120003
+INFO:13:33:48 Distance: 545.4684448242188
+INFO:13:33:48 Serial Number: 926
+INFO:13:33:48 SW Version: 0.2a
+INFO:13:33:48 Article Number: 4314083
+INFO:13:33:48 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:33:48 Address: 32
+INFO:13:33:48 Measuring Unit: μm
+INFO:13:33:48 Measuring Offset: 100.0
+INFO:13:33:48 Measuring Range: 1400.0
+INFO:13:33:50 Selected sensor: Unknown
+INFO:13:33:50 Temperature: 28.413063049316406
+INFO:13:33:50 Distance: 1491.211669921875
+INFO:13:33:50 Serial Number: 930
+INFO:13:33:50 SW Version: 0.3a
+INFO:13:33:50 Article Number: 4314083
+INFO:13:33:50 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:33:50 Address: 126
+INFO:13:33:50 Measuring Unit: μm
+INFO:13:33:50 Measuring Offset: 100.0
+INFO:13:33:50 Measuring Range: 1400.0
+INFO:13:33:57 Added sensor with location: Upper-Motor-NDE-X
+INFO:13:33:57 Selected sensor: Upper-Motor-NDE-X
+INFO:13:34:02 Machine: 123,  Sensor: Upper-Motor-NDE-X
+INFO:13:34:02 Temperature: 28.45978546142578
+INFO:13:34:02 Distance: 1491.211669921875
+INFO:13:34:02 Serial Number: 930
+INFO:13:34:02 Article Number: 4314083
+INFO:13:34:02 Software Version: 0.3a
+INFO:13:34:02 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:34:02 Measuring Unit: μm
+INFO:13:34:02 Measuring Range: 1400.0
+INFO:13:34:02 Measuring Offset: 100.0
+INFO:13:34:02 Address: 126
+INFO:13:34:06 Added sensor with location: WGC-Outer-DE-Ax1
+INFO:13:34:06 Selected sensor: WGC-Outer-DE-Ax1
+INFO:13:34:13 Machine: 123,  Sensor: WGC-Outer-DE-Ax1
+INFO:13:34:13 Temperature: 28.3443114416
+INFO:13:34:13 Distance: 545.6597290039062
+INFO:13:34:13 Serial Number: 926
+INFO:13:34:13 Article Number: 4314083
+INFO:13:34:13 Software Version: 0.2a
+INFO:13:34:13 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:34:13 Measuring Unit: μm
+INFO:13:34:13 Measuring Range: 1400.0
+INFO:13:34:13 Measuring Offset: 100.0
+INFO:13:34:13 Address: 32
+INFO:13:34:21 found adr: 32
+INFO:13:34:21 Machine: 123,  Sensor: WGC-Outer-DE-Ax1
+INFO:13:34:21 Temperature: 28.314463070399995
+INFO:13:34:21 Distance: 545.8270874023438
+INFO:13:34:21 Serial Number: 926
+INFO:13:34:21 Article Number: 4314083
+INFO:13:34:21 Software Version: 0.2a
+INFO:13:34:21 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:34:21 Measuring Unit: μm
+INFO:13:34:21 Measuring Range: 1400.0
+INFO:13:34:21 Measuring Offset: 100.0
+INFO:13:34:21 Address: 32
+INFO:13:34:22 found adr: 126
+INFO:13:34:22 Machine: 123,  Sensor: WGC-Outer-DE-Ax1
+INFO:13:34:22 Temperature: 28.436424255371094
+INFO:13:34:22 Distance: 1491.211669921875
+INFO:13:34:22 Serial Number: 930
+INFO:13:34:22 Article Number: 4314083
+INFO:13:34:22 Software Version: 0.3a
+INFO:13:34:22 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:34:22 Measuring Unit: μm
+INFO:13:34:22 Measuring Range: 1400.0
+INFO:13:34:22 Measuring Offset: 100.0
+INFO:13:34:22 Address: 126
+INFO:13:34:28 Selected sensor: Upper-Motor-NDE-X
+INFO:13:34:28 Temperature: 28.436424255371094
+INFO:13:34:28 Distance: 1491.211669921875
+INFO:13:34:28 Serial Number: 930
+INFO:13:34:28 SW Version: 0.3a
+INFO:13:34:28 Article Number: 4314083
+INFO:13:34:28 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:34:28 Address: 126
+INFO:13:34:28 Measuring Unit: μm
+INFO:13:34:28 Measuring Offset: 100.0
+INFO:13:34:28 Measuring Range: 1400.0
+INFO:13:34:31 Selected sensor: WGC-Outer-DE-Ax1
+INFO:13:34:31 Temperature: 28.314463070399995
+INFO:13:34:31 Distance: 545.8270874023438
+INFO:13:34:31 Serial Number: 926
+INFO:13:34:31 SW Version: 0.2a
+INFO:13:34:31 Article Number: 4314083
+INFO:13:34:31 Description: DT3009-S1,4-M20_OSS_LF
+INFO:13:34:31 Address: 32
+INFO:13:34:31 Measuring Unit: μm
+INFO:13:34:31 Measuring Offset: 100.0
+INFO:13:34:31 Measuring Range: 1400.0
+INFO:13:44:08 Added sensor with location: Upper-Motor-NDE-X
+INFO:13:44:08 Selected sensor: Upper-Motor-NDE-X
+INFO:14:07:21 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:08:26 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:09:07 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:09:22 Address: 32
+INFO:14:09:28 get_adr() missing 1 required positional argument: 'adr'
+INFO:14:11:07 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:11:13 unsupported operand type(s) for +=: 'int' and 'function'
+INFO:14:12:20 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:13:55 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:14:00 unsupported operand type(s) for +=: 'int' and 'function'
+INFO:14:14:05 unsupported operand type(s) for +=: 'int' and 'function'
+INFO:14:14:47 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:14:52 unsupported operand type(s) for +=: 'int' and 'function'
+INFO:14:15:14 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:15:18 unsupported operand type(s) for +=: 'int' and 'function'
+INFO:14:15:52 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:17:19 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:17:35 unsupported operand type(s) for +=: 'int' and 'function'
+INFO:14:18:49 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:18:54 Received: b'\xe5'
+INFO:14:19:07 Looking for sensor: 60
+INFO:14:19:08 Looking for sensor: 59
+INFO:14:19:09 Looking for sensor: 58
+INFO:14:19:10 Looking for sensor: 57
+INFO:14:19:11 Looking for sensor: 56
+INFO:14:19:12 Looking for sensor: 55
+INFO:14:19:13 Looking for sensor: 54
+INFO:14:19:14 Looking for sensor: 53
+INFO:14:19:15 Looking for sensor: 52
+INFO:14:19:16 Looking for sensor: 51
+INFO:14:19:17 Looking for sensor: 50
+INFO:14:19:18 Looking for sensor: 49
+INFO:14:19:19 Looking for sensor: 48
+INFO:14:19:20 Looking for sensor: 47
+INFO:14:19:21 Looking for sensor: 46
+INFO:14:19:22 Looking for sensor: 45
+INFO:14:19:23 Looking for sensor: 44
+INFO:14:19:24 Looking for sensor: 43
+INFO:14:19:25 Looking for sensor: 42
+INFO:14:19:26 Looking for sensor: 41
+INFO:14:19:27 Looking for sensor: 40
+INFO:14:19:28 Looking for sensor: 39
+INFO:14:19:29 Looking for sensor: 38
+INFO:14:19:30 Looking for sensor: 37
+INFO:14:19:31 Looking for sensor: 36
+INFO:14:19:32 Looking for sensor: 35
+INFO:14:19:33 Looking for sensor: 34
+INFO:14:19:34 Looking for sensor: 33
+INFO:14:19:35 Looking for sensor: 32
+INFO:14:19:36 Looking for sensor: 31
+INFO:14:19:37 Looking for sensor: 30
+INFO:14:19:42 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:19:43 Address: 126
+INFO:14:19:51 Address: 126
+INFO:14:20:53 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:21:57 Received: b'\xe5'
+INFO:14:22:05 Looking for sensor: 60
+INFO:14:22:06 Looking for sensor: 59
+INFO:14:22:07 Looking for sensor: 58
+INFO:14:22:08 Looking for sensor: 57
+INFO:14:22:09 Looking for sensor: 56
+INFO:14:22:10 Looking for sensor: 55
+INFO:14:22:11 Looking for sensor: 54
+INFO:14:22:12 Looking for sensor: 53
+INFO:14:22:13 Looking for sensor: 52
+INFO:14:22:14 Looking for sensor: 51
+INFO:14:22:15 Looking for sensor: 50
+INFO:14:22:16 Looking for sensor: 49
+INFO:14:22:17 Looking for sensor: 48
+INFO:14:22:18 Looking for sensor: 47
+INFO:14:22:19 Looking for sensor: 46
+INFO:14:22:20 Looking for sensor: 45
+INFO:14:22:21 Looking for sensor: 44
+INFO:14:22:22 Looking for sensor: 43
+INFO:14:22:23 Looking for sensor: 42
+INFO:14:22:24 Looking for sensor: 41
+INFO:14:22:25 Looking for sensor: 40
+INFO:14:22:26 Looking for sensor: 39
+INFO:14:22:27 Looking for sensor: 38
+INFO:14:22:28 Looking for sensor: 37
+INFO:14:22:29 Looking for sensor: 36
+INFO:14:22:35 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:22:37 Address: 32
+INFO:14:28:54 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:29:00 Added machine with Itm Number: 123
+INFO:14:29:00 Selected machine: 123
+INFO:14:29:04 Added sensor with location: Upper-Motor-NDE-X
+INFO:14:29:04 Selected sensor: Upper-Motor-NDE-X
+INFO:14:29:18 Added sensor with location: WGC-Outer-DE-Ax2
+INFO:14:29:18 Selected sensor: WGC-Outer-DE-Ax2
+INFO:14:29:50 Selected sensor: Upper-Motor-NDE-X
+INFO:14:30:21 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:30:27 Added machine with Itm Number: 123
+INFO:14:30:27 Selected machine: 123
+INFO:14:30:36 Added sensor with location: Upper-Motor-NDE-X
+INFO:14:30:36 Selected sensor: Upper-Motor-NDE-X
+INFO:14:30:40 Received: b'\xe5'
+INFO:14:30:51 current address: 111
+INFO:14:31:03 Machine: 123,  Sensor: Upper-Motor-NDE-X
+INFO:14:31:03 Temperature: 29.096490395839993
+INFO:14:31:03 Distance: 547.3572998046875
+INFO:14:31:03 Serial Number: 926
+INFO:14:31:03 Article Number: 4314083
+INFO:14:31:03 Software Version: 0.2a
+INFO:14:31:03 Description: DT3009-S1,4-M20_OSS_LF
+INFO:14:31:03 Measuring Unit: μm
+INFO:14:31:03 Measuring Range: 1400.0
+INFO:14:31:03 Measuring Offset: 100.0
+INFO:14:31:03 Address: 111
+INFO:14:31:29 found adr: 111
+INFO:14:31:29 Machine: 123,  Sensor: Upper-Motor-NDE-X
+INFO:14:31:29 Temperature: 29.0905207216
+INFO:14:31:29 Distance: 547.0225830078125
+INFO:14:31:29 Serial Number: 926
+INFO:14:31:29 Article Number: 4314083
+INFO:14:31:29 Software Version: 0.2a
+INFO:14:31:29 Description: DT3009-S1,4-M20_OSS_LF
+INFO:14:31:29 Measuring Unit: μm
+INFO:14:31:29 Measuring Range: 1400.0
+INFO:14:31:29 Measuring Offset: 100.0
+INFO:14:31:29 Address: 111
+INFO:14:31:29 found adr: 126
+INFO:14:31:29 Sensor: 930 not found in registry
+INFO:14:31:29 Machine: 123,  Sensor: Upper-Motor-NDE-X
+INFO:14:31:29 Temperature: 23.010398864746094
+INFO:14:31:29 Distance: 1491.211669921875
+INFO:14:31:29 Serial Number: 930
+INFO:14:31:29 Article Number: 4314083
+INFO:14:31:29 Software Version: 0.3a
+INFO:14:31:29 Description: DT3009-S1,4-M20_OSS_LF
+INFO:14:31:29 Measuring Unit: μm
+INFO:14:31:29 Measuring Range: 1400.0
+INFO:14:31:29 Measuring Offset: 100.0
+INFO:14:31:29 Address: 126
+INFO:14:31:52 Selected sensor: Upper-Motor-NDE-X
+INFO:14:31:52 Temperature: 29.0905207216
+INFO:14:31:52 Distance: 547.0225830078125
+INFO:14:31:52 Serial Number: 926
+INFO:14:31:52 SW Version: 0.2a
+INFO:14:31:52 Article Number: 4314083
+INFO:14:31:52 Description: DT3009-S1,4-M20_OSS_LF
+INFO:14:31:52 Address: 111
+INFO:14:31:52 Measuring Unit: μm
+INFO:14:31:52 Measuring Offset: 100.0
+INFO:14:31:52 Measuring Range: 1400.0
+INFO:14:31:57 Selected sensor: Unknown
+INFO:14:31:57 Temperature: 23.010398864746094
+INFO:14:31:57 Distance: 1491.211669921875
+INFO:14:31:57 Serial Number: 930
+INFO:14:31:57 SW Version: 0.3a
+INFO:14:31:57 Article Number: 4314083
+INFO:14:31:57 Description: DT3009-S1,4-M20_OSS_LF
+INFO:14:31:57 Address: 126
+INFO:14:31:57 Measuring Unit: μm
+INFO:14:31:57 Measuring Offset: 100.0
+INFO:14:31:57 Measuring Range: 1400.0
+INFO:14:32:00 Selected sensor: Upper-Motor-NDE-X
+INFO:14:32:00 Temperature: 29.0905207216
+INFO:14:32:00 Distance: 547.0225830078125
+INFO:14:32:00 Serial Number: 926
+INFO:14:32:00 SW Version: 0.2a
+INFO:14:32:00 Article Number: 4314083
+INFO:14:32:00 Description: DT3009-S1,4-M20_OSS_LF
+INFO:14:32:00 Address: 111
+INFO:14:32:00 Measuring Unit: μm
+INFO:14:32:00 Measuring Offset: 100.0
+INFO:14:32:00 Measuring Range: 1400.0
+INFO:14:33:26 Added sensor with location: WGC-Outer-DE-Ax2
+INFO:14:33:26 Selected sensor: WGC-Outer-DE-Ax2
+INFO:14:35:25 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:36:41 Added machine with Itm Number: sadfds
+INFO:14:36:41 Selected machine: fadsfasd
+INFO:14:37:07 Added sensor with location: Motor-NDE-X
+INFO:14:37:07 Selected sensor: Motor-NDE-X
+INFO:14:37:27 Received: b'\xe5'
+INFO:14:37:43 Looking for sensor: 60
+INFO:14:37:44 Looking for sensor: 59
+INFO:14:37:45 Looking for sensor: 58
+INFO:14:37:46 Looking for sensor: 57
+INFO:14:37:47 Looking for sensor: 56
+INFO:14:37:48 Looking for sensor: 55
+INFO:14:37:49 Looking for sensor: 54
+INFO:14:37:50 Looking for sensor: 53
+INFO:14:37:51 Looking for sensor: 52
+INFO:14:37:52 Looking for sensor: 51
+INFO:14:37:53 Looking for sensor: 50
+INFO:14:37:54 Looking for sensor: 49
+INFO:14:37:55 Looking for sensor: 48
+INFO:14:37:56 Looking for sensor: 47
+INFO:14:37:57 Looking for sensor: 46
+INFO:14:37:58 Looking for sensor: 45
+INFO:14:37:59 Looking for sensor: 44
+INFO:14:38:00 Looking for sensor: 43
+INFO:14:38:01 Looking for sensor: 42
+INFO:14:38:02 Looking for sensor: 41
+INFO:14:38:03 Looking for sensor: 40
+INFO:14:38:04 Looking for sensor: 39
+INFO:14:38:05 Looking for sensor: 38
+INFO:14:38:06 Looking for sensor: 37
+INFO:14:38:07 Looking for sensor: 36
+INFO:14:38:08 Looking for sensor: 35
+INFO:14:38:09 Looking for sensor: 34
+INFO:14:38:10 Looking for sensor: 33
+INFO:14:38:11 Looking for sensor: 32
+INFO:14:38:12 Looking for sensor: 31
+INFO:14:38:13 Looking for sensor: 30
+INFO:14:38:14 Looking for sensor: 29
+INFO:14:38:15 Looking for sensor: 28
+INFO:14:38:16 Looking for sensor: 27
+INFO:14:38:17 Looking for sensor: 26
+INFO:14:38:18 Looking for sensor: 25
+INFO:14:38:19 Looking for sensor: 24
+INFO:14:38:20 Looking for sensor: 23
+INFO:14:38:21 Looking for sensor: 22
+INFO:14:38:22 Looking for sensor: 21
+INFO:14:38:23 Looking for sensor: 20
+INFO:14:38:23 Checksum is not equal
+INFO:14:38:24 Looking for sensor: 19
+INFO:14:38:24 Checksum is not equal
+INFO:14:38:25 Looking for sensor: 18
+INFO:14:38:26 Looking for sensor: 17
+INFO:14:38:27 Looking for sensor: 16
+INFO:14:38:28 Looking for sensor: 15
+INFO:14:38:29 Looking for sensor: 14
+INFO:14:38:29 Checksum is not equal
+INFO:14:38:29 Checksum is not equal
+INFO:14:38:30 Checksum is not equal
+INFO:14:38:30 Looking for sensor: 13
+INFO:14:38:31 Looking for sensor: 12
+INFO:14:38:31 Checksum is not equal
+INFO:14:38:32 Looking for sensor: 11
+INFO:14:38:33 Looking for sensor: 10
+INFO:14:38:34 Looking for sensor: 9
+INFO:14:38:35 Looking for sensor: 8
+INFO:14:38:36 Looking for sensor: 7
+INFO:14:38:37 Looking for sensor: 6
+INFO:14:38:38 Looking for sensor: 5
+INFO:14:38:39 Looking for sensor: 4
+INFO:14:38:40 Looking for sensor: 3
+INFO:14:38:41 Looking for sensor: 2
+INFO:14:38:42 Looking for sensor: 1
+INFO:14:38:43 current address: Sensor not found
+INFO:14:38:53 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:38:55 Address: 11
+INFO:14:39:10 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:39:19 Added machine with Itm Number: 123
+INFO:14:39:19 Selected machine: 123
+INFO:14:39:23 Added sensor with location: Motor-DE-Y
+INFO:14:39:23 Selected sensor: Motor-DE-Y
+INFO:14:39:25 Received: b'\xe5'
+INFO:14:39:33 current address: 22
+INFO:14:43:27 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:43:36 Received: b'\xe5'
+INFO:14:43:42 Looking for sensor: 60
+INFO:14:43:43 Looking for sensor: 59
+INFO:14:43:44 Looking for sensor: 58
+INFO:14:43:45 Looking for sensor: 57
+INFO:14:43:46 Looking for sensor: 56
+INFO:14:43:47 Looking for sensor: 55
+INFO:14:43:48 Looking for sensor: 54
+INFO:14:43:49 Looking for sensor: 53
+INFO:14:43:50 current address: 13
+INFO:14:44:15 Added machine with Itm Number: 123
+INFO:14:44:15 Selected machine: 123
+INFO:14:44:20 Added sensor with location: Pump-DE-Ax2
+INFO:14:44:20 Selected sensor: Pump-DE-Ax2
+INFO:14:44:23 Received: b'\xe5'
+INFO:14:44:30 Looking for sensor: 60
+INFO:14:44:31 Looking for sensor: 59
+INFO:14:44:32 Looking for sensor: 58
+INFO:14:44:33 Looking for sensor: 57
+INFO:14:44:34 Looking for sensor: 56
+INFO:14:44:35 Looking for sensor: 55
+INFO:14:44:36 Looking for sensor: 54
+INFO:14:44:37 Looking for sensor: 53
+INFO:14:44:38 Looking for sensor: 52
+INFO:14:44:39 current address: 44
+INFO:14:46:04 Software Version: 0.2a
+INFO:14:46:11 Address: 44
+INFO:14:47:54 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:48:10 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:52:28 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:52:59 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:53:11 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:53:19 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:53:26 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:53:33 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:53:39 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:53:44 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:53:55 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:54:52 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:55:19 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:55:41 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:55:48 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:55:55 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:56:00 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:56:24 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:56:47 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:57:14 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:57:37 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:57:45 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:57:51 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:57:58 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:59:07 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:59:15 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:59:25 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:15:00:13 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:15:00:43 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:15:01:00 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:15:01:15 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:15:01:25 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:15:01:58 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:15:02:36 No sensor selected
+INFO:15:02:36 Temperature: 28.911430494399994
+INFO:15:02:36 Distance: 547.0225830078125
+INFO:15:02:36 Serial Number: 926
+INFO:15:02:36 Article Number: 4314083
+INFO:15:02:36 Software Version: 0.2a
+INFO:15:02:36 Description: DT3009-S1,4-M20_OSS_LF
+INFO:15:02:36 Measuring Unit: μm
+INFO:15:02:36 Measuring Range: 1400.0
+INFO:15:02:36 Measuring Offset: 100.0
+INFO:15:02:36 Address: 44
+INFO:15:03:45 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:15:04:01 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:15:05:05 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:15:05:36 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:15:06:28 No sensor selected
+INFO:15:06:28 Temperature: 28.98903625951999
+INFO:15:06:28 Distance: 547.0704345703125
+INFO:15:06:28 Serial Number: 926
+INFO:15:06:28 Article Number: 4314083
+INFO:15:06:28 Software Version: 0.2a
+INFO:15:06:28 Description: DT3009-S1,4-M20_OSS_LF
+INFO:15:06:28 Measuring Unit: μm
+INFO:15:06:28 Measuring Range: 1400.0
+INFO:15:06:28 Measuring Offset: 100.0
+INFO:15:06:28 Address: 44
+INFO:15:06:33 Temperature: 28.98903625951999
+INFO:15:06:34 Temperature: 28.98903625951999
+INFO:15:06:34 Temperature: 28.98306658528
+INFO:15:06:34 Temperature: 28.98306658528
+INFO:15:06:34 Temperature: 28.98306658528
+INFO:15:06:35 Temperature: 28.98306658528
+INFO:15:07:46 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:15:07:47 Distance: 547.0225830078125
+INFO:15:07:48 Serial Number: 926
+INFO:15:07:49 Software Version: 0.2a
+INFO:15:07:49 Article Number: 4314083
+INFO:15:07:50 Description: DT3009-S1,4-M20_OSS_LF
+INFO:15:07:51 Measuring Unit: μm
+INFO:15:07:52 Measuring Range: 1400.0
+INFO:15:07:52 Measuring Offset: 100.0
+INFO:15:07:53 Address: 44
+INFO:15:08:35 Temperature: 29.042763327679992
+INFO:15:08:46 No sensor selected
+INFO:15:08:46 Temperature: 29.05470267615999
+INFO:15:08:46 Distance: 547.0704345703125
+INFO:15:08:46 Serial Number: 926
+INFO:15:08:46 Article Number: 4314083
+INFO:15:08:46 Software Version: 0.2a
+INFO:15:08:46 Description: DT3009-S1,4-M20_OSS_LF
+INFO:15:08:46 Measuring Unit: μm
+INFO:15:08:46 Measuring Range: 1400.0
+INFO:15:08:46 Measuring Offset: 100.0
+INFO:15:08:46 Address: 44
+INFO:15:09:07 Added machine with Itm Number: 123
+INFO:15:09:07 Selected machine: 123
+INFO:15:09:50 Added sensor with location: Motor-DE-Y
+INFO:15:09:50 Selected sensor: Motor-DE-Y
+INFO:15:10:14 Received: b'\xe5'
+INFO:15:10:22 Looking for sensor: 60
+INFO:15:10:23 Looking for sensor: 59
+INFO:15:10:24 Looking for sensor: 58
+INFO:15:10:25 Looking for sensor: 57
+INFO:15:10:26 Looking for sensor: 56
+INFO:15:10:27 Looking for sensor: 55
+INFO:15:10:28 Looking for sensor: 54
+INFO:15:10:29 Looking for sensor: 53
+INFO:15:10:30 Looking for sensor: 52
+INFO:15:10:31 Looking for sensor: 51
+INFO:15:10:32 Looking for sensor: 50
+INFO:15:10:33 current address: 22
+INFO:15:10:51 Received: b'\xe5'
+INFO:15:10:57 Looking for sensor: 60
+INFO:15:10:58 Looking for sensor: 59
+INFO:15:10:59 Looking for sensor: 58
+INFO:15:11:00 Looking for sensor: 57
+INFO:15:11:01 Looking for sensor: 56
+INFO:15:11:02 Looking for sensor: 55
+INFO:15:11:03 Looking for sensor: 54
+INFO:15:11:04 Looking for sensor: 53
+INFO:15:11:05 Looking for sensor: 52
+INFO:15:11:06 Looking for sensor: 51
+INFO:15:11:07 Looking for sensor: 50
+INFO:15:11:08 Looking for sensor: 49
+INFO:15:11:09 Looking for sensor: 48
+INFO:15:11:10 Looking for sensor: 47
+INFO:15:11:11 Looking for sensor: 46
+INFO:15:11:12 Looking for sensor: 45
+INFO:15:11:13 Looking for sensor: 44
+INFO:15:11:14 Looking for sensor: 43
+INFO:15:11:15 Looking for sensor: 42
+INFO:15:11:16 Looking for sensor: 41
+INFO:15:11:17 Looking for sensor: 40
+INFO:15:11:18 Looking for sensor: 39
+INFO:15:11:19 Looking for sensor: 38
+INFO:15:11:20 Looking for sensor: 37
+INFO:15:11:21 Looking for sensor: 36
+INFO:15:11:22 Looking for sensor: 35
+INFO:15:11:23 current address: 22
+INFO:15:11:30 Received: b'\xe5'
+INFO:15:11:35 Looking for sensor: 60
+INFO:15:11:36 Looking for sensor: 59
+INFO:15:11:37 Looking for sensor: 58
+INFO:15:11:38 Looking for sensor: 57
+INFO:15:11:39 Looking for sensor: 56
+INFO:15:11:39 current address: 22
+INFO:15:12:23 Received: b'\xe5'
+INFO:15:12:28 Looking for sensor: 60
+INFO:15:12:29 Looking for sensor: 59
+INFO:15:12:30 Looking for sensor: 58
+INFO:15:12:31 Looking for sensor: 57
+INFO:15:12:32 current address: 22
+INFO:15:13:31 Added sensor with location: Pump-DE-Y
+INFO:15:13:31 Selected sensor: Pump-DE-Y
+INFO:15:13:47 Received: b'\xe5'
+INFO:15:13:54 Looking for sensor: 60
+INFO:15:13:55 Looking for sensor: 59
+INFO:15:13:56 Looking for sensor: 58
+INFO:15:13:57 Looking for sensor: 57
+INFO:15:13:58 Looking for sensor: 56
+INFO:15:13:59 Looking for sensor: 55
+INFO:15:14:00 Looking for sensor: 54
+INFO:15:14:01 Looking for sensor: 53
+INFO:15:14:01 current address: 42
+INFO:15:14:06 Machine: 123,  Sensor: Pump-DE-Y
+INFO:15:14:06 Temperature: 21.41004180908203
+INFO:15:14:06 Distance: 1491.211669921875
+INFO:15:14:06 Serial Number: 930
+INFO:15:14:06 Article Number: 4314083
+INFO:15:14:06 Software Version: 0.3a
+INFO:15:14:06 Description: DT3009-S1,4-M20_OSS_LF
+INFO:15:14:06 Measuring Unit: μm
+INFO:15:14:06 Measuring Range: 1400.0
+INFO:15:14:06 Measuring Offset: 100.0
+INFO:15:14:06 Address: 42
+INFO:15:14:08 Selected sensor: Motor-DE-Y
+INFO:15:14:19 Machine: 123,  Sensor: Motor-DE-Y
+INFO:15:14:19 Checksum is not equal
+INFO:15:14:19 Checksum is not equal
+INFO:15:14:19 Checksum is not equal
+INFO:15:14:19 Checksum is not equal
+INFO:15:14:19 Checksum is not equal
+INFO:15:14:19 Checksum is not equal
+INFO:15:14:19 Checksum is not equal
+INFO:15:14:19 Checksum is not equal
+INFO:15:14:19 Checksum is not equal
+INFO:15:14:19 Checksum is not equal
+INFO:15:14:22 Machine: 123,  Sensor: Motor-DE-Y
+INFO:15:14:22 Checksum is not equal
+INFO:15:14:22 Checksum is not equal
+INFO:15:14:22 Checksum is not equal
+INFO:15:14:22 Checksum is not equal
+INFO:15:14:22 Checksum is not equal
+INFO:15:14:22 Checksum is not equal
+INFO:15:14:22 Checksum is not equal
+INFO:15:14:22 Checksum is not equal
+INFO:15:14:22 Checksum is not equal
+INFO:15:14:22 Checksum is not equal
+INFO:15:14:29 Machine: 123,  Sensor: Motor-DE-Y
+INFO:15:14:29 Checksum is not equal
+INFO:15:14:29 Checksum is not equal
+INFO:15:14:29 Checksum is not equal
+INFO:15:14:29 Checksum is not equal
+INFO:15:14:29 Checksum is not equal
+INFO:15:14:29 Checksum is not equal
+INFO:15:14:29 Checksum is not equal
+INFO:15:14:29 Checksum is not equal
+INFO:15:14:29 Checksum is not equal
+INFO:15:14:29 Checksum is not equal
+INFO:15:14:41 Machine: 123,  Sensor: Motor-DE-Y
+INFO:15:14:41 Checksum is not equal
+INFO:15:14:41 Checksum is not equal
+INFO:15:14:41 Checksum is not equal
+INFO:15:14:41 Checksum is not equal
+INFO:15:14:41 Checksum is not equal
+INFO:15:14:41 Checksum is not equal
+INFO:15:14:41 Checksum is not equal
+INFO:15:14:41 Checksum is not equal
+INFO:15:14:41 Checksum is not equal
+INFO:15:14:41 Checksum is not equal
+INFO:15:14:57 Checksum is not equal
+INFO:15:14:58 Checksum is not equal
+INFO:15:14:58 Checksum is not equal
+INFO:15:14:58 Checksum is not equal
+INFO:15:14:59 Checksum is not equal
+INFO:15:15:11 Added sensor with location: Pump-KP
+INFO:15:15:11 Selected sensor: Pump-KP
+INFO:15:15:13 Checksum is not equal
+INFO:15:15:14 Checksum is not equal
+INFO:15:15:14 Checksum is not equal
+INFO:15:15:15 Checksum is not equal
+INFO:15:15:15 Checksum is not equal
+INFO:15:15:15 Checksum is not equal
+INFO:15:15:15 Checksum is not equal
+INFO:15:15:26 Checksum is not equal
+INFO:15:15:27 Checksum is not equal
+INFO:15:15:27 Checksum is not equal
+INFO:15:15:28 Checksum is not equal
+INFO:15:15:28 Checksum is not equal
+INFO:15:15:43 Checksum is not equal
+INFO:15:15:44 Checksum is not equal
+INFO:15:15:44 Checksum is not equal
+INFO:15:15:45 Checksum is not equal
+INFO:15:15:45 Checksum is not equal
+INFO:15:15:45 Checksum is not equal
+INFO:15:15:45 Checksum is not equal
+INFO:15:15:45 Checksum is not equal
+INFO:15:15:46 Checksum is not equal
+INFO:15:15:56 Checksum is not equal
+INFO:15:15:57 Checksum is not equal
+INFO:15:15:58 Checksum is not equal
+INFO:15:15:58 Checksum is not equal
+INFO:15:15:58 Checksum is not equal
+INFO:15:15:58 Checksum is not equal
+INFO:15:15:59 Checksum is not equal
+INFO:15:16:14 Checksum is not equal
+INFO:15:16:14 Checksum is not equal
+INFO:15:16:14 Checksum is not equal
+INFO:15:16:15 Checksum is not equal
+INFO:15:19:54 Checksum is not equal
+INFO:15:24:01 Checksum is not equal
+INFO:15:24:27 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:15:24:35 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:15:24:38 Temperature: 24.920310974121094
+INFO:15:24:40 Distance: 1491.211669921875
+INFO:15:24:41 Serial Number: 930
+INFO:15:24:43 Article Number: 4314083
+INFO:15:24:44 Software Version: 0.3a
+INFO:15:25:38 Received: b'\xe5'
+INFO:15:25:51 Looking for sensor: 60
+INFO:15:25:52 Looking for sensor: 59
+INFO:15:25:53 Looking for sensor: 58
+INFO:15:25:54 Looking for sensor: 57
+INFO:15:25:55 Looking for sensor: 56
+INFO:15:25:55 current address: 50
+INFO:15:26:00 Received: b'\xe5'
+INFO:15:26:07 Looking for sensor: 60
+INFO:15:26:08 Looking for sensor: 59
+INFO:15:26:09 Looking for sensor: 58
+INFO:15:26:10 Looking for sensor: 57
+INFO:15:26:11 Looking for sensor: 56
+INFO:15:26:12 Looking for sensor: 55
+INFO:15:26:13 Looking for sensor: 54
+INFO:15:26:14 Looking for sensor: 53
+INFO:15:26:15 Looking for sensor: 52
+INFO:15:26:16 Looking for sensor: 51
+INFO:15:26:17 Looking for sensor: 50
+INFO:15:26:18 Looking for sensor: 49
+INFO:15:26:19 Looking for sensor: 48
+INFO:15:26:20 Looking for sensor: 47
+INFO:15:26:21 Looking for sensor: 46
+INFO:15:26:22 Looking for sensor: 45
+INFO:15:26:23 Looking for sensor: 44
+INFO:15:26:24 Looking for sensor: 43
+INFO:15:26:25 Looking for sensor: 42
+INFO:15:26:25 current address: 50
+INFO:15:28:02 Temperature: 25.662078857421875
+INFO:15:28:02 Temperature: 25.662078857421875
+INFO:15:28:03 Temperature: 25.667922973632812
+INFO:15:28:03 Temperature: 25.667922973632812
+INFO:15:28:03 Temperature: 25.667922973632812
+INFO:15:28:03 Temperature: 25.667922973632812
+INFO:15:28:04 Temperature: 25.667922973632812
+INFO:15:28:04 Temperature: 25.667922973632812
+INFO:15:28:04 Temperature: 25.667922973632812
+INFO:15:28:04 Temperature: 25.667922973632812
+INFO:15:28:04 Temperature: 25.667922973632812
+INFO:15:28:04 Temperature: 25.67376708984375
+INFO:15:28:05 Temperature: 25.67376708984375
+INFO:15:28:06 No sensor selected
+INFO:15:28:06 Temperature: 25.679603576660156
+INFO:15:28:06 Distance: 1491.211669921875
+INFO:15:28:06 Serial Number: 930
+INFO:15:28:06 Article Number: 4314083
+INFO:15:28:06 Software Version: 0.3a
+INFO:15:28:06 Description: DT3009-S1,4-M20_OSS_LF
+INFO:15:28:06 Measuring Unit: μm
+INFO:15:28:06 Measuring Range: 1400.0
+INFO:15:28:06 Measuring Offset: 100.0
+INFO:15:28:06 Address: 50
+INFO:15:30:47 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:15:30:49 No sensor selected
+INFO:15:30:49 Temperature: 26.35712432861328
+INFO:15:30:49 Distance: 1491.211669921875
+INFO:15:30:49 Serial Number: 930
+INFO:15:30:49 Article Number: 4314083
+INFO:15:30:49 Software Version: 0.3a
+INFO:15:30:49 Description: DT3009-S1,4-M20_OSS_LF
+INFO:15:30:49 Measuring Unit: μm
+INFO:15:30:49 Measuring Range: 1400.0
+INFO:15:30:49 Measuring Offset: 100.0
+INFO:15:30:49 Address: 50
+INFO:15:30:50 No sensor selected
+INFO:15:30:50 Temperature: 26.35712432861328
+INFO:15:30:50 Distance: 1491.211669921875
+INFO:15:30:50 Serial Number: 930
+INFO:15:30:50 Article Number: 4314083
+INFO:15:30:50 Software Version: 0.3a
+INFO:15:30:50 Description: DT3009-S1,4-M20_OSS_LF
+INFO:15:30:50 Measuring Unit: μm
+INFO:15:30:50 Measuring Range: 1400.0
+INFO:15:30:50 Measuring Offset: 100.0
+INFO:15:30:50 Address: 50
+INFO:15:30:50 No sensor selected
+INFO:15:30:50 Temperature: 26.35712432861328
+INFO:15:30:50 Distance: 1491.211669921875
+INFO:15:30:50 Serial Number: 930
+INFO:15:30:50 Article Number: 4314083
+INFO:15:30:50 Software Version: 0.3a
+INFO:15:30:50 Description: DT3009-S1,4-M20_OSS_LF
+INFO:15:30:50 Measuring Unit: μm
+INFO:15:30:50 Measuring Range: 1400.0
+INFO:15:30:50 Measuring Offset: 100.0
+INFO:15:30:50 Address: 50
+INFO:15:30:50 No sensor selected
+INFO:15:30:50 Temperature: 26.35712432861328
+INFO:15:30:50 Distance: 1491.211669921875
+INFO:15:30:50 Serial Number: 930
+INFO:15:30:50 Article Number: 4314083
+INFO:15:30:50 Software Version: 0.3a
+INFO:15:30:50 Description: DT3009-S1,4-M20_OSS_LF
+INFO:15:30:50 Measuring Unit: μm
+INFO:15:30:50 Measuring Range: 1400.0
+INFO:15:30:50 Measuring Offset: 100.0
+INFO:15:30:50 Address: 50
+INFO:15:30:57 No sensor selected
+INFO:15:30:57 Temperature: 26.386329650878906
+INFO:15:30:57 Distance: 1491.211669921875
+INFO:15:30:57 Serial Number: 930
+INFO:15:30:57 Article Number: 4314083
+INFO:15:30:57 Software Version: 0.3a
+INFO:15:30:57 Description: DT3009-S1,4-M20_OSS_LF
+INFO:15:30:57 Measuring Unit: μm
+INFO:15:30:57 Measuring Range: 1400.0
+INFO:15:30:57 Measuring Offset: 100.0
+INFO:15:30:57 Address: 50
+INFO:15:30:57 No sensor selected
+INFO:15:30:57 Temperature: 26.386329650878906
+INFO:15:30:57 Distance: 1491.211669921875
+INFO:15:30:57 Serial Number: 930
+INFO:15:30:57 Article Number: 4314083
+INFO:15:30:57 Software Version: 0.3a
+INFO:15:30:57 Description: DT3009-S1,4-M20_OSS_LF
+INFO:15:30:57 Measuring Unit: μm
+INFO:15:30:57 Measuring Range: 1400.0
+INFO:15:30:57 Measuring Offset: 100.0
+INFO:15:30:57 Address: 50
+INFO:15:30:57 No sensor selected
+INFO:15:30:57 Temperature: 26.386329650878906
+INFO:15:30:57 Distance: 1491.211669921875
+INFO:15:30:57 Serial Number: 930
+INFO:15:30:57 Article Number: 4314083
+INFO:15:30:57 Software Version: 0.3a
+INFO:15:30:57 Description: DT3009-S1,4-M20_OSS_LF
+INFO:15:30:57 Measuring Unit: μm
+INFO:15:30:57 Measuring Range: 1400.0
+INFO:15:30:57 Measuring Offset: 100.0
+INFO:15:30:57 Address: 50
+INFO:15:31:35 No sensor selected
+INFO:15:31:35 Temperature: 26.49146270751953
+INFO:15:31:35 Distance: 1491.211669921875
+INFO:15:31:35 Serial Number: 930
+INFO:15:31:35 Article Number: 4314083
+INFO:15:31:35 Software Version: 0.3a
+INFO:15:31:35 Description: DT3009-S1,4-M20_OSS_LF
+INFO:15:31:35 Measuring Unit: μm
+INFO:15:31:35 Measuring Range: 1400.0
+INFO:15:31:35 Measuring Offset: 100.0
+INFO:15:31:35 Address: 50
+INFO:15:31:35 No sensor selected
+INFO:15:31:35 Temperature: 26.49146270751953
+INFO:15:31:35 Distance: 1491.211669921875
+INFO:15:31:35 Serial Number: 930
+INFO:15:31:35 Article Number: 4314083
+INFO:15:31:35 Software Version: 0.3a
+INFO:15:31:35 Description: DT3009-S1,4-M20_OSS_LF
+INFO:15:31:35 Measuring Unit: μm
+INFO:15:31:35 Measuring Range: 1400.0
+INFO:15:31:35 Measuring Offset: 100.0
+INFO:15:31:35 Address: 50
+INFO:15:31:35 No sensor selected
+INFO:15:31:35 Temperature: 26.49146270751953
+INFO:15:31:35 Distance: 1491.211669921875
+INFO:15:31:35 Serial Number: 930
+INFO:15:31:36 Article Number: 4314083
+INFO:15:31:36 Software Version: 0.3a
+INFO:15:31:36 Description: DT3009-S1,4-M20_OSS_LF
+INFO:15:31:36 Measuring Unit: μm
+INFO:15:31:36 Measuring Range: 1400.0
+INFO:15:31:36 Measuring Offset: 100.0
+INFO:15:31:36 Address: 50
+INFO:15:31:36 No sensor selected
+INFO:15:31:36 Temperature: 26.49146270751953
+INFO:15:31:36 Distance: 1491.211669921875
+INFO:15:31:36 Serial Number: 930
+INFO:15:31:36 Article Number: 4314083
+INFO:15:31:36 Software Version: 0.3a
+INFO:15:31:36 Description: DT3009-S1,4-M20_OSS_LF
+INFO:15:31:36 Measuring Unit: μm
+INFO:15:31:36 Measuring Range: 1400.0
+INFO:15:31:36 Measuring Offset: 100.0
+INFO:15:31:36 Address: 50
+INFO:15:31:36 No sensor selected
+INFO:15:31:36 Temperature: 26.49146270751953
+INFO:15:31:36 Distance: 1491.211669921875
+INFO:15:31:36 Serial Number: 930
+INFO:15:31:36 Article Number: 4314083
+INFO:15:31:36 Software Version: 0.3a
+INFO:15:31:36 Description: DT3009-S1,4-M20_OSS_LF
+INFO:15:31:36 Measuring Unit: μm
+INFO:15:31:36 Measuring Range: 1400.0
+INFO:15:31:36 Measuring Offset: 100.0
+INFO:15:31:36 Address: 50
+INFO:15:31:36 No sensor selected
+INFO:15:31:36 Temperature: 26.49146270751953
+INFO:15:31:36 Distance: 1491.211669921875
+INFO:15:31:36 Serial Number: 930
+INFO:15:31:36 Article Number: 4314083
+INFO:15:31:36 Software Version: 0.3a
+INFO:15:31:36 Description: DT3009-S1,4-M20_OSS_LF
+INFO:15:31:36 Measuring Unit: μm
+INFO:15:31:36 Measuring Range: 1400.0
+INFO:15:31:36 Measuring Offset: 100.0
+INFO:15:31:36 Address: 50
+INFO:15:31:36 No sensor selected
+INFO:15:31:36 Temperature: 26.49146270751953
+INFO:15:31:36 Distance: 1491.211669921875
+INFO:15:31:36 Serial Number: 930
+INFO:15:31:36 Article Number: 4314083
+INFO:15:31:36 Software Version: 0.3a
+INFO:15:31:36 Description: DT3009-S1,4-M20_OSS_LF
+INFO:15:31:36 Measuring Unit: μm
+INFO:15:31:36 Measuring Range: 1400.0
+INFO:15:31:36 Measuring Offset: 100.0
+INFO:15:31:36 Address: 50
+INFO:15:31:36 No sensor selected
+INFO:15:31:36 Temperature: 26.49146270751953
+INFO:15:31:36 Distance: 1491.211669921875
+INFO:15:31:36 Serial Number: 930
+INFO:15:31:36 Article Number: 4314083
+INFO:15:31:36 Software Version: 0.3a
+INFO:15:31:36 Description: DT3009-S1,4-M20_OSS_LF
+INFO:15:31:36 Measuring Unit: μm
+INFO:15:31:36 Measuring Range: 1400.0
+INFO:15:31:36 Measuring Offset: 100.0
+INFO:15:31:36 Address: 50
+INFO:15:31:36 No sensor selected
+INFO:15:31:36 Temperature: 26.49146270751953
+INFO:15:31:36 Distance: 1491.211669921875
+INFO:15:31:37 Serial Number: 930
+INFO:15:31:37 Article Number: 4314083
+INFO:15:31:37 Software Version: 0.3a
+INFO:15:31:37 Description: DT3009-S1,4-M20_OSS_LF
+INFO:15:31:37 Measuring Unit: μm
+INFO:15:31:37 Measuring Range: 1400.0
+INFO:15:31:37 Measuring Offset: 100.0
+INFO:15:31:37 Address: 50
+INFO:15:31:37 No sensor selected
+INFO:15:31:37 Temperature: 26.49146270751953
+INFO:15:31:37 Distance: 1491.211669921875
+INFO:15:31:37 Serial Number: 930
+INFO:15:31:37 Article Number: 4314083
+INFO:15:31:37 Software Version: 0.3a
+INFO:15:31:37 Description: DT3009-S1,4-M20_OSS_LF
+INFO:15:31:37 Measuring Unit: μm
+INFO:15:31:37 Measuring Range: 1400.0
+INFO:15:31:37 Measuring Offset: 100.0
+INFO:15:31:37 Address: 50
+INFO:15:31:37 No sensor selected
+INFO:15:31:37 Temperature: 26.49730682373047
+INFO:15:31:37 Distance: 1491.211669921875
+INFO:15:31:37 Serial Number: 930
+INFO:15:31:37 Article Number: 4314083
+INFO:15:31:37 Software Version: 0.3a
+INFO:15:31:37 Description: DT3009-S1,4-M20_OSS_LF
+INFO:15:31:37 Measuring Unit: μm
+INFO:15:31:37 Measuring Range: 1400.0
+INFO:15:31:37 Measuring Offset: 100.0
+INFO:15:31:37 Address: 50
+INFO:15:31:37 No sensor selected
+INFO:15:31:37 Temperature: 26.49730682373047
+INFO:15:31:37 Distance: 1491.211669921875
+INFO:15:31:37 Serial Number: 930
+INFO:15:31:37 Article Number: 4314083
+INFO:15:31:37 Software Version: 0.3a
+INFO:15:31:37 Description: DT3009-S1,4-M20_OSS_LF
+INFO:15:31:37 Measuring Unit: μm
+INFO:15:31:37 Measuring Range: 1400.0
+INFO:15:31:37 Measuring Offset: 100.0
+INFO:15:31:37 Address: 50
+INFO:15:31:37 No sensor selected
+INFO:15:31:37 Temperature: 26.49730682373047
+INFO:15:31:37 Distance: 1491.211669921875
+INFO:15:31:37 Serial Number: 930
+INFO:15:31:37 Article Number: 4314083
+INFO:15:31:37 Software Version: 0.3a
+INFO:15:31:37 Description: DT3009-S1,4-M20_OSS_LF
+INFO:15:31:37 Measuring Unit: μm
+INFO:15:31:37 Measuring Range: 1400.0
+INFO:15:31:37 Measuring Offset: 100.0
+INFO:15:31:37 Address: 50
+INFO:15:31:37 No sensor selected
+INFO:15:31:37 Temperature: 26.49730682373047
+INFO:15:31:37 Distance: 1491.211669921875
+INFO:15:31:37 Serial Number: 930
+INFO:15:31:37 Article Number: 4314083
+INFO:15:31:37 Software Version: 0.3a
+INFO:15:31:37 Description: DT3009-S1,4-M20_OSS_LF
+INFO:15:31:37 Measuring Unit: μm
+INFO:15:31:38 Measuring Range: 1400.0
+INFO:15:31:38 Measuring Offset: 100.0
+INFO:15:31:38 Address: 50
+INFO:15:31:38 No sensor selected
+INFO:15:31:38 Temperature: 26.49730682373047
+INFO:15:31:38 Distance: 1491.211669921875
+INFO:15:31:38 Serial Number: 930
+INFO:15:31:38 Article Number: 4314083
+INFO:15:31:38 Software Version: 0.3a
+INFO:15:31:38 Description: DT3009-S1,4-M20_OSS_LF
+INFO:15:31:38 Measuring Unit: μm
+INFO:15:31:38 Measuring Range: 1400.0
+INFO:15:31:38 Measuring Offset: 100.0
+INFO:15:31:38 Address: 50
+INFO:15:31:38 No sensor selected
+INFO:15:31:38 Temperature: 26.49730682373047
+INFO:15:31:38 Distance: 1491.211669921875
+INFO:15:31:38 Serial Number: 930
+INFO:15:31:38 Article Number: 4314083
+INFO:15:31:38 Software Version: 0.3a
+INFO:15:31:38 Description: DT3009-S1,4-M20_OSS_LF
+INFO:15:31:38 Measuring Unit: μm
+INFO:15:31:38 Measuring Range: 1400.0
+INFO:15:31:38 Measuring Offset: 100.0
+INFO:15:31:38 Address: 50
+INFO:15:31:38 No sensor selected
+INFO:15:31:38 Temperature: 26.49730682373047
+INFO:15:31:38 Distance: 1491.211669921875
+INFO:15:31:38 Serial Number: 930
+INFO:15:31:38 Article Number: 4314083
+INFO:15:31:38 Software Version: 0.3a
+INFO:15:31:38 Description: DT3009-S1,4-M20_OSS_LF
+INFO:15:31:38 Measuring Unit: μm
+INFO:15:31:38 Measuring Range: 1400.0
+INFO:15:31:38 Measuring Offset: 100.0
+INFO:15:31:38 Address: 50
+INFO:15:31:38 No sensor selected
+INFO:15:31:38 Temperature: 26.49730682373047
+INFO:15:31:38 Distance: 1491.211669921875
+INFO:15:31:38 Serial Number: 930
+INFO:15:31:38 Article Number: 4314083
+INFO:15:31:38 Software Version: 0.3a
+INFO:15:31:38 Description: DT3009-S1,4-M20_OSS_LF
+INFO:15:31:38 Measuring Unit: μm
+INFO:15:31:38 Measuring Range: 1400.0
+INFO:15:31:38 Measuring Offset: 100.0
+INFO:15:31:38 Address: 50
+INFO:15:31:38 No sensor selected
+INFO:15:31:38 Temperature: 26.503143310546875
+INFO:15:31:38 Distance: 1491.211669921875
+INFO:15:31:38 Serial Number: 930
+INFO:15:31:38 Article Number: 4314083
+INFO:15:31:38 Software Version: 0.3a
+INFO:15:31:38 Description: DT3009-S1,4-M20_OSS_LF
+INFO:15:31:38 Measuring Unit: μm
+INFO:15:31:38 Measuring Range: 1400.0
+INFO:15:31:38 Measuring Offset: 100.0
+INFO:15:31:38 Address: 50
