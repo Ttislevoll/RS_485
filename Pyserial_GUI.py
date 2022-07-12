@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import ANCHOR, BOTTOM, END, LEFT, N, NW, RIGHT, SOLID, SUNKEN, TOP, W, ttk, messagebox, filedialog
+from tkinter import ANCHOR, BOTTOM, CENTER, END, LEFT, N, NW, RIGHT, SOLID, SUNKEN, TOP, W, ttk, messagebox, filedialog
 import ctypes
 import serial
 import serial.tools.list_ports
@@ -16,6 +16,7 @@ import time
 from new_machine import New_Machine
 from new_sensor import New_Sensor
           
+#global variables
 ports : list = []
 adr : hex = 0x00
 fcs : hex = 0x00
@@ -25,13 +26,15 @@ t_60s = 0
 ser = None
 machines : List[Machine] = []
 labels = {}
-addresses = [0x7e, 0x20]
 temp_corr = {}
+
+#reads temperature correction values from text file
 for line in open("TempCorrFactor.txt").readlines():
     if line != '\n':
         var = line.split()
         temp_corr[var[0]] = [float(var[1]), float(var[2])]
 
+#telegrams for communicating with sensors
 broadcast = [0x10,0x7f,0x01,0x09,0x89,0x16]
 distance_temp_v03a = [0x10,adr,0x01,0x4c,fcs,0x16]
 temperature_v02a = [0x68,0x09,0x09,0x68,adr,0x01,0x4c,0x30,0x33,0x5e,0xd1,0x0c,0x04,fcs,0x16]
@@ -49,6 +52,8 @@ assign_address = [0x68,0x09,0x09,0x68,adr,0x01,0x43,0x37,0x3e,new_adr,0x00,0x00,
 
 
 #serial read functions
+
+#reads temperature from sensor with version 0.2a or 0.3a
 def get_temperature(adr, sensor):
     try:
         adr = adr()
@@ -79,6 +84,7 @@ def get_temperature(adr, sensor):
         log_text=error
         log_write(log_text)
 
+#reads distance from sensor with version 0.2a or 0.3a
 def get_distance(adr, sensor):
     try:
         adr=adr()
@@ -99,6 +105,7 @@ def get_distance(adr, sensor):
         log_text=error
         log_write(log_text)
 
+#returns serial number from sensor
 def get_serial_number(adr):
     serial_number[4] = adr()
     serial_number[-2] = get_fcs(serial_number, 4)
@@ -108,6 +115,7 @@ def get_serial_number(adr):
     serial_num = int.from_bytes(received[13:17], "little")
     return serial_num
 
+#saves and prints serial number
 def save_serial_number(adr, sensor):
     try:
         serial_number = get_serial_number(adr)
@@ -120,6 +128,7 @@ def save_serial_number(adr, sensor):
         log_text=error
         log_write(log_text)
 
+#reads article number of sensor
 def get_article_number(adr, sensor):
     try:
         article_number[4] = adr()
@@ -137,6 +146,7 @@ def get_article_number(adr, sensor):
         log_text=error
         log_write(log_text)
 
+#returns software version of sensor
 def get_sw_version(adr):
     sw_version[4] = adr()
     sw_version[-2] = get_fcs(sw_version, 4)
@@ -147,6 +157,7 @@ def get_sw_version(adr):
     sw_string = f'0.{sw[1]}{chr(sw[0])}'
     return sw_string
 
+#save and print software version
 def save_sw_version(adr, sensor):
     try:
         sw_version = get_sw_version(adr)
@@ -159,6 +170,7 @@ def save_sw_version(adr, sensor):
         log_text=error
         log_write(log_text)
 
+#reads destriction of sensor
 def get_description(adr, sensor):
     try:
         description[4] = adr()
@@ -178,6 +190,7 @@ def get_description(adr, sensor):
         log_text=error
         log_write(log_text)
 
+#reads measuring unit of sensor
 def get_measuring_unit(adr, sensor):
     try:
         measuring_unit[4] = adr()
@@ -196,6 +209,7 @@ def get_measuring_unit(adr, sensor):
         log_text=error
         log_write(log_text)
 
+#reads measuring range of sensor
 def get_measuring_range(adr, sensor):
     try:
         measuring_range[4] = adr()
@@ -213,6 +227,7 @@ def get_measuring_range(adr, sensor):
         log_text=error
         log_write(log_text)
 
+#reads measuring offset of sensor
 def get_measuring_offset(adr, sensor):
     try:
         measuring_offset[4] = adr()
@@ -230,6 +245,7 @@ def get_measuring_offset(adr, sensor):
         log_text=error
         log_write(log_text)
 
+#returns address if it exists, or if adr=0x7f(broadcast), returns address of single connected sensor
 def get_adr(adr):
     broadcast[1] = adr
     broadcast[-2] = get_fcs(broadcast, 1)
@@ -238,6 +254,7 @@ def get_adr(adr):
     if get_fcs(received, 1) != received[-2]: raise Exception("Checksum is not equal")
     return received[2]
 
+#saves and prints address
 def save_address(adr, sensor):
     try:
         address = get_adr(adr())
@@ -250,6 +267,7 @@ def save_address(adr, sensor):
         log_text=error
         log_write(log_text)
 
+#retrieve all date from sensor
 def get_all(adr, sensor):
     txt_log.insert(END, "\n")
     try: log_text=f'Machine: {get_machine()},  Sensor: {get_sensor()}'
@@ -266,10 +284,11 @@ def get_all(adr, sensor):
     get_measuring_offset(adr, sensor)
     save_address(adr, sensor)
 
-def get_all_multiple():
+#retrieves all data from sensors when there are mulitple sensors connected
+def get_all_group():
     sensors_group = get_machine().sensors_group
     sensors_group.clear()
-    ser.timeout=0.01
+    ser.timeout=0.05
     for i in range(0,127):
         try: 
             adr = get_adr(i)
@@ -286,23 +305,26 @@ def get_all_multiple():
                         get_all(lambda:adr, lambda:sensors_group[-1])
                         sensor_found = True
                         break                
-                ser.timeout=0.01
                 if not sensor_found: 
                     sensors_group.append(Sensor("Unknown", "Unknown", "Unknown", "Unknown"))                                        
                     log_write(f"Sensor: {serial_num} not found in registry")
                     get_all(lambda:adr, lambda:sensors_group[-1])
-                combobox_group_sensors['values'] = get_machine().sensors_group
-                current_group_sensor.set("")
+                ser.timeout=0.01                
             except Exception as error: 
                 log_write(error)
-                break        
+                break   
+    combobox_group_sensors['values'] = get_machine().sensors_group
+    current_group_sensor.set("")     
     ser.timeout=1
     
 
 #serial write functions
+#changes the address of single connected sensor
 def set_address(new_adr):
     try:
-        assign_address[4] = get_adr(0x7f)
+        try: current_adr=get_adr(get_sensor().values["Address"])
+        except: raise Exception("Sensor is not present")
+        assign_address[4] = current_adr
         assign_address[9] = new_adr
         assign_address[-2] = get_fcs(assign_address, 4)
         ser.write(bytearray(assign_address))
@@ -319,15 +341,17 @@ def set_address(new_adr):
         log_text=error
         log_write(log_text)
 
+#looks for sensor after reset follwing address change
 def polling_sensor():
     global seconds
     global t_60s
     current_adr = None
     ser.timeout = 0.01
+    if ser.in_waiting != 0: ser.reset_input_buffer()
     try:
         if(time.time() > t_60s):
             current_adr = "Sensor not found"                
-        else: current_adr = get_adr(0x7f)                
+        else: current_adr = get_adr(0x7f)              
     except: 
         time_left = t_60s - time.time()
         if(time_left < seconds):
@@ -335,13 +359,17 @@ def polling_sensor():
             seconds -= 1
         window.after(100, polling_sensor)
     else:
+        try: get_sensor().values["Address"] = current_adr
+        except: pass
         labels["Address"]['text'] = str(current_adr)
         log_text=f'current address: {current_adr}'
         log_write(log_text)
     ser.timeout = 1
 
 #Utility functions
-def refresh_ports(): #Function is called when refresh button is pressed
+
+#refreshes the values in list of ports
+def refresh_ports(): 
     global ports
     global ser
     ports = serial.tools.list_ports.comports()
@@ -349,13 +377,15 @@ def refresh_ports(): #Function is called when refresh button is pressed
     current_port.set("")
     ser = None
 
-def log_write(text : str): #Writes to log text-widget
+#writes string to log
+def log_write(text : str): 
     current_time = datetime.datetime.now().strftime("%H:%M:%S")
     logging.info(f'{str(current_time)} {text}')
     txt_log.insert(END, f'{str(current_time)} {text}\n')    
     txt_log.yview_moveto(1.0)
 
-def port_selected(): #Function is called when a port is selected
+#function is called when a port is selected from the list
+def port_selected():
     global ser
     ser = None
     ser = initialize_port()
@@ -363,27 +393,32 @@ def port_selected(): #Function is called when a port is selected
     log_text=f'Selected port: {current_port.get()}'
     log_write(log_text)
 
+#function is called when a machine is selected from the list
 def machine_selected():
     window.focus()
     log_text=f'Selected machine: {current_machine.get()}'
     log_write(log_text)
     combobox_sensors['values'] = get_machine().sensors
+    combobox_group_sensors['values'] = get_machine().sensors_group
     current_sensor.set("")    
     for key in labels:
         labels[key]['text'] = ""
 
+#function is called when a sensor is selected from the list
 def sensor_selected():
     window.focus()
     current_group_sensor.set("")
     sensor = get_sensor()
     txt_log.insert(END, "\n")
     log_text=f'Selected sensor: {current_sensor.get()}'
+    lbl_current_sensor['text'] = f"Sensor: {sensor.values['Serial Number']} Location: {sensor.location}"
     log_write(log_text) 
     #log_write(sensor)
     for key in sensor.values:
         if sensor.values[key]: log_write(f'{key}: {sensor.values[key]}')
         labels[key]['text'] = sensor.values[key]
 
+#function is called when a sensor is selected from the group sensor list
 def group_sensor_selected():
     window.focus()
     current_sensor.set("")
@@ -396,7 +431,7 @@ def group_sensor_selected():
         if group_sensor.values[key]: log_write(f'{key}: {group_sensor.values[key]}')
         labels[key]['text'] = group_sensor.values[key]
     
-
+#creates a gui button with label to display results
 def create_button(text, func, padx_btn=(20,8), padx_lbl=(8,20), pady=(8,8)):
     frame = ttk.Frame(frame_right, width=50, height=50)
     btn = ttk.Button(frame, text=text, width=14, command=lambda: func())
@@ -406,12 +441,14 @@ def create_button(text, func, padx_btn=(20,8), padx_lbl=(8,20), pady=(8,8)):
     frame.pack()
     return lbl
 
+#calculates the fcs checksum of the telegram
 def get_fcs(telegram, x):
     sum=0
     for i in range(x, len(telegram)-2):
         sum += telegram[i]
     return sum % 256
 
+#initializes Serial object
 def initialize_port():
     index = int(combobox_ports.current())
     if index < 0:
@@ -428,6 +465,7 @@ def initialize_port():
     )
     return ser
 
+#opens a dialog window for creating a new Machine object
 def create_machine():
     dialog = New_Machine(parent=window, msg_list=["ITM Number:","Description:","Serial Number:"])
     window.wait_window(dialog.window)
@@ -438,6 +476,7 @@ def create_machine():
         log_write(f'Added machine with Itm Number: {machines[0].itm_number}')
         machine_selected()
 
+#opens a dialog widow for creating a new Sensor object
 def create_sensor():
     if combobox_machines.current() == -1: 
         messagebox.showinfo("error", "No selected machine")
@@ -454,9 +493,11 @@ def create_sensor():
         sensor_selected()
         selected_address.set(values[1])
 
+#returns the selected Machine object
 def get_machine():
     return machines[combobox_machines.current()]
 
+#returns the selected Sensor object
 def get_sensor():
     return machines[combobox_machines.current()].sensors[combobox_sensors.current()]
 
@@ -481,7 +522,10 @@ window.iconphoto(False, icon)
 frame_right=ttk.Frame(master=window)
 frame_left= ttk.Frame(master=window)
 
-#Creates button for retreiving temperature value from sensor and a label to display result
+lbl_current_sensor = ttk.Label(frame_right, text="")
+lbl_current_sensor.pack(padx=(8,8), pady=(0,5))
+
+#Creates button for retreiving all data from sensor and a label to display result
 create_button("Get All", lambda:get_all(lambda:get_adr(0x7f), get_sensor), pady=(28,8))
 #Creates button for retreiving temperature value from sensor and a label to display result
 labels["Temperature"] = create_button("Temperature", lambda:get_temperature(lambda:get_adr(0x7f), get_sensor))
@@ -489,30 +533,23 @@ labels["Temperature"] = create_button("Temperature", lambda:get_temperature(lamb
 labels["Distance"] = create_button("Distance", lambda:get_distance(lambda:get_adr(0x7f), get_sensor))
 #Creates button for retreiving serial number from sensor and a label to display result
 labels["Serial Number"] = create_button("Serial Number", lambda:save_serial_number(lambda:get_adr(0x7f), get_sensor))
-#Creates button for retreiving sofr version from sensor and a label to display result
+#Creates button for retreiving software version from sensor and a label to display result
 labels["SW Version"] = create_button("SW Version", lambda:save_sw_version(lambda:get_adr(0x7f), get_sensor))
 #Creates button for retreiving article number from sensor and a label to display result
 labels["Article Number"] = create_button("Article Number", lambda:get_article_number(lambda:get_adr(0x7f), get_sensor))
-#Creates button for retreiving measuring unit from sensor and a label to display result
+#Creates button for retreiving description from sensor and a label to display result
 labels["Description"] = create_button("Description", lambda:get_description(lambda:get_adr(0x7f), get_sensor))
 #Creates button for retreiving measuring unit from sensor and a label to display result
 labels["Measuring Unit"] = create_button("Measuring Unit", lambda:get_measuring_unit(lambda:get_adr(0x7f), get_sensor))
-#Creates button for retreiving article number from sensor and a label to display result
+#Creates button for retreiving measuring range from sensor and a label to display result
 labels["Measuring Range"] = create_button("Measuring Range", lambda:get_measuring_range(lambda:get_adr(0x7f), get_sensor))
-#Creates button for retreiving article number from sensor and a label to display result
+#Creates button for retreiving measuring offset from sensor and a label to display result
 labels["Measuring Offset"] = create_button("Measuring Offset", lambda:get_measuring_offset(lambda:get_adr(0x7f), get_sensor))
-#Creates button for retreiving article number from sensor and a label to display result
+#Creates button for retreiving address from sensor and a label to display result
 labels["Address"] = create_button("Address", lambda:save_address(lambda:get_adr(0x7f), get_sensor))
 
-create_button("Multiple_sensor", get_all_multiple)
-
-
-#Creates button for changing address of the sensor
-# frame_assign_address = ttk.Frame(frame_left, width=50, height=50)
-# btn_assign_address = ttk.Button(frame_assign_address, text="Assign Address", width=14, command=lambda: set_address(0x7e))
-# btn_assign_address.pack(side=tk.LEFT, padx=(20,8), pady=8)
-# lbl_assign_address = ttk.Label(frame_assign_address, text="", width=14, background="white", relief=SOLID)
-# lbl_assign_address.pack(side=tk.RIGHT, padx=(8,20), pady=8)
+#creates a button for retreiving all data from group of sensors
+create_button("Group Sensors", get_all_group)
 
 #Creates a text box for displaying log
 frame_log = ttk.Frame(window)
@@ -523,6 +560,8 @@ txt_log.pack(side=LEFT)
 scrollbar = ttk.Scrollbar(frame_log, orient=tk.VERTICAL, command=txt_log.yview)
 txt_log.configure(yscroll=scrollbar.set)
 scrollbar.pack(side=RIGHT, fill=tk.BOTH)
+
+
 
 #Creates a list and button for changing address
 frame_assign_address = ttk.Frame(frame_left, width=50, height=50)
@@ -552,7 +591,7 @@ if(len(ports) > 0):
 refresh_btn = ttk.Button(frame_ports, text="Refresh", command=refresh_ports)
 refresh_btn.pack(side=tk.RIGHT, padx=(5,20), pady=(0,0))
 
-#Creates a label, dropdown list and refresh button for port selection
+#Creates a list for machine selection
 frame_machines = ttk.Frame(frame_left, width=50, height=50)
 lbl_machines = ttk.Label(frame_machines, text="Machines")
 lbl_machines.pack(anchor=NW, padx=(20,5), pady=(50,0))
@@ -564,7 +603,7 @@ combobox_machines.pack(side=tk.LEFT, padx=(20,5), pady=(0,0))
 add_machine_btn = ttk.Button(frame_machines, text="New Machine", command=create_machine)
 add_machine_btn.pack(side=tk.RIGHT, padx=(5,20), pady=(0,0))
 
-#Creates a label and dropdown list for sensor selection
+#Creates a list for sensor selection
 frame_sensors = ttk.Frame(frame_left, width=50, height=50)
 lbl_sensors = ttk.Label(frame_sensors, text="Sensors")
 lbl_sensors.pack(anchor=NW, padx=(20,5), pady=(50,0))
@@ -576,7 +615,7 @@ combobox_sensors.pack(side=tk.LEFT, padx=(20,5), pady=(0,0))
 add_sensor_btn = ttk.Button(frame_sensors, text="New Sensor", command=create_sensor)
 add_sensor_btn.pack(side=tk.RIGHT, padx=(5,20), pady=(0,0))
 
-#select group sensor
+#Creates a list for group sensor selection
 frame_group_sensors = ttk.Frame(frame_left, width=50, height=50)
 lbl_group_sensors = ttk.Label(frame_group_sensors, text="Group Sensors")
 lbl_group_sensors.pack(anchor=NW, padx=(20,5), pady=(50,0))
@@ -586,11 +625,13 @@ combobox_group_sensors['state'] = 'readonly'
 combobox_group_sensors.bind("<<ComboboxSelected>>", lambda e: group_sensor_selected())
 combobox_group_sensors.pack(side=tk.LEFT, padx=(20,5), pady=(0,0))
 
+#saves machines list to pickle file
 def save():
     Files = [('Pickle Files', '*.p')]
     file = filedialog.asksaveasfilename(filetypes = Files, defaultextension = Files)
     pickle.dump(machines, open(file, "wb"))
  
+#loads machines list from pickle file
 def load():
     global machines
     Files = [('Pickle Files', '*.p')]

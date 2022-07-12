@@ -108,3 +108,24 @@ INFO:Description: DT3009-S1,4-M20_OSS_LF
 INFO:Measuring Unit: μm
 INFO:Measuring Range: 1400.0
 INFO:Measuring Offset: 100.0
+INFO:14:38:32 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:38:39 Temperature: 30.33465576171875
+INFO:14:38:39 Temperature: 30.33465576171875
+INFO:14:38:39 Temperature: 30.33465576171875
+INFO:14:38:40 Serial Number: 930
+INFO:14:38:41 Serial Number: 930
+INFO:14:38:53 Added machine with Itm Number: 1
+INFO:14:38:53 Selected machine: 1
+INFO:14:38:58 found adr: 43
+INFO:14:38:58 Sensor: 930 not found in registry
+INFO:14:38:58 No sensor selected
+INFO:14:38:58 Temperature: 30.340492248535156
+INFO:14:38:58 Distance: 1491.211669921875
+INFO:14:38:58 Serial Number: 930
+INFO:14:38:58 Article Number: 4314083
+INFO:14:38:58 Software Version: 0.3a
+INFO:14:38:58 Description: DT3009-S1,4-M20_OSS_LF
+INFO:14:38:58 Measuring Unit: μm
+INFO:14:38:58 Measuring Range: 1400.0
+INFO:14:38:58 Measuring Offset: 100.0
+INFO:14:38:58 Address: 43
