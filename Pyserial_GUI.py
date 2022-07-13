@@ -1,6 +1,7 @@
 import tkinter as tk
-from tkinter import ANCHOR, BOTTOM, CENTER, END, LEFT, N, NW, RIGHT, SOLID, SUNKEN, TOP, W, ttk, messagebox, filedialog
+from tkinter import ANCHOR, BOTTOM, CENTER, END, LEFT, N, NW, RIGHT, SOLID, SUNKEN, SW, TOP, W, ttk, messagebox, filedialog
 import ctypes
+from turtle import right, width
 import serial
 import serial.tools.list_ports
 from PIL import ImageTk, Image
@@ -27,6 +28,7 @@ ser = None
 machines : List[Machine] = []
 labels = {}
 temp_corr = {}
+treeview_dict = {}
 
 #reads temperature correction values from text file
 for line in open("TempCorrFactor.txt").readlines():
@@ -96,7 +98,9 @@ def get_distance(adr, sensor):
         received = ser.read(bytes)
         if get_fcs(received, 4) != received[-2]: raise Exception("checksum is not equal")
         distance = struct.unpack('f', received[7:11])[0]
-        try: sensor().values["Distance"] = distance
+        try: 
+            sensor().values["Distance"] = distance
+            treeview_dict[sensor().location][3] = distance
         except: pass
         labels["Distance"]['text'] = str(distance)
         log_text=f'Distance: {distance}'
@@ -119,7 +123,9 @@ def get_serial_number(adr):
 def save_serial_number(adr, sensor):
     try:
         serial_number = get_serial_number(adr)
-        try: sensor().values["Serial Number"] = serial_number
+        try: 
+            sensor().values["Serial Number"] = serial_number
+            treeview_dict[sensor().location][0] = serial_number
         except: pass
         labels["Serial Number"]['text'] = str(serial_number)
         log_text=f'Serial Number: {serial_number}'
@@ -258,7 +264,10 @@ def get_adr(adr):
 def save_address(adr, sensor):
     try:
         address = get_adr(adr())
-        try: sensor().values["Address"] = address
+        try: 
+            sensor().values["Address"] = address
+            current_address_lbl_value['text'] = address
+            treeview_dict[sensor().location][2] = address
         except: pass
         labels["Address"]['text'] = address
         log_text=f'Address: {address}'
@@ -283,6 +292,8 @@ def get_all(adr, sensor):
     get_measuring_range(adr, sensor)
     get_measuring_offset(adr, sensor)
     save_address(adr, sensor)
+    update_sensor_lbl()
+    update_treeview()
 
 #retrieves all data from sensors when there are mulitple sensors connected
 def get_all_group():
@@ -309,7 +320,7 @@ def get_all_group():
                     sensors_group.append(Sensor("Unknown", "Unknown", "Unknown", "Unknown"))                                        
                     log_write(f"Sensor: {serial_num} not found in registry")
                     get_all(lambda:adr, lambda:sensors_group[-1])
-                ser.timeout=0.01                
+                ser.timeout=0.05                
             except Exception as error: 
                 log_write(error)
                 break   
@@ -361,7 +372,8 @@ def polling_sensor():
     else:
         try: get_sensor().values["Address"] = current_adr
         except: pass
-        labels["Address"]['text'] = str(current_adr)
+        labels["Address"]['text'] = current_adr
+        current_address_lbl_value['text'] = current_adr
         log_text=f'current address: {current_adr}'
         log_write(log_text)
     ser.timeout = 1
@@ -395,6 +407,7 @@ def port_selected():
 
 #function is called when a machine is selected from the list
 def machine_selected():
+    global treeview_dict
     window.focus()
     log_text=f'Selected machine: {current_machine.get()}'
     log_write(log_text)
@@ -403,6 +416,11 @@ def machine_selected():
     current_sensor.set("")    
     for key in labels:
         labels[key]['text'] = ""
+    if get_machine().machine_type == "Compressor":
+        treeview_dict = compressors
+    elif get_machine().machine_type == "Pump":
+        treeview_dict = pumps
+    update_treeview()
 
 #function is called when a sensor is selected from the list
 def sensor_selected():
@@ -411,12 +429,14 @@ def sensor_selected():
     sensor = get_sensor()
     txt_log.insert(END, "\n")
     log_text=f'Selected sensor: {current_sensor.get()}'
-    lbl_current_sensor['text'] = f"Sensor: {sensor.values['Serial Number']} Location: {sensor.location}"
+    update_sensor_lbl()
     log_write(log_text) 
     #log_write(sensor)
     for key in sensor.values:
         if sensor.values[key]: log_write(f'{key}: {sensor.values[key]}')
         labels[key]['text'] = sensor.values[key]
+    selected_address.set(sensor.address)
+    current_address_lbl_value["text"] = sensor.values["Address"]
 
 #function is called when a sensor is selected from the group sensor list
 def group_sensor_selected():
@@ -432,14 +452,20 @@ def group_sensor_selected():
         labels[key]['text'] = group_sensor.values[key]
     
 #creates a gui button with label to display results
-def create_button(text, func, padx_btn=(20,8), padx_lbl=(8,20), pady=(8,8)):
+def create_button(text, func, padx_btn=(20,8), pady=(8,8)):
     frame = ttk.Frame(frame_right, width=50, height=50)
     btn = ttk.Button(frame, text=text, width=14, command=lambda: func())
     btn.pack(side=tk.LEFT, padx=padx_btn, pady=pady)
-    lbl = ttk.Label(frame, text="", width=14, background="white", relief=SOLID)
-    lbl.pack(side=tk.RIGHT, padx=padx_lbl, pady=pady)
+    frame.pack(anchor=W)
+
+def create_display(text, top_frame, padx_lbl=(20,8), padx_lbl_value=(8,20), pady=(8,8)):
+    frame = ttk.Frame(top_frame, width=50, height=50)
+    lbl = ttk.Label(frame, text=text, width=14, background="gainsboro", relief=SOLID)
+    lbl.pack(side=tk.LEFT, padx=padx_lbl, pady=pady)
+    lbl_value = ttk.Label(frame, text="", width=14, background="white", relief=SOLID)
+    lbl_value.pack(side=tk.RIGHT, padx=padx_lbl_value, pady=pady)
     frame.pack()
-    return lbl
+    return lbl_value
 
 #calculates the fcs checksum of the telegram
 def get_fcs(telegram, x):
@@ -501,12 +527,22 @@ def get_machine():
 def get_sensor():
     return machines[combobox_machines.current()].sensors[combobox_sensors.current()]
 
+def update_sensor_lbl():
+    try:
+        lbl_current_sensor['text'] = f"Sensor: {get_sensor().values['Serial Number']} Location: {get_sensor().location}"
+    except: pass
+
+def reset_buffer():
+    ser.reset_input_buffer()
+
 #Creates Window
 ctypes.windll.shcore.SetProcessDpiAwareness(1)
 window = tk.Tk()
 window.title("DT3005 - Serial Communication")
-window.geometry('1300x900+300+50')
+window.geometry('1500x900+300+50')
 window.resizable(False,False)
+style = ttk.Style()
+style.configure('Treeview', rowheight=25)
 
 #Configures log file
 logging.basicConfig(filename="Log.log", encoding='utf-8', level=logging.INFO, format='%(levelname)s:%(message)s')
@@ -522,38 +558,40 @@ window.iconphoto(False, icon)
 frame_right=ttk.Frame(master=window)
 frame_left= ttk.Frame(master=window)
 
+
 lbl_current_sensor = ttk.Label(frame_right, text="")
 lbl_current_sensor.pack(padx=(8,8), pady=(0,5))
 
 #Creates button for retreiving all data from sensor and a label to display result
-create_button("Get All", lambda:get_all(lambda:get_adr(0x7f), get_sensor), pady=(28,8))
+create_button("Get All", lambda:get_all(lambda:get_adr(0x7f), get_sensor), pady=(8,8))
 #Creates button for retreiving temperature value from sensor and a label to display result
-labels["Temperature"] = create_button("Temperature", lambda:get_temperature(lambda:get_adr(0x7f), get_sensor))
+labels["Temperature"] = create_display("Temperature", frame_right)
 #Creates button for retreiving distance value from sensor and a label to display result
-labels["Distance"] = create_button("Distance", lambda:get_distance(lambda:get_adr(0x7f), get_sensor))
+labels["Distance"] = create_display("Distance",frame_right)
 #Creates button for retreiving serial number from sensor and a label to display result
-labels["Serial Number"] = create_button("Serial Number", lambda:save_serial_number(lambda:get_adr(0x7f), get_sensor))
+labels["Serial Number"] = create_display("Serial Number",frame_right)
 #Creates button for retreiving software version from sensor and a label to display result
-labels["SW Version"] = create_button("SW Version", lambda:save_sw_version(lambda:get_adr(0x7f), get_sensor))
+labels["SW Version"] = create_display("SW Version",frame_right)
 #Creates button for retreiving article number from sensor and a label to display result
-labels["Article Number"] = create_button("Article Number", lambda:get_article_number(lambda:get_adr(0x7f), get_sensor))
+labels["Article Number"] = create_display("Article Number",frame_right)
 #Creates button for retreiving description from sensor and a label to display result
-labels["Description"] = create_button("Description", lambda:get_description(lambda:get_adr(0x7f), get_sensor))
+labels["Description"] = create_display("Description",frame_right)
 #Creates button for retreiving measuring unit from sensor and a label to display result
-labels["Measuring Unit"] = create_button("Measuring Unit", lambda:get_measuring_unit(lambda:get_adr(0x7f), get_sensor))
+labels["Measuring Unit"] = create_display("Measuring Unit",frame_right)
 #Creates button for retreiving measuring range from sensor and a label to display result
-labels["Measuring Range"] = create_button("Measuring Range", lambda:get_measuring_range(lambda:get_adr(0x7f), get_sensor))
+labels["Measuring Range"] = create_display("Measuring Range",frame_right)
 #Creates button for retreiving measuring offset from sensor and a label to display result
-labels["Measuring Offset"] = create_button("Measuring Offset", lambda:get_measuring_offset(lambda:get_adr(0x7f), get_sensor))
+labels["Measuring Offset"] = create_display("Measuring Offset",frame_right)
 #Creates button for retreiving address from sensor and a label to display result
-labels["Address"] = create_button("Address", lambda:save_address(lambda:get_adr(0x7f), get_sensor))
+labels["Address"] = create_display("Address", frame_right)
 
 #creates a button for retreiving all data from group of sensors
 create_button("Group Sensors", get_all_group)
+create_button("Reset Buffer", reset_buffer)
 
 #Creates a text box for displaying log
 frame_log = ttk.Frame(window)
-txt_log = tk.Text(frame_log, height=31, width=45)
+txt_log = tk.Text(frame_log, height=15, width=61)
 lbl_log = ttk.Label(frame_log, text="Log")
 lbl_log.pack(anchor=NW)
 txt_log.pack(side=LEFT)
@@ -561,17 +599,70 @@ scrollbar = ttk.Scrollbar(frame_log, orient=tk.VERTICAL, command=txt_log.yview)
 txt_log.configure(yscroll=scrollbar.set)
 scrollbar.pack(side=RIGHT, fill=tk.BOTH)
 
+#creates dictionary for overview
+lines = open("compressors.txt").readlines()
+compressors = {}
+for line in lines:
+    if line != '\n':
+        compressors[line.split()[0]] = ["",line.split()[1],"","",line.split()[2],line.split()[3]]
+
+lines = open("pumps.txt").readlines()
+pumps = {}
+for line in lines:
+    if line != '\n':
+        pumps[line.split()[0]] = ["",line.split()[1],"","",line.split()[2],line.split()[3]]
+
+#creates treeview
+columns = ("one", "two", "three", "four", "five")
+tree_frame = ttk.Frame(window)
+tree = ttk.Treeview(tree_frame, columns=columns, show='headings', selectmode='browse')
+tree.heading('one', text="Location")
+tree.heading('two', text="Serial Number")
+tree.heading('three', text="Default Address")
+tree.heading('four', text="Current Address")
+tree.heading('five', text="Distance")
+tree.column(column=columns[0], width=174)
+for i in range(1,5): tree.column(column=columns[i], anchor=CENTER, width=140)
+tree.pack(side=LEFT)
+# add a scrollbar
+scrollbar = ttk.Scrollbar(tree_frame, orient=tk.VERTICAL, command=tree.yview)
+tree.configure(yscroll=scrollbar.set)
+scrollbar.pack(side=RIGHT, fill=tk.BOTH)
+
+def update_treeview():
+    tree.delete(*tree.get_children())
+    tag = 0
+    for key in treeview_dict:
+        items = [key] + treeview_dict[key][0:4]
+        tree.insert('', tk.END, values=items, tag=str(tag))
+        try:
+            distance = float(tree.item(tree.get_children()[tag])['values'][4])
+            nom_value = int(treeview_dict[key][4])
+            tolerance = int(treeview_dict[key][5])
+            if distance < nom_value + tolerance and distance > nom_value - tolerance:
+                tree.tag_configure(str(tag), background="limegreen")  
+            else: tree.tag_configure(str(tag), background="red")        
+        except: pass
+        tag += 1
 
 
+address_frame = ttk.Frame(frame_left, width=50, height=50)
+current_address_frame = ttk.Frame(address_frame, width=50, height=50)
+current_address_frame.pack(anchor=NW)
+current_address_lbl = ttk.Label(current_address_frame, text="Current Address", width=20)
+current_address_lbl.pack(side=tk.TOP, padx=(20,0), pady=(50,0), anchor=NW)
+current_address_lbl_value = ttk.Label(current_address_frame, text="", width=20, background="white", relief=SOLID)
+current_address_lbl_value.pack(side=tk.BOTTOM, padx=(20,0), pady=(0,0), ipady=1)
 #Creates a list and button for changing address
-frame_assign_address = ttk.Frame(frame_left, width=50, height=50)
-lbl_assign_address = ttk.Label(frame_assign_address, text="Change Address")
-lbl_assign_address.pack(anchor=NW, padx=(20,5), pady=(50,0))
+frame_new_address = ttk.Frame(address_frame, width=50, height=50)
+frame_new_address.pack(anchor=SW)
+lbl_new_address = ttk.Label(frame_new_address, text="New Address")
+lbl_new_address.pack(anchor=NW, padx=(20,5), pady=(0,0))
 selected_address = tk.StringVar()
-entry_assign_address = ttk.Entry(frame_assign_address, textvariable=selected_address, width=20)
-entry_assign_address.pack(side=tk.LEFT, padx=(20,5), pady=(0,0))
-assign_address_btn = ttk.Button(frame_assign_address, text="Assign Address", command=lambda: set_address(int(selected_address.get())))
-assign_address_btn.pack(side=tk.RIGHT, padx=(5,20), pady=(0,0))
+entry_new_address = ttk.Entry(frame_new_address, textvariable=selected_address, width=20)
+entry_new_address.pack(side=tk.LEFT, padx=(20,5), pady=(0,0))
+change_address_btn = ttk.Button(frame_new_address, text="Change Address", command=lambda: set_address(int(selected_address.get())))
+change_address_btn.pack(side=tk.RIGHT, padx=(5,20), pady=(0,0))
 
 
 #Creates a label, dropdown list and refresh button for port selection
@@ -652,11 +743,12 @@ window.config(menu = mainmenu)
 #Places widgets in window
 frame_right.pack(side=RIGHT, anchor=N)
 frame_left.pack(side=LEFT, anchor=N)
-frame_ports.pack()
-frame_machines.pack()
-frame_sensors.pack()
+frame_ports.pack(anchor=W)
+frame_machines.pack(anchor=W)
+frame_sensors.pack(anchor=W)
 frame_group_sensors.pack(anchor=W)
-frame_assign_address.pack()
+address_frame.pack(anchor=W)
 frame_log.pack()
+tree_frame.pack(pady=(10,0))
 
 window.mainloop()

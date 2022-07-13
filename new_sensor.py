@@ -11,9 +11,6 @@ class New_Sensor:
         self.window.geometry("1000x500+750+300")
         icon = ImageTk.PhotoImage(Image.open("onesubsea_icon.png"))
         self.window.iconphoto(False, icon)
-        self.s=ttk.Style()
-        self.s.configure('Treeview', rowheight=25)
-
         self.cancel = False
         self.machine = machine
         self.tree = self.create_treeview(machine.machine_type)
