@@ -1,7 +1,6 @@
 import tkinter as tk
 from tkinter import ANCHOR, BOTTOM, CENTER, END, LEFT, N, NW, RIGHT, SOLID, SUNKEN, SW, TOP, W, ttk, messagebox, filedialog
 import ctypes
-from turtle import right, width
 import serial
 import serial.tools.list_ports
 from PIL import ImageTk, Image
@@ -16,7 +15,8 @@ import os.path
 import time
 from new_machine import New_Machine
 from new_sensor import New_Sensor
-          
+
+
 #global variables
 ports : list = []
 adr : hex = 0x00
@@ -56,7 +56,7 @@ assign_address = [0x68,0x09,0x09,0x68,adr,0x01,0x43,0x37,0x3e,new_adr,0x00,0x00,
 #serial read functions
 
 #reads temperature from sensor with version 0.2a or 0.3a
-def get_temperature(adr, sensor):
+def get_temperature(adr):
     try:
         adr = adr()
         if get_sw_version(lambda:adr) == "0.2a":
@@ -78,17 +78,13 @@ def get_temperature(adr, sensor):
             if get_fcs(received, 4) != received[-2]: raise Exception("Checksum is not equal")
             temperature = struct.unpack('f', received[11:15])[0]
         temperature = round(temperature, 1)
-        try: sensor().values["Temperature"] = temperature
-        except: pass
-        labels["Temperature"]['text'] = str(temperature) + u'\N{DEGREE SIGN}'
-        log_text=f'Temperature: {temperature}\N{DEGREE SIGN}'
-        log_write(log_text)
+        return temperature
     except Exception as error:
         log_text=error
         log_write(log_text)
 
 #reads distance from sensor with version 0.2a or 0.3a
-def get_distance(adr, sensor):
+def get_distance(adr):
     try:
         adr=adr()
         distance_temp_v03a[1] = adr
@@ -100,13 +96,7 @@ def get_distance(adr, sensor):
         if get_fcs(received, 4) != received[-2]: raise Exception("checksum is not equal")
         distance = struct.unpack('f', received[7:11])[0]
         distance = round(distance)
-        try: 
-            sensor().values["Distance"] = distance
-            treeview_dict[sensor().location][3] = distance
-        except: pass
-        labels["Distance"]['text'] = str(distance) + " μm"
-        log_text=f'Distance: {distance} μm'
-        log_write(log_text)
+        return distance
     except Exception as error:
         log_text=error
         log_write(log_text)
@@ -121,23 +111,8 @@ def get_serial_number(adr):
     serial_num = int.from_bytes(received[13:17], "little")
     return serial_num
 
-#saves and prints serial number
-def save_serial_number(adr, sensor):
-    try:
-        serial_number = get_serial_number(adr)
-        try: 
-            sensor().values["Serial Number"] = serial_number
-            treeview_dict[sensor().location][0] = serial_number
-        except: pass
-        labels["Serial Number"]['text'] = str(serial_number)
-        log_text=f'Serial Number: {serial_number}'
-        log_write(log_text)
-    except Exception as error:
-        log_text=error
-        log_write(log_text)
-
 #reads article number of sensor
-def get_article_number(adr, sensor):
+def get_article_number(adr):
     try:
         article_number[4] = adr()
         article_number[-2] = get_fcs(article_number, 4)
@@ -145,11 +120,7 @@ def get_article_number(adr, sensor):
         received = ser.read(19)
         if get_fcs(received, 4) != received[-2]: raise Exception("checksum is not equal")
         article_n = int.from_bytes(received[13:17], "little")
-        try: sensor().values["Article Number"] = article_n
-        except: pass
-        labels["Article Number"]['text'] = str(article_n)
-        log_text=f'Article Number: {article_n}'
-        log_write(log_text)
+        return article_n
     except Exception as error:
         log_text=error
         log_write(log_text)
@@ -165,21 +136,8 @@ def get_sw_version(adr):
     sw_string = f'0.{sw[1]}{chr(sw[0])}'
     return sw_string
 
-#save and print software version
-def save_sw_version(adr, sensor):
-    try:
-        sw_version = get_sw_version(adr)
-        try: sensor().values["SW Version"] = sw_version
-        except: pass
-        labels["SW Version"]['text'] = sw_version
-        log_text=f'Software Version: {sw_version}'
-        log_write(log_text)
-    except Exception as error:
-        log_text=error
-        log_write(log_text)
-
 #reads destriction of sensor
-def get_description(adr, sensor):
+def get_description(adr):
     try:
         description[4] = adr()
         description[-2] = get_fcs(description, 4)
@@ -189,17 +147,13 @@ def get_description(adr, sensor):
         temp = received[13:45]
         text = str(temp.decode("ascii"))
         text = text.strip()
-        try: sensor().values["Description"] = text
-        except: pass
-        labels["Description"]['text'] = text
-        log_text=f'Description: {text}'
-        log_write(log_text)
+        return text
     except Exception as error:
         log_text=error
         log_write(log_text)
 
 #reads measuring unit of sensor
-def get_measuring_unit(adr, sensor):
+def get_measuring_unit(adr):
     try:
         measuring_unit[4] = adr()
         measuring_unit[-2] = get_fcs(measuring_unit, 4)
@@ -208,17 +162,13 @@ def get_measuring_unit(adr, sensor):
         if get_fcs(received, 4) != received[-2]: raise Exception("Checksum is not equal")
         unit = int(received[13])
         units = ["m","mm","μm"]
-        try: sensor().values["Measuring Unit"] = units[unit]
-        except: pass
-        labels["Measuring Unit"]['text'] = units[unit]
-        log_text=f'Measuring Unit: {units[unit]}'
-        log_write(log_text)
+        return units[unit]
     except Exception as error:
         log_text=error
         log_write(log_text)
 
 #reads measuring range of sensor
-def get_measuring_range(adr, sensor):
+def get_measuring_range(adr):
     try:
         measuring_range[4] = adr()
         measuring_range[-2] = get_fcs(measuring_range, 4)
@@ -226,17 +176,13 @@ def get_measuring_range(adr, sensor):
         received = ser.read(19)
         if get_fcs(received, 4) != received[-2]: raise Exception("checksum is not equal")
         range = struct.unpack('f', received[13:17])[0]
-        try: sensor().values["Measuring Range"] = range
-        except: pass
-        labels["Measuring Range"]['text'] = str(range)
-        log_text=f'Measuring Range: {range}'
-        log_write(log_text)
+        return range
     except Exception as error:
         log_text=error
         log_write(log_text)
 
 #reads measuring offset of sensor
-def get_measuring_offset(adr, sensor):
+def get_measuring_offset(adr):
     try:
         measuring_offset[4] = adr()
         measuring_offset[-2] = get_fcs(measuring_offset, 4)
@@ -244,11 +190,7 @@ def get_measuring_offset(adr, sensor):
         received = ser.read(19)
         if get_fcs(received, 4) != received[-2]: raise Exception("checksum is not equal")
         offset = struct.unpack('f', received[13:17])[0]
-        try: sensor().values["Measuring Offset"] = offset
-        except: pass
-        labels["Measuring Offset"]['text'] = str(offset)
-        log_text=f'Measuring Offset: {offset}'
-        log_write(log_text)
+        return offset
     except Exception as error:
         log_text=error
         log_write(log_text)
@@ -262,40 +204,41 @@ def get_adr(adr):
     if get_fcs(received, 1) != received[-2]: raise Exception("Checksum is not equal")
     return received[2]
 
-#saves and prints address
-def save_address(adr, sensor):
-    try:
-        address = get_adr(adr())
-        try: 
-            sensor().values["Address"] = address
-            current_address_lbl_value['text'] = address
-            treeview_dict[sensor().location][1] = address
-        except: pass
-        labels["Address"]['text'] = address
-        log_text=f'Address: {address}'
-        log_write(log_text)
-    except Exception as error:
-        log_text=error
-        log_write(log_text)
 
 #retrieve all date from sensor
-def get_all(adr, sensor):
+def get_all(adr):
+    values = {}
+    values["Temperature"] = get_temperature(adr)
+    values["Distance"] = get_distance(adr)
+    values["Serial Number"] = get_serial_number(adr)
+    values["Article Number"] = get_article_number(adr)
+    values["SW Version"] = get_sw_version(adr)
+    values["Description"] = get_description(adr)
+    values["Measuring Unit"] = get_measuring_unit(adr)
+    values["Measuring Range"] = get_measuring_range(adr)
+    values["Measuring Offset"] = get_measuring_offset(adr)
+    values["Address"] = adr()
+    return values
+
+def get_all_button(adr, sensor):
     txt_log.insert(END, "\n")
     try: log_text=f'Machine: {get_machine()},  Sensor: {sensor()}'
     except: log_text="No sensor selected"
     log_write(log_text)
-    get_temperature(adr, sensor)
-    get_distance(adr, sensor)
-    save_serial_number(adr, sensor)
-    get_article_number(adr, sensor)
-    save_sw_version(adr, sensor)
-    get_description(adr, sensor)
-    get_measuring_unit(adr, sensor)
-    get_measuring_range(adr, sensor)
-    get_measuring_offset(adr, sensor)
-    save_address(adr, sensor)
-    update_sensor_lbl()
-    update_treeview()
+    retrieved = get_all(adr)
+    for key in retrieved:
+        labels[key]['text'] = retrieved[key]
+        log_write(f"{key}: {retrieved[key]}")
+        try:
+            sensor().values[key] = retrieved[key]
+        except: pass
+    try:
+        treeview_dict[sensor().location][0] = retrieved["Serial Number"]
+        treeview_dict[sensor().location][1] = retrieved["Address"]
+        treeview_dict[sensor().location][3] = retrieved["Distance"]
+        update_treeview()
+    except: pass
+
 
 #retrieves all data from sensors when there are mulitple sensors connected
 def get_all_group():
@@ -574,7 +517,7 @@ lbl_current_sensor = ttk.Label(frame_right, text="")
 lbl_current_sensor.pack(padx=(8,8), pady=(0,5))
 
 #Creates button for retreiving all data from sensor and a label to display result
-create_button("Get All", lambda:get_all(lambda:get_adr(0x7f), get_sensor), pady=(8,8))
+create_button("Get All", lambda:get_all_button(lambda:get_adr(0x7f), get_sensor), pady=(8,8))
 #Creates button for retreiving temperature value from sensor and a label to display result
 labels["Temperature"] = create_display("Temperature", frame_right)
 #Creates button for retreiving distance value from sensor and a label to display result

@@ -9,6 +9,19 @@ class Machine:
         self.machine_type = machine_type
         self.sensors: List[Sensor] = []
         self.sensors_group: List[Sensor] = []
+
+        #creates dictionary for overview
+        lines = open("compressors.txt").readlines()
+        self.compressors = {}
+        for line in lines:
+            if line != '\n':
+                self.compressors[line.split()[0]] = ["","",line.split()[1],"",line.split()[2],line.split()[3]]
+
+        lines = open("pumps.txt").readlines()
+        self.pumps = {}
+        for line in lines:
+            if line != '\n':
+                self.pumps[line.split()[0]] = ["","",line.split()[1],"",line.split()[2],line.split()[3]]
     
     def __str__(self):
         return str(self.description)
