@@ -1,5 +1,5 @@
+from openpyxl import Workbook, load_workbook
 
 
-list=[1,5,6,4,5,7,7]
-print(list[0:5])
-float("")
+wb = load_workbook(filename = 'ME-ProxSensor-TestProgDataFile.xlsx')
+ws = wb.active

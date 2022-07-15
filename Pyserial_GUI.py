@@ -266,7 +266,7 @@ def get_adr(adr):
 def save_address(adr, sensor):
     try:
         address = get_adr(adr())
-        try: 
+        try:
             sensor().values["Address"] = address
             current_address_lbl_value['text'] = address
             treeview_dict[sensor().location][1] = address

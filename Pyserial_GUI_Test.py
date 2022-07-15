@@ -57,49 +57,41 @@ assign_address = [0x68,0x09,0x09,0x68,adr,0x01,0x43,0x37,0x3e,new_adr,0x00,0x00,
 
 #reads temperature from sensor with version 0.2a or 0.3a
 def get_temperature(adr):
-    try:
-        adr = adr()
-        if get_sw_version(lambda:adr) == "0.2a":
-            temperature_v02a[4] = adr
-            temperature_v02a[-2] = get_fcs(temperature_v02a, 4)
-            ser.write(bytearray(temperature_v02a))
-            received = ser.read(19)
-            if get_fcs(received, 4) != received[-2]: raise Exception("Checksum is not equal")
-            temp = struct.unpack('i', received[13:17])[0]
-            serial_num = str(get_serial_number(lambda:adr))
-            a = temp_corr[serial_num][0]
-            b = temp_corr[serial_num][1]
-            temperature = temp * a + b
-        else:
-            distance_temp_v03a[1] = adr
-            distance_temp_v03a[-2] = get_fcs(distance_temp_v03a, 1)
-            ser.write(bytearray(distance_temp_v03a))
-            received = ser.read(17)
-            if get_fcs(received, 4) != received[-2]: raise Exception("Checksum is not equal")
-            temperature = struct.unpack('f', received[11:15])[0]
-        temperature = round(temperature, 1)
-        return temperature
-    except Exception as error:
-        log_text=error
-        log_write(log_text)
+    adr = adr()
+    if get_sw_version(lambda:adr) == "0.2a":
+        temperature_v02a[4] = adr
+        temperature_v02a[-2] = get_fcs(temperature_v02a, 4)
+        ser.write(bytearray(temperature_v02a))
+        received = ser.read(19)
+        if get_fcs(received, 4) != received[-2]: raise Exception("Checksum is not equal")
+        temp = struct.unpack('i', received[13:17])[0]
+        serial_num = str(get_serial_number(lambda:adr))
+        a = temp_corr[serial_num][0]
+        b = temp_corr[serial_num][1]
+        temperature = temp * a + b
+    else:
+        distance_temp_v03a[1] = adr
+        distance_temp_v03a[-2] = get_fcs(distance_temp_v03a, 1)
+        ser.write(bytearray(distance_temp_v03a))
+        received = ser.read(17)
+        if get_fcs(received, 4) != received[-2]: raise Exception("Checksum is not equal")
+        temperature = struct.unpack('f', received[11:15])[0]
+    temperature = round(temperature, 1)
+    return temperature
 
 #reads distance from sensor with version 0.2a or 0.3a
 def get_distance(adr):
-    try:
-        adr=adr()
-        distance_temp_v03a[1] = adr
-        distance_temp_v03a[-2] = get_fcs(distance_temp_v03a, 1)
-        bytes = 17
-        if get_sw_version(lambda:adr) == "0.2a": bytes=13
-        ser.write(bytearray(distance_temp_v03a))
-        received = ser.read(bytes)
-        if get_fcs(received, 4) != received[-2]: raise Exception("checksum is not equal")
-        distance = struct.unpack('f', received[7:11])[0]
-        distance = round(distance)
-        return distance
-    except Exception as error:
-        log_text=error
-        log_write(log_text)
+    adr=adr()
+    distance_temp_v03a[1] = adr
+    distance_temp_v03a[-2] = get_fcs(distance_temp_v03a, 1)
+    bytes = 17
+    if get_sw_version(lambda:adr) == "0.2a": bytes=13
+    ser.write(bytearray(distance_temp_v03a))
+    received = ser.read(bytes)
+    if get_fcs(received, 4) != received[-2]: raise Exception("checksum is not equal")
+    distance = struct.unpack('f', received[7:11])[0]
+    distance = round(distance)
+    return distance
 
 #returns serial number from sensor
 def get_serial_number(adr):
@@ -113,17 +105,13 @@ def get_serial_number(adr):
 
 #reads article number of sensor
 def get_article_number(adr):
-    try:
-        article_number[4] = adr()
-        article_number[-2] = get_fcs(article_number, 4)
-        ser.write(bytearray(article_number))
-        received = ser.read(19)
-        if get_fcs(received, 4) != received[-2]: raise Exception("checksum is not equal")
-        article_n = int.from_bytes(received[13:17], "little")
-        return article_n
-    except Exception as error:
-        log_text=error
-        log_write(log_text)
+    article_number[4] = adr()
+    article_number[-2] = get_fcs(article_number, 4)
+    ser.write(bytearray(article_number))
+    received = ser.read(19)
+    if get_fcs(received, 4) != received[-2]: raise Exception("checksum is not equal")
+    article_n = int.from_bytes(received[13:17], "little")
+    return article_n
 
 #returns software version of sensor
 def get_sw_version(adr):
@@ -138,62 +126,46 @@ def get_sw_version(adr):
 
 #reads destriction of sensor
 def get_description(adr):
-    try:
-        description[4] = adr()
-        description[-2] = get_fcs(description, 4)
-        ser.write(bytearray(description))
-        received = ser.read(47)
-        if get_fcs(received, 4) != received[-2]: raise Exception("checksum is not equal")
-        temp = received[13:45]
-        text = str(temp.decode("ascii"))
-        text = text.strip()
-        return text
-    except Exception as error:
-        log_text=error
-        log_write(log_text)
+    description[4] = adr()
+    description[-2] = get_fcs(description, 4)
+    ser.write(bytearray(description))
+    received = ser.read(47)
+    if get_fcs(received, 4) != received[-2]: raise Exception("checksum is not equal")
+    temp = received[13:45]
+    text = str(temp.decode("ascii"))
+    text = text.strip()
+    return text
 
 #reads measuring unit of sensor
 def get_measuring_unit(adr):
-    try:
-        measuring_unit[4] = adr()
-        measuring_unit[-2] = get_fcs(measuring_unit, 4)
-        ser.write(bytearray(measuring_unit))
-        received = ser.read(16)
-        if get_fcs(received, 4) != received[-2]: raise Exception("Checksum is not equal")
-        unit = int(received[13])
-        units = ["m","mm","μm"]
-        return units[unit]
-    except Exception as error:
-        log_text=error
-        log_write(log_text)
+    measuring_unit[4] = adr()
+    measuring_unit[-2] = get_fcs(measuring_unit, 4)
+    ser.write(bytearray(measuring_unit))
+    received = ser.read(16)
+    if get_fcs(received, 4) != received[-2]: raise Exception("Checksum is not equal")
+    unit = int(received[13])
+    units = ["m","mm","μm"]
+    return units[unit]
 
 #reads measuring range of sensor
 def get_measuring_range(adr):
-    try:
-        measuring_range[4] = adr()
-        measuring_range[-2] = get_fcs(measuring_range, 4)
-        ser.write(bytearray(measuring_range))
-        received = ser.read(19)
-        if get_fcs(received, 4) != received[-2]: raise Exception("checksum is not equal")
-        range = struct.unpack('f', received[13:17])[0]
-        return range
-    except Exception as error:
-        log_text=error
-        log_write(log_text)
+    measuring_range[4] = adr()
+    measuring_range[-2] = get_fcs(measuring_range, 4)
+    ser.write(bytearray(measuring_range))
+    received = ser.read(19)
+    if get_fcs(received, 4) != received[-2]: raise Exception("checksum is not equal")
+    range = struct.unpack('f', received[13:17])[0]
+    return range
 
 #reads measuring offset of sensor
 def get_measuring_offset(adr):
-    try:
-        measuring_offset[4] = adr()
-        measuring_offset[-2] = get_fcs(measuring_offset, 4)
-        ser.write(bytearray(measuring_offset))
-        received = ser.read(19)
-        if get_fcs(received, 4) != received[-2]: raise Exception("checksum is not equal")
-        offset = struct.unpack('f', received[13:17])[0]
-        return offset
-    except Exception as error:
-        log_text=error
-        log_write(log_text)
+    measuring_offset[4] = adr()
+    measuring_offset[-2] = get_fcs(measuring_offset, 4)
+    ser.write(bytearray(measuring_offset))
+    received = ser.read(19)
+    if get_fcs(received, 4) != received[-2]: raise Exception("checksum is not equal")
+    offset = struct.unpack('f', received[13:17])[0]
+    return offset
 
 #returns address if it exists, or if adr=0x7f(broadcast), returns address of single connected sensor
 def get_adr(adr):
@@ -203,7 +175,6 @@ def get_adr(adr):
     received = ser.read(6)
     if get_fcs(received, 1) != received[-2]: raise Exception("Checksum is not equal")
     return received[2]
-
 
 #retrieve all date from sensor
 def get_all(adr):
@@ -221,23 +192,27 @@ def get_all(adr):
     return values
 
 def get_all_button(adr, sensor):
-    txt_log.insert(END, "\n")
-    try: log_text=f'Machine: {get_machine()},  Sensor: {sensor()}'
-    except: log_text="No sensor selected"
-    log_write(log_text)
-    retrieved = get_all(adr)
-    for key in retrieved:
-        labels[key]['text'] = retrieved[key]
-        log_write(f"{key}: {retrieved[key]}")
-        try:
-            sensor().values[key] = retrieved[key]
-        except: pass
     try:
-        treeview_dict[sensor().location][0] = retrieved["Serial Number"]
-        treeview_dict[sensor().location][1] = retrieved["Address"]
-        treeview_dict[sensor().location][3] = retrieved["Distance"]
-        update_treeview()
-    except: pass
+        txt_log.insert(END, "\n")
+        try: log_text=f'Machine: {get_machine()},  Sensor: {sensor()}'
+        except: log_text="No sensor selected"
+        log_write(log_text)
+        retrieved = get_all(adr)
+        for key in retrieved:
+            labels[key]['text'] = retrieved[key]
+            log_write(f"{key}: {retrieved[key]}")
+            try:
+                sensor().values[key] = retrieved[key]
+            except: pass
+        try:
+            treeview_dict[sensor().location][0] = retrieved["Serial Number"]
+            treeview_dict[sensor().location][1] = retrieved["Address"]
+            treeview_dict[sensor().location][3] = retrieved["Distance"]
+            current_address_lbl_value['text'] = retrieved["Address"]
+            update_treeview()
+        except: pass
+    except Exception as error:
+        log_write(error)
 
 
 #retrieves all data from sensors when there are mulitple sensors connected
@@ -251,6 +226,7 @@ def get_all_group():
         except: pass
         else:
             try:
+                txt_log.insert(END, "\n")
                 log_write(f'found adr: {adr}')
                 ser.timeout=1
                 serial_num = get_serial_number(lambda:adr)
@@ -258,17 +234,17 @@ def get_all_group():
                 for sensor in get_machine().sensors:
                     if sensor.values["Serial Number"] == serial_num:
                         sensors_group.append(Sensor(sensor.location, sensor.address, sensor.nom_value, sensor.tolerance))                    
-                        get_all(lambda:adr, lambda:sensors_group[-1])
+                        get_all_button(lambda:adr, lambda:sensors_group[-1])
                         sensor_found = True
                         break                
                 if not sensor_found: 
                     sensors_group.append(Sensor("Unknown", "Unknown", "Unknown", "Unknown"))                                        
                     log_write(f"Sensor: {serial_num} not found in registry")
-                    get_all(lambda:adr, lambda:sensors_group[-1])
-                ser.timeout=0.05                
+                    get_all_button(lambda:adr, lambda:sensors_group[-1])                                
             except Exception as error: 
                 log_write(error)
-                break   
+                break
+            ser.timeout=0.05  
     combobox_group_sensors['values'] = sensors_group
     current_group_sensor.set("")     
     combobox_group_sensors.current(newindex=len(sensors_group)-1)
@@ -280,42 +256,40 @@ def get_all_group():
 #changes the address of single connected sensor
 def set_address(new_adr):
     try:
-        try: current_adr=get_adr(get_sensor().values["Address"])
+        try: current_adr = get_adr(get_sensor().values["Address"])
         except: raise Exception("Sensor is not present")
         assign_address[4] = current_adr
         assign_address[9] = new_adr
         assign_address[-2] = get_fcs(assign_address, 4)
         ser.write(bytearray(assign_address))
         received = ser.read(1)
-        log_text=f'Received: {received}'
-        log_write(log_text)
+        log_write(f'Received: {received}')
         messagebox.showinfo("Assign Address", "Restart the sensor then click 'ok'")
         global seconds
         global t_60s
         seconds = 60
         t_60s = time.time() + seconds
-        polling_sensor()
+        polling_sensor(new_adr)
     except Exception as error:
         log_text=error
         log_write(log_text)
 
 #looks for sensor after reset follwing address change
-def polling_sensor():
+def polling_sensor(adr):
     global seconds
-    global t_60s
     current_adr = None
     ser.timeout = 0.01
     if ser.in_waiting != 0: ser.reset_input_buffer()
     try:
         if(time.time() > t_60s):
             current_adr = "Sensor not found"                
-        else: current_adr = get_adr(0x7f)              
+        else: current_adr = get_adr(adr)              
     except: 
         time_left = t_60s - time.time()
         if(time_left < seconds):
             log_write(f'Looking for sensor: {seconds}')
             seconds -= 1
-        window.after(100, polling_sensor)
+        window.after(100, lambda:polling_sensor(adr))
     else:
         try: 
             get_sensor().values["Address"] = current_adr
@@ -509,9 +483,9 @@ canvas.create_image(20, 20, anchor=NW, image=img)
 icon = ImageTk.PhotoImage(Image.open("onesubsea_icon.png"))
 window.iconphoto(False, icon)
 
-frame_right=ttk.Frame(master=window)
-frame_left= ttk.Frame(master=window)
 
+frame_right = ttk.Frame(master=window)
+frame_left = ttk.Frame(master=window)
 
 lbl_current_sensor = ttk.Label(frame_right, text="")
 lbl_current_sensor.pack(padx=(8,8), pady=(0,5))
