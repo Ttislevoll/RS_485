@@ -15,42 +15,30 @@ import os.path
 import time
 from new_machine import New_Machine
 from new_sensor import New_Sensor
-
+from openpyxl import Workbook, load_workbook
 
 #global variables
 ports : list = []
-adr : hex = 0x00
-fcs : hex = 0x00
-new_adr : hex = 0x00
-seconds = 0
-t_60s = 0
 ser = None
 machines : List[Machine] = []
 labels = {}
-temp_corr = {}
 treeview_dict = {}
-
-#reads temperature correction values from text file
-for line in open("TempCorrFactor.txt").readlines():
-    if line != '\n':
-        var = line.split()
-        temp_corr[var[0]] = [float(var[1]), float(var[2])]
 
 #telegrams for communicating with sensors
 broadcast = [0x10,0x7f,0x01,0x09,0x89,0x16]
-distance_temp_v03a = [0x10,adr,0x01,0x4c,fcs,0x16]
-temperature_v02a = [0x68,0x09,0x09,0x68,adr,0x01,0x4c,0x30,0x33,0x5e,0xd1,0x0c,0x04,fcs,0x16]
+distance_temp_v03a = [0x10,0x00,0x01,0x4c,0x00,0x16]
+temperature_v02a = [0x68,0x09,0x09,0x68,0x00,0x01,0x4c,0x30,0x33,0x5e,0xd1,0x0c,0x04,0x00,0x16]
 #read block 0x10
-sw_version = [0x68,0x09,0x09,0x68,adr,0x01,0x4c,0x30,0x33,0x5e,0x10,0x02,0x02,fcs,0x16]
-article_number = [0x68,0x09,0x09,0x68,adr,0x01,0x4c,0x30,0x33,0x5e,0x10,0x04,0x04,fcs,0x16]
-serial_number = [0x68,0x09,0x09,0x68,adr,0x01,0x4c,0x30,0x33,0x5e,0x10,0x10,0x04,fcs,0x16]
-description = [0x68,0x09,0x09,0x68,adr,0x01,0x4c,0x30,0x33,0x5e,0x10,0x28,0x20,fcs,0x16]
+sw_version = [0x68,0x09,0x09,0x68,0x00,0x01,0x4c,0x30,0x33,0x5e,0x10,0x02,0x02,0x00,0x16]
+article_number = [0x68,0x09,0x09,0x68,0x00,0x01,0x4c,0x30,0x33,0x5e,0x10,0x04,0x04,0x00,0x16]
+serial_number = [0x68,0x09,0x09,0x68,0x00,0x01,0x4c,0x30,0x33,0x5e,0x10,0x10,0x04,0x00,0x16]
+description = [0x68,0x09,0x09,0x68,0x00,0x01,0x4c,0x30,0x33,0x5e,0x10,0x28,0x20,0x00,0x16]
 #read block 0x20
-measuring_unit = [0x68,0x09,0x09,0x68,adr,0x01,0x4c,0x30,0x33,0x5e,0x20,0x03,0x01,fcs,0x16]
-measuring_range = [0x68,0x09,0x09,0x68,adr,0x01,0x4c,0x30,0x33,0x5e,0x20,0x1c,0x04,fcs,0x16]
-measuring_offset = [0x68,0x09,0x09,0x68,adr,0x01,0x4c,0x30,0x33,0x5e,0x20,0x20,0x04,fcs,0x16]
+measuring_unit = [0x68,0x09,0x09,0x68,0x00,0x01,0x4c,0x30,0x33,0x5e,0x20,0x03,0x01,0x00,0x16]
+measuring_range = [0x68,0x09,0x09,0x68,0x00,0x01,0x4c,0x30,0x33,0x5e,0x20,0x1c,0x04,0x00,0x16]
+measuring_offset = [0x68,0x09,0x09,0x68,0x00,0x01,0x4c,0x30,0x33,0x5e,0x20,0x20,0x04,0x00,0x16]
 #assign address
-assign_address = [0x68,0x09,0x09,0x68,adr,0x01,0x43,0x37,0x3e,new_adr,0x00,0x00,0x00,fcs,0x16]
+assign_address = [0x68,0x09,0x09,0x68,0x00,0x01,0x43,0x37,0x3e,0x00,0x00,0x00,0x00,0x00,0x16]
 
 
 #serial read functions
@@ -66,6 +54,7 @@ def get_temperature(adr):
         if get_fcs(received, 4) != received[-2]: raise Exception("Checksum is not equal")
         temp = struct.unpack('i', received[13:17])[0]
         serial_num = str(get_serial_number(lambda:adr))
+        temp_corr = get_temp_corr()
         a = temp_corr[serial_num][0]
         b = temp_corr[serial_num][1]
         temperature = temp * a + b
@@ -179,19 +168,19 @@ def get_adr(adr):
 #retrieve all date from sensor
 def get_all(adr):
     values = {}
-    values["Temperature"] = get_temperature(adr)
-    values["Distance"] = get_distance(adr)
+    values["Address"] = adr()
     values["Serial Number"] = get_serial_number(adr)
-    values["Article Number"] = get_article_number(adr)
     values["SW Version"] = get_sw_version(adr)
+    values["Article Number"] = get_article_number(adr) 
     values["Description"] = get_description(adr)
     values["Measuring Unit"] = get_measuring_unit(adr)
     values["Measuring Range"] = get_measuring_range(adr)
     values["Measuring Offset"] = get_measuring_offset(adr)
-    values["Address"] = adr()
+    values["Distance"] = get_distance(adr)
+    values["Temperature"] = get_temperature(adr)  
     return values
 
-def get_all_button(adr, sensor):
+def read_sensor(adr, sensor):
     try:
         txt_log.insert(END, "\n")
         try: log_text=f'Machine: {get_machine()},  Sensor: {sensor()}'
@@ -216,7 +205,7 @@ def get_all_button(adr, sensor):
 
 
 #retrieves all data from sensors when there are mulitple sensors connected
-def get_all_group():
+def read_all_sensors():
     sensors_group = get_machine().sensors_group
     sensors_group.clear()
     ser.timeout=0.05
@@ -234,13 +223,13 @@ def get_all_group():
                 for sensor in get_machine().sensors:
                     if sensor.values["Serial Number"] == serial_num:
                         sensors_group.append(Sensor(sensor.location, sensor.address, sensor.nom_value, sensor.tolerance))                    
-                        get_all_button(lambda:adr, lambda:sensors_group[-1])
+                        read_sensor(lambda:adr, lambda:sensors_group[-1])
                         sensor_found = True
                         break                
                 if not sensor_found: 
                     sensors_group.append(Sensor("Unknown", "Unknown", "Unknown", "Unknown"))                                        
                     log_write(f"Sensor: {serial_num} not found in registry")
-                    get_all_button(lambda:adr, lambda:sensors_group[-1])                                
+                    read_sensor(lambda:adr, lambda:sensors_group[-1])                                
             except Exception as error: 
                 log_write(error)
                 break
@@ -265,31 +254,27 @@ def set_address(new_adr):
         received = ser.read(1)
         log_write(f'Received: {received}')
         messagebox.showinfo("Assign Address", "Restart the sensor then click 'ok'")
-        global seconds
-        global t_60s
         seconds = 60
-        t_60s = time.time() + seconds
-        polling_sensor(new_adr)
+        wait = time.time() + seconds
+        polling_sensor(new_adr, seconds, wait)
     except Exception as error:
         log_text=error
         log_write(log_text)
 
 #looks for sensor after reset follwing address change
-def polling_sensor(adr):
-    global seconds
-    current_adr = None
+def polling_sensor(adr, seconds, wait):
     ser.timeout = 0.01
     if ser.in_waiting != 0: ser.reset_input_buffer()
     try:
-        if(time.time() > t_60s):
+        if(time.time() > wait):
             current_adr = "Sensor not found"                
         else: current_adr = get_adr(adr)              
     except: 
-        time_left = t_60s - time.time()
+        time_left = wait - time.time()
         if(time_left < seconds):
             log_write(f'Looking for sensor: {seconds}')
             seconds -= 1
-        window.after(100, lambda:polling_sensor(adr))
+        window.after(100, lambda:polling_sensor(adr, seconds, wait))
     else:
         try: 
             get_sensor().values["Address"] = current_adr
@@ -378,13 +363,13 @@ def group_sensor_selected():
 #creates a gui button with label to display results
 def create_button(text, func, padx_btn=(20,8), pady=(8,8)):
     frame = ttk.Frame(frame_right, width=50, height=50)
-    btn = ttk.Button(frame, text=text, width=14, command=lambda: func())
-    btn.pack(side=tk.LEFT, padx=padx_btn, pady=pady)
+    btn = ttk.Button(frame, text=text, width=15, command=lambda: func())
+    btn.pack(side=tk.LEFT, padx=padx_btn, pady=pady, ipady=1)
     frame.pack(anchor=W)
 
 def create_display(text, top_frame, padx_lbl=(20,8), padx_lbl_value=(8,20), pady=(8,8)):
     frame = ttk.Frame(top_frame, width=50, height=50)
-    lbl = ttk.Label(frame, text=text, width=14, background="gainsboro", relief=SOLID)
+    lbl = ttk.Label(frame, text=text, width=14)
     lbl.pack(side=tk.LEFT, padx=padx_lbl, pady=pady)
     lbl_value = ttk.Label(frame, text="", width=14, background="white", relief=SOLID)
     lbl_value.pack(side=tk.RIGHT, padx=padx_lbl_value, pady=pady)
@@ -400,7 +385,7 @@ def get_fcs(telegram, x):
 
 #initializes Serial object
 def initialize_port():
-    index = int(combobox_ports.current())
+    index = combobox_ports.current()
     if index < 0:
         raise Exception()
     #Creates Serial object
@@ -463,6 +448,101 @@ def update_sensor_lbl():
 def reset_buffer():
     ser.reset_input_buffer()
 
+def get_temp_corr():
+    #reads temperature correction values from text file
+    temp_corr = {}
+    for line in open("TempCorrFactor.txt").readlines():
+        if line != '\n':
+            var = line.split()
+            temp_corr[var[0]] = [float(var[1]), float(var[2])]
+    return temp_corr
+
+#saves machines list to pickle file
+def save():
+    Files = [('Pickle Files', '*.p')]
+    file = filedialog.asksaveasfilename(filetypes = Files, defaultextension = Files)
+    pickle.dump(machines, open(file, "wb"))
+ 
+#loads machines list from pickle file
+def load():
+    global machines
+    Files = [('Pickle Files', '*.p')]
+    file = filedialog.askopenfilename(filetypes=Files, defaultextension = Files) 
+    machines = pickle.load(open(file, "rb"))
+    combobox_machines['values'] = machines
+
+_loop = None
+def loop():
+    global _loop
+    get_all(lambda:get_adr(0x7f), get_sensor)
+    print(get_sensor().values)
+    _loop = window.after(500, loop)
+
+def endloop():
+    window.after_cancel(_loop)
+
+def print(machine):
+    wb = load_workbook(filename = 'ME-ProxSensor-TestProgDataFile.xlsx')
+    ws = wb.active
+    print_machine(ws, machine)
+    print_values(ws, machine.sensors, machine)
+    print_values(ws, machine.sensors_group, machine)
+    wb.save('test.xlsx')
+
+def print_values(ws, sensors, machine):
+    row = 19
+    column = 1
+    for sensor in sensors:
+        while ws.cell(row, column).value:
+            column += 1
+        else:
+            dataset = column
+            if sensors is machine.sensors: index = 1
+            else: index = 2
+            print_dataset(ws, sensor, f'Dataset: {dataset}', index)
+            ws.cell(row, column, str(column))
+            row += 1
+            for key in sensor.values:
+                ws.cell(row, column, str(sensor.values[key]))
+                row += 1
+            row = 19
+            column += 1
+
+def print_dataset(ws, sensor, dataset, index):
+    row = 6
+    column = 1
+    while ws.cell(row, column).value:
+        if ws.cell(row, column).value == sensor.location:
+            ws.cell(row, column + index, dataset)
+            break
+        row += 1
+
+def print_machine(ws, machine):
+    ws.cell(1, 1, "Project: test")
+    ws.cell(2, 1, f'Machine ITM: {machine.itm_number}')
+    ws.cell(3, 1, f'Machine Description {machine.description}')
+    ws.cell(4, 1, f'Machine Serial No.: {machine.serial_number}')
+
+def update_treeview():
+    tree.delete(*tree.get_children())
+    tag = 0
+    for key in treeview_dict:
+        items = [key] + treeview_dict[key][0:4]
+        tree.insert('', tk.END, values=items, tag=str(tag))
+        try:
+            distance = float(tree.item(tree.get_children()[tag])['values'][4])
+            default_address = int(tree.item(tree.get_children()[tag])['values'][3])
+            current_address = int(tree.item(tree.get_children()[tag])['values'][2])
+            nom_value = int(treeview_dict[key][4])
+            tolerance = int(treeview_dict[key][5])
+            if distance < nom_value + tolerance and distance > nom_value - tolerance:
+                tree.tag_configure(str(tag), background="limegreen")  
+                if current_address != default_address:
+                    tree.tag_configure(str(tag), background="yellow")  
+            else: tree.tag_configure(str(tag), background="red")        
+        except: pass
+        tag += 1
+
 #Creates Window
 ctypes.windll.shcore.SetProcessDpiAwareness(1)
 window = tk.Tk()
@@ -483,7 +563,6 @@ canvas.create_image(20, 20, anchor=NW, image=img)
 icon = ImageTk.PhotoImage(Image.open("onesubsea_icon.png"))
 window.iconphoto(False, icon)
 
-
 frame_right = ttk.Frame(master=window)
 frame_left = ttk.Frame(master=window)
 
@@ -491,7 +570,7 @@ lbl_current_sensor = ttk.Label(frame_right, text="")
 lbl_current_sensor.pack(padx=(8,8), pady=(0,5))
 
 #Creates button for retreiving all data from sensor and a label to display result
-create_button("Get All", lambda:get_all_button(lambda:get_adr(0x7f), get_sensor), pady=(8,8))
+create_button("Read Sensor", lambda:read_sensor(lambda:get_adr(0x7f), get_sensor), pady=(8,8))
 #Creates button for retreiving temperature value from sensor and a label to display result
 labels["Temperature"] = create_display("Temperature", frame_right)
 #Creates button for retreiving distance value from sensor and a label to display result
@@ -514,7 +593,7 @@ labels["Measuring Offset"] = create_display("Measuring Offset",frame_right)
 labels["Address"] = create_display("Address", frame_right)
 
 #creates a button for retreiving all data from group of sensors
-create_button("Group Sensors", get_all_group)
+create_button("Read All Sensors", read_all_sensors)
 create_button("Reset Buffer", reset_buffer)
 
 #Creates a text box for displaying log
@@ -543,26 +622,6 @@ tree.pack(side=LEFT)
 scrollbar = ttk.Scrollbar(tree_frame, orient=tk.VERTICAL, command=tree.yview)
 tree.configure(yscroll=scrollbar.set)
 scrollbar.pack(side=RIGHT, fill=tk.BOTH)
-
-def update_treeview():
-    tree.delete(*tree.get_children())
-    tag = 0
-    for key in treeview_dict:
-        items = [key] + treeview_dict[key][0:4]
-        tree.insert('', tk.END, values=items, tag=str(tag))
-        try:
-            distance = float(tree.item(tree.get_children()[tag])['values'][4])
-            default_address = int(tree.item(tree.get_children()[tag])['values'][3])
-            current_address = int(tree.item(tree.get_children()[tag])['values'][2])
-            nom_value = int(treeview_dict[key][4])
-            tolerance = int(treeview_dict[key][5])
-            if distance < nom_value + tolerance and distance > nom_value - tolerance:
-                tree.tag_configure(str(tag), background="limegreen")  
-                if current_address != default_address:
-                    tree.tag_configure(str(tag), background="yellow")  
-            else: tree.tag_configure(str(tag), background="red")        
-        except: pass
-        tag += 1
 
 
 address_frame = ttk.Frame(frame_left, width=50, height=50)
@@ -635,30 +694,6 @@ combobox_group_sensors['state'] = 'readonly'
 combobox_group_sensors.bind("<<ComboboxSelected>>", lambda e: group_sensor_selected())
 combobox_group_sensors.pack(side=tk.LEFT, padx=(20,5), pady=(0,0))
 
-#saves machines list to pickle file
-def save():
-    Files = [('Pickle Files', '*.p')]
-    file = filedialog.asksaveasfilename(filetypes = Files, defaultextension = Files)
-    pickle.dump(machines, open(file, "wb"))
- 
-#loads machines list from pickle file
-def load():
-    global machines
-    Files = [('Pickle Files', '*.p')]
-    file = filedialog.askopenfilename(filetypes=Files, defaultextension = Files) 
-    machines = pickle.load(open(file, "rb"))
-    combobox_machines['values'] = machines
-
-_loop = None
-def loop():
-    global _loop
-    get_all(lambda:get_adr(0x7f), get_sensor)
-    print(get_sensor().values)
-    _loop = window.after(500, loop)
-
-def endloop():
-    window.after_cancel(_loop)
-
  
 frame = ttk.Frame(window)
 frame.pack()
@@ -669,6 +704,7 @@ mainmenu.add_command(label = "Load", command= load)
 mainmenu.add_command(label = "Exit", command= window.destroy)
 mainmenu.add_command(label = "Loop", command= loop)
 mainmenu.add_command(label = "End Loop", command= endloop)
+mainmenu.add_command(label = "Print", command=lambda: print(get_machine()))
 
 window.config(menu = mainmenu)
 

@@ -5,16 +5,16 @@ class Sensor:
         self.nom_value = nom_value
         self.tolerance = tolerance
         self.values = {
-            "Temperature": "",
-            "Distance": "",
+            "Address": "",
             "Serial Number": "",
             "SW Version": "",
             "Article Number": "",
-            "Description": "",
-            "Address": "",
+            "Description": "",            
             "Measuring Unit": "",
-            "Measuring Offset": "",
             "Measuring Range": "",
+            "Measuring Offset": "",        
+            "Distance": "",
+            "Temperature": "",
         }
 
     def __str__(self):
