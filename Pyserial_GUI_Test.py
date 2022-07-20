@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import ANCHOR, BOTTOM, CENTER, END, LEFT, N, NW, RIGHT, SOLID, SUNKEN, SW, TOP, W, ttk, messagebox, filedialog
 import ctypes
+from turtle import width
 import serial
 import serial.tools.list_ports
 from PIL import ImageTk, Image
@@ -45,15 +46,14 @@ assign_address = [0x68,0x09,0x09,0x68,0x00,0x01,0x43,0x37,0x3e,0x00,0x00,0x00,0x
 
 #reads temperature from sensor with version 0.2a or 0.3a
 def get_temperature(adr):
-    adr = adr()
-    if get_sw_version(lambda:adr) == "0.2a":
+    if get_sw_version(adr) == "0.2a":
         temperature_v02a[4] = adr
         temperature_v02a[-2] = get_fcs(temperature_v02a, 4)
         ser.write(bytearray(temperature_v02a))
         received = ser.read(19)
         if get_fcs(received, 4) != received[-2]: raise Exception("Checksum is not equal")
         temp = struct.unpack('i', received[13:17])[0]
-        serial_num = str(get_serial_number(lambda:adr))
+        serial_num = str(get_serial_number(adr))
         temp_corr = get_temp_corr()
         a = temp_corr[serial_num][0]
         b = temp_corr[serial_num][1]
@@ -70,11 +70,10 @@ def get_temperature(adr):
 
 #reads distance from sensor with version 0.2a or 0.3a
 def get_distance(adr):
-    adr=adr()
     distance_temp_v03a[1] = adr
     distance_temp_v03a[-2] = get_fcs(distance_temp_v03a, 1)
     bytes = 17
-    if get_sw_version(lambda:adr) == "0.2a": bytes=13
+    if get_sw_version(adr) == "0.2a": bytes=13
     ser.write(bytearray(distance_temp_v03a))
     received = ser.read(bytes)
     if get_fcs(received, 4) != received[-2]: raise Exception("checksum is not equal")
@@ -84,7 +83,7 @@ def get_distance(adr):
 
 #returns serial number from sensor
 def get_serial_number(adr):
-    serial_number[4] = adr()
+    serial_number[4] = adr
     serial_number[-2] = get_fcs(serial_number, 4)
     ser.write(bytearray(serial_number))
     received = ser.read(19)
@@ -94,7 +93,7 @@ def get_serial_number(adr):
 
 #reads article number of sensor
 def get_article_number(adr):
-    article_number[4] = adr()
+    article_number[4] = adr
     article_number[-2] = get_fcs(article_number, 4)
     ser.write(bytearray(article_number))
     received = ser.read(19)
@@ -104,7 +103,7 @@ def get_article_number(adr):
 
 #returns software version of sensor
 def get_sw_version(adr):
-    sw_version[4] = adr()
+    sw_version[4] = adr
     sw_version[-2] = get_fcs(sw_version, 4)
     ser.write(bytearray(sw_version))
     received = ser.read(17)
@@ -115,7 +114,7 @@ def get_sw_version(adr):
 
 #reads destriction of sensor
 def get_description(adr):
-    description[4] = adr()
+    description[4] = adr
     description[-2] = get_fcs(description, 4)
     ser.write(bytearray(description))
     received = ser.read(47)
@@ -127,7 +126,7 @@ def get_description(adr):
 
 #reads measuring unit of sensor
 def get_measuring_unit(adr):
-    measuring_unit[4] = adr()
+    measuring_unit[4] = adr
     measuring_unit[-2] = get_fcs(measuring_unit, 4)
     ser.write(bytearray(measuring_unit))
     received = ser.read(16)
@@ -138,7 +137,7 @@ def get_measuring_unit(adr):
 
 #reads measuring range of sensor
 def get_measuring_range(adr):
-    measuring_range[4] = adr()
+    measuring_range[4] = adr
     measuring_range[-2] = get_fcs(measuring_range, 4)
     ser.write(bytearray(measuring_range))
     received = ser.read(19)
@@ -148,7 +147,7 @@ def get_measuring_range(adr):
 
 #reads measuring offset of sensor
 def get_measuring_offset(adr):
-    measuring_offset[4] = adr()
+    measuring_offset[4] = adr
     measuring_offset[-2] = get_fcs(measuring_offset, 4)
     ser.write(bytearray(measuring_offset))
     received = ser.read(19)
@@ -168,7 +167,7 @@ def get_adr(adr):
 #retrieve all date from sensor
 def get_all(adr):
     values = {}
-    values["Address"] = adr()
+    values["Address"] = adr
     values["Serial Number"] = get_serial_number(adr)
     values["SW Version"] = get_sw_version(adr)
     values["Article Number"] = get_article_number(adr) 
@@ -180,13 +179,13 @@ def get_all(adr):
     values["Temperature"] = get_temperature(adr)  
     return values
 
-def read_sensor(adr, sensor):
+def read_sensor(adr_func, sensor):
     try:
         txt_log.insert(END, "\n")
         try: log_text=f'Machine: {get_machine()},  Sensor: {sensor()}'
         except: log_text="No sensor selected"
         log_write(log_text)
-        retrieved = get_all(adr)
+        retrieved = get_all(adr_func())
         for key in retrieved:
             labels[key]['text'] = retrieved[key]
             log_write(f"{key}: {retrieved[key]}")
@@ -206,40 +205,41 @@ def read_sensor(adr, sensor):
 
 #retrieves all data from sensors when there are mulitple sensors connected
 def read_all_sensors():
-    sensors_group = get_machine().sensors_group
-    sensors_group.clear()
-    ser.timeout=0.05
-    for i in range(0,127):
-        try: 
-            adr = get_adr(i)
-        except: pass
-        else:
-            try:
+    try:
+        sensors_group = get_machine().sensors_group
+        sensors_group.clear()
+        ser.timeout=0.02
+        for i in range(0, 127):
+            try: 
+                progress_var.set(i)
+                window.update_idletasks()
+                adr = get_adr(i)                
+            except: pass
+            else:
                 txt_log.insert(END, "\n")
                 log_write(f'found adr: {adr}')
                 ser.timeout=1
-                serial_num = get_serial_number(lambda:adr)
+                serial_num = get_serial_number(adr)
                 sensor_found = False
                 for sensor in get_machine().sensors:
                     if sensor.values["Serial Number"] == serial_num:
-                        sensors_group.append(Sensor(sensor.location, sensor.address, sensor.nom_value, sensor.tolerance))                    
-                        read_sensor(lambda:adr, lambda:sensors_group[-1])
+                        sensor_data = [sensor.location, sensor.address, sensor.nom_value, sensor.tolerance]                   
                         sensor_found = True
                         break                
                 if not sensor_found: 
-                    sensors_group.append(Sensor("Unknown", "Unknown", "Unknown", "Unknown"))                                        
-                    log_write(f"Sensor: {serial_num} not found in registry")
-                    read_sensor(lambda:adr, lambda:sensors_group[-1])                                
-            except Exception as error: 
-                log_write(error)
-                break
-            ser.timeout=0.05  
-    combobox_group_sensors['values'] = sensors_group
-    current_group_sensor.set("")     
-    combobox_group_sensors.current(newindex=len(sensors_group)-1)
-    current_sensor.set("")
-    ser.timeout=1
-    
+                    sensor_data = ["Unknown", "Unknown", "Unknown", "Unknown"]                                      
+                    log_write(f"Sensor: {serial_num} not found in registry")  
+                sensors_group.append(Sensor(sensor_data[0], sensor_data[1], sensor_data[2], sensor_data[3]))  
+                read_sensor(lambda:adr, lambda:sensors_group[-1])                               
+                ser.timeout=0.02  
+        combobox_group_sensors['values'] = sensors_group
+        current_group_sensor.set("")     
+        combobox_group_sensors.current(newindex=len(sensors_group)-1)
+        current_sensor.set("")
+        ser.timeout=1
+    except Exception as error: 
+        log_write(error)
+    progress_var.set(0)
 
 #serial write functions
 #changes the address of single connected sensor
@@ -473,15 +473,18 @@ def load():
 
 _loop = None
 def loop():
-    global _loop
-    get_all(lambda:get_adr(0x7f), get_sensor)
-    print(get_sensor().values)
-    _loop = window.after(500, loop)
+    try:
+        global _loop
+        values = get_all(get_adr(0x7f))
+        log_write(values)
+    except Exception as error: 
+        log_write(error) 
+    _loop = window.after(50, loop)
 
 def endloop():
     window.after_cancel(_loop)
 
-def print(machine):
+def print_excel(machine):
     wb = load_workbook(filename = 'ME-ProxSensor-TestProgDataFile.xlsx')
     ws = wb.active
     print_machine(ws, machine)
@@ -557,12 +560,13 @@ logging.basicConfig(filename="Log.log", encoding='utf-8', level=logging.INFO, fo
 
 #adds onesubsea icon and logo to window
 canvas = tk.Canvas(window, width = 700, height = 150)
-canvas.pack()
+canvas.grid(row=0, column=1)
 img = ImageTk.PhotoImage(Image.open("onesubsea_logo.png"))
 canvas.create_image(20, 20, anchor=NW, image=img)
 icon = ImageTk.PhotoImage(Image.open("onesubsea_icon.png"))
 window.iconphoto(False, icon)
 
+frame_center = ttk.Frame(master=window)
 frame_right = ttk.Frame(master=window)
 frame_left = ttk.Frame(master=window)
 
@@ -597,7 +601,7 @@ create_button("Read All Sensors", read_all_sensors)
 create_button("Reset Buffer", reset_buffer)
 
 #Creates a text box for displaying log
-frame_log = ttk.Frame(window)
+frame_log = ttk.Frame(frame_center)
 txt_log = tk.Text(frame_log, height=15, width=61)
 lbl_log = ttk.Label(frame_log, text="Log")
 lbl_log.pack(anchor=NW)
@@ -606,9 +610,12 @@ scrollbar = ttk.Scrollbar(frame_log, orient=tk.VERTICAL, command=txt_log.yview)
 txt_log.configure(yscroll=scrollbar.set)
 scrollbar.pack(side=RIGHT, fill=tk.BOTH)
 
+progress_var = tk.DoubleVar() #here you have ints but when calc. %'s usually floats
+progressbar = ttk.Progressbar(frame_center, variable=progress_var, maximum=126, length=737)
+
 #creates treeview
 columns = ("one", "two", "three", "four", "five")
-tree_frame = ttk.Frame(window)
+tree_frame = ttk.Frame(frame_center)
 tree = ttk.Treeview(tree_frame, columns=columns, show='headings', selectmode='browse')
 tree.heading('one', text="Location")
 tree.heading('two', text="Serial Number")
@@ -616,7 +623,8 @@ tree.heading('three', text="Current Address")
 tree.heading('four', text="Default Address")
 tree.heading('five', text="Distance")
 tree.column(column=columns[0], width=174)
-for i in range(1,5): tree.column(column=columns[i], anchor=CENTER, width=140)
+tree.column(column=columns[1], anchor=CENTER, width=141)
+for i in range(2,5): tree.column(column=columns[i], anchor=CENTER, width=140)
 tree.pack(side=LEFT)
 # add a scrollbar
 scrollbar = ttk.Scrollbar(tree_frame, orient=tk.VERTICAL, command=tree.yview)
@@ -696,7 +704,8 @@ combobox_group_sensors.pack(side=tk.LEFT, padx=(20,5), pady=(0,0))
 
  
 frame = ttk.Frame(window)
-frame.pack()
+frame.grid()
+
  
 mainmenu = tk.Menu(frame)
 mainmenu.add_command(label = "Save", command= save)  
@@ -704,19 +713,22 @@ mainmenu.add_command(label = "Load", command= load)
 mainmenu.add_command(label = "Exit", command= window.destroy)
 mainmenu.add_command(label = "Loop", command= loop)
 mainmenu.add_command(label = "End Loop", command= endloop)
-mainmenu.add_command(label = "Print", command=lambda: print(get_machine()))
+mainmenu.add_command(label = "Print", command=lambda: print_excel(get_machine()))
 
 window.config(menu = mainmenu)
 
 #Places widgets in window
-frame_right.pack(side=RIGHT, anchor=N)
-frame_left.pack(side=LEFT, anchor=N)
+frame_center.grid(row=1, column=1, sticky='n')
+frame_right.grid(row=1, column=2, sticky='n')
+frame_left.grid(row=1, column=0, sticky='n')
+
 frame_ports.pack(anchor=W)
 frame_machines.pack(anchor=W)
 frame_sensors.pack(anchor=W)
 frame_group_sensors.pack(anchor=W)
 address_frame.pack(anchor=W)
 frame_log.pack()
-tree_frame.pack(pady=(10,0))
+progressbar.pack(anchor=W)
+tree_frame.pack()
 
 window.mainloop()
