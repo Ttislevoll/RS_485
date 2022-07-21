@@ -45,7 +45,19 @@ assign_address = [0x68,0x09,0x09,0x68,0x00,0x01,0x43,0x37,0x3e,0x00,0x00,0x00,0x
 #serial read functions
 
 #reads temperature from sensor with version 0.2a or 0.3a
-def get_temperature(adr):
+def get_temperature(adr: int) -> float:
+    """Reads temperature from sensor
+
+    Args:
+        adr (int): Sensor address
+
+    Raises:
+        Exception: Checksum is not equal
+        Exception: Checksum is not equal
+
+    Returns:
+        float: Temperature
+    """
     if get_sw_version(adr) == "0.2a":
         temperature_v02a[4] = adr
         temperature_v02a[-2] = get_fcs(temperature_v02a, 4)
@@ -69,7 +81,18 @@ def get_temperature(adr):
     return temperature
 
 #reads distance from sensor with version 0.2a or 0.3a
-def get_distance(adr):
+def get_distance(adr : int) -> float:
+    """Reads distance from sensor
+
+    Args:
+        adr (int): Sensor address
+
+    Raises:
+        Exception: Checksum is not equal
+
+    Returns:
+        float: Distance
+    """
     distance_temp_v03a[1] = adr
     distance_temp_v03a[-2] = get_fcs(distance_temp_v03a, 1)
     bytes = 17
@@ -82,7 +105,18 @@ def get_distance(adr):
     return distance
 
 #returns serial number from sensor
-def get_serial_number(adr):
+def get_serial_number(adr : int) -> int:
+    """Reads serial number from sensor
+
+    Args:
+        adr (int): Sensor address
+
+    Raises:
+        Exception: Checksum is not equal
+
+    Returns:
+        int: Serial number
+    """
     serial_number[4] = adr
     serial_number[-2] = get_fcs(serial_number, 4)
     ser.write(bytearray(serial_number))
@@ -92,7 +126,18 @@ def get_serial_number(adr):
     return serial_num
 
 #reads article number of sensor
-def get_article_number(adr):
+def get_article_number(adr : int) -> int:
+    """Reads article number from sensor
+
+    Args:
+        adr (int): Sensor address
+
+    Raises:
+        Exception: Checksum is not equal
+
+    Returns:
+        int: Article number
+    """
     article_number[4] = adr
     article_number[-2] = get_fcs(article_number, 4)
     ser.write(bytearray(article_number))
@@ -102,7 +147,18 @@ def get_article_number(adr):
     return article_n
 
 #returns software version of sensor
-def get_sw_version(adr):
+def get_sw_version(adr : int) -> str:
+    """Reads sw version from sensor
+
+    Args:
+        adr (int): Sensor address
+
+    Raises:
+        Exception: Checksum is not equal
+
+    Returns:
+        str: Sw version
+    """
     sw_version[4] = adr
     sw_version[-2] = get_fcs(sw_version, 4)
     ser.write(bytearray(sw_version))
@@ -113,7 +169,18 @@ def get_sw_version(adr):
     return sw_string
 
 #reads destriction of sensor
-def get_description(adr):
+def get_description(adr : int) -> str:
+    """Reads description from sensor
+
+    Args:
+        adr (int): Sensor address
+
+    Raises:
+        Exception: Checksum is not equal
+
+    Returns:
+        str: Description
+    """
     description[4] = adr
     description[-2] = get_fcs(description, 4)
     ser.write(bytearray(description))
@@ -125,7 +192,18 @@ def get_description(adr):
     return text
 
 #reads measuring unit of sensor
-def get_measuring_unit(adr):
+def get_measuring_unit(adr : int) -> str:
+    """Reads measuring unit from sensor
+
+    Args:
+        adr (int): Sensor address
+
+    Raises:
+        Exception: Checksum is not equal
+
+    Returns:
+        str: Measuring unit
+    """
     measuring_unit[4] = adr
     measuring_unit[-2] = get_fcs(measuring_unit, 4)
     ser.write(bytearray(measuring_unit))
@@ -136,7 +214,18 @@ def get_measuring_unit(adr):
     return units[unit]
 
 #reads measuring range of sensor
-def get_measuring_range(adr):
+def get_measuring_range(adr : int) -> float:
+    """Reads measuring range from sensor
+
+    Args:
+        adr (int): Sensor address
+
+    Raises:
+        Exception: Checksum is not equal
+
+    Returns:
+        float: Measuring range
+    """
     measuring_range[4] = adr
     measuring_range[-2] = get_fcs(measuring_range, 4)
     ser.write(bytearray(measuring_range))
@@ -146,7 +235,18 @@ def get_measuring_range(adr):
     return range
 
 #reads measuring offset of sensor
-def get_measuring_offset(adr):
+def get_measuring_offset(adr : int) -> float:
+    """Reads measuring offset from sensor
+
+    Args:
+        adr (int): Sensor address
+
+    Raises:
+        Exception: Checksum is not equal
+
+    Returns:
+        float: Measuring offset
+    """
     measuring_offset[4] = adr
     measuring_offset[-2] = get_fcs(measuring_offset, 4)
     ser.write(bytearray(measuring_offset))
@@ -156,7 +256,18 @@ def get_measuring_offset(adr):
     return offset
 
 #returns address if it exists, or if adr=0x7f(broadcast), returns address of single connected sensor
-def get_adr(adr):
+def get_adr(adr : int) -> int:
+    """Reads address from sensor. Returns address any single sensor if adr is broadcast(0x7f)
+
+    Args:
+        adr (int): Sensor address
+
+    Raises:
+        Exception: Checksum is not equal
+
+    Returns:
+        int: Address
+    """
     broadcast[1] = adr
     broadcast[-2] = get_fcs(broadcast, 1)
     ser.write(bytearray(broadcast))
@@ -165,7 +276,15 @@ def get_adr(adr):
     return received[2]
 
 #retrieve all date from sensor
-def get_all(adr):
+def get_all(adr: int) -> dict:
+    """Reads all values from sensor
+
+    Args:
+        adr (int): Sensor address
+
+    Returns:
+        dict: Sensor readings
+    """
     values = {}
     values["Address"] = adr
     values["Serial Number"] = get_serial_number(adr)
@@ -549,7 +668,7 @@ def update_treeview():
 #Creates Window
 ctypes.windll.shcore.SetProcessDpiAwareness(1)
 window = tk.Tk()
-window.title("DT3005 - Serial Communication")
+window.title("OneSubsea ME Proximity sensor test")
 window.geometry('1500x900+300+50')
 window.resizable(False,False)
 style = ttk.Style()
