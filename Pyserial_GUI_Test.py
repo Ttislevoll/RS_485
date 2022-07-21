@@ -375,13 +375,13 @@ def set_address(new_adr):
         messagebox.showinfo("Assign Address", "Restart the sensor then click 'ok'")
         seconds = 60
         wait = time.time() + seconds
-        polling_sensor(new_adr, seconds, wait)
+        polling_sensor(new_adr, seconds, wait, get_sensor())
     except Exception as error:
         log_text=error
         log_write(log_text)
 
 #looks for sensor after reset follwing address change
-def polling_sensor(adr, seconds, wait):
+def polling_sensor(adr, seconds, wait, sensor):
     ser.timeout = 0.01
     if ser.in_waiting != 0: ser.reset_input_buffer()
     try:
@@ -393,11 +393,11 @@ def polling_sensor(adr, seconds, wait):
         if(time_left < seconds):
             log_write(f'Looking for sensor: {seconds}')
             seconds -= 1
-        window.after(100, lambda:polling_sensor(adr, seconds, wait))
+        window.after(100, lambda:polling_sensor(adr, seconds, wait, sensor))
     else:
         try: 
-            get_sensor().values["Address"] = current_adr
-            treeview_dict[get_sensor().location][1] = current_adr
+            sensor.values["Address"] = current_adr
+            treeview_dict[sensor.location][1] = current_adr
         except: pass
         labels["Address"]['text'] = current_adr
         current_address_lbl_value['text'] = current_adr
