@@ -8,8 +8,8 @@ from PIL import ImageTk, Image
 import logging
 import datetime
 import struct
-from machine import machine
-from sensor import Sensor
+from Machine import machine
+from Sensor import Sensor
 import pickle
 from typing import List
 import os.path

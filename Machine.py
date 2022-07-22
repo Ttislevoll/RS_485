@@ -1,4 +1,4 @@
-from sensor import Sensor
+from Sensor import Sensor
 from typing import List
 
 class Machine:
