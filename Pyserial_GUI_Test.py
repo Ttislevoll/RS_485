@@ -383,7 +383,7 @@ def set_address(new_adr):
 #looks for sensor after reset follwing address change
 def polling_sensor(adr, seconds, wait, sensor):
     ser.timeout = 0.01
-    if ser.in_waiting != 0: ser.reset_input_buffer()
+    if ser.in_waiting > 0: ser.reset_input_buffer()
     try:
         if(time.time() > wait):
             current_adr = "Sensor not found"                
@@ -478,22 +478,6 @@ def group_sensor_selected():
     for key in group_sensor.values:
         if group_sensor.values[key]: log_write(f'{key}: {group_sensor.values[key]}')
         labels[key]['text'] = group_sensor.values[key]
-    
-#creates a gui button with label to display results
-def create_button(text, func, padx_btn=(20,8), pady=(8,8)):
-    frame = ttk.Frame(frame_right, width=50, height=50)
-    btn = ttk.Button(frame, text=text, width=15, command=lambda: func())
-    btn.pack(side=tk.LEFT, padx=padx_btn, pady=pady, ipady=1)
-    frame.pack(anchor=W)
-
-def create_display(text, top_frame, padx_lbl=(20,8), padx_lbl_value=(8,20), pady=(8,8)):
-    frame = ttk.Frame(top_frame, width=50, height=50)
-    lbl = ttk.Label(frame, text=text, width=14)
-    lbl.pack(side=tk.LEFT, padx=padx_lbl, pady=pady)
-    lbl_value = ttk.Label(frame, text="", width=14, background="white", relief=SOLID)
-    lbl_value.pack(side=tk.RIGHT, padx=padx_lbl_value, pady=pady)
-    frame.pack()
-    return lbl_value
 
 #calculates the fcs checksum of the telegram
 def get_fcs(telegram, x):
@@ -604,25 +588,29 @@ def endloop():
     window.after_cancel(_loop)
 
 def print_excel(machine):
+    Files = [('Excel Files', '*.xlsx')]
+    file = filedialog.asksaveasfilename(filetypes = Files, defaultextension = Files)
+    project_name = file.split('/')[-1].split('.')[0]
     wb = load_workbook(filename = 'ME-ProxSensor-TestProgDataFile.xlsx')
     ws = wb.active
-    print_machine(ws, machine)
+    print_machine(ws, machine, project_name)
     print_values(ws, machine.sensors, machine)
     print_values(ws, machine.sensors_group, machine)
-    wb.save('test.xlsx')
+    wb.save(file)
+    b = 4
 
 def print_values(ws, sensors, machine):
     row = 19
-    column = 1
+    column = 2
     for sensor in sensors:
         while ws.cell(row, column).value:
             column += 1
         else:
-            dataset = column
+            dataset = column - 1
             if sensors is machine.sensors: index = 1
             else: index = 2
             print_dataset(ws, sensor, f'Dataset: {dataset}', index)
-            ws.cell(row, column, str(column))
+            ws.cell(row, column, str(dataset))
             row += 1
             for key in sensor.values:
                 ws.cell(row, column, str(sensor.values[key]))
@@ -639,10 +627,10 @@ def print_dataset(ws, sensor, dataset, index):
             break
         row += 1
 
-def print_machine(ws, machine):
-    ws.cell(1, 1, "Project: test")
+def print_machine(ws, machine, project_name):
+    ws.cell(1, 1, f'Project: {project_name}')
     ws.cell(2, 1, f'Machine ITM: {machine.itm_number}')
-    ws.cell(3, 1, f'Machine Description {machine.description}')
+    ws.cell(3, 1, f'Machine Description: {machine.description}')
     ws.cell(4, 1, f'Machine Serial No.: {machine.serial_number}')
 
 def update_treeview():
@@ -665,12 +653,27 @@ def update_treeview():
         except: pass
         tag += 1
 
+#creates a gui button with label to display results
+def create_button(text, func, padx_btn=(20,8), pady=(8,8)):
+    frame = ttk.Frame(frame_right, width=50, height=50)
+    btn = ttk.Button(frame, text=text, width=15, command=lambda: func())
+    btn.pack(side=tk.LEFT, padx=padx_btn, pady=pady, ipady=1)
+    frame.pack(anchor=W)
+
+def create_display(text, padx_lbl=(20,0), padx_lbl_value=(0,20), pady=(8,8)):
+    frame = ttk.Frame(frame_right, width=50, height=50)
+    lbl = ttk.Label(frame, text=text, width=16)
+    lbl.pack(side=tk.LEFT, padx=padx_lbl, pady=pady)
+    lbl_value = ttk.Label(frame, text="", width=14, background="white", relief=SOLID)
+    lbl_value.pack(side=tk.RIGHT, padx=padx_lbl_value, pady=pady)
+    frame.pack()
+    return lbl_value
+
 #Creates Window
 ctypes.windll.shcore.SetProcessDpiAwareness(1)
 window = tk.Tk()
 window.title("OneSubsea ME Proximity sensor test")
 window.geometry('1500x900+300+50')
-window.resizable(False,False)
 style = ttk.Style()
 style.configure('Treeview', rowheight=25)
 
@@ -695,47 +698,46 @@ lbl_current_sensor.pack(padx=(8,8), pady=(0,5))
 #Creates button for retreiving all data from sensor and a label to display result
 create_button("Read Sensor", lambda:read_sensor(lambda:get_adr(0x7f), get_sensor), pady=(8,8))
 #Creates button for retreiving temperature value from sensor and a label to display result
-labels["Temperature"] = create_display("Temperature", frame_right)
+labels["Temperature"] = create_display("Temperature")
 #Creates button for retreiving distance value from sensor and a label to display result
-labels["Distance"] = create_display("Distance",frame_right)
+labels["Distance"] = create_display("Distance")
 #Creates button for retreiving serial number from sensor and a label to display result
-labels["Serial Number"] = create_display("Serial Number",frame_right)
+labels["Serial Number"] = create_display("Serial Number")
 #Creates button for retreiving software version from sensor and a label to display result
-labels["SW Version"] = create_display("SW Version",frame_right)
+labels["SW Version"] = create_display("SW Version")
 #Creates button for retreiving article number from sensor and a label to display result
-labels["Article Number"] = create_display("Article Number",frame_right)
+labels["Article Number"] = create_display("Article Number")
 #Creates button for retreiving description from sensor and a label to display result
-labels["Description"] = create_display("Description",frame_right)
+labels["Description"] = create_display("Description")
 #Creates button for retreiving measuring unit from sensor and a label to display result
-labels["Measuring Unit"] = create_display("Measuring Unit",frame_right)
+labels["Measuring Unit"] = create_display("Measuring Unit")
 #Creates button for retreiving measuring range from sensor and a label to display result
-labels["Measuring Range"] = create_display("Measuring Range",frame_right)
+labels["Measuring Range"] = create_display("Measuring Range")
 #Creates button for retreiving measuring offset from sensor and a label to display result
-labels["Measuring Offset"] = create_display("Measuring Offset",frame_right)
+labels["Measuring Offset"] = create_display("Measuring Offset")
 #Creates button for retreiving address from sensor and a label to display result
-labels["Address"] = create_display("Address", frame_right)
+labels["Address"] = create_display("Address")
 
 #creates a button for retreiving all data from group of sensors
 create_button("Read All Sensors", read_all_sensors)
 create_button("Reset Buffer", reset_buffer)
 
 #Creates a text box for displaying log
-frame_log = ttk.Frame(frame_center)
-txt_log = tk.Text(frame_log, height=15, width=61)
-lbl_log = ttk.Label(frame_log, text="Log")
-lbl_log.pack(anchor=NW)
-txt_log.pack(side=LEFT)
-scrollbar = ttk.Scrollbar(frame_log, orient=tk.VERTICAL, command=txt_log.yview)
+txt_log = tk.Text(frame_center, height=15)
+lbl_log = ttk.Label(frame_center, text="Log")
+lbl_log.grid(row=0, column=0, sticky='w')
+txt_log.grid(row=1, column=0, sticky='we')
+scrollbar = ttk.Scrollbar(frame_center, orient=tk.VERTICAL, command=txt_log.yview)
 txt_log.configure(yscroll=scrollbar.set)
-scrollbar.pack(side=RIGHT, fill=tk.BOTH)
+scrollbar.grid(row=1, column=1, sticky='ns')
 
 progress_var = tk.DoubleVar() #here you have ints but when calc. %'s usually floats
-progressbar = ttk.Progressbar(frame_center, variable=progress_var, maximum=126, length=737)
+progressbar = ttk.Progressbar(frame_center, variable=progress_var, maximum=126)
+progressbar.grid(row=2, column=0, sticky='we')
 
 #creates treeview
 columns = ("one", "two", "three", "four", "five")
-tree_frame = ttk.Frame(frame_center)
-tree = ttk.Treeview(tree_frame, columns=columns, show='headings', selectmode='browse')
+tree = ttk.Treeview(frame_center, columns=columns, show='headings', selectmode='browse')
 tree.heading('one', text="Location")
 tree.heading('two', text="Serial Number")
 tree.heading('three', text="Current Address")
@@ -744,11 +746,11 @@ tree.heading('five', text="Distance")
 tree.column(column=columns[0], width=174)
 tree.column(column=columns[1], anchor=CENTER, width=141)
 for i in range(2,5): tree.column(column=columns[i], anchor=CENTER, width=140)
-tree.pack(side=LEFT)
+tree.grid(row=3, column=0, sticky='we')
 # add a scrollbar
-scrollbar = ttk.Scrollbar(tree_frame, orient=tk.VERTICAL, command=tree.yview)
+scrollbar = ttk.Scrollbar(frame_center, orient=tk.VERTICAL, command=tree.yview)
 tree.configure(yscroll=scrollbar.set)
-scrollbar.pack(side=RIGHT, fill=tk.BOTH)
+scrollbar.grid(row=3, column=1, sticky='ns')
 
 
 address_frame = ttk.Frame(frame_left, width=50, height=50)
@@ -756,16 +758,17 @@ current_address_frame = ttk.Frame(address_frame, width=50, height=50)
 current_address_frame.pack(anchor=NW)
 current_address_lbl = ttk.Label(current_address_frame, text="Current Address", width=20)
 current_address_lbl.pack(side=tk.TOP, padx=(20,0), pady=(50,0), anchor=NW)
-current_address_lbl_value = ttk.Label(current_address_frame, text="", width=20, background="white", relief=SOLID)
-current_address_lbl_value.pack(side=tk.BOTTOM, padx=(20,0), pady=(0,0), ipady=1)
+current_address_lbl_value = ttk.Label(current_address_frame, text="", width=19, background="white", relief=SOLID)
+current_address_lbl_value.pack(side=tk.BOTTOM, padx=(20,0), pady=(0,0), ipady=1, anchor='w')
+
 #Creates a list and button for changing address
 frame_new_address = ttk.Frame(address_frame, width=50, height=50)
 frame_new_address.pack(anchor=SW)
 lbl_new_address = ttk.Label(frame_new_address, text="New Address")
 lbl_new_address.pack(anchor=NW, padx=(20,5), pady=(0,0))
 selected_address = tk.StringVar()
-entry_new_address = ttk.Entry(frame_new_address, textvariable=selected_address, width=20)
-entry_new_address.pack(side=tk.LEFT, padx=(20,5), pady=(0,0))
+entry_new_address = ttk.Entry(frame_new_address, textvariable=selected_address, width=19)
+entry_new_address.pack(side=tk.LEFT, padx=(20,5), pady=(0,0), anchor='w')
 change_address_btn = ttk.Button(frame_new_address, text="Change Address", command=lambda: set_address(int(selected_address.get())))
 change_address_btn.pack(side=tk.RIGHT, padx=(5,20), pady=(0,0))
 
@@ -821,11 +824,8 @@ combobox_group_sensors['state'] = 'readonly'
 combobox_group_sensors.bind("<<ComboboxSelected>>", lambda e: group_sensor_selected())
 combobox_group_sensors.pack(side=tk.LEFT, padx=(20,5), pady=(0,0))
 
- 
 frame = ttk.Frame(window)
 frame.grid()
-
- 
 mainmenu = tk.Menu(frame)
 mainmenu.add_command(label = "Save", command= save)  
 mainmenu.add_command(label = "Load", command= load)
@@ -833,11 +833,15 @@ mainmenu.add_command(label = "Exit", command= window.destroy)
 mainmenu.add_command(label = "Loop", command= loop)
 mainmenu.add_command(label = "End Loop", command= endloop)
 mainmenu.add_command(label = "Print", command=lambda: print_excel(get_machine()))
-
 window.config(menu = mainmenu)
 
 #Places widgets in window
+window.columnconfigure(0, weight=1, minsize=386)
+window.columnconfigure(1, weight=1)
+window.columnconfigure(2, weight=1, minsize=320)
+
 frame_center.grid(row=1, column=1, sticky='n')
+frame_center.columnconfigure(0, weight=1)
 frame_right.grid(row=1, column=2, sticky='n')
 frame_left.grid(row=1, column=0, sticky='n')
 
@@ -846,8 +850,5 @@ frame_machines.pack(anchor=W)
 frame_sensors.pack(anchor=W)
 frame_group_sensors.pack(anchor=W)
 address_frame.pack(anchor=W)
-frame_log.pack()
-progressbar.pack(anchor=W)
-tree_frame.pack()
 
 window.mainloop()
