@@ -12400,3 +12400,2025 @@ INFO:10:57:25 Selected port: COM1 - MOXA USB Serial Port (COM1)
 INFO:10:57:56 Selected port: COM1 - MOXA USB Serial Port (COM1)
 INFO:11:33:01 No sensor selected
 INFO:11:33:01 'NoneType' object has no attribute 'write'
+INFO:11:42:20 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:11:42:40 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:12:07:30 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:12:07:47 No sensor selected
+INFO:12:07:48 Address: 12
+INFO:12:07:48 Serial Number: 926
+INFO:12:07:48 SW Version: 0.2a
+INFO:12:07:48 Article Number: 4314083
+INFO:12:07:48 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:07:48 Measuring Unit: μm
+INFO:12:07:48 Measuring Range: 1400.0
+INFO:12:07:48 Measuring Offset: 100.0
+INFO:12:07:48 Distance: 1490
+INFO:12:07:48 Temperature: 40.9
+INFO:12:07:50 No sensor selected
+INFO:12:07:50 Address: 12
+INFO:12:07:50 Serial Number: 926
+INFO:12:07:50 SW Version: 0.2a
+INFO:12:07:50 Article Number: 4314083
+INFO:12:07:50 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:07:50 Measuring Unit: μm
+INFO:12:07:50 Measuring Range: 1400.0
+INFO:12:07:50 Measuring Offset: 100.0
+INFO:12:07:50 Distance: 1490
+INFO:12:07:50 Temperature: 40.9
+INFO:12:07:50 No sensor selected
+INFO:12:07:50 Address: 12
+INFO:12:07:50 Serial Number: 926
+INFO:12:07:50 SW Version: 0.2a
+INFO:12:07:50 Article Number: 4314083
+INFO:12:07:50 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:07:50 Measuring Unit: μm
+INFO:12:07:50 Measuring Range: 1400.0
+INFO:12:07:50 Measuring Offset: 100.0
+INFO:12:07:50 Distance: 1490
+INFO:12:07:50 Temperature: 40.9
+INFO:12:07:50 No sensor selected
+INFO:12:07:50 Address: 12
+INFO:12:07:50 Serial Number: 926
+INFO:12:07:50 SW Version: 0.2a
+INFO:12:07:50 Article Number: 4314083
+INFO:12:07:50 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:07:50 Measuring Unit: μm
+INFO:12:07:50 Measuring Range: 1400.0
+INFO:12:07:50 Measuring Offset: 100.0
+INFO:12:07:50 Distance: 1490
+INFO:12:07:50 Temperature: 40.9
+INFO:12:07:51 No sensor selected
+INFO:12:07:51 Address: 12
+INFO:12:07:51 Serial Number: 926
+INFO:12:07:51 SW Version: 0.2a
+INFO:12:07:51 Article Number: 4314083
+INFO:12:07:51 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:07:51 Measuring Unit: μm
+INFO:12:07:51 Measuring Range: 1400.0
+INFO:12:07:51 Measuring Offset: 100.0
+INFO:12:07:51 Distance: 1490
+INFO:12:07:51 Temperature: 40.9
+INFO:12:07:51 No sensor selected
+INFO:12:07:51 Address: 12
+INFO:12:07:51 Serial Number: 926
+INFO:12:07:51 SW Version: 0.2a
+INFO:12:07:51 Article Number: 4314083
+INFO:12:07:51 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:07:51 Measuring Unit: μm
+INFO:12:07:51 Measuring Range: 1400.0
+INFO:12:07:51 Measuring Offset: 100.0
+INFO:12:07:51 Distance: 1490
+INFO:12:07:51 Temperature: 40.9
+INFO:12:07:51 No sensor selected
+INFO:12:07:51 Address: 12
+INFO:12:07:51 Serial Number: 926
+INFO:12:07:51 SW Version: 0.2a
+INFO:12:07:51 Article Number: 4314083
+INFO:12:07:51 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:07:51 Measuring Unit: μm
+INFO:12:07:51 Measuring Range: 1400.0
+INFO:12:07:51 Measuring Offset: 100.0
+INFO:12:07:51 Distance: 1490
+INFO:12:07:51 Temperature: 40.9
+INFO:12:07:51 No sensor selected
+INFO:12:07:51 Address: 12
+INFO:12:07:51 Serial Number: 926
+INFO:12:07:51 SW Version: 0.2a
+INFO:12:07:51 Article Number: 4314083
+INFO:12:07:51 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:07:51 Measuring Unit: μm
+INFO:12:07:51 Measuring Range: 1400.0
+INFO:12:07:51 Measuring Offset: 100.0
+INFO:12:07:51 Distance: 1490
+INFO:12:07:51 Temperature: 40.9
+INFO:12:07:51 No sensor selected
+INFO:12:07:51 Address: 12
+INFO:12:07:51 Serial Number: 926
+INFO:12:07:51 SW Version: 0.2a
+INFO:12:07:51 Article Number: 4314083
+INFO:12:07:51 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:07:51 Measuring Unit: μm
+INFO:12:07:51 Measuring Range: 1400.0
+INFO:12:07:51 Measuring Offset: 100.0
+INFO:12:07:51 Distance: 1490
+INFO:12:07:51 Temperature: 40.9
+INFO:12:07:51 No sensor selected
+INFO:12:07:51 Address: 12
+INFO:12:07:51 Serial Number: 926
+INFO:12:07:51 SW Version: 0.2a
+INFO:12:07:51 Article Number: 4314083
+INFO:12:07:51 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:07:51 Measuring Unit: μm
+INFO:12:07:51 Measuring Range: 1400.0
+INFO:12:07:51 Measuring Offset: 100.0
+INFO:12:07:51 Distance: 1490
+INFO:12:07:51 Temperature: 40.9
+INFO:12:07:51 No sensor selected
+INFO:12:07:51 Address: 12
+INFO:12:07:51 Serial Number: 926
+INFO:12:07:51 SW Version: 0.2a
+INFO:12:07:51 Article Number: 4314083
+INFO:12:07:51 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:07:51 Measuring Unit: μm
+INFO:12:07:51 Measuring Range: 1400.0
+INFO:12:07:51 Measuring Offset: 100.0
+INFO:12:07:51 Distance: 1490
+INFO:12:07:51 Temperature: 40.9
+INFO:12:07:52 No sensor selected
+INFO:12:07:52 Address: 12
+INFO:12:07:52 Serial Number: 926
+INFO:12:07:52 SW Version: 0.2a
+INFO:12:07:52 Article Number: 4314083
+INFO:12:07:52 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:07:52 Measuring Unit: μm
+INFO:12:07:52 Measuring Range: 1400.0
+INFO:12:07:52 Measuring Offset: 100.0
+INFO:12:07:52 Distance: 1490
+INFO:12:07:52 Temperature: 40.9
+INFO:12:07:52 No sensor selected
+INFO:12:07:52 Address: 12
+INFO:12:07:52 Serial Number: 926
+INFO:12:07:52 SW Version: 0.2a
+INFO:12:07:52 Article Number: 4314083
+INFO:12:07:52 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:07:52 Measuring Unit: μm
+INFO:12:07:52 Measuring Range: 1400.0
+INFO:12:07:52 Measuring Offset: 100.0
+INFO:12:07:52 Distance: 1490
+INFO:12:07:52 Temperature: 40.9
+INFO:12:07:52 No sensor selected
+INFO:12:07:52 Address: 12
+INFO:12:07:52 Serial Number: 926
+INFO:12:07:52 SW Version: 0.2a
+INFO:12:07:52 Article Number: 4314083
+INFO:12:07:52 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:07:52 Measuring Unit: μm
+INFO:12:07:52 Measuring Range: 1400.0
+INFO:12:07:52 Measuring Offset: 100.0
+INFO:12:07:52 Distance: 1490
+INFO:12:07:52 Temperature: 40.9
+INFO:12:07:52 No sensor selected
+INFO:12:07:52 Address: 12
+INFO:12:07:52 Serial Number: 926
+INFO:12:07:52 SW Version: 0.2a
+INFO:12:07:52 Article Number: 4314083
+INFO:12:07:52 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:07:52 Measuring Unit: μm
+INFO:12:07:52 Measuring Range: 1400.0
+INFO:12:07:52 Measuring Offset: 100.0
+INFO:12:07:52 Distance: 1490
+INFO:12:07:52 Temperature: 40.9
+INFO:12:07:52 No sensor selected
+INFO:12:07:52 Address: 12
+INFO:12:07:52 Serial Number: 926
+INFO:12:07:52 SW Version: 0.2a
+INFO:12:07:52 Article Number: 4314083
+INFO:12:07:52 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:07:52 Measuring Unit: μm
+INFO:12:07:52 Measuring Range: 1400.0
+INFO:12:07:52 Measuring Offset: 100.0
+INFO:12:07:52 Distance: 1490
+INFO:12:07:52 Temperature: 40.9
+INFO:12:07:52 No sensor selected
+INFO:12:07:52 Address: 12
+INFO:12:07:52 Serial Number: 926
+INFO:12:07:52 SW Version: 0.2a
+INFO:12:07:52 Article Number: 4314083
+INFO:12:07:52 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:07:52 Measuring Unit: μm
+INFO:12:07:52 Measuring Range: 1400.0
+INFO:12:07:52 Measuring Offset: 100.0
+INFO:12:07:52 Distance: 1490
+INFO:12:07:52 Temperature: 40.9
+INFO:12:07:52 No sensor selected
+INFO:12:07:52 Address: 12
+INFO:12:07:52 Serial Number: 926
+INFO:12:07:52 SW Version: 0.2a
+INFO:12:07:52 Article Number: 4314083
+INFO:12:07:52 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:07:52 Measuring Unit: μm
+INFO:12:07:52 Measuring Range: 1400.0
+INFO:12:07:52 Measuring Offset: 100.0
+INFO:12:07:52 Distance: 1490
+INFO:12:07:52 Temperature: 40.9
+INFO:12:07:53 No sensor selected
+INFO:12:07:53 Address: 12
+INFO:12:07:53 Serial Number: 926
+INFO:12:07:53 SW Version: 0.2a
+INFO:12:07:53 Article Number: 4314083
+INFO:12:07:53 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:07:53 Measuring Unit: μm
+INFO:12:07:53 Measuring Range: 1400.0
+INFO:12:07:53 Measuring Offset: 100.0
+INFO:12:07:53 Distance: 1490
+INFO:12:07:53 Temperature: 40.9
+INFO:12:07:53 No sensor selected
+INFO:12:07:53 Address: 12
+INFO:12:07:53 Serial Number: 926
+INFO:12:07:53 SW Version: 0.2a
+INFO:12:07:53 Article Number: 4314083
+INFO:12:07:53 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:07:53 Measuring Unit: μm
+INFO:12:07:53 Measuring Range: 1400.0
+INFO:12:07:53 Measuring Offset: 100.0
+INFO:12:07:53 Distance: 1490
+INFO:12:07:53 Temperature: 40.9
+INFO:12:07:53 No sensor selected
+INFO:12:07:53 Address: 12
+INFO:12:07:53 Serial Number: 926
+INFO:12:07:53 SW Version: 0.2a
+INFO:12:07:53 Article Number: 4314083
+INFO:12:07:53 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:07:53 Measuring Unit: μm
+INFO:12:07:53 Measuring Range: 1400.0
+INFO:12:07:53 Measuring Offset: 100.0
+INFO:12:07:53 Distance: 1490
+INFO:12:07:53 Temperature: 40.9
+INFO:12:07:53 No sensor selected
+INFO:12:07:53 Address: 12
+INFO:12:07:53 Serial Number: 926
+INFO:12:07:53 SW Version: 0.2a
+INFO:12:07:53 Article Number: 4314083
+INFO:12:07:53 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:07:53 Measuring Unit: μm
+INFO:12:07:53 Measuring Range: 1400.0
+INFO:12:07:53 Measuring Offset: 100.0
+INFO:12:07:53 Distance: 1490
+INFO:12:07:53 Temperature: 40.9
+INFO:12:07:53 No sensor selected
+INFO:12:07:53 Address: 12
+INFO:12:07:53 Serial Number: 926
+INFO:12:07:53 SW Version: 0.2a
+INFO:12:07:53 Article Number: 4314083
+INFO:12:07:53 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:07:53 Measuring Unit: μm
+INFO:12:07:53 Measuring Range: 1400.0
+INFO:12:07:53 Measuring Offset: 100.0
+INFO:12:07:53 Distance: 1490
+INFO:12:07:53 Temperature: 40.9
+INFO:12:07:53 No sensor selected
+INFO:12:07:53 Address: 12
+INFO:12:07:53 Serial Number: 926
+INFO:12:07:53 SW Version: 0.2a
+INFO:12:07:53 Article Number: 4314083
+INFO:12:07:53 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:07:53 Measuring Unit: μm
+INFO:12:07:53 Measuring Range: 1400.0
+INFO:12:07:53 Measuring Offset: 100.0
+INFO:12:07:53 Distance: 1490
+INFO:12:07:53 Temperature: 40.9
+INFO:12:07:54 No sensor selected
+INFO:12:07:54 Address: 12
+INFO:12:07:54 Serial Number: 926
+INFO:12:07:54 SW Version: 0.2a
+INFO:12:07:54 Article Number: 4314083
+INFO:12:07:54 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:07:54 Measuring Unit: μm
+INFO:12:07:54 Measuring Range: 1400.0
+INFO:12:07:54 Measuring Offset: 100.0
+INFO:12:07:54 Distance: 1490
+INFO:12:07:54 Temperature: 40.9
+INFO:12:07:54 No sensor selected
+INFO:12:07:54 Address: 12
+INFO:12:07:54 Serial Number: 926
+INFO:12:07:54 SW Version: 0.2a
+INFO:12:07:54 Article Number: 4314083
+INFO:12:07:54 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:07:54 Measuring Unit: μm
+INFO:12:07:54 Measuring Range: 1400.0
+INFO:12:07:54 Measuring Offset: 100.0
+INFO:12:07:54 Distance: 1490
+INFO:12:07:54 Temperature: 40.9
+INFO:12:07:54 No sensor selected
+INFO:12:07:54 Address: 12
+INFO:12:07:54 Serial Number: 926
+INFO:12:07:54 SW Version: 0.2a
+INFO:12:07:54 Article Number: 4314083
+INFO:12:07:54 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:07:54 Measuring Unit: μm
+INFO:12:07:54 Measuring Range: 1400.0
+INFO:12:07:54 Measuring Offset: 100.0
+INFO:12:07:54 Distance: 1490
+INFO:12:07:54 Temperature: 40.9
+INFO:12:08:06 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:12:08:13 No sensor selected
+INFO:12:08:13 Address: 12
+INFO:12:08:13 Serial Number: 926
+INFO:12:08:13 SW Version: 0.2a
+INFO:12:08:13 Article Number: 4314083
+INFO:12:08:13 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:08:13 Measuring Unit: μm
+INFO:12:08:13 Measuring Range: 1400.0
+INFO:12:08:13 Measuring Offset: 100.0
+INFO:12:08:13 Distance: 1490
+INFO:12:08:13 Temperature: 41.0
+INFO:12:08:18 No sensor selected
+INFO:12:08:18 Address: 12
+INFO:12:08:18 Serial Number: 926
+INFO:12:08:18 SW Version: 0.2a
+INFO:12:08:18 Article Number: 4314083
+INFO:12:08:18 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:08:18 Measuring Unit: μm
+INFO:12:08:18 Measuring Range: 1400.0
+INFO:12:08:18 Measuring Offset: 100.0
+INFO:12:08:18 Distance: 1490
+INFO:12:08:18 Temperature: 41.0
+INFO:12:08:18 No sensor selected
+INFO:12:08:18 Address: 12
+INFO:12:08:18 Serial Number: 926
+INFO:12:08:18 SW Version: 0.2a
+INFO:12:08:18 Article Number: 4314083
+INFO:12:08:18 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:08:18 Measuring Unit: μm
+INFO:12:08:18 Measuring Range: 1400.0
+INFO:12:08:18 Measuring Offset: 100.0
+INFO:12:08:18 Distance: 1490
+INFO:12:08:18 Temperature: 41.0
+INFO:12:08:19 No sensor selected
+INFO:12:08:19 Address: 12
+INFO:12:08:19 Serial Number: 926
+INFO:12:08:19 SW Version: 0.2a
+INFO:12:08:19 Article Number: 4314083
+INFO:12:08:19 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:08:19 Measuring Unit: μm
+INFO:12:08:19 Measuring Range: 1400.0
+INFO:12:08:19 Measuring Offset: 100.0
+INFO:12:08:19 Distance: 1490
+INFO:12:08:19 Temperature: 41.0
+INFO:12:08:19 No sensor selected
+INFO:12:08:19 Address: 12
+INFO:12:08:19 Serial Number: 926
+INFO:12:08:19 SW Version: 0.2a
+INFO:12:08:19 Article Number: 4314083
+INFO:12:08:19 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:08:19 Measuring Unit: μm
+INFO:12:08:19 Measuring Range: 1400.0
+INFO:12:08:19 Measuring Offset: 100.0
+INFO:12:08:19 Distance: 1490
+INFO:12:08:19 Temperature: 41.0
+INFO:12:08:19 No sensor selected
+INFO:12:08:19 Address: 12
+INFO:12:08:19 Serial Number: 926
+INFO:12:08:19 SW Version: 0.2a
+INFO:12:08:19 Article Number: 4314083
+INFO:12:08:19 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:08:19 Measuring Unit: μm
+INFO:12:08:19 Measuring Range: 1400.0
+INFO:12:08:19 Measuring Offset: 100.0
+INFO:12:08:19 Distance: 1490
+INFO:12:08:19 Temperature: 41.0
+INFO:12:08:19 No sensor selected
+INFO:12:08:19 Address: 12
+INFO:12:08:19 Serial Number: 926
+INFO:12:08:19 SW Version: 0.2a
+INFO:12:08:19 Article Number: 4314083
+INFO:12:08:19 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:08:19 Measuring Unit: μm
+INFO:12:08:19 Measuring Range: 1400.0
+INFO:12:08:19 Measuring Offset: 100.0
+INFO:12:08:19 Distance: 1490
+INFO:12:08:19 Temperature: 41.0
+INFO:12:08:19 No sensor selected
+INFO:12:08:20 Address: 12
+INFO:12:08:20 Serial Number: 926
+INFO:12:08:20 SW Version: 0.2a
+INFO:12:08:20 Article Number: 4314083
+INFO:12:08:20 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:08:20 Measuring Unit: μm
+INFO:12:08:20 Measuring Range: 1400.0
+INFO:12:08:20 Measuring Offset: 100.0
+INFO:12:08:20 Distance: 1490
+INFO:12:08:20 Temperature: 41.0
+INFO:12:08:20 No sensor selected
+INFO:12:08:20 Address: 12
+INFO:12:08:20 Serial Number: 926
+INFO:12:08:20 SW Version: 0.2a
+INFO:12:08:20 Article Number: 4314083
+INFO:12:08:20 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:08:20 Measuring Unit: μm
+INFO:12:08:20 Measuring Range: 1400.0
+INFO:12:08:20 Measuring Offset: 100.0
+INFO:12:08:20 Distance: 1490
+INFO:12:08:20 Temperature: 41.0
+INFO:12:09:21 Added machine with Itm Number: 23432
+INFO:12:09:21 Selected machine: 22342
+INFO:12:10:46 Added sensor with location: Motor-NDE-X
+INFO:12:10:46 Selected sensor: Motor-NDE-X
+INFO:12:10:53 Machine: 22342,  Sensor: Motor-NDE-X
+INFO:12:10:53 Address: 12
+INFO:12:10:53 Serial Number: 926
+INFO:12:10:53 SW Version: 0.2a
+INFO:12:10:53 Article Number: 4314083
+INFO:12:10:53 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:10:53 Measuring Unit: μm
+INFO:12:10:53 Measuring Range: 1400.0
+INFO:12:10:53 Measuring Offset: 100.0
+INFO:12:10:53 Distance: 1490
+INFO:12:10:53 Temperature: 40.7
+INFO:12:11:15 Machine: 22342,  Sensor: Motor-NDE-X
+INFO:12:11:15 Address: 12
+INFO:12:11:15 Serial Number: 926
+INFO:12:11:15 SW Version: 0.2a
+INFO:12:11:15 Article Number: 4314083
+INFO:12:11:15 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:11:15 Measuring Unit: μm
+INFO:12:11:15 Measuring Range: 1400.0
+INFO:12:11:15 Measuring Offset: 100.0
+INFO:12:11:15 Distance: 1490
+INFO:12:11:15 Temperature: 41.1
+INFO:12:11:17 Machine: 22342,  Sensor: Motor-NDE-X
+INFO:12:11:17 Address: 12
+INFO:12:11:17 Serial Number: 926
+INFO:12:11:17 SW Version: 0.2a
+INFO:12:11:17 Article Number: 4314083
+INFO:12:11:17 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:11:17 Measuring Unit: μm
+INFO:12:11:17 Measuring Range: 1400.0
+INFO:12:11:17 Measuring Offset: 100.0
+INFO:12:11:17 Distance: -77
+INFO:12:11:17 Temperature: 41.4
+INFO:12:11:18 Machine: 22342,  Sensor: Motor-NDE-X
+INFO:12:11:18 Address: 12
+INFO:12:11:18 Serial Number: 926
+INFO:12:11:18 SW Version: 0.2a
+INFO:12:11:18 Article Number: 4314083
+INFO:12:11:18 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:11:18 Measuring Unit: μm
+INFO:12:11:18 Measuring Range: 1400.0
+INFO:12:11:18 Measuring Offset: 100.0
+INFO:12:11:18 Distance: -77
+INFO:12:11:18 Temperature: 41.3
+INFO:12:11:19 Machine: 22342,  Sensor: Motor-NDE-X
+INFO:12:11:19 Address: 12
+INFO:12:11:19 Serial Number: 926
+INFO:12:11:19 SW Version: 0.2a
+INFO:12:11:19 Article Number: 4314083
+INFO:12:11:19 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:11:19 Measuring Unit: μm
+INFO:12:11:19 Measuring Range: 1400.0
+INFO:12:11:19 Measuring Offset: 100.0
+INFO:12:11:19 Distance: 644
+INFO:12:11:19 Temperature: 41.3
+INFO:12:11:37 Received: b'\xe5'
+INFO:12:11:43 current address: 11
+INFO:12:12:18 Added sensor with location: Motor-NDE-Y
+INFO:12:12:18 Selected sensor: Motor-NDE-Y
+INFO:12:12:24 Machine: 22342,  Sensor: Motor-NDE-Y
+INFO:12:12:24 Checksum is not equal
+INFO:12:13:57 Machine: 22342,  Sensor: Motor-NDE-Y
+INFO:12:13:57 Address: 11
+INFO:12:13:57 Serial Number: 930
+INFO:12:13:57 SW Version: 0.3a
+INFO:12:13:57 Article Number: 4314083
+INFO:12:13:57 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:13:57 Measuring Unit: μm
+INFO:12:13:57 Measuring Range: 1400.0
+INFO:12:13:57 Measuring Offset: 100.0
+INFO:12:13:57 Distance: 633
+INFO:12:13:57 Temperature: 21.6
+INFO:12:19:53 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:12:19:55 No sensor selected
+INFO:12:19:55 Address: 11
+INFO:12:19:55 Serial Number: 930
+INFO:12:19:55 SW Version: 0.3a
+INFO:12:19:55 Article Number: 4314083
+INFO:12:19:55 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:19:55 Measuring Unit: μm
+INFO:12:19:55 Measuring Range: 1400.0
+INFO:12:19:55 Measuring Offset: 100.0
+INFO:12:19:55 Distance: 632
+INFO:12:19:55 Temperature: 22.9
+INFO:12:20:01 No sensor selected
+INFO:12:20:01 Address: 11
+INFO:12:20:01 Serial Number: 926
+INFO:12:20:01 SW Version: 0.2a
+INFO:12:20:01 Article Number: 4314083
+INFO:12:20:01 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:01 Measuring Unit: μm
+INFO:12:20:01 Measuring Range: 1400.0
+INFO:12:20:01 Measuring Offset: 100.0
+INFO:12:20:01 Distance: 1490
+INFO:12:20:01 Temperature: 83.3
+INFO:12:20:06 No sensor selected
+INFO:12:20:06 Address: 11
+INFO:12:20:06 Serial Number: 930
+INFO:12:20:06 SW Version: 0.3a
+INFO:12:20:06 Article Number: 4314083
+INFO:12:20:06 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:06 Measuring Unit: μm
+INFO:12:20:06 Measuring Range: 1400.0
+INFO:12:20:06 Measuring Offset: 100.0
+INFO:12:20:06 Distance: 605
+INFO:12:20:06 Temperature: 15.4
+INFO:12:20:12 No sensor selected
+INFO:12:20:12 Address: 11
+INFO:12:20:12 Serial Number: 930
+INFO:12:20:12 SW Version: 0.3a
+INFO:12:20:12 Article Number: 4314083
+INFO:12:20:12 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:12 Measuring Unit: μm
+INFO:12:20:12 Measuring Range: 1400.0
+INFO:12:20:12 Measuring Offset: 100.0
+INFO:12:20:12 Distance: 605
+INFO:12:20:12 Temperature: 22.9
+INFO:12:20:18 No sensor selected
+INFO:12:20:18 Address: 11
+INFO:12:20:18 Serial Number: 930
+INFO:12:20:18 SW Version: 0.3a
+INFO:12:20:18 Article Number: 4314083
+INFO:12:20:18 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:18 Measuring Unit: μm
+INFO:12:20:18 Measuring Range: 1400.0
+INFO:12:20:18 Measuring Offset: 100.0
+INFO:12:20:18 Distance: 633
+INFO:12:20:18 Temperature: 22.9
+INFO:12:20:22 No sensor selected
+INFO:12:20:22 Address: 11
+INFO:12:20:22 Serial Number: 930
+INFO:12:20:22 SW Version: 0.3a
+INFO:12:20:22 Article Number: 4314083
+INFO:12:20:22 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:22 Measuring Unit: μm
+INFO:12:20:22 Measuring Range: 1400.0
+INFO:12:20:22 Measuring Offset: 100.0
+INFO:12:20:22 Distance: 605
+INFO:12:20:22 Temperature: 15.4
+INFO:12:20:26 No sensor selected
+INFO:12:20:26 Address: 11
+INFO:12:20:26 Serial Number: 930
+INFO:12:20:26 SW Version: 0.3a
+INFO:12:20:26 Article Number: 4314083
+INFO:12:20:26 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:26 Measuring Unit: μm
+INFO:12:20:26 Measuring Range: 1400.0
+INFO:12:20:26 Measuring Offset: 100.0
+INFO:12:20:26 Distance: 633
+INFO:12:20:26 Temperature: 23.0
+INFO:12:20:26 No sensor selected
+INFO:12:20:26 Address: 11
+INFO:12:20:26 Serial Number: 930
+INFO:12:20:26 SW Version: 0.3a
+INFO:12:20:26 Article Number: 4314083
+INFO:12:20:26 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:26 Measuring Unit: μm
+INFO:12:20:26 Measuring Range: 1400.0
+INFO:12:20:26 Measuring Offset: 100.0
+INFO:12:20:26 Distance: 633
+INFO:12:20:26 Temperature: 23.0
+INFO:12:20:27 No sensor selected
+INFO:12:20:27 Address: 11
+INFO:12:20:27 Serial Number: 930
+INFO:12:20:27 SW Version: 0.3a
+INFO:12:20:27 Article Number: 4314083
+INFO:12:20:27 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:27 Measuring Unit: μm
+INFO:12:20:27 Measuring Range: 1400.0
+INFO:12:20:27 Measuring Offset: 100.0
+INFO:12:20:27 Distance: 632
+INFO:12:20:27 Temperature: 23.0
+INFO:12:20:27 No sensor selected
+INFO:12:20:27 Address: 11
+INFO:12:20:27 Serial Number: 930
+INFO:12:20:27 SW Version: 0.3a
+INFO:12:20:27 Article Number: 4314083
+INFO:12:20:27 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:27 Measuring Unit: μm
+INFO:12:20:27 Measuring Range: 1400.0
+INFO:12:20:27 Measuring Offset: 100.0
+INFO:12:20:27 Distance: 633
+INFO:12:20:27 Temperature: 23.0
+INFO:12:20:27 No sensor selected
+INFO:12:20:27 Address: 11
+INFO:12:20:27 Serial Number: 930
+INFO:12:20:27 SW Version: 0.3a
+INFO:12:20:27 Article Number: 4314083
+INFO:12:20:27 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:27 Measuring Unit: μm
+INFO:12:20:27 Measuring Range: 1400.0
+INFO:12:20:27 Measuring Offset: 100.0
+INFO:12:20:27 Distance: 632
+INFO:12:20:27 Temperature: 23.0
+INFO:12:20:27 No sensor selected
+INFO:12:20:27 Address: 11
+INFO:12:20:27 Serial Number: 930
+INFO:12:20:27 SW Version: 0.3a
+INFO:12:20:27 Article Number: 4314083
+INFO:12:20:27 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:27 Measuring Unit: μm
+INFO:12:20:27 Measuring Range: 1400.0
+INFO:12:20:27 Measuring Offset: 100.0
+INFO:12:20:27 Distance: 632
+INFO:12:20:27 Temperature: 23.0
+INFO:12:20:27 No sensor selected
+INFO:12:20:27 Address: 11
+INFO:12:20:27 Serial Number: 930
+INFO:12:20:27 SW Version: 0.3a
+INFO:12:20:27 Article Number: 4314083
+INFO:12:20:27 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:27 Measuring Unit: μm
+INFO:12:20:27 Measuring Range: 1400.0
+INFO:12:20:27 Measuring Offset: 100.0
+INFO:12:20:27 Distance: 633
+INFO:12:20:27 Temperature: 23.0
+INFO:12:20:27 No sensor selected
+INFO:12:20:27 Address: 11
+INFO:12:20:27 Serial Number: 930
+INFO:12:20:27 SW Version: 0.3a
+INFO:12:20:27 Article Number: 4314083
+INFO:12:20:27 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:27 Measuring Unit: μm
+INFO:12:20:27 Measuring Range: 1400.0
+INFO:12:20:27 Measuring Offset: 100.0
+INFO:12:20:27 Distance: 633
+INFO:12:20:27 Temperature: 23.0
+INFO:12:20:28 No sensor selected
+INFO:12:20:28 Address: 11
+INFO:12:20:28 Serial Number: 930
+INFO:12:20:28 SW Version: 0.3a
+INFO:12:20:28 Article Number: 4314083
+INFO:12:20:28 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:28 Measuring Unit: μm
+INFO:12:20:28 Measuring Range: 1400.0
+INFO:12:20:28 Measuring Offset: 100.0
+INFO:12:20:28 Distance: 633
+INFO:12:20:28 Temperature: 23.0
+INFO:12:20:28 No sensor selected
+INFO:12:20:28 Address: 11
+INFO:12:20:28 Serial Number: 930
+INFO:12:20:28 SW Version: 0.3a
+INFO:12:20:28 Article Number: 4314083
+INFO:12:20:28 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:28 Measuring Unit: μm
+INFO:12:20:28 Measuring Range: 1400.0
+INFO:12:20:28 Measuring Offset: 100.0
+INFO:12:20:28 Distance: 632
+INFO:12:20:28 Temperature: 23.0
+INFO:12:20:28 No sensor selected
+INFO:12:20:28 Address: 11
+INFO:12:20:28 Serial Number: 930
+INFO:12:20:28 SW Version: 0.3a
+INFO:12:20:28 Article Number: 4314083
+INFO:12:20:28 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:28 Measuring Unit: μm
+INFO:12:20:28 Measuring Range: 1400.0
+INFO:12:20:28 Measuring Offset: 100.0
+INFO:12:20:28 Distance: 633
+INFO:12:20:28 Temperature: 23.0
+INFO:12:20:28 No sensor selected
+INFO:12:20:28 Address: 11
+INFO:12:20:28 Serial Number: 930
+INFO:12:20:28 SW Version: 0.3a
+INFO:12:20:28 Article Number: 4314083
+INFO:12:20:28 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:28 Measuring Unit: μm
+INFO:12:20:28 Measuring Range: 1400.0
+INFO:12:20:28 Measuring Offset: 100.0
+INFO:12:20:28 Distance: 632
+INFO:12:20:28 Temperature: 23.0
+INFO:12:20:28 No sensor selected
+INFO:12:20:28 Address: 11
+INFO:12:20:28 Serial Number: 930
+INFO:12:20:28 SW Version: 0.3a
+INFO:12:20:28 Article Number: 4314083
+INFO:12:20:28 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:28 Measuring Unit: μm
+INFO:12:20:28 Measuring Range: 1400.0
+INFO:12:20:28 Measuring Offset: 100.0
+INFO:12:20:28 Distance: 633
+INFO:12:20:28 Temperature: 23.0
+INFO:12:20:28 No sensor selected
+INFO:12:20:28 Address: 11
+INFO:12:20:28 Serial Number: 930
+INFO:12:20:28 SW Version: 0.3a
+INFO:12:20:28 Article Number: 4314083
+INFO:12:20:28 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:28 Measuring Unit: μm
+INFO:12:20:28 Measuring Range: 1400.0
+INFO:12:20:28 Measuring Offset: 100.0
+INFO:12:20:28 Distance: 632
+INFO:12:20:28 Temperature: 23.0
+INFO:12:20:29 No sensor selected
+INFO:12:20:29 Address: 11
+INFO:12:20:29 Serial Number: 930
+INFO:12:20:29 SW Version: 0.3a
+INFO:12:20:29 Article Number: 4314083
+INFO:12:20:29 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:29 Measuring Unit: μm
+INFO:12:20:29 Measuring Range: 1400.0
+INFO:12:20:29 Measuring Offset: 100.0
+INFO:12:20:29 Distance: 632
+INFO:12:20:29 Temperature: 23.0
+INFO:12:20:29 No sensor selected
+INFO:12:20:29 Address: 11
+INFO:12:20:29 Serial Number: 930
+INFO:12:20:29 SW Version: 0.3a
+INFO:12:20:29 Article Number: 4314083
+INFO:12:20:29 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:29 Measuring Unit: μm
+INFO:12:20:29 Measuring Range: 1400.0
+INFO:12:20:29 Measuring Offset: 100.0
+INFO:12:20:29 Distance: 632
+INFO:12:20:29 Temperature: 23.0
+INFO:12:20:29 No sensor selected
+INFO:12:20:29 Address: 11
+INFO:12:20:29 Serial Number: 930
+INFO:12:20:29 SW Version: 0.3a
+INFO:12:20:29 Article Number: 4314083
+INFO:12:20:29 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:29 Measuring Unit: μm
+INFO:12:20:29 Measuring Range: 1400.0
+INFO:12:20:29 Measuring Offset: 100.0
+INFO:12:20:29 Distance: 632
+INFO:12:20:29 Temperature: 23.0
+INFO:12:20:29 No sensor selected
+INFO:12:20:29 Address: 11
+INFO:12:20:29 Serial Number: 930
+INFO:12:20:29 SW Version: 0.3a
+INFO:12:20:29 Article Number: 4314083
+INFO:12:20:29 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:29 Measuring Unit: μm
+INFO:12:20:29 Measuring Range: 1400.0
+INFO:12:20:29 Measuring Offset: 100.0
+INFO:12:20:29 Distance: 632
+INFO:12:20:29 Temperature: 23.0
+INFO:12:20:29 No sensor selected
+INFO:12:20:29 Address: 11
+INFO:12:20:29 Serial Number: 930
+INFO:12:20:29 SW Version: 0.3a
+INFO:12:20:29 Article Number: 4314083
+INFO:12:20:29 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:29 Measuring Unit: μm
+INFO:12:20:29 Measuring Range: 1400.0
+INFO:12:20:29 Measuring Offset: 100.0
+INFO:12:20:29 Distance: 633
+INFO:12:20:29 Temperature: 23.0
+INFO:12:20:30 No sensor selected
+INFO:12:20:30 Address: 11
+INFO:12:20:30 Serial Number: 930
+INFO:12:20:30 SW Version: 0.3a
+INFO:12:20:30 Article Number: 4314083
+INFO:12:20:30 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:30 Measuring Unit: μm
+INFO:12:20:30 Measuring Range: 1400.0
+INFO:12:20:30 Measuring Offset: 100.0
+INFO:12:20:30 Distance: 632
+INFO:12:20:30 Temperature: 23.0
+INFO:12:20:30 No sensor selected
+INFO:12:20:30 Address: 11
+INFO:12:20:30 Serial Number: 930
+INFO:12:20:30 SW Version: 0.3a
+INFO:12:20:30 Article Number: 4314083
+INFO:12:20:30 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:30 Measuring Unit: μm
+INFO:12:20:30 Measuring Range: 1400.0
+INFO:12:20:30 Measuring Offset: 100.0
+INFO:12:20:30 Distance: 633
+INFO:12:20:30 Temperature: 23.0
+INFO:12:20:30 No sensor selected
+INFO:12:20:30 Address: 11
+INFO:12:20:30 Serial Number: 930
+INFO:12:20:30 SW Version: 0.3a
+INFO:12:20:30 Article Number: 4314083
+INFO:12:20:30 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:30 Measuring Unit: μm
+INFO:12:20:30 Measuring Range: 1400.0
+INFO:12:20:30 Measuring Offset: 100.0
+INFO:12:20:30 Distance: 633
+INFO:12:20:30 Temperature: 23.0
+INFO:12:20:30 No sensor selected
+INFO:12:20:30 Address: 11
+INFO:12:20:30 Serial Number: 930
+INFO:12:20:30 SW Version: 0.3a
+INFO:12:20:30 Article Number: 4314083
+INFO:12:20:30 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:30 Measuring Unit: μm
+INFO:12:20:30 Measuring Range: 1400.0
+INFO:12:20:30 Measuring Offset: 100.0
+INFO:12:20:30 Distance: 633
+INFO:12:20:30 Temperature: 23.0
+INFO:12:20:30 No sensor selected
+INFO:12:20:30 Address: 11
+INFO:12:20:30 Serial Number: 930
+INFO:12:20:30 SW Version: 0.3a
+INFO:12:20:30 Article Number: 4314083
+INFO:12:20:30 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:30 Measuring Unit: μm
+INFO:12:20:30 Measuring Range: 1400.0
+INFO:12:20:30 Measuring Offset: 100.0
+INFO:12:20:30 Distance: 633
+INFO:12:20:30 Temperature: 23.0
+INFO:12:20:30 No sensor selected
+INFO:12:20:30 Address: 11
+INFO:12:20:30 Serial Number: 930
+INFO:12:20:30 SW Version: 0.3a
+INFO:12:20:30 Article Number: 4314083
+INFO:12:20:30 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:30 Measuring Unit: μm
+INFO:12:20:30 Measuring Range: 1400.0
+INFO:12:20:30 Measuring Offset: 100.0
+INFO:12:20:30 Distance: 632
+INFO:12:20:30 Temperature: 23.0
+INFO:12:20:31 No sensor selected
+INFO:12:20:31 Address: 11
+INFO:12:20:31 Serial Number: 930
+INFO:12:20:31 SW Version: 0.3a
+INFO:12:20:31 Article Number: 4314083
+INFO:12:20:31 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:31 Measuring Unit: μm
+INFO:12:20:31 Measuring Range: 1400.0
+INFO:12:20:31 Measuring Offset: 100.0
+INFO:12:20:31 Distance: 633
+INFO:12:20:31 Temperature: 23.0
+INFO:12:20:31 No sensor selected
+INFO:12:20:31 Address: 11
+INFO:12:20:31 Serial Number: 930
+INFO:12:20:31 SW Version: 0.3a
+INFO:12:20:31 Article Number: 4314083
+INFO:12:20:31 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:31 Measuring Unit: μm
+INFO:12:20:31 Measuring Range: 1400.0
+INFO:12:20:31 Measuring Offset: 100.0
+INFO:12:20:31 Distance: 633
+INFO:12:20:31 Temperature: 23.0
+INFO:12:20:31 No sensor selected
+INFO:12:20:31 Address: 11
+INFO:12:20:31 Serial Number: 930
+INFO:12:20:31 SW Version: 0.3a
+INFO:12:20:31 Article Number: 4314083
+INFO:12:20:31 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:31 Measuring Unit: μm
+INFO:12:20:31 Measuring Range: 1400.0
+INFO:12:20:31 Measuring Offset: 100.0
+INFO:12:20:31 Distance: 632
+INFO:12:20:31 Temperature: 23.0
+INFO:12:20:31 No sensor selected
+INFO:12:20:31 Address: 11
+INFO:12:20:31 Serial Number: 930
+INFO:12:20:31 SW Version: 0.3a
+INFO:12:20:31 Article Number: 4314083
+INFO:12:20:31 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:31 Measuring Unit: μm
+INFO:12:20:31 Measuring Range: 1400.0
+INFO:12:20:31 Measuring Offset: 100.0
+INFO:12:20:31 Distance: 632
+INFO:12:20:31 Temperature: 23.0
+INFO:12:20:31 No sensor selected
+INFO:12:20:31 Address: 11
+INFO:12:20:31 Serial Number: 930
+INFO:12:20:31 SW Version: 0.3a
+INFO:12:20:31 Article Number: 4314083
+INFO:12:20:31 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:31 Measuring Unit: μm
+INFO:12:20:31 Measuring Range: 1400.0
+INFO:12:20:31 Measuring Offset: 100.0
+INFO:12:20:31 Distance: 633
+INFO:12:20:31 Temperature: 23.0
+INFO:12:20:31 No sensor selected
+INFO:12:20:31 Address: 11
+INFO:12:20:31 Serial Number: 930
+INFO:12:20:31 SW Version: 0.3a
+INFO:12:20:31 Article Number: 4314083
+INFO:12:20:31 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:31 Measuring Unit: μm
+INFO:12:20:31 Measuring Range: 1400.0
+INFO:12:20:31 Measuring Offset: 100.0
+INFO:12:20:31 Distance: 633
+INFO:12:20:31 Temperature: 23.0
+INFO:12:20:32 No sensor selected
+INFO:12:20:32 Address: 11
+INFO:12:20:32 Serial Number: 930
+INFO:12:20:32 SW Version: 0.3a
+INFO:12:20:32 Article Number: 4314083
+INFO:12:20:32 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:32 Measuring Unit: μm
+INFO:12:20:32 Measuring Range: 1400.0
+INFO:12:20:32 Measuring Offset: 100.0
+INFO:12:20:32 Distance: 632
+INFO:12:20:32 Temperature: 23.0
+INFO:12:20:32 No sensor selected
+INFO:12:20:32 Address: 11
+INFO:12:20:32 Serial Number: 930
+INFO:12:20:32 SW Version: 0.3a
+INFO:12:20:32 Article Number: 4314083
+INFO:12:20:32 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:32 Measuring Unit: μm
+INFO:12:20:32 Measuring Range: 1400.0
+INFO:12:20:32 Measuring Offset: 100.0
+INFO:12:20:32 Distance: 633
+INFO:12:20:32 Temperature: 23.0
+INFO:12:20:32 No sensor selected
+INFO:12:20:32 Address: 11
+INFO:12:20:32 Serial Number: 930
+INFO:12:20:32 SW Version: 0.3a
+INFO:12:20:32 Article Number: 4314083
+INFO:12:20:32 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:32 Measuring Unit: μm
+INFO:12:20:32 Measuring Range: 1400.0
+INFO:12:20:32 Measuring Offset: 100.0
+INFO:12:20:32 Distance: 633
+INFO:12:20:32 Temperature: 23.0
+INFO:12:20:36 No sensor selected
+INFO:12:20:36 Address: 11
+INFO:12:20:36 Serial Number: 930
+INFO:12:20:36 SW Version: 0.3a
+INFO:12:20:36 Article Number: 4314083
+INFO:12:20:36 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:36 Measuring Unit: μm
+INFO:12:20:36 Measuring Range: 1400.0
+INFO:12:20:36 Measuring Offset: 100.0
+INFO:12:20:36 Distance: 632
+INFO:12:20:36 Temperature: 23.0
+INFO:12:20:37 No sensor selected
+INFO:12:20:37 Address: 11
+INFO:12:20:37 Serial Number: 930
+INFO:12:20:37 SW Version: 0.3a
+INFO:12:20:37 Article Number: 4314083
+INFO:12:20:37 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:37 Measuring Unit: μm
+INFO:12:20:37 Measuring Range: 1400.0
+INFO:12:20:37 Measuring Offset: 100.0
+INFO:12:20:37 Distance: 632
+INFO:12:20:37 Temperature: 23.0
+INFO:12:20:41 No sensor selected
+INFO:12:20:41 Address: 11
+INFO:12:20:41 Serial Number: 930
+INFO:12:20:41 SW Version: 0.3a
+INFO:12:20:41 Article Number: 4314083
+INFO:12:20:41 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:41 Measuring Unit: μm
+INFO:12:20:41 Measuring Range: 1400.0
+INFO:12:20:41 Measuring Offset: 100.0
+INFO:12:20:41 Distance: 605
+INFO:12:20:41 Temperature: 23.0
+INFO:12:20:45 No sensor selected
+INFO:12:20:45 Address: 11
+INFO:12:20:45 Serial Number: 930
+INFO:12:20:45 SW Version: 0.3a
+INFO:12:20:45 Article Number: 4314083
+INFO:12:20:45 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:45 Measuring Unit: μm
+INFO:12:20:45 Measuring Range: 1400.0
+INFO:12:20:45 Measuring Offset: 100.0
+INFO:12:20:45 Distance: 605
+INFO:12:20:45 Temperature: 15.5
+INFO:12:20:48 No sensor selected
+INFO:12:20:48 Address: 11
+INFO:12:20:48 Serial Number: 930
+INFO:12:20:48 SW Version: 0.3a
+INFO:12:20:48 Article Number: 4314083
+INFO:12:20:48 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:48 Measuring Unit: μm
+INFO:12:20:48 Measuring Range: 1400.0
+INFO:12:20:48 Measuring Offset: 100.0
+INFO:12:20:48 Distance: 633
+INFO:12:20:48 Temperature: 23.0
+INFO:12:20:48 No sensor selected
+INFO:12:20:48 Address: 11
+INFO:12:20:48 Serial Number: 930
+INFO:12:20:48 SW Version: 0.3a
+INFO:12:20:48 Article Number: 4314083
+INFO:12:20:48 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:48 Measuring Unit: μm
+INFO:12:20:48 Measuring Range: 1400.0
+INFO:12:20:48 Measuring Offset: 100.0
+INFO:12:20:48 Distance: 633
+INFO:12:20:48 Temperature: 23.0
+INFO:12:20:49 No sensor selected
+INFO:12:20:49 Address: 11
+INFO:12:20:49 Serial Number: 930
+INFO:12:20:49 SW Version: 0.3a
+INFO:12:20:49 Article Number: 4314083
+INFO:12:20:49 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:49 Measuring Unit: μm
+INFO:12:20:49 Measuring Range: 1400.0
+INFO:12:20:49 Measuring Offset: 100.0
+INFO:12:20:49 Distance: 633
+INFO:12:20:49 Temperature: 23.0
+INFO:12:20:49 No sensor selected
+INFO:12:20:49 Address: 11
+INFO:12:20:49 Serial Number: 930
+INFO:12:20:49 SW Version: 0.3a
+INFO:12:20:49 Article Number: 4314083
+INFO:12:20:49 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:49 Measuring Unit: μm
+INFO:12:20:49 Measuring Range: 1400.0
+INFO:12:20:49 Measuring Offset: 100.0
+INFO:12:20:49 Distance: 632
+INFO:12:20:49 Temperature: 23.0
+INFO:12:20:49 No sensor selected
+INFO:12:20:49 Address: 11
+INFO:12:20:49 Serial Number: 930
+INFO:12:20:49 SW Version: 0.3a
+INFO:12:20:49 Article Number: 4314083
+INFO:12:20:49 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:49 Measuring Unit: μm
+INFO:12:20:49 Measuring Range: 1400.0
+INFO:12:20:49 Measuring Offset: 100.0
+INFO:12:20:49 Distance: 633
+INFO:12:20:49 Temperature: 23.0
+INFO:12:20:49 No sensor selected
+INFO:12:20:49 Address: 11
+INFO:12:20:49 Serial Number: 930
+INFO:12:20:49 SW Version: 0.3a
+INFO:12:20:49 Article Number: 4314083
+INFO:12:20:49 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:49 Measuring Unit: μm
+INFO:12:20:49 Measuring Range: 1400.0
+INFO:12:20:49 Measuring Offset: 100.0
+INFO:12:20:49 Distance: 633
+INFO:12:20:49 Temperature: 23.0
+INFO:12:20:49 No sensor selected
+INFO:12:20:49 Address: 11
+INFO:12:20:49 Serial Number: 930
+INFO:12:20:49 SW Version: 0.3a
+INFO:12:20:49 Article Number: 4314083
+INFO:12:20:49 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:49 Measuring Unit: μm
+INFO:12:20:49 Measuring Range: 1400.0
+INFO:12:20:49 Measuring Offset: 100.0
+INFO:12:20:49 Distance: 632
+INFO:12:20:49 Temperature: 23.0
+INFO:12:20:50 No sensor selected
+INFO:12:20:50 Address: 11
+INFO:12:20:50 Serial Number: 930
+INFO:12:20:50 SW Version: 0.3a
+INFO:12:20:50 Article Number: 4314083
+INFO:12:20:50 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:50 Measuring Unit: μm
+INFO:12:20:50 Measuring Range: 1400.0
+INFO:12:20:50 Measuring Offset: 100.0
+INFO:12:20:50 Distance: 632
+INFO:12:20:50 Temperature: 23.0
+INFO:12:20:50 No sensor selected
+INFO:12:20:50 Address: 11
+INFO:12:20:50 Serial Number: 930
+INFO:12:20:50 SW Version: 0.3a
+INFO:12:20:50 Article Number: 4314083
+INFO:12:20:50 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:50 Measuring Unit: μm
+INFO:12:20:50 Measuring Range: 1400.0
+INFO:12:20:50 Measuring Offset: 100.0
+INFO:12:20:50 Distance: 633
+INFO:12:20:50 Temperature: 23.0
+INFO:12:20:50 No sensor selected
+INFO:12:20:50 Address: 11
+INFO:12:20:50 Serial Number: 930
+INFO:12:20:50 SW Version: 0.3a
+INFO:12:20:50 Article Number: 4314083
+INFO:12:20:50 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:50 Measuring Unit: μm
+INFO:12:20:50 Measuring Range: 1400.0
+INFO:12:20:50 Measuring Offset: 100.0
+INFO:12:20:50 Distance: 633
+INFO:12:20:50 Temperature: 23.0
+INFO:12:20:50 No sensor selected
+INFO:12:20:50 Address: 11
+INFO:12:20:50 Serial Number: 930
+INFO:12:20:50 SW Version: 0.3a
+INFO:12:20:50 Article Number: 4314083
+INFO:12:20:50 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:50 Measuring Unit: μm
+INFO:12:20:50 Measuring Range: 1400.0
+INFO:12:20:50 Measuring Offset: 100.0
+INFO:12:20:50 Distance: 633
+INFO:12:20:50 Temperature: 23.0
+INFO:12:20:50 No sensor selected
+INFO:12:20:50 Address: 11
+INFO:12:20:50 Serial Number: 930
+INFO:12:20:50 SW Version: 0.3a
+INFO:12:20:50 Article Number: 4314083
+INFO:12:20:50 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:50 Measuring Unit: μm
+INFO:12:20:50 Measuring Range: 1400.0
+INFO:12:20:50 Measuring Offset: 100.0
+INFO:12:20:50 Distance: 632
+INFO:12:20:50 Temperature: 23.0
+INFO:12:20:50 No sensor selected
+INFO:12:20:50 Address: 11
+INFO:12:20:50 Serial Number: 930
+INFO:12:20:50 SW Version: 0.3a
+INFO:12:20:50 Article Number: 4314083
+INFO:12:20:50 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:50 Measuring Unit: μm
+INFO:12:20:50 Measuring Range: 1400.0
+INFO:12:20:50 Measuring Offset: 100.0
+INFO:12:20:50 Distance: 633
+INFO:12:20:50 Temperature: 23.0
+INFO:12:20:51 No sensor selected
+INFO:12:20:51 Address: 11
+INFO:12:20:51 Serial Number: 930
+INFO:12:20:51 SW Version: 0.3a
+INFO:12:20:51 Article Number: 4314083
+INFO:12:20:51 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:20:51 Measuring Unit: μm
+INFO:12:20:51 Measuring Range: 1400.0
+INFO:12:20:51 Measuring Offset: 100.0
+INFO:12:20:51 Distance: 632
+INFO:12:20:51 Temperature: 23.0
+INFO:12:21:11 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:12:21:13 No sensor selected
+INFO:12:21:13 Address: 11
+INFO:12:21:13 Serial Number: 930
+INFO:12:21:13 SW Version: 0.3a
+INFO:12:21:13 Article Number: 4314083
+INFO:12:21:13 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:21:13 Measuring Unit: μm
+INFO:12:21:13 Measuring Range: 1400.0
+INFO:12:21:13 Measuring Offset: 100.0
+INFO:12:21:13 Distance: 632
+INFO:12:21:13 Temperature: 23.0
+INFO:12:21:18 No sensor selected
+INFO:12:21:18 Address: 11
+INFO:12:21:18 Serial Number: 930
+INFO:12:21:18 SW Version: 0.3a
+INFO:12:21:18 Article Number: 4314083
+INFO:12:21:18 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:21:18 Measuring Unit: μm
+INFO:12:21:18 Measuring Range: 1400.0
+INFO:12:21:18 Measuring Offset: 100.0
+INFO:12:21:18 Distance: 605
+INFO:12:21:18 Temperature: 23.0
+INFO:12:21:22 No sensor selected
+INFO:12:21:22 Address: 11
+INFO:12:21:22 Serial Number: 930
+INFO:12:21:22 SW Version: 0.3a
+INFO:12:21:22 Article Number: 4314083
+INFO:12:21:22 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:21:22 Measuring Unit: μm
+INFO:12:21:22 Measuring Range: 1400.0
+INFO:12:21:22 Measuring Offset: 100.0
+INFO:12:21:22 Distance: -77
+INFO:12:21:22 Temperature: 15.5
+INFO:12:21:27 No sensor selected
+INFO:12:21:27 Address: 11
+INFO:12:21:27 Serial Number: 930
+INFO:12:21:27 SW Version: 0.3a
+INFO:12:21:27 Article Number: 4314083
+INFO:12:21:27 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:21:27 Measuring Unit: μm
+INFO:12:21:27 Measuring Range: 1400.0
+INFO:12:21:27 Measuring Offset: 100.0
+INFO:12:21:27 Distance: 605
+INFO:12:21:27 Temperature: 15.5
+INFO:12:21:28 No sensor selected
+INFO:12:21:28 Address: 11
+INFO:12:21:28 Serial Number: 930
+INFO:12:21:28 SW Version: 0.3a
+INFO:12:21:28 Article Number: 4314083
+INFO:12:21:28 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:21:28 Measuring Unit: μm
+INFO:12:21:28 Measuring Range: 1400.0
+INFO:12:21:28 Measuring Offset: 100.0
+INFO:12:21:28 Distance: 632
+INFO:12:21:28 Temperature: 23.0
+INFO:12:21:29 No sensor selected
+INFO:12:21:29 Address: 11
+INFO:12:21:29 Serial Number: 930
+INFO:12:21:29 SW Version: 0.3a
+INFO:12:21:29 Article Number: 4314083
+INFO:12:21:29 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:21:29 Measuring Unit: μm
+INFO:12:21:29 Measuring Range: 1400.0
+INFO:12:21:29 Measuring Offset: 100.0
+INFO:12:21:29 Distance: 632
+INFO:12:21:29 Temperature: 23.0
+INFO:12:21:29 No sensor selected
+INFO:12:21:29 Address: 11
+INFO:12:21:29 Serial Number: 930
+INFO:12:21:29 SW Version: 0.3a
+INFO:12:21:29 Article Number: 4314083
+INFO:12:21:29 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:21:29 Measuring Unit: μm
+INFO:12:21:29 Measuring Range: 1400.0
+INFO:12:21:29 Measuring Offset: 100.0
+INFO:12:21:29 Distance: 633
+INFO:12:21:29 Temperature: 23.0
+INFO:12:21:29 No sensor selected
+INFO:12:21:29 Address: 11
+INFO:12:21:29 Serial Number: 930
+INFO:12:21:29 SW Version: 0.3a
+INFO:12:21:29 Article Number: 4314083
+INFO:12:21:29 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:21:29 Measuring Unit: μm
+INFO:12:21:29 Measuring Range: 1400.0
+INFO:12:21:29 Measuring Offset: 100.0
+INFO:12:21:29 Distance: 632
+INFO:12:21:29 Temperature: 23.0
+INFO:12:21:29 No sensor selected
+INFO:12:21:29 Address: 11
+INFO:12:21:29 Serial Number: 930
+INFO:12:21:29 SW Version: 0.3a
+INFO:12:21:29 Article Number: 4314083
+INFO:12:21:29 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:21:29 Measuring Unit: μm
+INFO:12:21:29 Measuring Range: 1400.0
+INFO:12:21:29 Measuring Offset: 100.0
+INFO:12:21:29 Distance: 632
+INFO:12:21:29 Temperature: 23.0
+INFO:12:21:29 No sensor selected
+INFO:12:21:29 Address: 11
+INFO:12:21:29 Serial Number: 930
+INFO:12:21:29 SW Version: 0.3a
+INFO:12:21:29 Article Number: 4314083
+INFO:12:21:29 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:21:29 Measuring Unit: μm
+INFO:12:21:29 Measuring Range: 1400.0
+INFO:12:21:29 Measuring Offset: 100.0
+INFO:12:21:29 Distance: 633
+INFO:12:21:29 Temperature: 23.0
+INFO:12:21:30 No sensor selected
+INFO:12:21:30 Address: 11
+INFO:12:21:30 Serial Number: 930
+INFO:12:21:30 SW Version: 0.3a
+INFO:12:21:30 Article Number: 4314083
+INFO:12:21:30 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:21:30 Measuring Unit: μm
+INFO:12:21:30 Measuring Range: 1400.0
+INFO:12:21:30 Measuring Offset: 100.0
+INFO:12:21:30 Distance: 632
+INFO:12:21:30 Temperature: 23.0
+INFO:12:21:30 No sensor selected
+INFO:12:21:30 Address: 11
+INFO:12:21:30 Serial Number: 930
+INFO:12:21:30 SW Version: 0.3a
+INFO:12:21:30 Article Number: 4314083
+INFO:12:21:30 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:21:30 Measuring Unit: μm
+INFO:12:21:30 Measuring Range: 1400.0
+INFO:12:21:30 Measuring Offset: 100.0
+INFO:12:21:30 Distance: 632
+INFO:12:21:30 Temperature: 23.0
+INFO:12:21:33 No sensor selected
+INFO:12:21:33 Address: 11
+INFO:12:21:33 Serial Number: 930
+INFO:12:21:33 SW Version: 0.3a
+INFO:12:21:33 Article Number: 4314083
+INFO:12:21:33 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:21:33 Measuring Unit: μm
+INFO:12:21:33 Measuring Range: 1400.0
+INFO:12:21:33 Measuring Offset: 100.0
+INFO:12:21:33 Distance: 605
+INFO:12:21:33 Temperature: 15.6
+INFO:12:21:35 No sensor selected
+INFO:12:21:35 Address: 11
+INFO:12:21:35 Serial Number: 930
+INFO:12:21:35 SW Version: 0.3a
+INFO:12:21:35 Article Number: 4314083
+INFO:12:21:35 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:21:35 Measuring Unit: μm
+INFO:12:21:35 Measuring Range: 1400.0
+INFO:12:21:35 Measuring Offset: 100.0
+INFO:12:21:35 Distance: 632
+INFO:12:21:35 Temperature: 23.0
+INFO:12:21:35 No sensor selected
+INFO:12:21:35 Address: 11
+INFO:12:21:35 Serial Number: 930
+INFO:12:21:35 SW Version: 0.3a
+INFO:12:21:35 Article Number: 4314083
+INFO:12:21:35 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:21:35 Measuring Unit: μm
+INFO:12:21:35 Measuring Range: 1400.0
+INFO:12:21:35 Measuring Offset: 100.0
+INFO:12:21:35 Distance: 632
+INFO:12:21:35 Temperature: 23.0
+INFO:12:21:35 No sensor selected
+INFO:12:21:35 Address: 11
+INFO:12:21:35 Serial Number: 930
+INFO:12:21:35 SW Version: 0.3a
+INFO:12:21:35 Article Number: 4314083
+INFO:12:21:35 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:21:35 Measuring Unit: μm
+INFO:12:21:35 Measuring Range: 1400.0
+INFO:12:21:35 Measuring Offset: 100.0
+INFO:12:21:35 Distance: 632
+INFO:12:21:35 Temperature: 23.0
+INFO:12:21:35 No sensor selected
+INFO:12:21:35 Address: 11
+INFO:12:21:35 Serial Number: 930
+INFO:12:21:35 SW Version: 0.3a
+INFO:12:21:35 Article Number: 4314083
+INFO:12:21:35 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:21:35 Measuring Unit: μm
+INFO:12:21:35 Measuring Range: 1400.0
+INFO:12:21:35 Measuring Offset: 100.0
+INFO:12:21:35 Distance: 632
+INFO:12:21:35 Temperature: 23.0
+INFO:12:21:36 No sensor selected
+INFO:12:21:36 Address: 11
+INFO:12:21:36 Serial Number: 930
+INFO:12:21:36 SW Version: 0.3a
+INFO:12:21:36 Article Number: 4314083
+INFO:12:21:36 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:21:36 Measuring Unit: μm
+INFO:12:21:36 Measuring Range: 1400.0
+INFO:12:21:36 Measuring Offset: 100.0
+INFO:12:21:36 Distance: 632
+INFO:12:21:36 Temperature: 23.0
+INFO:12:21:36 No sensor selected
+INFO:12:21:36 Address: 11
+INFO:12:21:36 Serial Number: 930
+INFO:12:21:36 SW Version: 0.3a
+INFO:12:21:36 Article Number: 4314083
+INFO:12:21:36 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:21:36 Measuring Unit: μm
+INFO:12:21:36 Measuring Range: 1400.0
+INFO:12:21:36 Measuring Offset: 100.0
+INFO:12:21:36 Distance: 633
+INFO:12:21:36 Temperature: 23.0
+INFO:12:21:36 No sensor selected
+INFO:12:21:36 Address: 11
+INFO:12:21:36 Serial Number: 930
+INFO:12:21:36 SW Version: 0.3a
+INFO:12:21:36 Article Number: 4314083
+INFO:12:21:36 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:21:36 Measuring Unit: μm
+INFO:12:21:36 Measuring Range: 1400.0
+INFO:12:21:36 Measuring Offset: 100.0
+INFO:12:21:36 Distance: 632
+INFO:12:21:36 Temperature: 23.0
+INFO:12:21:40 No sensor selected
+INFO:12:21:40 Address: 11
+INFO:12:21:40 Serial Number: 930
+INFO:12:21:40 SW Version: 0.3a
+INFO:12:21:40 Article Number: 4314083
+INFO:12:21:40 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:21:40 Measuring Unit: μm
+INFO:12:21:40 Measuring Range: 1400.0
+INFO:12:21:40 Measuring Offset: 100.0
+INFO:12:21:40 Distance: -77
+INFO:12:21:40 Temperature: 15.6
+INFO:12:21:42 No sensor selected
+INFO:12:21:42 Address: 11
+INFO:12:21:42 Serial Number: 930
+INFO:12:21:42 SW Version: 0.3a
+INFO:12:21:42 Article Number: 4314083
+INFO:12:21:42 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:21:42 Measuring Unit: μm
+INFO:12:21:42 Measuring Range: 1400.0
+INFO:12:21:42 Measuring Offset: 100.0
+INFO:12:21:42 Distance: 632
+INFO:12:21:42 Temperature: 23.0
+INFO:12:21:42 No sensor selected
+INFO:12:21:42 Address: 11
+INFO:12:21:42 Serial Number: 930
+INFO:12:21:42 SW Version: 0.3a
+INFO:12:21:42 Article Number: 4314083
+INFO:12:21:42 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:21:42 Measuring Unit: μm
+INFO:12:21:42 Measuring Range: 1400.0
+INFO:12:21:42 Measuring Offset: 100.0
+INFO:12:21:42 Distance: 632
+INFO:12:21:42 Temperature: 23.0
+INFO:12:21:42 No sensor selected
+INFO:12:21:42 Address: 11
+INFO:12:21:42 Serial Number: 930
+INFO:12:21:42 SW Version: 0.3a
+INFO:12:21:42 Article Number: 4314083
+INFO:12:21:42 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:21:42 Measuring Unit: μm
+INFO:12:21:42 Measuring Range: 1400.0
+INFO:12:21:42 Measuring Offset: 100.0
+INFO:12:21:42 Distance: 632
+INFO:12:21:42 Temperature: 23.0
+INFO:12:21:42 No sensor selected
+INFO:12:21:42 Address: 11
+INFO:12:21:42 Serial Number: 930
+INFO:12:21:42 SW Version: 0.3a
+INFO:12:21:42 Article Number: 4314083
+INFO:12:21:42 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:21:42 Measuring Unit: μm
+INFO:12:21:42 Measuring Range: 1400.0
+INFO:12:21:42 Measuring Offset: 100.0
+INFO:12:21:42 Distance: 632
+INFO:12:21:42 Temperature: 23.0
+INFO:12:21:42 No sensor selected
+INFO:12:21:42 Address: 11
+INFO:12:21:42 Serial Number: 930
+INFO:12:21:42 SW Version: 0.3a
+INFO:12:21:42 Article Number: 4314083
+INFO:12:21:42 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:21:42 Measuring Unit: μm
+INFO:12:21:42 Measuring Range: 1400.0
+INFO:12:21:42 Measuring Offset: 100.0
+INFO:12:21:42 Distance: 632
+INFO:12:21:42 Temperature: 23.0
+INFO:12:21:42 No sensor selected
+INFO:12:21:42 Address: 11
+INFO:12:21:42 Serial Number: 930
+INFO:12:21:42 SW Version: 0.3a
+INFO:12:21:42 Article Number: 4314083
+INFO:12:21:42 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:21:42 Measuring Unit: μm
+INFO:12:21:42 Measuring Range: 1400.0
+INFO:12:21:42 Measuring Offset: 100.0
+INFO:12:21:42 Distance: 633
+INFO:12:21:42 Temperature: 23.0
+INFO:12:21:43 No sensor selected
+INFO:12:21:43 Address: 11
+INFO:12:21:43 Serial Number: 930
+INFO:12:21:43 SW Version: 0.3a
+INFO:12:21:43 Article Number: 4314083
+INFO:12:21:43 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:21:43 Measuring Unit: μm
+INFO:12:21:43 Measuring Range: 1400.0
+INFO:12:21:43 Measuring Offset: 100.0
+INFO:12:21:43 Distance: 633
+INFO:12:21:43 Temperature: 23.0
+INFO:12:21:43 No sensor selected
+INFO:12:21:43 Address: 11
+INFO:12:21:43 Serial Number: 930
+INFO:12:21:43 SW Version: 0.3a
+INFO:12:21:43 Article Number: 4314083
+INFO:12:21:43 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:21:43 Measuring Unit: μm
+INFO:12:21:43 Measuring Range: 1400.0
+INFO:12:21:43 Measuring Offset: 100.0
+INFO:12:21:43 Distance: 632
+INFO:12:21:43 Temperature: 23.0
+INFO:12:21:43 No sensor selected
+INFO:12:21:43 Address: 11
+INFO:12:21:43 Serial Number: 930
+INFO:12:21:43 SW Version: 0.3a
+INFO:12:21:43 Article Number: 4314083
+INFO:12:21:43 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:21:43 Measuring Unit: μm
+INFO:12:21:43 Measuring Range: 1400.0
+INFO:12:21:43 Measuring Offset: 100.0
+INFO:12:21:43 Distance: 632
+INFO:12:21:43 Temperature: 23.0
+INFO:12:21:43 No sensor selected
+INFO:12:21:43 Address: 11
+INFO:12:21:43 Serial Number: 930
+INFO:12:21:43 SW Version: 0.3a
+INFO:12:21:43 Article Number: 4314083
+INFO:12:21:43 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:21:43 Measuring Unit: μm
+INFO:12:21:43 Measuring Range: 1400.0
+INFO:12:21:43 Measuring Offset: 100.0
+INFO:12:21:43 Distance: 633
+INFO:12:21:43 Temperature: 23.0
+INFO:12:21:43 No sensor selected
+INFO:12:21:43 Address: 11
+INFO:12:21:43 Serial Number: 930
+INFO:12:21:43 SW Version: 0.3a
+INFO:12:21:43 Article Number: 4314083
+INFO:12:21:43 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:21:43 Measuring Unit: μm
+INFO:12:21:43 Measuring Range: 1400.0
+INFO:12:21:43 Measuring Offset: 100.0
+INFO:12:21:43 Distance: 632
+INFO:12:21:43 Temperature: 23.0
+INFO:12:21:43 No sensor selected
+INFO:12:21:43 Address: 11
+INFO:12:21:43 Serial Number: 930
+INFO:12:21:43 SW Version: 0.3a
+INFO:12:21:43 Article Number: 4314083
+INFO:12:21:43 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:21:43 Measuring Unit: μm
+INFO:12:21:43 Measuring Range: 1400.0
+INFO:12:21:43 Measuring Offset: 100.0
+INFO:12:21:43 Distance: 632
+INFO:12:21:43 Temperature: 23.0
+INFO:12:21:43 No sensor selected
+INFO:12:21:44 Address: 11
+INFO:12:21:44 Serial Number: 930
+INFO:12:21:44 SW Version: 0.3a
+INFO:12:21:44 Article Number: 4314083
+INFO:12:21:44 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:21:44 Measuring Unit: μm
+INFO:12:21:44 Measuring Range: 1400.0
+INFO:12:21:44 Measuring Offset: 100.0
+INFO:12:21:44 Distance: 632
+INFO:12:21:44 Temperature: 23.0
+INFO:12:21:44 No sensor selected
+INFO:12:21:44 Address: 11
+INFO:12:21:44 Serial Number: 930
+INFO:12:21:44 SW Version: 0.3a
+INFO:12:21:44 Article Number: 4314083
+INFO:12:21:44 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:21:44 Measuring Unit: μm
+INFO:12:21:44 Measuring Range: 1400.0
+INFO:12:21:44 Measuring Offset: 100.0
+INFO:12:21:44 Distance: 632
+INFO:12:21:44 Temperature: 23.0
+INFO:12:21:45 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 632, 'Temperature': 23.0}
+INFO:12:21:45 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 633, 'Temperature': 23.0}
+INFO:12:21:45 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 632, 'Temperature': 23.0}
+INFO:12:21:46 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 633, 'Temperature': 23.0}
+INFO:12:21:46 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 632, 'Temperature': 23.0}
+INFO:12:21:46 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 633, 'Temperature': 23.0}
+INFO:12:21:46 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 632, 'Temperature': 23.0}
+INFO:12:21:46 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 632, 'Temperature': 23.0}
+INFO:12:21:46 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 632, 'Temperature': 23.0}
+INFO:12:21:46 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 633, 'Temperature': 23.0}
+INFO:12:21:46 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 632, 'Temperature': 23.0}
+INFO:12:21:46 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 632, 'Temperature': 23.0}
+INFO:12:21:46 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 633, 'Temperature': 23.0}
+INFO:12:21:46 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 632, 'Temperature': 23.0}
+INFO:12:21:47 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 632, 'Temperature': 23.0}
+INFO:12:21:47 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 632, 'Temperature': 23.0}
+INFO:12:21:47 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 632, 'Temperature': 23.0}
+INFO:12:21:47 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 633, 'Temperature': 23.0}
+INFO:12:21:47 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 632, 'Temperature': 23.0}
+INFO:12:21:47 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 633, 'Temperature': 23.0}
+INFO:12:21:47 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 632, 'Temperature': 23.0}
+INFO:12:21:47 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 633, 'Temperature': 23.0}
+INFO:12:21:47 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 632, 'Temperature': 23.0}
+INFO:12:21:47 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 632, 'Temperature': 23.0}
+INFO:12:21:47 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 632, 'Temperature': 23.0}
+INFO:12:21:48 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 632, 'Temperature': 23.1}
+INFO:12:21:48 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 632, 'Temperature': 23.1}
+INFO:12:21:48 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 632, 'Temperature': 23.1}
+INFO:12:21:48 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 632, 'Temperature': 23.1}
+INFO:12:21:48 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 633, 'Temperature': 23.1}
+INFO:12:21:48 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 632, 'Temperature': 23.0}
+INFO:12:21:48 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 631, 'Temperature': 23.0}
+INFO:12:21:48 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 631, 'Temperature': 23.0}
+INFO:12:21:48 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 632, 'Temperature': 23.0}
+INFO:12:21:48 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 669, 'Temperature': 23.0}
+INFO:12:21:48 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 702, 'Temperature': 23.0}
+INFO:12:21:49 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 711, 'Temperature': 23.0}
+INFO:12:21:49 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 711, 'Temperature': 23.0}
+INFO:12:21:49 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 711, 'Temperature': 23.0}
+INFO:12:21:49 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 711, 'Temperature': 23.0}
+INFO:12:21:49 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 712, 'Temperature': 23.0}
+INFO:12:21:49 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 696, 'Temperature': 23.0}
+INFO:12:21:49 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 654, 'Temperature': 23.0}
+INFO:12:21:49 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 616, 'Temperature': 23.0}
+INFO:12:21:49 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.0}
+INFO:12:21:49 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 600, 'Temperature': 23.0}
+INFO:12:21:49 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 599, 'Temperature': 23.0}
+INFO:12:21:50 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 599, 'Temperature': 23.0}
+INFO:12:21:50 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 615, 'Temperature': 23.0}
+INFO:12:21:50 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 621, 'Temperature': 23.1}
+INFO:12:21:50 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 628, 'Temperature': 23.1}
+INFO:12:21:50 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 628, 'Temperature': 23.1}
+INFO:12:21:50 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 628, 'Temperature': 23.1}
+INFO:12:21:50 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 628, 'Temperature': 23.1}
+INFO:12:21:50 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 624, 'Temperature': 23.1}
+INFO:12:21:50 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 622, 'Temperature': 23.1}
+INFO:12:21:50 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 622, 'Temperature': 23.1}
+INFO:12:21:51 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 622, 'Temperature': 23.1}
+INFO:12:21:51 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 622, 'Temperature': 23.1}
+INFO:12:21:51 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 616, 'Temperature': 23.1}
+INFO:12:21:51 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 601, 'Temperature': 23.1}
+INFO:12:21:51 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:51 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:51 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:51 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:51 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:51 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:52 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:52 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:52 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:52 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:52 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:52 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:52 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:52 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:52 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:52 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:53 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:53 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:53 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:53 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:53 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:53 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:53 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:53 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:53 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:53 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:53 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:54 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:54 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:54 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:54 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:54 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:54 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:54 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:54 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:54 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:54 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:54 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:55 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:55 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:55 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:55 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:55 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:55 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:55 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:55 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:55 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:55 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:55 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:56 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:56 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:56 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:56 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:56 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:56 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:56 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:56 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:56 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:56 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:56 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:57 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:57 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:57 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:57 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:57 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:57 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:57 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:57 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:57 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:57 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:57 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:58 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:58 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:58 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:58 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:58 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:58 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:58 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:58 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:58 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:58 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:58 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:59 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:59 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:59 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:59 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:59 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:59 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:59 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:59 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:59 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:21:59 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:00 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:00 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:00 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:00 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:00 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:00 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:00 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:00 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:00 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:00 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:01 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:01 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:01 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:01 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:01 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:01 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:01 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:01 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:01 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:01 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:02 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:02 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:02 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:02 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:02 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:02 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:02 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:02 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:02 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:02 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:03 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:03 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:03 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:03 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:03 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:03 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:03 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:03 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:03 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:03 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:04 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:04 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:04 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:04 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:04 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:04 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:04 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:04 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:04 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:04 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:04 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:05 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:05 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:05 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:05 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:05 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:05 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:05 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:05 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:05 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:05 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:06 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:06 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:06 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:06 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:06 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:06 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:06 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:06 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:06 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:06 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:07 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:07 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:07 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:07 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:07 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:07 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:07 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:07 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:07 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:07 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:08 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:08 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:08 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:08 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:08 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:08 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:08 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:08 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:08 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:08 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:08 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:09 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:09 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:09 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:09 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:09 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:09 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:09 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:09 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:09 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:09 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:09 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:10 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:10 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:10 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:22:10 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.1}
+INFO:12:23:01 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:12:23:04 No sensor selected
+INFO:12:23:04 Address: 11
+INFO:12:23:04 Serial Number: 930
+INFO:12:23:04 SW Version: 0.3a
+INFO:12:23:04 Article Number: 4314083
+INFO:12:23:04 Description: DT3009-S1,4-M20_OSS_LF
+INFO:12:23:04 Measuring Unit: μm
+INFO:12:23:04 Measuring Range: 1400.0
+INFO:12:23:04 Measuring Offset: 100.0
+INFO:12:23:04 Distance: 602
+INFO:12:23:04 Temperature: 23.1
+INFO:12:23:13 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.2}
+INFO:12:23:13 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.2}
+INFO:12:23:13 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.2}
+INFO:12:23:13 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.2}
+INFO:12:23:13 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.2}
+INFO:12:23:13 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.2}
+INFO:12:23:13 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.2}
+INFO:12:23:13 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.2}
+INFO:12:23:14 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.2}
+INFO:12:23:14 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.2}
+INFO:12:23:14 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.2}
+INFO:12:23:14 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.2}
+INFO:12:23:14 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.2}
+INFO:12:23:14 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 601, 'Temperature': 23.2}
+INFO:12:23:14 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.2}
+INFO:12:23:14 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.2}
+INFO:12:23:14 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.2}
+INFO:12:23:14 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.2}
+INFO:12:23:14 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.2}
+INFO:12:23:15 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.2}
+INFO:12:23:15 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.2}
+INFO:12:23:15 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.2}
+INFO:12:23:15 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.2}
+INFO:12:23:15 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.2}
+INFO:12:23:15 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.2}
+INFO:12:23:15 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.2}
+INFO:12:23:15 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.2}
+INFO:12:23:15 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.2}
+INFO:12:23:15 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.2}
+INFO:12:23:15 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.2}
+INFO:12:23:16 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.2}
+INFO:12:23:16 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.2}
+INFO:12:23:16 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.2}
+INFO:12:23:16 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.2}
+INFO:12:23:16 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.2}
+INFO:12:23:16 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.2}
+INFO:12:23:16 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.2}
+INFO:12:23:16 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.2}
+INFO:12:23:16 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.2}
+INFO:12:23:16 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.2}
+INFO:12:23:16 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.2}
+INFO:12:23:17 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.2}
+INFO:12:23:17 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.2}
+INFO:12:23:17 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.2}
+INFO:12:23:17 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.2}
+INFO:12:23:17 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.2}
+INFO:12:23:17 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.2}
+INFO:12:23:17 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.2}
+INFO:12:23:17 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.2}
+INFO:12:23:17 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.2}
+INFO:12:23:17 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.2}
+INFO:12:23:17 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.2}
+INFO:12:23:17 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.2}
+INFO:12:23:18 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.2}
+INFO:12:23:18 {'Address': 11, 'Serial Number': 930, 'SW Version': '0.3a', 'Article Number': 4314083, 'Description': 'DT3009-S1,4-M20_OSS_LF', 'Measuring Unit': 'μm', 'Measuring Range': 1400.0, 'Measuring Offset': 100.0, 'Distance': 602, 'Temperature': 23.2}
+INFO:12:33:11 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:12:35:54 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:12:35:59 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:12:38:05 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:12:55:00 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:13:11:11 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:23:51 Selected port: COM1 - MOXA USB Serial Port (COM1)
+INFO:14:24:37 Machine not selected
+INFO:14:24:42 Added machine with Itm Number: 1
+INFO:14:24:42 Selected machine: 1
+INFO:14:24:44 found adr: 11
+INFO:14:24:44 Sensor: 930 not found in registry
+INFO:14:24:44 Machine: 1,  Sensor: Unknown
+INFO:14:24:44 Address: 11
+INFO:14:24:44 Serial Number: 930
+INFO:14:24:44 SW Version: 0.3a
+INFO:14:24:44 Article Number: 4314083
+INFO:14:24:44 Description: DT3009-S1,4-M20_OSS_LF
+INFO:14:24:44 Measuring Unit: μm
+INFO:14:24:44 Measuring Range: 1400.0
+INFO:14:24:44 Measuring Offset: 100.0
+INFO:14:24:44 Distance: 603
+INFO:14:24:44 Temperature: 24.7
+INFO:14:24:50 found adr: 11
+INFO:14:24:50 Sensor: 930 not found in registry
+INFO:14:24:50 Machine: 1,  Sensor: Unknown
+INFO:14:24:51 index out of range
+INFO:14:24:56 found adr: 11
+INFO:14:24:56 Sensor: 930 not found in registry
+INFO:14:24:56 Machine: 1,  Sensor: Unknown
+INFO:14:24:56 Address: 11
+INFO:14:24:56 Serial Number: 930
+INFO:14:24:56 SW Version: 0.3a
+INFO:14:24:56 Article Number: 4314083
+INFO:14:24:56 Description: DT3009-S1,4-M20_OSS_LF
+INFO:14:24:56 Measuring Unit: μm
+INFO:14:24:56 Measuring Range: 1400.0
+INFO:14:24:56 Measuring Offset: 100.0
+INFO:14:24:56 Distance: 602
+INFO:14:24:56 Temperature: 24.7
+INFO:14:24:59 found adr: 11
+INFO:14:24:59 Sensor: 930 not found in registry
+INFO:14:24:59 Machine: 1,  Sensor: Unknown
+INFO:14:25:00 Address: 11
+INFO:14:25:00 Serial Number: 930
+INFO:14:25:00 SW Version: 0.3a
+INFO:14:25:00 Article Number: 4314083
+INFO:14:25:00 Description: DT3009-S1,4-M20_OSS_LF
+INFO:14:25:00 Measuring Unit: μm
+INFO:14:25:00 Measuring Range: 1400.0
+INFO:14:25:00 Measuring Offset: 100.0
+INFO:14:25:00 Distance: 602
+INFO:14:25:00 Temperature: 24.7
+INFO:14:25:03 found adr: 11
+INFO:14:25:03 Sensor: 930 not found in registry
+INFO:14:25:03 Machine: 1,  Sensor: Unknown
+INFO:14:25:03 Address: 11
+INFO:14:25:03 Serial Number: 930
+INFO:14:25:03 SW Version: 0.3a
+INFO:14:25:03 Article Number: 4314083
+INFO:14:25:03 Description: DT3009-S1,4-M20_OSS_LF
+INFO:14:25:03 Measuring Unit: μm
+INFO:14:25:03 Measuring Range: 1400.0
+INFO:14:25:03 Measuring Offset: 100.0
+INFO:14:25:03 Distance: 603
+INFO:14:25:03 Temperature: 24.7
+INFO:14:25:06 found adr: 11
+INFO:14:25:06 Sensor: 930 not found in registry
+INFO:14:25:06 Machine: 1,  Sensor: Unknown
+INFO:14:25:06 Address: 11
+INFO:14:25:06 Serial Number: 930
+INFO:14:25:06 SW Version: 0.3a
+INFO:14:25:06 Article Number: 4314083
+INFO:14:25:06 Description: DT3009-S1,4-M20_OSS_LF
+INFO:14:25:06 Measuring Unit: μm
+INFO:14:25:06 Measuring Range: 1400.0
+INFO:14:25:06 Measuring Offset: 100.0
+INFO:14:25:06 Distance: 603
+INFO:14:25:06 Temperature: 24.7
+INFO:14:25:10 found adr: 11
+INFO:14:25:10 Sensor: 930 not found in registry
+INFO:14:25:10 Machine: 1,  Sensor: Unknown
+INFO:14:25:10 Address: 11
+INFO:14:25:10 Serial Number: 930
+INFO:14:25:10 SW Version: 0.3a
+INFO:14:25:10 Article Number: 4314083
+INFO:14:25:10 Description: DT3009-S1,4-M20_OSS_LF
+INFO:14:25:10 Measuring Unit: μm
+INFO:14:25:10 Measuring Range: 1400.0
+INFO:14:25:10 Measuring Offset: 100.0
+INFO:14:25:10 Distance: 602
+INFO:14:25:10 Temperature: 24.7
+INFO:14:25:13 found adr: 11
+INFO:14:25:13 Sensor: 930 not found in registry
+INFO:14:25:13 Machine: 1,  Sensor: Unknown
+INFO:14:25:13 Address: 11
+INFO:14:25:13 Serial Number: 930
+INFO:14:25:13 SW Version: 0.3a
+INFO:14:25:13 Article Number: 4314083
+INFO:14:25:13 Description: DT3009-S1,4-M20_OSS_LF
+INFO:14:25:13 Measuring Unit: μm
+INFO:14:25:13 Measuring Range: 1400.0
+INFO:14:25:13 Measuring Offset: 100.0
+INFO:14:25:13 Distance: 602
+INFO:14:25:13 Temperature: 24.7
+INFO:14:25:17 found adr: 11
+INFO:14:25:17 Sensor: 930 not found in registry
+INFO:14:25:17 Machine: 1,  Sensor: Unknown
+INFO:14:25:17 Address: 11
+INFO:14:25:17 Serial Number: 930
+INFO:14:25:17 SW Version: 0.3a
+INFO:14:25:17 Article Number: 4314083
+INFO:14:25:17 Description: DT3009-S1,4-M20_OSS_LF
+INFO:14:25:17 Measuring Unit: μm
+INFO:14:25:17 Measuring Range: 1400.0
+INFO:14:25:17 Measuring Offset: 100.0
+INFO:14:25:17 Distance: 602
+INFO:14:25:17 Temperature: 24.7
+INFO:14:25:20 found adr: 11
+INFO:14:25:20 Sensor: 930 not found in registry
+INFO:14:25:20 Machine: 1,  Sensor: Unknown
+INFO:14:25:20 Address: 11
+INFO:14:25:20 Serial Number: 930
+INFO:14:25:20 SW Version: 0.3a
+INFO:14:25:20 Article Number: 4314083
+INFO:14:25:20 Description: DT3009-S1,4-M20_OSS_LF
+INFO:14:25:20 Measuring Unit: μm
+INFO:14:25:20 Measuring Range: 1400.0
+INFO:14:25:20 Measuring Offset: 100.0
+INFO:14:25:20 Distance: 602
+INFO:14:25:20 Temperature: 24.7
+INFO:14:25:23 found adr: 11
+INFO:14:25:23 Sensor: 930 not found in registry
+INFO:14:25:23 Machine: 1,  Sensor: Unknown
+INFO:14:25:23 Address: 11
+INFO:14:25:23 Serial Number: 930
+INFO:14:25:23 SW Version: 0.3a
+INFO:14:25:23 Article Number: 4314083
+INFO:14:25:23 Description: DT3009-S1,4-M20_OSS_LF
+INFO:14:25:23 Measuring Unit: μm
+INFO:14:25:23 Measuring Range: 1400.0
+INFO:14:25:23 Measuring Offset: 100.0
+INFO:14:25:23 Distance: 602
+INFO:14:25:23 Temperature: 24.7
+INFO:14:25:27 found adr: 11
+INFO:14:25:27 Sensor: 930 not found in registry
+INFO:14:25:27 Machine: 1,  Sensor: Unknown
+INFO:14:25:27 Address: 11
+INFO:14:25:27 Serial Number: 930
+INFO:14:25:27 SW Version: 0.3a
+INFO:14:25:27 Article Number: 4314083
+INFO:14:25:27 Description: DT3009-S1,4-M20_OSS_LF
+INFO:14:25:27 Measuring Unit: μm
+INFO:14:25:27 Measuring Range: 1400.0
+INFO:14:25:27 Measuring Offset: 100.0
+INFO:14:25:27 Distance: 602
+INFO:14:25:27 Temperature: 24.7
+INFO:14:25:31 found adr: 11
+INFO:14:25:31 Sensor: 930 not found in registry
+INFO:14:25:31 Machine: 1,  Sensor: Unknown
+INFO:14:25:31 Address: 11
+INFO:14:25:31 Serial Number: 930
+INFO:14:25:31 SW Version: 0.3a
+INFO:14:25:31 Article Number: 4314083
+INFO:14:25:31 Description: DT3009-S1,4-M20_OSS_LF
+INFO:14:25:31 Measuring Unit: μm
+INFO:14:25:31 Measuring Range: 1400.0
+INFO:14:25:31 Measuring Offset: 100.0
+INFO:14:25:31 Distance: 602
+INFO:14:25:31 Temperature: 24.7
+INFO:14:25:42 Added sensor with location: Pump-DE-Y
+INFO:14:25:42 Selected sensor: Pump-DE-Y
+INFO:14:25:43 Machine: 1,  Sensor: Pump-DE-Y
+INFO:14:25:43 Address: 11
+INFO:14:25:43 Serial Number: 930
+INFO:14:25:43 SW Version: 0.3a
+INFO:14:25:43 Article Number: 4314083
+INFO:14:25:43 Description: DT3009-S1,4-M20_OSS_LF
+INFO:14:25:43 Measuring Unit: μm
+INFO:14:25:43 Measuring Range: 1400.0
+INFO:14:25:43 Measuring Offset: 100.0
+INFO:14:25:43 Distance: 602
+INFO:14:25:43 Temperature: 24.7
+INFO:14:25:47 Machine: 1,  Sensor: Pump-DE-Y
+INFO:14:25:47 Address: 11
+INFO:14:25:47 Serial Number: 930
+INFO:14:25:47 SW Version: 0.3a
+INFO:14:25:47 Article Number: 4314083
+INFO:14:25:47 Description: DT3009-S1,4-M20_OSS_LF
+INFO:14:25:47 Measuring Unit: μm
+INFO:14:25:47 Measuring Range: 1400.0
+INFO:14:25:47 Measuring Offset: 100.0
+INFO:14:25:47 Distance: 603
+INFO:14:25:47 Temperature: 24.7

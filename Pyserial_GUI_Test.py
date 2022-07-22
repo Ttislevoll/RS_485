@@ -1,7 +1,6 @@
 import tkinter as tk
 from tkinter import ANCHOR, BOTTOM, CENTER, END, LEFT, N, NW, RIGHT, SOLID, SUNKEN, SW, TOP, W, ttk, messagebox, filedialog
 import ctypes
-from turtle import width
 import serial
 import serial.tools.list_ports
 from PIL import ImageTk, Image
@@ -285,6 +284,7 @@ def get_all(adr: int) -> dict:
     Returns:
         dict: Sensor readings
     """
+    if ser.in_waiting > 0: ser.reset_input_buffer()
     values = {}
     values["Address"] = adr
     values["Serial Number"] = get_serial_number(adr)
@@ -434,7 +434,7 @@ def polling_sensor(adr: int, seconds: int, wait: int, sensor: Sensor):
 
 #refreshes the values in list of ports
 def refresh_ports() -> None: 
-    """_summary_
+    """Refresh list of connected ports
     """
     global ports
     global ser
@@ -444,23 +444,30 @@ def refresh_ports() -> None:
     ser = None
 
 #writes string to log
-def log_write(text : str): 
+def log_write(text : str) -> None: 
     current_time = datetime.datetime.now().strftime("%H:%M:%S")
     logging.info(f'{str(current_time)} {text}')
     txt_log.insert(END, f'{str(current_time)} {text}\n')    
     txt_log.yview_moveto(1.0)
 
 #function is called when a port is selected from the list
-def port_selected():
-    global ser
-    ser = None
-    ser = initialize_port()
-    window.focus()
-    log_text=f'Selected port: {current_port.get()}'
-    log_write(log_text)
+def port_selected() -> None:
+    """Initializes serial port when selected from list
+    """
+    try:
+        global ser
+        ser = None
+        ser = initialize_port()
+        window.focus()
+        log_text=f'Selected port: {current_port.get()}'
+        log_write(log_text)
+    except Exception as error:
+        log_write(error)
 
 #function is called when a machine is selected from the list
-def machine_selected():
+def machine_selected() -> None:
+    """Updates gui widgets when selecting a machine from list
+    """
     global treeview_dict
     window.focus()
     log_text=f'Selected machine: {current_machine.get()}'
@@ -477,15 +484,16 @@ def machine_selected():
     update_treeview()
 
 #function is called when a sensor is selected from the list
-def sensor_selected():
+def sensor_selected() -> None:
+    """Updates gui widgets when selecting a sensor from list
+    """
     window.focus()
     current_group_sensor.set("")
     sensor = get_sensor()
     txt_log.insert(END, "\n")
     log_text=f'Selected sensor: {current_sensor.get()}'
     update_sensor_lbl()
-    log_write(log_text) 
-    #log_write(sensor)
+    log_write(log_text)
     for key in sensor.values:
         if sensor.values[key]: log_write(f'{key}: {sensor.values[key]}')
         labels[key]['text'] = sensor.values[key]
@@ -493,7 +501,9 @@ def sensor_selected():
     current_address_lbl_value["text"] = sensor.values["Address"]
 
 #function is called when a sensor is selected from the group sensor list
-def group_sensor_selected():
+def group_sensor_selected() -> None:
+    """Updates gui widgets when selecting a sensor_group from list
+    """
     window.focus()
     current_sensor.set("")
     group_sensor = get_machine().sensors_group[combobox_group_sensors.current()]
@@ -506,9 +516,18 @@ def group_sensor_selected():
         labels[key]['text'] = group_sensor.values[key]
 
 #calculates the fcs checksum of the telegram
-def get_fcs(telegram, x):
+def get_fcs(telegram: list, start: int) -> int:
+    """Calculates fcs for telegram
+
+    Args:
+        telegram (list): string of bytes for talking with sensor
+        start (int): index of address in telegram
+
+    Returns:
+        int: fcs
+    """
     sum=0
-    for i in range(x, len(telegram)-2):
+    for i in range(start, len(telegram)-2):
         sum += telegram[i]
     return sum % 256
 
@@ -811,10 +830,8 @@ combobox_ports.pack(side=tk.LEFT, padx=(20,5), pady=(0,0))
 ports = serial.tools.list_ports.comports() #Creates a list of connected serial ports
 combobox_ports['values'] = ports #adds the "ports" list to a dropdown menu
 if(len(ports) > 0): 
-    try:
-        combobox_ports.current(newindex=0)
-        port_selected()
-    except: pass
+    combobox_ports.current(newindex=0)
+    port_selected()
 refresh_btn = ttk.Button(frame_ports, text="Refresh", command=refresh_ports)
 refresh_btn.pack(side=tk.RIGHT, padx=(5,20), pady=(0,0))
 
