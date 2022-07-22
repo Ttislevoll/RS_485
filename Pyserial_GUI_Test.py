@@ -298,7 +298,13 @@ def get_all(adr: int) -> dict:
     values["Temperature"] = get_temperature(adr)  
     return values
 
-def read_sensor(adr_func, sensor):
+def read_sensor(adr_func: int, sensor: Sensor) -> None:
+    """Displays and saves data from single sensor
+
+    Args:
+        adr_func (function): Function returning sensor address
+        sensor (Sensor): Sensor object for storing data
+    """
     try:
         txt_log.insert(END, "\n")
         try: log_text=f'Machine: {get_machine()},  Sensor: {sensor()}'
@@ -323,7 +329,9 @@ def read_sensor(adr_func, sensor):
 
 
 #retrieves all data from sensors when there are mulitple sensors connected
-def read_all_sensors():
+def read_all_sensors() -> None:
+    """Loops through every possible sensor address for reading multiple sensors
+    """
     try:
         sensors_group = get_machine().sensors_group
         sensors_group.clear()
@@ -362,7 +370,15 @@ def read_all_sensors():
 
 #serial write functions
 #changes the address of single connected sensor
-def set_address(new_adr):
+def set_address(new_adr: int) -> None:
+    """Changes sensor address
+
+    Args:
+        new_adr (int): New address for sensor
+
+    Raises:
+        Exception: Sensor is not present
+    """ 
     try:
         try: current_adr = get_adr(get_sensor().values["Address"])
         except: raise Exception("Sensor is not present")
@@ -381,7 +397,15 @@ def set_address(new_adr):
         log_write(log_text)
 
 #looks for sensor after reset follwing address change
-def polling_sensor(adr, seconds, wait, sensor):
+def polling_sensor(adr: int, seconds: int, wait: int, sensor: Sensor):
+    """Reads the new address after power reset
+
+    Args:
+        adr (int): New address for sensor
+        seconds (int): polling timeout
+        wait (int): start time + seconds
+        sensor (Sensor): Sensor object for storing address
+    """
     ser.timeout = 0.01
     if ser.in_waiting > 0: ser.reset_input_buffer()
     try:
@@ -409,7 +433,9 @@ def polling_sensor(adr, seconds, wait, sensor):
 #Utility functions
 
 #refreshes the values in list of ports
-def refresh_ports(): 
+def refresh_ports() -> None: 
+    """_summary_
+    """
     global ports
     global ser
     ports = serial.tools.list_ports.comports()
@@ -785,8 +811,10 @@ combobox_ports.pack(side=tk.LEFT, padx=(20,5), pady=(0,0))
 ports = serial.tools.list_ports.comports() #Creates a list of connected serial ports
 combobox_ports['values'] = ports #adds the "ports" list to a dropdown menu
 if(len(ports) > 0): 
-    combobox_ports.current(newindex=0)
-    port_selected()
+    try:
+        combobox_ports.current(newindex=0)
+        port_selected()
+    except: pass
 refresh_btn = ttk.Button(frame_ports, text="Refresh", command=refresh_ports)
 refresh_btn.pack(side=tk.RIGHT, padx=(5,20), pady=(0,0))
 
